@@ -1,6 +1,6 @@
 # swedish-accounting-agents
 
-Claude Code skills for Swedish accounting compliance. These skills give Claude deep knowledge of Swedish bookkeeping law, tax rules, and reporting requirements, useful for any developer building accounting software targeting Sweden.
+Claude skills for Swedish accounting compliance. These skills give Claude deep knowledge of Swedish bookkeeping law, tax rules, and reporting requirements, useful for any developer building accounting software targeting Sweden, or anyone doing their own bookkeeping.
 
 ## Skills
 
@@ -29,6 +29,5 @@ claude
 
 Or add the skills to an existing project by copying `.claude/skills/swedish-*` into your project's `.claude/skills/` directory.
 
-## License
-
-AGPL-3.0-or-later
+**Claude Desktop & claude.ai**
+Go to **Settings > Customize** or **Settings > Capabilities > Skills** and add the skill files there. Claude will use them across conversations. Requires code execution to be enabled under Settings > Capabilities.
