@@ -1,0 +1,65 @@
+# Traktamente and Utlägg
+
+## Domestic traktamente
+
+Tax-free domestic traktamente requires a tjänsteresa with overnight stay, destination ≥50 km from both home and workplace, with documented reseräkning.
+
+| Period | Hel dag | Halv dag | Nattraktamente |
+|---|---|---|---|
+| 2024-2025 | 290 SEK | 145 SEK | 145 SEK |
+| 2026 | 300 SEK | 150 SEK | 150 SEK |
+
+### Day type rules
+
+Departure before 12:00 or return after 19:00 = hel dag. Otherwise halv dag. Intermediate days are always hela dagar.
+
+### Tremånadersregeln
+
+After 3 consecutive months at the same location: rate drops to 70% of maximibelopp. After 2 years: drops to 50%. A break of ≥4 weeks resets the counter.
+
+### Meal reductions (2025, traktamente = 290 SEK)
+
+| Meals provided | Reduction | Remaining |
+|---|---|---|
+| Frukost only | 58 SEK (20%) | 232 SEK |
+| Lunch or middag | 102 SEK (35.2%) | 188 SEK |
+| Lunch and middag | 203 SEK (70%) | 87 SEK |
+| All three meals | 261 SEK (90%) | 29 SEK |
+
+When meals are provided and traktamente reduced, a kostförmån for the free meal is also triggered (both apply simultaneously). Meals included in transport tickets do not trigger a reduction.
+
+### International traktamente
+
+Uses country-specific normalbelopp published annually by Skatteverket. Same 3-month, 2-year, and meal reduction percentage rules apply.
+
+## Utlägg vs kostnadsersättning
+
+| Characteristic | Utlägg (employer's expense) | Kostnadsersättning (employee's cost) |
+|---|---|---|
+| Receipt belongs to | The company | The employee |
+| Taxable income? | No | No, if within skattefria schabloner |
+| Arbetsgivaravgifter? | No | No, if within schabloner |
+| On lönespec? | No (or info only) | Yes, listed separately |
+| Example | Office supplies, client lunch | Milersättning, traktamente |
+
+For purchases >4,000 SEK including moms, the employer's name must appear on the receipt for VAT deduction.
+
+## Milersättning
+
+Unchanged 2024-2026:
+- Own car: 25 SEK/mil (2.50 SEK/km)
+- Förmånsbil (petrol/diesel): 12 SEK/mil
+- Förmånsbil (electric/hybrid): 9.50 SEK/mil
+
+Amounts exceeding schabloner are taxed as salary with full arbetsgivaravgifter. All reimbursements require a körjournal with dates, mileage readings, destinations, and business purpose. Retention: 7 years per bokföringslagen.
+
+## BAS accounts
+
+| Account | Purpose |
+|---|---|
+| 7321 | Skattefria traktamenten, Sverige |
+| 7322 | Skattepliktiga traktamenten, Sverige |
+| 7323 | Skattefria traktamenten, utlandet |
+| 7324 | Skattepliktiga traktamenten, utlandet |
+| 7331 | Skattefria bilersättningar |
+| 7332 | Skattepliktiga bilersättningar |
