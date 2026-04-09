@@ -1,4 +1,4 @@
-# swedish-accounting-agents
+# swedish-accounting-skills
 
 Claude skills for Swedish accounting compliance. These skills give Claude deep knowledge of Swedish bookkeeping law, tax rules, and reporting requirements, useful for any developer building accounting software targeting Sweden, or anyone doing their own bookkeeping.
 
