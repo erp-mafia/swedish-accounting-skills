@@ -31,3 +31,15 @@ Or add the skills to an existing project by copying `.claude/skills/swedish-*` i
 
 **Claude Desktop & claude.ai**
 Go to **Settings > Customize** or **Settings > Capabilities > Skills** and add the skill files there. Claude will use them across conversations. Requires code execution to be enabled under Settings > Capabilities.
+
+## Note on skill naming
+
+These are **community-maintained** skills, not official Anthropic skills. Claude Code treats the `anthropic-skills:` prefix as Anthropic-maintained — do not rename these skills with that prefix, as Claude may refuse to modify them or treat them with undue authority.
+
+## Skill description limits
+
+Claude Code enforces a **max 1024 characters** for the `description` field in `SKILL.md` frontmatter. Skills exceeding this limit will fail to import. Keep descriptions concise — detailed trigger keywords and coverage belong in the skill body and reference files, not the description.
+
+## License
+
+AGPL-3.0-or-later
