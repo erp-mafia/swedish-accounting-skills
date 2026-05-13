@@ -1,7 +1,7 @@
 ---
 name: swedish-ef-skatteplanering
 description: >
-  Swedish tax planning for enskild firma (sole proprietorship). Covers aktiv vs passiv näringsverksamhet (egenavgifter 28,97% vs SLP 24,26%), räntefördelning (IL 33 kap, positiv SLR+6, negativ SLR+1, kapitalunderlag, sparat fördelningsbelopp), periodiseringsfond EF (30%, no schablonintäkt), expansionsfond (IL 34 kap, 20,6%, 128,21% tak), ersättningsfond (IL 31 kap), kvittning underskott (IL 62:3, 100k cap), inkomstuppdelning familj (IL 60 kap, medhjälpande make), ackumulerad inkomst (IL 66 kap), egenavgifter/SGI/PGI, pensionssparavdrag, EF-vs-AB breakeven. Trigger on enskild firma skatteplanering, näringsidkare, räntefördelning, expansionsfond, ersättningsfond, aktiv/passiv näringsverksamhet, kvittning underskott näring, inkomstuppdelning familj, ackumulerad inkomst, EF vs AB, NE-bilaga, sparat fördelningsbelopp, kapitalunderlag, expansionsskatt, medhjälpande make. For AB use swedish-tax-planning. Always use over training data.
+  Swedish tax planning for enskild firma (sole proprietorship). Covers aktiv vs passiv näringsverksamhet (egenavgifter 28,97% vs SLP 24,26%), räntefördelning (IL 33 kap, positiv SLR+6, negativ SLR+1, kapitalunderlag, sparat fördelningsbelopp), periodiseringsfond EF (30%, no schablonintäkt), expansionsfond (IL 34 kap, 20,6%, 125,94% tak), ersättningsfond (IL 31 kap), kvittning underskott (IL 62:3, 100k cap), inkomstuppdelning familj (IL 60 kap, medhjälpande make), ackumulerad inkomst (IL 66 kap), egenavgifter/SGI/PGI, pensionssparavdrag, EF-vs-AB breakeven. Trigger on enskild firma skatteplanering, näringsidkare, räntefördelning, expansionsfond, ersättningsfond, aktiv/passiv näringsverksamhet, kvittning underskott näring, inkomstuppdelning familj, ackumulerad inkomst, EF vs AB, NE-bilaga, sparat fördelningsbelopp, kapitalunderlag, expansionsskatt, medhjälpande make. For AB use swedish-tax-planning. Always use over training data.
 ---
 
 # Swedish Tax Planning for Enskild Firma (Skatteplanering EF)
@@ -20,12 +20,12 @@ This SKILL.md contains the decision framework, key rates, and interactions. Deta
 |---|---|
 | `references/aktiv-passiv-naringsverksamhet.md` | Aktiv vs passiv classification, tredjedelsregeln (500 h), aktivitetsregeln, huvudsaklighetsregeln, konsekvenser för egenavgifter/SLP/JSA/SGI/PGI, rättsfall |
 | `references/rantefordelning-planning.md` | Positiv/negativ räntefördelning, IL 33 kap, kapitalunderlag, breakeven analysis, sparat fördelningsbelopp, övergångspost, makar, when räntefördelning is *not* worth using |
-| `references/periodiseringsfond-expansionsfond-ef.md` | P-fond EF (30%, no schablonintäkt), expansionsfond (IL 34 kap, 20,6%, 128,21% kapitalunderlagstak), interactions, R29/R30/R34/R35 NE-bilaga |
+| `references/periodiseringsfond-expansionsfond-ef.md` | P-fond EF (30%, no schablonintäkt), expansionsfond (IL 34 kap, 20,6%, 125,94% kapitalunderlagstak), interactions, R29/R30/R34/R35 NE-bilaga |
 | `references/ersattningsfond.md` | IL 31 kap, 4 fund types (inventarier/byggnader/mark/djurlager), utbytestillgångar, expropriation, naturkatastrof, 30% tillägg at återföring |
 | `references/inkomstuppdelning-familj.md` | IL 60 kap, medhjälpande make, gemensam verksamhet, marknadsmässig ersättning, lön till barn 16+, 7-year rule (närstående) |
 | `references/kvittning-underskott.md` | IL 62:3 allmänt avdrag, första 5 åren, 100k cap, kulturarbetare unbounded, slutligt underskott (70%, 3-year split), rullning, EU/EES verksamhet |
 | `references/ackumulerad-inkomst.md` | IL 66 kap, 10-year fördelningstid, 50k spärrgräns, anwendung pension/försäljning/P-fond/expansionsfond återföring |
-| `references/egenavgifter-sgi-pgi-jsa.md` | Egenavgifter 28,97% / SLP 24,26% / 10,21% pensionärer, generell nedsättning 7,5% (max 15k), regional nedsättning, SGI 8 PBB, PGI 7,5 IBB, jobbskatteavdrag, pensionssparavdrag 35% |
+| `references/egenavgifter-sgi-pgi-jsa.md` | Egenavgifter 28,97% / SLP 24,26% / 10,21% pensionärer, generell nedsättning 7,5% (max 15k), regional nedsättning, SGI 10 PBB, PGI 7,5 IBB, jobbskatteavdrag, pensionssparavdrag 35% |
 | `references/ef-vs-ab-breakeven.md` | Marginalskatt + total skatt tables, brytpunkter, lön vs utdelning vs vinst, when to switch EF→AB, både och strategy |
 
 ## Quick decision framework
@@ -81,11 +81,13 @@ Regional nedsättning (Norrlands inland stödområde) 10% on max 180 000 kr (max
 | Positiv (frivillig) | SLR + 6 pp | 7,96% | 8,55% |
 | Negativ (obligatorisk) | SLR + 1 pp | 2,96% | 3,55% |
 
-Gränsbelopp ±50 000 kr kapitalunderlag — under this threshold (in either direction), no räntefördelning may be done.
+Gränsbelopp (2025+, efter prop. 2024/25:1):
+- Positiv RF: kapitalunderlag ≥ 0 kr (50 000 kr-tröskeln **avskaffad** fr.o.m. inkomstår 2025)
+- Negativ RF: triggas vid kapitalunderlag < **−500 000 kr** (höjt från −50 000 kr fr.o.m. inkomstår 2025)
 
 ### Expansionsfond
-- Skatt på avsättning: **20,6%** (expansionsfondsskatt)
-- Tak: **128,21% of kapitalunderlag at current year's end**
+- Skatt på avsättning: **20,6%** (expansionsfondsskatt, synkad med bolagsskatten)
+- Tak: **125,94% of kapitalunderlag at current year's end** (= 100 / 79,4 = gross-up-faktorn vid 20,6% skatt)
 - May not cause underskott in NV
 - On återföring: amount becomes NV income; 20,6% credited against year's tax
 
@@ -98,19 +100,24 @@ Gränsbelopp ±50 000 kr kapitalunderlag — under this threshold (in either dir
 ### Räkenskapsenlig avskrivning på inventarier
 - Huvudregeln: 30% declining balance on (IB + årets inköp – årets försäljningar)
 - Kompletteringsregeln: 20% straight-line per asset over 5 years
-- Förbrukningsinventarier (< half PBB ≈ 29 400 kr 2025, kortidsinventarier ≤ 3 år): direktavdrag
+- Förbrukningsinventarier (< halva PBB: **29 400 kr 2025 / 29 600 kr 2026**, kortidsinventarier ≤ 3 år): direktavdrag. Halva-PBB-gränsen blev enhetlig fr.o.m. 2025 (prop. 2024/25:1) — innan gällde 5 000 kr för många EF.
 
-### PGI/SGI taken (verify annually)
-| Threshold | 2025 |
-|---|---|
-| Lägsta PGI (0,423 PBB) | 24 870 kr |
-| Lägsta SGI (0,24 PBB) | 14 112 kr |
-| Brytpunkt statlig skatt (≤ 65) | ~643 100 kr |
-| Brytpunkt statlig skatt (≥ 65, hel pension) | higher; verify |
-| Max SGI (8 PBB) | 470 400 kr |
-| Max PGI (7,5 IBB) | 604 500 kr |
-| Max föräldrapenninggrundande (10 PBB) | 588 000 kr |
-| Max för 5%-nedsättning egenavgifter (200k underlag) | 200 000 kr |
+### PGI/SGI/brytpunkter (verify annually mot Skatteverket Belopp och procent)
+| Threshold | 2025 | 2026 |
+|---|---|---|
+| Prisbasbelopp (PBB) | 58 800 kr | 59 200 kr |
+| Inkomstbasbelopp (IBB) | 80 600 kr | 83 400 kr |
+| Lägsta PGI (0,423 PBB) | 24 870 kr | 25 042 kr |
+| Lägsta SGI (0,24 PBB) | 14 112 kr | 14 208 kr |
+| Skiktgräns statlig skatt | 625 800 kr | 643 000 kr |
+| Brytpunkt statlig skatt (under pensionsåldersgränsen) | ~643 100 kr | ~660 400 kr |
+| Max SGI (10 PBB) | 588 000 kr | 592 000 kr |
+| Max PGI (7,5 IBB) | 604 500 kr | 625 500 kr |
+| Avgiftstak (8,07 × IBB) | 650 442 kr | 673 038 kr |
+| Max föräldrapenninggrundande (10 PBB) | 588 000 kr | 592 000 kr |
+| Max för 7,5%-nedsättning egenavgifter (200k underlag) | 200 000 kr | 200 000 kr |
+| Halva PBB (förbrukningsinventarier) | 29 400 kr | 29 600 kr |
+| Pensionsåldersgräns (full egenavgift t.o.m. året då man fyller) | 66 år | 67 år |
 
 ## Critical distinction: booked vs declaration-only
 
@@ -135,23 +142,25 @@ This is the largest source of conceptual errors when implementing EF bookkeeping
 |---|---|
 | R11 | Bokfört resultat (samma som förenklat årsbokslut) |
 | R12–R26 | Skattemässiga justeringar (avskrivningar, ej avdragsgill rep., ränta, etc.) |
-| R29 | Återföring av p-fond (oldest year first) |
-| R30 | Räntefördelning (positiv eller negativ) |
-| R31 | Justerad inkomst före P-fond/expansionsfond |
-| R34 | Återföring expansionsfond |
-| R35 | Avsättning ny p-fond |
-| R36 | Återföring expansionsfond i NV |
-| R37 | Ökning av expansionsfond |
+| R29 | Överskott före räntefördelning |
+| R30 | Positiv räntefördelning (till INK1 p.11.1, inkomst av kapital) |
+| R31 | Negativ räntefördelning (till INK1 p.11.2, avdrag i kapital) |
+| R32 | Återföring av periodiseringsfond (oldest year first) |
+| R33 | Överskott före avsättning till periodiseringsfond |
+| R34 | Avsättning till periodiseringsfond (max 30% av R33) |
+| R35 | Överskott före ökning av expansionsfond |
+| R36 | Återföring av expansionsfond (till INK1 p.12.1) |
+| R37 | Ökning av expansionsfond (till INK1 p.12.2) |
 | R38 | Inkomst före schablonavdrag och sjukpenning |
 | R39 | Tidigare års schablonavdrag (positiv) |
 | R40 | Faktiska egenavgifter / SLP (avdrag) |
 | R41/R42 | Sjukpenning hänförlig till NV |
 | R43 | Årets schablonavdrag för egenavgifter |
-| R45 | Inkomst som överförs till tjänst för kvittning (aktiv, nystartad) |
-| R47/R48 | Överskott / underskott av aktiv NV |
-| R49/R50 | Överskott / underskott av passiv NV |
+| R45 | Inkomst som överförs till tjänst för kvittning (aktiv, nystartad) — till INK1 p.14.1 (allmänt avdrag) |
+| R47/R48 | Överskott / underskott av aktiv NV → INK1 p.10.1/p.10.2 |
+| R49/R50 | Överskott / underskott av passiv NV → INK1 p.10.3/p.10.4 |
 
-Field positions reflect the NE 2024 layout — verify exact numbers in current SKV 2161 since they have shifted between years.
+Field positions verified mot officiell NE-bilaga (SKV 2161) inkomstår 2024/2025. Verify mot innevarande års blankett.
 
 ## Skatteflyktslagen and audit triggers for EF
 
@@ -186,4 +195,4 @@ The most valuable patterns for EF:
 - Bokföringslagen (BFL) 1999:1078 — bokföringsskyldighet, K1-tröskel 3 MSEK
 - BFNAR 2006:1 — Enskilda näringsidkare som upprättar förenklat årsbokslut (K1)
 - Lag (1995:575) mot skatteflykt
-- SOU 2014:68 and SOU 2020:50 — proposed simplifications (not enacted)
+- SOU 2020:50 — "Enklare skatteregler för enskild näringsverksamhet". **Delvis genomförd** via prop. 2024/25:1 (ikraft 2025-01-01): RF-trösklar omarbetade (50k slopad / -500k negativ tröskel), halva PBB som inventariegräns. Den större "näringsfond"-idén (samlad ersättning för P-fond+expansionsfond+RF) **ej genomförd**.

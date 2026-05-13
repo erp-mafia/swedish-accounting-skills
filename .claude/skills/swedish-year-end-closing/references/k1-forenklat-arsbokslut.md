@@ -26,7 +26,7 @@ If the same person runs multiple verksamheter:
 
 If multiple personer arbetar gemensamt i ett enkelt bolag:
 - Track-aggregeras per delägare → each delägare's share räknas mot 3 MSEK
-- If en delägares andel > 3 MSEK, samme delägare måste lämna fullt årsbokslut — och om så är fallet, alla delägare ska lämna fullt årsbokslut för den gemensamma verksamheten (PDF: "Följer man reglerna om förenklat årsbokslut i en verksamhet måste samma regler också tillämpas för de övriga verksamheterna")
+- If en delägares andel > 3 MSEK, samme delägare måste lämna fullt årsbokslut — och om så är fallet, alla delägare ska lämna fullt årsbokslut för den gemensamma verksamheten. En näringsidkare som tillämpar förenklat årsbokslut i en verksamhet ska använda samma regelverk för sina övriga verksamheter — man får inte blanda förenklat och fullständigt över olika delverksamheter.
 
 ## Räkenskapsåret
 
@@ -303,7 +303,7 @@ Each year: räkna ut lägsta värdet enligt huvudregel + lägsta enligt komplett
 - Huvudregel: lägsta värdets princip (LVP) — det lägre av anskaffningsvärde och nettoförsäljningsvärde
 - FIFO för värdering av identiska partier
 - **97%-regeln** (3% schablonmässigt inkuransavdrag) tillåts i K1
-- **K1 specifik förenkling**: lager < 5 000 kr **behöver inte alls tas upp** (PDF ened sid 240 punkt 3: "varuförändring bokförs (endast lager överstigande 5 000 kr måste tas upp som tillgång)")
+- **K1 specifik förenkling**: lager < 5 000 kr **behöver inte alls tas upp** som tillgång — varuförändringen bokförs men endast lager över 5 000 kr balansredovisas
 
 ### Skulder
 
@@ -317,8 +317,8 @@ Each year: räkna ut lägsta värdet enligt huvudregel + lägsta enligt komplett
 
 ### Skogskonto / skogsskadekonto / upphovsmannakonto
 
-- Medlen tas upp till **halva beloppet** för räntefördelningens kapitalunderlag (latent skatt)
-- I förenklat årsbokslut: redovisas som information **U4**, inte som tillgång (eller delvis)
+- I förenklat årsbokslut: **kontosaldot bokförs i sin helhet i B9 (Kassa och bank)** — pengarna tillhör företaget och ska redovisas som tillgång. Dessutom upplyses kontot i ruta **U4** (Övriga upplysningar) med beskrivning av kontotyp och latent skatteskuld.
+- För **räntefördelningens kapitalunderlag** tas däremot bara **halva beloppet** av skogskonto/skogsskadekonto/upphovsmannakonto med (latent skatt elimineras).
 
 ## NE-bilaga mapping (the critical bridge)
 
@@ -335,10 +335,11 @@ The whole point of the förenklade årsbokslutet is to feed directly into NE-bil
 | B13-B16 Skulder | → | (info ruta 6) |
 | R11 Bokfört resultat | → | NE **R11** |
 | R12-R26 (in deklarationsbilden) | Skattemässiga justeringar (ej avdragsgill rep, ränta osv) | NE R12–R26 |
-| U1 Periodiseringsfonder | → | NE **R29 (återföring)** / **R35 (avsättning)** |
-| U2 Expansionsfond | → | NE **R36 (återföring i NV)** / **R37 (ökning)** |
-| U3 Ersättningsfond | → | (bokförd avsättning, ingen separat NE-ruta) |
-| (Räntefördelning) | → | NE **R30** |
+| U1 Periodiseringsfonder | → | NE **R32 (återföring)** / **R34 (avsättning)** |
+| U2 Expansionsfond | → | NE **R36 (återföring)** → INK1 p.12.1 / **R37 (ökning)** → INK1 p.12.2 |
+| U3 Ersättningsfond | → | (bokförd avsättning via resultaträkningen, ingen separat NE-ruta — påverkar R11) |
+| (Räntefördelning positiv) | → | NE **R30** → INK1 p.11.1 (inkomst av kapital) |
+| (Räntefördelning negativ) | → | NE **R31** → INK1 p.11.2 (avdrag i kapital) |
 | (Eget egenavgifter schablonavdrag) | → | NE **R39, R40, R43** |
 | Aktiv/passiv-kryssruta | → | NE sid 1 |
 | Slutligt R47/R48 (aktiv) eller R49/R50 (passiv) | → | INK1 sid 2 ruta 10.1–10.4 |
@@ -370,42 +371,36 @@ Vid utrangering eller försäljning ska tillgången **strykas** från förteckni
 
 All räkenskapsinformation (verifikationer, det förenklade årsbokslutet, lagervärdering, anläggningsförteckning, anläggningsavtal, ansvarsförbindelser) ska arkiveras **7 år** efter räkenskapsårets utgång enligt BFL 7 kap.
 
-Format: pappersfakturor → behåll i original i pärm; elektroniska underlag → arkiveras elektroniskt (eller papper om inkommit på papper). Skannad pappersfaktura kan arkiveras digitalt OM originalet behålls 3 år extra.
+Format: pappersfakturor → behåll i original i pärm; elektroniska underlag → arkiveras elektroniskt (eller papper om inkommit på papper).
 
-## Praktikfall — Stina Svensson (PDF distilled)
+**BFL-ändring 2024-07-01:** kravet att behålla pappersoriginal i 3 år efter scanning **är borttaget**. Pappersoriginal får förstöras direkt efter att räkenskapsinformationen överförts till ett annat format, förutsatt att överföringen är tillförlitlig och den digitala kopian uppfyller arkiveringskraven. 7-årsregeln gäller fortfarande för den lagrade räkenskapsinformationen.
 
-This is the worked example from ened.pdf kapitel "Praktikfall". Distilled here as illustration:
+## Bokslutsprocess — checklista per K1-fält
 
-**Stina** driver en EF (måleri):
-- Industribyggnad + mark
-- Bokför enligt **kontantmetoden**, redovisar moms en gång per år
-- Räkenskapsår 2018 (jan-dec)
-- Betalar månatligen 20 000 kr F-skatt → 240 000 kr för hela året
+Bokslutssekvens för en EF som upprättar förenklat årsbokslut. Varje steg motsvarar en post i förenklat årsbokslut och dess bokföringsmotsvarighet.
 
-### Arbetsgång vid bokslut
+| # | Operation | Förenklat årsbokslut-fält |
+|---|---|---|
+| 1 | Avstämning bank/kassa/skattekonto vs bokföring (innan B-poster) | — |
+| 2 | Avskrivning byggnader (4 % standard för industri-/näringsfastighet — kontrollera SKV A 2005:5 för byggnadstyp) | B2 |
+| 3 | Avskrivning inventarier — huvudregeln 30 % declining på (IB + årets inköp − årets försäljningar) eller kompletteringsregeln 20 % straight-line. Använd det som ger lägst restvärde. | B4 |
+| 4 | Lagervärdering — fysisk inventering 31 dec, 97 % av anskaffningsvärde (3 %-schablonavdrag) eller 85 % för djurlager. Lager < halvt PBB får utelämnas (BFNAR 2025:1) | B6 |
+| 5 | Kundfordringar — avboka fjolårets, boka årets per saldolista 31 dec | B7 |
+| 6 | Övriga fordringar — förhöjd leasingavgift, förskott till leverantör | B8 |
+| 7 | Kassa och bank — saldon 31 dec inklusive skogskonto till **fullt belopp** (se separat sektion) | B9 |
+| 8 | Låneskulder | B13 |
+| 9 | Skatteskulder — moms, AGI-skuld | B14 |
+| 10 | Leverantörsskulder inkl. moms | B15 |
+| 11 | Övriga skulder — förskott från kund > halvt PBB | B16 |
+| 12 | Boka årets resultat (8999 debet / 2019 kredit för EF) | R11 |
+| 13 | Fyll i U1 (P-fond), U2 (expansionsfond), U3 (ersättningsfond), U4 (skogskonto/upphovsmannakonto/betalningsplan) | U1-U4 |
+| 14 | För R11 till NE-bilaga, fortsätt med skattemässiga justeringar R12-R26, RF R30/R31, P-fond R32/R34, expansionsfond R36/R37, schablonavdrag R43 | (NE forts.) |
 
-1. **Avstämning** — kontrollera att alla betalningar är bokförda; bekräfta saldon mot bank, skattekonto, kassa
-2. **Avskrivningar byggnader** (B2): industrifastigheten avskrivs med 4% av 625 000 kr = **25 000 kr/år**
-3. **Avskrivningar inventarier** (B4): huvudregeln 30% av (IB 145 406 − sålt 40 000) = 30% × 105 406 = 31 622 kr
-4. **Lagervärdering** (B6): inventering 31 dec, värdera enligt FIFO; 97% × 31 900 = 30 943 kr
-5. **Kundfordringar** (B7): bokföra föregående års (avbokas) och beräkna årets 52 000 kr
-6. **Övriga fordringar** (B8): förskott till leverantörer (förhöjd leasingavgift), 42 000 kr
-7. **Kassa och bank** (B9): 79 121 kr
-8. **Låneskulder** (B13): fastighetslån 487 220 kr
-9. **Leverantörsskulder** (B15): 31 775 kr (inkl moms 7 156 kr)
-10. **Övriga skulder** (B16): förskott från kund 12 000 kr
-11. **Skatteskuld** (B14): moms 100 721 kr
-12. **Boka årets resultat**: 322 891 kr → 8999 Debit / 2019 Credit
-13. **Fyll i förenklat årsbokslut** med U1 = 80 000 kr P-fond (informationspost)
-
-### Slutgiltiga siffror
-- Tillgångar summa: 852 848 kr
-- Skulder + eget kapital: 852 848 kr
-- Årets resultat (R11): **322 891 kr**
-
-Detta R11 förs direkt till NE-bilaga ruta R11. Sedan görs skattemässiga justeringar (R12-R26), räntefördelning (R30), periodiseringsfond (R29/R35), expansionsfond (R36/R37), och slutligen schablonavdrag egenavgifter (R43).
-
-Stina's situation: hon har bokförd P-fond 80 000 kr (i U1) — DETTA ÄR ENDAST UPPLYSNING, inte ett avdrag i resultaträkningen. Det skattemässiga avdraget för P-fond görs i NE-bilagan ruta R35.
+Kritiska invarianter att kontrollera efter steg 14:
+- Σ tillgångar = Σ skulder + eget kapital (balansidentitet)
+- U1-U4 är **upplysningar**, INTE bokföringsposter mot resultatet
+- R11 i NE = R11 i förenklat årsbokslut (samma siffra)
+- P-fond i U1 är endast information — avdraget görs på NE-ruta R34, INTE i resultaträkningen
 
 ## Common pitfalls (specifika för K1)
 
@@ -450,7 +445,7 @@ If you build bokföringssoftware targeted at EF:
 - [ ] Allow utelämning av < 5 000 kr fordringar/skulder per BFNAR 2006:1
 - [ ] Apply 97% schablonavdrag för inkurans på lager
 - [ ] Apply huvudregel/kompletteringsregel for avskrivning, choose lower automatic
-- [ ] Surface 80 000 kr halv-PBB cap för förbrukningsinventarier (29 400 kr 2025)
+- [ ] Surface halv-PBB-cap för förbrukningsinventarier (29 400 kr 2025 / 29 600 kr 2026; gräns höjd från 5 000 kr fr.o.m. 2025 via prop. 2024/25:1)
 
 ## Out of scope
 

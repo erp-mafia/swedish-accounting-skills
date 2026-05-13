@@ -4,9 +4,21 @@
 
 - IL 33 kap (Räntefördelning) — full chapter
 - IL 33 kap 2 § — applies to enskilda näringsidkare and svenska dödsbon
-- IL 33 kap 3 § — gränsbelopp ±50 000 kr
+- IL 33 kap 3 § — gränsbelopp (amended fr.o.m. 2025-01-01, see "2025 reform" below)
 - IL 33 kap 6 § — positiv räntefördelning frivillig
 - Prop 1993/94:50 sid 427 — introduced the system
+- **Prop. 2024/25:1 (budgetpropositionen 2025) — "Förbättrade skattemässiga villkor för enskilda näringsidkare"**: avskaffade 50 000 kr-tröskeln för positiv räntefördelning och höjde tröskeln för negativ räntefördelning till −500 000 kr, ikraft 1 januari 2025
+
+## 2025 reform — gränsbelopp omarbetade
+
+Det ursprungliga ±50 000 kr-systemet (gällande t.o.m. inkomstår 2024) är **inte längre i kraft**. Fr.o.m. inkomstår 2025 (deklaration 2026) gäller:
+
+| Regel | Före 2025 | Fr.o.m. 2025 |
+|---|---|---|
+| Positiv räntefördelning (frivillig) | Kapitalunderlag > **+50 000 kr** krävdes | **Tröskel slopad** — får göras om kapitalunderlag är positivt (≥ 0 kr) |
+| Negativ räntefördelning (obligatorisk) | Kapitalunderlag < **−50 000 kr** triggade | Triggas först om kapitalunderlag < **−500 000 kr** |
+
+Reformen kommer från SOU 2020:50 "Enklare skatteregler för enskild näringsverksamhet" och genomfördes delvis via prop. 2024/25:1.
 
 ## The fundamental idea
 
@@ -14,20 +26,20 @@ Räntefördelning shifts a *schablon* return on the kapital insatt i verksamhete
 
 The intent (1994 reform): align tax treatment of capital invested in EF with capital invested in AB (where a näringsidkare can lend money to the AB and get marknadsmässig ränta taxed at 30% in kapital).
 
-### Positiv räntefördelning (frivillig)
+### Positiv räntefördelning (frivillig) — 2025+
 
-- Kapitalunderlag > **+50 000 kr** at föregående års utgång
+- Kapitalunderlag **≥ 0 kr** at föregående års utgång (50 000 kr-tröskeln slopad fr.o.m. 2025)
 - Rate: **SLR + 6 procentenheter**
 - Effect: deduct kapitalunderlag × rate from NV income, add same amount as kapitalinkomst (30% tax)
 
-### Negativ räntefördelning (obligatorisk)
+### Negativ räntefördelning (obligatorisk) — 2025+
 
-- Kapitalunderlag < **−50 000 kr** at föregående års utgång
+- Kapitalunderlag **< −500 000 kr** at föregående års utgång (höjt från −50 000 kr fr.o.m. 2025)
 - Rate: **SLR + 1 procentenhet**
 - Effect: add belopp to NV income, deduct same as kapitalkostnad (30% skattereduktion)
 - **Cannot be skipped** — it is obligatorisk per IL 33 kap
 
-If kapitalunderlag is between −50 000 and +50 000 kr → **no räntefördelning at all** (absolute, not marginal — if you're at +50 001 you do räntefördelning on the *entire* 50 001 belopp, not on the 1 kr över gränsen).
+Mellan −500 000 och 0 kr → **ingen räntefördelning alls** (gränsen är absolut, inte marginell). Tidigare (≤ 2024) gällde ±50 000 kr som dubbelriktad gräns.
 
 ## Rates by year
 
@@ -36,7 +48,7 @@ Anchored to statslåneräntan (SLR) 30 november the year before income year.
 | Inkomstår | SLR Nov 30 prior year | Positiv rate (SLR+6) | Negativ rate (SLR+1) |
 |---|---|---|---|
 | 2021 | 0,23% | 6,5% | 1,5% (effektivt 1,51%) |
-| 2024 | (verify) | ~8% | ~3% |
+| 2024 | 2,62 % | 8,62 % | 3,62 % |
 | 2025 | 1,96% | **7,96%** | **2,96%** |
 | 2026 | 2,55% | **8,55%** | **3,55%** |
 
@@ -44,9 +56,7 @@ SLR may not go below 0,5% as floor (same floor as för schablonintäkt on P-fond
 
 ## When is positiv räntefördelning *worth* doing?
 
-This is the most consequential planning question, and the answer is "less often than people think". From the PDF:
-
-> *"Idag är det inte så säkert att skatt inklusive egenavgifter överstiger 30 procent, som är kapitalskatten på positivt räntefördelningsbelopp."*
+This is the most consequential planning question, and the answer is "less often than people think". Den faktiska NV-marginalskatten (kommunal + egenavgifter + ev. statlig) överstiger inte alltid kapitalskattens 30 % — räntefördelningen lönar sig bara när den gör det.
 
 ### Decision tree
 
@@ -54,33 +64,22 @@ This is the most consequential planning question, and the answer is "less often 
 2. **Under 65, under brytpunkten**: Marginalskatt ~46% inkl egenavgifter. Räntefördelning skattereduktion = (46% − 30%) ≈ 16 procentenheter. Small benefit, but pensions- och sjukpenninggrundande inkomst minskar. → MAYBE NOT worth it for low income; weigh against förlorad SGI/PGI.
 3. **Under 65, över brytpunkten**: Marginalskatt 52–65% inkl statlig och egenavgifter. Räntefördelning saves ~22–35 pp. → DO IT.
 
-### Worked examples (from PDF)
+### Decision table: lönar sig RF? (NV-vinst 100 000 kr, hela vinsten flyttad)
 
-#### Astrid, född 1936 (pensionär, no egenavgifter at all)
-Vinst 100 000 kr, total skatt utan räntefördelning 2 997 kr.
-With räntefördelning on entire 100 000: skatt = 30% × 100 000 = 30 000 kr.
-**Extra skatt: 27 003 kr.** → Don't do it.
+| Profil | NV-skatt utan RF (≈) | Med RF (30 % kap) | Delta | Beslut |
+|---|---|---|---|---|
+| Född 1937 eller tidigare (0 % avgift) | ~3 000 | 30 000 | +27 000 | RF FEL |
+| Pensionär 10,21 % egenavgift | ~10 700 | 30 000 | +19 300 | RF FEL |
+| Aktiv, under brytpunkt | ~23 600 | 30 000 | +6 400 | RF FEL |
+| Aktiv, över brytpunkt (vinst stor + tjänst) | ~74 500 (varav statlig ~20 %) | partial RF + rest NV | NEGATIV | RF RÄTT |
 
-#### Mimmi, född 1949 (pensionär, egenavgifter 10,21%)
-Vinst 100 000 kr, skatt utan räntefördelning 10 654 kr.
-With räntefördelning: 30 000 kr.
-**Extra skatt: 19 346 kr.** → Don't do it.
+Tröskel: RF lönar sig bara när NV-marginalskatt (kommunal + egenavgifter + ev. statlig) > 30 % kapital-skatt. Pensionärer + låginkomst-aktiva slår sällan över 30 % nettoeffekt. Aktiv över brytpunkten: 52–65 % marginal-NV → RF flyttar belopp från 52 % NV till 30 % kapital = stor besparing.
 
-#### Mirjam, född 1989 (full egenavgifter, vinst 100 000 kr)
-Skatt utan räntefördelning 23 606 kr.
-With räntefördelning: 30 000 kr.
-**Extra skatt: 6 394 kr.** → Don't do it (even though aktiv non-pensionär).
+### Sammanfattning
 
-#### Mirjam, but vinst is 250 000 kr (over brytpunkten because + tjänsteinkomst)
-Skatt utan räntefördelning 74 487 kr.
-With räntefördelning on entire vinst: 75 000 kr räntefördelningsbelopp + the rest in NV.
-**Net benefit: räntefördelning saves money once kapitalbeskattat belopp avoids statlig skatt on top of egenavgifter.**
-
-### Conclusion (PDF slutsatser)
-
-> *"För +65-åringar är det bättre att låta bli räntefördelningen."*
-> *"För övriga som inte betalar statlig skatt kan räntefördelningen innebära något lägre skatt än utan räntefördelning. Men även om räntefördelningen bara medför litet lägre skatt kan det ändå vara bättre att låta bli."*
-> *"För övriga som ligger över brytpunkten lönar det sig att använda räntefördelning."*
+- Pensionärer (≥ 65): låt bli räntefördelning — netto sämre i nästan alla scenarion
+- Under 65 men under brytpunkten: marginell vinst i bästa fall, ofta inte värt att tappa SGI/PGI
+- Under 65, över brytpunkten: räntefördela — kan flytta 22–35 pp marginalskatt till kapital
 
 In sum: positiv räntefördelning is only clearly beneficial when the näringsidkare is **below 65, has aktiv verksamhet, and has inkomst over brytpunkten för statlig inkomstskatt**.
 
@@ -132,17 +131,18 @@ Positiv räntefördelning need not be utnyttjat. The unused belopp:
 - Adds to kapitalunderlag next year → ränta-på-ränta effect
 - May be used at företagets nedläggning to offset återförd P-fond and expansionsfond (powerful exit-planning tool)
 
-Worked example (Ville, ur PDF):
-- Skogsinnehav, kapitalunderlag 800 000 kr, ingen lust att räntefördela mot 0-resultat
-- Räntefördelningsbelopp år 1: 800 000 × 7,15% = 57 200 kr → sparat
-- Kapitalunderlag år 2 grows by sparat belopp → 880 000 kr
-- Year 3 räntefördelning belopp = 880 000 × 6,99% = 61 512 kr → also sparas
-- Sparat ackumulerat ingång år 3: 118 712 kr
-- Year 3 säljer skog för 200 000 kr → resultat = 200 000 kr
-- Aktuellt års räntefördelning = 96 800 kr
-- Total available: 118 712 + 96 800 = 215 512 kr (cap = resultat = 200 000)
-- Use 200 000 kr → 200 000 × 30% = 60 000 kr i kapital (cheap), saving NV income from being taxed at 65%
-- Carry forward remaining 15 512 kr
+Mekanik:
+```
+år 1: RF_belopp = kapitalunderlag × (SLR + 6%)
+      om NV-resultat = 0 → hela RF_belopp sparas
+      sparat_ackumulerat = RF_belopp
+år N: kapitalunderlag_ingång += fjolårets sparat_belopp   # ränta-på-ränta
+      RF_belopp = kapitalunderlag × (SLR + 6%)
+      utnyttjat = min(sparat_ackumulerat + RF_belopp, NV_resultat)
+      sparat_ackumulerat = (sparat_ackumulerat + RF_belopp) − utnyttjat
+```
+
+Skogsägare-pattern: under låga/noll-resultatår låter man hela RF-beloppet sparas → stort ackumulerat utrymme. Vid avverkningsår (eller nedläggningsår) utnyttjas allt mot NV-resultatet → flyttar 200k–500k från NV-marginalskatt (~52 %) till kapital (30 %) = ~22–35 % effektiv besparing på det belopp som flyttas.
 
 ### Overtaking sparat räntefördelning
 
@@ -167,11 +167,11 @@ If kapitalunderlag was negativt 31 dec 1993 (when systemet infördes), a **över
 Övergångsposten:
 - Carries with bodelning, arv, gåva, testamente (helt övertagande)
 - Försvinner at *byte av företagsform* (e.g., EF → AB) and at *försäljning*
-- SOU 2020:50 proposes abolishing den
+- SOU 2020:50 föreslog avskaffande — **inte genomfört** via prop. 2024/25:1, övergångsposten består
 
 ### Särskild post (fastigheter erhållna med lån genom gåva)
 
-When you receive a fastighet i gåva and take över a lån that exceeds the fastighet's andel of skattemässigt kapitalunderlag, you may add a **särskild post** at gåvotillfället to undvika negativ räntefördelning. Only valid as long as the kapitalunderlag före den särskilda posten is positiv. Proposed slopad in SOU 2020:50.
+When you receive a fastighet i gåva and take över a lån that exceeds the fastighet's andel of skattemässigt kapitalunderlag, you may add a **särskild post** at gåvotillfället to undvika negativ räntefördelning. Only valid as long as the kapitalunderlag före den särskilda posten is positiv. SOU 2020:50 föreslog slopande — **inte genomfört** via prop. 2024/25:1, posten består.
 
 ## Alternative valuation rule for fastigheter
 
@@ -189,14 +189,14 @@ Jämkningsregeln: värdet via alternativregel ≤ 75% av byggnadsvärde, mark oc
 
 If makar driver gemensam EF:
 - Each make computes their *own* kapitalunderlag based on *their* andel av tillgångar/skulder
-- One make can deliberately own all problematic skulder, so the other has +50 001 räntefördelningsutrymme
+- Genom att låta ena maken äga skulder och andra maken äga tillgångar styrs hur stort kapitalunderlag respektive make har — och därmed hur stor positiv räntefördelning var och en kan göra
 
-Worked example (PDF): makar driva en liten verkstad. Fastighetsvärde 1 000 000 kr, skulder 920 000 kr, mannen äger maskiner 100 000 kr. Default fördelning 50/50 på fastigheten:
-- Manns kapitalunderlag: 0,5 × (1M − 920k) + 100k = 140 000 kr → får räntefördela
-- Kvinnans: 0,5 × (1M − 920k) = 40 000 kr → får INTE räntefördela (under 50k tröskel)
-- If de buy en maskin 15 000 kr och låter kvinnan köpa: hennes underlag blir 40k+15k = 55 000 kr → får räntefördela hela 55k
+Worked example (2025-regler, efter slopad +50 001-tröskel): makarna driver en liten verkstad. Fastighetsvärde 1 000 000 kr, skulder 920 000 kr, mannen äger maskiner 100 000 kr. Default 50/50-fördelning på fastigheten:
+- Mannens kapitalunderlag: 0,5 × (1M − 920k) + 100k = 140 000 kr → RF-belopp 2025 ≈ 11 144 kr
+- Kvinnans: 0,5 × (1M − 920k) = 40 000 kr → RF-belopp 2025 ≈ 3 184 kr
+- Om de istället köper en maskin 15 000 kr och låter kvinnan stå för den: hennes underlag 55 000 kr → RF-belopp 2025 ≈ 4 378 kr (≈ 1 200 kr större)
 
-This kind of fördelningsplanering is legitim under IL 33 kap.
+Sedan 50 001-tröskeln slopades 2025 handlar planeringen inte längre om att passera en gräns utan om att maximera respektive makes underlag inom kapital-skatt-bandet. Sådan fördelningsplanering är legitim under IL 33 kap.
 
 ## Pitfalls
 
@@ -207,15 +207,24 @@ This kind of fördelningsplanering is legitim under IL 33 kap.
 5. **Aktier antas vara tillgång i EF** — they are NOT (de hör till inkomstslaget kapital, not näringsverksamheten)
 6. **Insatsemissioner i ekonomisk förening** — only counted if förvärvade (not if mottagna gratis), because de motsvarar inte beskattade pengar
 
-## SOU 2020:50 simplification proposal (not enacted)
+## SOU 2020:50 — partial enactment (2025) + remaining proposals
 
-- Slopad övergångspost
-- Slopad särskild post för fastigheter
-- Räntesatsen för positiv räntefördelning föreslås sänkas till bara SLR (utan +6 pp)
-- Slopad negativ räntefördelning helt
-- Kapitalunderlag beräknas på utgång av året (inte ingång)
-- 50 000 kr gränsbelopp slopas
+SOU 2020:50 "Enklare skatteregler för enskild näringsverksamhet" har genomförts **delvis** via prop. 2024/25:1 (budgetpropositionen 2025, ikraft 2025-01-01):
 
-Worth flagging in software as a "watch this space" — if enacted, all rules above change materially.
+**Genomfört:**
+- ✅ **50 000 kr-gränsen för positiv räntefördelning slopad** (krävde tidigare kapitalunderlag > +50 000 kr; nu räcker ≥ 0 kr)
+- ✅ **Tröskeln för negativ räntefördelning höjd** till −500 000 kr (var −50 000 kr) — SOU föreslog total slopning, men reformen blev en höjd tröskel istället
+- ✅ Höjd schabloninventariegräns till halva PBB (var 5 000 kr)
+- ✅ Vissa förenklingar i förenklat årsbokslut
+
+**Inte genomfört** (kvarstår som förslag — bevaka):
+- ❌ Slopad övergångspost (post 1994)
+- ❌ Slopad särskild post för fastigheter erhållna genom gåva med lån
+- ❌ Räntesatsen för positiv räntefördelning sänkt till enbart SLR (utan +6 pp)
+- ❌ Total slopning av negativ räntefördelning
+- ❌ Kapitalunderlag beräknat på årets utgång (i stället för ingång)
+- ❌ Den större "näringsfond"-reformen (samlad ersättning för P-fond + expansionsfond + räntefördelning) — för komplex, lades på is efter remissrundan
+
+Worth flagging in software as a "watch this space" for the remaining proposals.
 
 See also [[periodiseringsfond-expansionsfond-ef]] (kapitalunderlag conceptually identical) and [[egenavgifter-sgi-pgi-jsa]] (SGI/PGI consequence of räntefördelning).

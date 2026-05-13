@@ -46,29 +46,34 @@ Vid flytt till EU/EES-land kan kontinuitet medges (EU-rätten).
 
 ### Reporting on NE
 
-- Ruta **R34** — Återföring av periodiseringsfond
-- Ruta **R35** — Avsättning till periodiseringsfond
+- Ruta **R32** — Återföring av periodiseringsfond
+- Ruta **R33** — Överskott före avsättning till periodiseringsfond (= caps R34)
+- Ruta **R34** — Avsättning till periodiseringsfond (max 30 % av R33)
 - Upplysning U1 in förenklat årsbokslut: sammanlagda P-fonder vid årets slut
 
-### Worked example (PDF "Renata")
+### Pitfall: P-fond utan likvid reserv
 
-A coronial example of poor planning: Renata builds 6 × 100 000 kr P-fond over six years, then realizes she's tomma på pengar in retirement and måste likvidera verksamheten. Hon måste återföra 600 000 kr, with tax ~240 000 kr, when hon already har spent the cash flow. Lesson: **always reserve 30–35% of P-fond ingång for the eventual tax bill**, e.g., on a separate bankkonto.
+Scenario: P-fond-avsättning år 1-6 (totalt N kr), pengarna används i drift (inga kontanter kvar). År 7+ tvingande återföring av äldsta P-fond → skattebördan kan vara 40-50 % av återfört belopp utan motsvarande kassaflöde.
 
-Renata's recovery strategy: continue verksamheten in liten skala, do partial återföring + new avsättning each year (200 000 kr återförs, 30k ny avsättning → 170 000 kr beskattas årligen), spreading the bill over years 7–13.
+**Reserveringsregel**: vid varje P-fond-avsättning, sätt av 30-35 % av beloppet på separat konto (likvid reserv för framtida skattebörda).
+
+**Mitigation om man hamnat där**: fortsätt verksamheten i liten skala, gör partial återföring + ny avsättning varje år (t.ex. återför 200 000 / sätt av 30 000 → 170 000 nettoåterförs och beskattas årligen) → sprider skattebelastningen över år 7-13.
 
 ### Combining with räntefördelning at nedläggning
 
-Sparat fördelningsbelopp (positiv räntefördelning som sparats) may be used at nedläggning to offset återförd P-fond AND expansionsfond. This is the **largest single planning opportunity** for an EF closing down — see worked example "Lennart" in [[rantefordelning-planning]].
+Sparat fördelningsbelopp (positiv räntefördelning som sparats) får användas vid nedläggning för att kvitta återförd P-fond OCH expansionsfond. Detta är den **enskilt största planeringsmöjligheten** för en EF vid avveckling — se sparat-fördelningsbelopp-mekaniken i [[rantefordelning-planning]].
 
 ### Tillfällig regel 2019 (COVID)
 
 For inkomstår 2019, 100% av vinsten fick avsättas till P-fond (one-time relief). Possible to retroactively use via omprövning of 2019 deklaration within 6 years (= until inkomstår 2025 deklaration filing window) if not already done.
 
-### SOU 2020:50 proposal (not enacted)
+### SOU 2020:50 proposal — P-fond delarna **EJ genomförda**
+
+Höjningen från 30% till 40% och förlängd carry till 10 år låg på utredningens bord. **Inte enacted** via prop. 2024/25:1 (som främst genomförde RF-reformen — se [[rantefordelning-planning]] för det som faktiskt blev lag). Bevaka för framtida reformpaket.
 
 - Höjd från 30% till **40%**
 - Förlängd carry från 6 till **10 år**
-- P-fond äldre than 6 år FÅR INTE överföras till AB vid ombildning (would be återförda direkt at takeover)
+- P-fond äldre än 6 år FÅR INTE överföras till AB vid ombildning (would be återförda direkt at takeover)
 
 ## Expansionsfond mechanics
 
@@ -78,8 +83,8 @@ Expansionsfond gives EF the equivalent of an AB's ability to retain earnings at 
 
 ### Avsättning rules
 
-- Skatt: **20,6%** expansionsfondsskatt
-- Tak: expansionsfonden får vara **högst 128,21% av kapitalunderlaget** vid årets utgång
+- Skatt: **20,6%** expansionsfondsskatt (synkad med bolagsskatten)
+- Tak: expansionsfonden får vara **högst 125,94% av kapitalunderlaget** vid årets utgång (= 1 / (1 − 0,206) = 100 / 79,4 — gross-up-faktorn som säkerställer att fondens netto-värde efter expansionsfondsskatt = kapitalunderlaget)
 - Ökning av expansionsfond may NOT cause underskott in NV
 - Ökning beräknas på resultat efter räntefördelning, efter ändring av P-fond, och före ändring expansionsfond
 
@@ -101,23 +106,25 @@ Practical tip: the year 2 expansionsfond kapitalunderlag will be similar to the 
 
 ### NE-bilaga fields
 
-- Ruta **R36** — Återföring av expansionsfond i NV
-- Ruta **R37** — Ökning av expansionsfond
-- Sid 2 expansionsfondsbilaga **2196** for kapitalunderlagsberäkning (separately filed)
+- Ruta **R35** — Överskott före ökning av expansionsfond (= caps R37)
+- Ruta **R36** — Återföring av expansionsfond → INK1 p.12.1
+- Ruta **R37** — Ökning av expansionsfond → INK1 p.12.2
+- Hjälpblankett **SKV 2196** (Räntefördelning och expansionsfond) — used för kapitalunderlagsberäkning. **Lämnas INTE in** till Skatteverket; behåll som arbetspapper. Beräknade belopp överförs till NE och INK1.
 - Upplysning U2 in förenklat årsbokslut: expansionsfond vid årets slut
 
-### Worked example (PDF "Georg")
+### Expansionsfond — breakeven-exempel (siffror illustrativa)
 
-50 år, aktiv NV, vinst 800 000 kr, kapitalunderlagstak 400 000 kr för expansionsfond.
+Setup: aktiv EF under pensionsåldersgränsen, NV-vinst 800 000 kr, kapitalunderlagstak 400 000 kr → max-avsättning 400 000 × 1,2594 = ~503 000 kr.
 
-Without expansionsfond:
-- Skatt och egenavgifter på 800 000 kr ≈ 236 000 kr (≈ 29,5%)
+| Variabel | Utan expansionsfond | Med 100 000 kr avsättning |
+|---|---|---|
+| NV-beskattad inkomst | 800 000 | 700 000 |
+| Skatt + egenavgifter på NV-delen | ~236 000 | ~189 500 |
+| Expansionsfondsskatt (20,6 % × 100 000) | 0 | 20 600 |
+| **Total skatt år 1** | **~236 000** | **~210 100** |
+| **Sparat år 1** | — | **~25 900 kr** |
 
-With expansionsfond avsättning 100 000 kr:
-- Inkomst beskattad som NV: 700 000 kr → skatt och egenavgifter 189 492 kr
-- Expansionsfondsskatt: 20,6% × 100 000 = 20 600 kr
-- Total: 210 092 kr
-- **Sparat: 25 908 kr** at the cost of setting aside 100 000 kr (returnable later)
+Avsättning binder upp 100 000 kr i verksamheten (kan återföras senare → 20,6 % återbetalas mot återföringsårets skatt). Lönsamt när NV-marginalskatt år 1 > 20,6 %.
 
 ### Carry-forward of skatt
 
@@ -146,7 +153,9 @@ So total skatt mot vad det vore som direkt löneuttag är samma, **bara om utbet
 - Vid kapitalunderlagsminskning under fondens nivå
 - Vid byte av företagsform: kan överföras till AB *under förutsättning att samtliga realtillgångar överförs* OCH att tillgångar med skattemässigt värde ≥ 79,4% av expansionsfondens belopp överförs (motsvarar 100% − 20,6%)
 
-### SOU 2020:50 proposal (not enacted)
+### SOU 2020:50 proposal — expansionsfond-delarna **EJ genomförda**
+
+Slopningen av expansionsfond ingick i den större "näringsfond"-idén som SOU föreslog. **Inte enacted** — prop. 2024/25:1 begränsade sig till RF-reformen (se [[rantefordelning-planning]]). Expansionsfond består tills vidare.
 
 - Expansionsfond föreslås **slopad** (avskaffad)
 - Befintliga fonder återförs med minst 10% per år under högst 10 år
@@ -156,9 +165,7 @@ So total skatt mot vad det vore som direkt löneuttag är samma, **bara om utbet
 
 ## Sjukpenninggrundande and pensionsgrundande inkomst effects
 
-This is the most subtle interaction. From the PDF (Sjukpenning section):
-
-> *"Men när Försäkringskassan beräknar din sjukpenninggrundande inkomst (SGI) och din föräldrapenninggrundande inkomst bortser man från de skattemässiga dispositionerna periodiseringsfond och expansionsfond."*
+This is the most subtle interaction. Försäkringskassan bortser från de skattemässiga dispositionerna **periodiseringsfond och expansionsfond** vid beräkning av sjukpenninggrundande inkomst (SGI) och föräldrapenninggrundande inkomst — men de slår igenom på den pensionsgrundande inkomsten (PGI).
 
 | Disposition | SGI effekt | PGI effekt |
 |---|---|---|
@@ -172,10 +179,15 @@ This is the most subtle interaction. From the PDF (Sjukpenning section):
 
 **Implication**: a näringsidkare with ojämn inkomst may use P-fond strategically to **smooth out PGI** (höja den i låga år, sänka i höga år) but NOT to smooth SGI (which Försäkringskassan adjusts back).
 
-Pensionsgrundande inkomst tak: **7,5 inkomstbasbelopp** (604 500 kr 2025). Income above this gives no extra pension but full egenavgifter. Use P-fond to keep PGI just under taket — see worked example "Laura":
-- Vinst 800 000 kr, after 25% schablonavdrag egenavgifter = 600 000 kr (nettoinkomst, would exceed PGI-tak 511 500 in 2021)
-- Avsättning 118 000 kr till P-fond → nettoinkomst sjunker till 682 000 → 511 500 → matches PGI-tak exactly
-- Future låginkomstår: lös upp P-fond för högre PGI då
+PGI-tak (7,5 IBB): 2025 = 604 500 kr / 2026 = 625 500 kr. Inkomst över taket → 0 extra pension, full egenavgift (= ren skatt utan pensionsavkastning).
+
+PGI-utjämnings-strategy:
+```
+höginkomstår: avsätt (förväntad_PGI − tak) till P-fond → PGI sänks till exakt taket
+låginkomstår: återför P-fond → höjer PGI mot taket
+```
+
+PGI-beräkning: PGI = NV-resultat efter schablonavdrag (25 % aktiv / 20 % SLP / 10 % pensionär). Vid 800 000 kr brutto aktiv NV → PGI-grund 600 000 kr (under 2025/2026-taket, ingen avsättning behövs). Vid större brutto → räkna ut delta mot taket och avsätt motsvarande.
 
 ## Bokföringsförbudet (K1 / BFNAR 2006:1)
 
@@ -183,9 +195,9 @@ EF must **NOT** book P-fond or expansionsfond in räkenskaperna — only as uppl
 
 The reason: K1 is designed to keep redovisning aligned with real ekonomisk ställning, not skattemässig disposition. Latent skatteskuld is disclosed via U-poster, not booked.
 
-BAS 2018 Förenklat årsbokslut nevertheless has accounts available for those who *want* to track (2080 Periodiseringsfonder, 2050 Avsättning till expansionsfond, 2060 Ersättningsfond) — but they are for **informationssyfte only**, must not be debited/krediterad mot resultatkonton.
+BAS 2018 Förenklat årsbokslut har konton 2080 Periodiseringsfonder och 2050 Avsättning till expansionsfond för EF som *vill* spegla skattemässiga reserver i sin redovisning, men de är för **informationssyfte only** — får INTE debiteras/krediteras mot resultatkonton (förbudet ovan).
 
-For ersättningsfond, the situation is different: see [[ersattningsfond]].
+**Undantag: ersättningsfond (IL 31 kap).** Till skillnad från P-fond och expansionsfond **skall** ersättningsfondsavsättningen bokföras via resultaträkningen (debit 8xxx, credit **2060 Ersättningsfond**) för att avdraget ska vara giltigt. Detta gäller även för EF under K1. Se [[ersattningsfond]] för detaljer. Undantag: ersättningsfond för mark behöver inte bokföras enligt BFNAR 2006:1.
 
 ## Interactions with each other
 
@@ -203,14 +215,14 @@ P-fond and expansionsfond are computed **in a specific order**:
 
 The exact ordering is enforced by NE-blankett layout. Note that the result *after* P-fond avsättning is the cap for expansionsfond ökning, so the two tools partly compete (every kr more in P-fond is one kr less expansionsfond room).
 
-### SOU 2020:50 proposes reversing the order — räntefördelning would be applied *last*, after P-fond. Not enacted.
+### SOU 2020:50 proposes reversing the order — räntefördelning would be applied *last*, after P-fond. **Not enacted** (prop. 2024/25:1 ändrade RF-trösklarna men inte beräkningsordningen).
 
 ## Common pitfalls
 
 1. **Booking P-fond in EF räkenskaperna** — invaliderar avdraget (oppositional to AB where it's required)
 2. **Forgetting tvingande återföring** at upphörande — Skatteverket återför automatiskt and may apply skattetillägg
 3. **Calculating expansionsfond tak using prior year kapitalunderlag** — must be *current year's* utgång, not prior year's
-4. **Misunderstanding 128,21% multiplier** — it represents 1 / (1 − 0,206) = 100 / 79,4 = the gross-up factor that ensures the net-of-tax expansionsfond equals exactly kapitalunderlaget. Equivalent statement: expansionsfond *net of skatt* ≤ 100% av kapitalunderlag.
+4. **Misunderstanding 125,94 % multiplier** — it represents 1 / (1 − 0,206) = 100 / 79,4 ≈ 1,2594 = the gross-up factor that ensures the net-of-tax expansionsfond equals exactly kapitalunderlaget. Equivalent statement: expansionsfond *net of skatt* ≤ 100 % av kapitalunderlag. Äldre källor (före 2021) använder 128,21 % baserat på den dåvarande 22 % bolagsskatten; korrekt multiplikator vid nuvarande 20,6 % expansionsfondsskatt är 125,94 %.
 5. **Skipping U1/U2 upplysning** in förenklat årsbokslut — formal compliance requirement under BFNAR 2006:1
 6. **Forgetting expansionsfond may NOT cause underskott** — software should clip ökning at the level that leaves NV result ≥ 0
 

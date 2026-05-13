@@ -3,7 +3,7 @@
 ## Legal basis
 
 - IL 2 kap 23 § — defines aktiv vs passiv näringsverksamhet
-- IL 12 kap 37 § — aktiv NV gives basis for jobbskatteavdrag
+- IL 67 kap 5-9 §§ — aktiv NV gives basis for jobbskatteavdrag (skattereduktion)
 - IL 59 kap — pensionssparavdrag requires aktiv
 - Socialavgiftslagen (SAL) 2000:980 — egenavgifter on aktiv
 - Lagen (1990:659) om särskild löneskatt — SLP on passiv
@@ -58,7 +58,7 @@ Tested in 4 steps:
 
 Earlier doctrine: yes — if one delverksamhet is aktiv, the aggregated whole becomes aktiv. Modern interpretation: not automatic; samlad bedömning required. But where labor exceeds 500 h in one part, the aggregated whole usually becomes aktiv.
 
-Worked example (from PDF): Erik has a hyresfastighet (~150 h work/year, normally passiv). He starts a fastighetskonsultverksamhet with 400 h work/year. Combined = 550 h, exceeds tredjedelsregeln → aggregated EF becomes aktiv even though the rental income dominates the balansomslutning.
+Exempel: hyresfastighet (~150 h/år, isolerat passiv) + ny konsultverksamhet (~400 h/år) i samma EF → kombinerat 550 h, överstiger tredjedelsregeln → hela den sammanslagna EF:n klassas som **aktiv**, även om hyresintäkten dominerar balansomslutningen.
 
 ## Important rättsfall
 
@@ -100,8 +100,8 @@ The schablonavdrag on NE sid 2:
 ## Worked example: which is cheaper?
 
 For a non-pensionär näringsidkare with 100 000 kr överskott:
-- **Aktiv**: 28,97% egenavgift = 28 970 kr; with 7,5% nedsättning on 40 001–100 000 kr (60 000 underlag × 7,5% = 4 500 kr), net egenavgift ≈ 24 470 kr; PLUS jobbskatteavdrag and grundavdrag reduce inkomstskatt by ~17 000 kr.
-- **Passiv**: 24,26% SLP = 24 260 kr; no nedsättning, no jobbskatteavdrag.
+- **Aktiv**: 28,97 % egenavgift = 28 970 kr; nedsättning = 7,5 % × 100 000 = 7 500 kr (nedsättningen tas av hela underlaget när överskott > 40 000 kr; ingen subtraktion av 40 000), netto egenavgift ≈ 21 470 kr; PLUS jobbskatteavdrag och grundavdrag reducerar inkomstskatten ytterligare.
+- **Passiv**: 24,26 % SLP = 24 260 kr; ingen nedsättning, inget jobbskatteavdrag.
 
 Net: aktiv is roughly 15 000–17 000 kr cheaper per year at this income level. Above brytpunkten the gap narrows because nedsättning caps at 200k underlag and JSA tapers off, but aktiv usually still wins unless the verksamhet is purely capital-yield.
 

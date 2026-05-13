@@ -51,29 +51,33 @@ Tekniskt: underskottet dras av som **allmänt avdrag** in INK1 sid 2 ruta **14.1
 
 Det allmänna avdraget minskar underlag för **jobbskatteavdrag** (subtle: less JSA om man kvittar). Det minskar också underlag för PGI och SGI (kvittning är intäktsneutral i den beräkningen — Försäkringskassan bortser från).
 
-### Worked example (PDF)
+### Worked example
 
-> *"Du har sammanlagda tjänsteinkomster på 280 000 kr. På det betalar du ca 61 000 kr i skatt. Men du har också en nystartad aktiv verksamhet som gett underskott på 50 000 kr."*
-> *"Du väljer att kvitta det underskottet mot dina tjänsteinkomster genom ett allmänt avdrag. Avdraget görs på baksidan av blankett INK1 (huvudblanketten), dit det förs från ruta R45 på bilaga NE."*
-> *"Effekten blir att du skattar på endast 280 000 – 50 000 = 230 000 kr. Det ger en skatt på ca 46 000 kr, dvs en minskad skatt på 61 000 – 46 000 = 15 000 kr."*
+Tjänsteinkomst 280 000 kr (skatt ca 61 000 kr) + nystartad aktiv EF med 50 000 kr underskott:
+- 50 000 kr förs från NE R45 till INK1 ruta 14.1 (allmänt avdrag)
+- Beskattningsbar tjänsteinkomst sänks till 230 000 kr → skatt ca 46 000 kr
+- Skatteminskning ≈ 15 000 kr
 
 ## Rullning bättre än kvittning ofta
 
-The PDF strongly emphasizes that **rullning is often better than kvittning** for näringsidkare who expect future profit:
-
-> *"För de näringsidkare som har underskott men som så småningom går med vinst, är rullningen mer gynnsam än kvittning mot tjänst. För det första får du då spara underskottet hur länge som helst. För det andra räknas underskottet av inte bara mot skatten, utan även mot egenavgifterna, vilket ger en högre avdragseffekt."*
+**Rullning är ofta bättre än kvittning** för näringsidkare som räknar med framtida vinst. Två skäl: (1) rullat underskott kan sparas obegränsat länge, (2) det räknas av mot både inkomstskatt *och* egenavgifter — högre avdragseffekt än kvittning mot tjänst, som bara minskar inkomstskatten.
 
 Rule of thumb: rullning ger **25–35 procentenheter bättre effekt** än kvittning mot tjänst (because kvittning bara sparar inkomstskatt; rullning sparar inkomstskatt + egenavgifter ~28,97%).
 
-PDF example:
-- År 1: konsultrörelse, underskott 40 000 kr (investeringar + marknadsföring)
-- Tjänsteinkomst år 1: 250 000 kr
-- Option A (kvittning): skatt minskar med ca 11 800 kr i år 1
-- Option B (rullning): inrullas till år 2
-- År 2: konsult vinst före egenavgifter 187 500 kr. Med inrullat underskott blir det 147 500 kr → skatt och egenavgifter ~46 000 kr (mot 63 200 utan inrullning)
-- Net rullningsförmån: 17 200 kr (vs kvittning's 11 800 kr) → **5 400 kr bättre med rullning**
+Räkneexempel (illustrativt):
+```
+år 1: underskott_NV = 40 000 kr, tjänsteinkomst = 250 000 kr
+  option_A (kvittning):  skattereduktion ≈ 11 800 kr i år 1     # bara inkomstskatt
+  option_B (rullning):   inrullas till år 2
 
-The catch: rullningen kräver att verksamheten faktiskt går med vinst senare. If verksamheten aldrig blir lönsam, kvittning är bättre.
+år 2: vinst_NV_före_egenavgifter = 187 500 kr
+  med inrullning: 187 500 − 40 000 = 147 500 kr → skatt+egenavgifter ≈ 46 000 kr
+  utan inrullning: skatt+egenavgifter ≈ 63 200 kr på 187 500 kr
+  rullningsförmån = 17 200 kr  (vs kvittning 11 800 kr)
+  → rullning ≈ 5 400 kr bättre
+```
+
+Villkor: rullning kräver att verksamheten faktiskt går med vinst senare. Om verksamheten aldrig blir lönsam → kvittning bättre (eller slutligt underskott vid avveckling, 70 %-regeln).
 
 ### Possibility för omprövning
 
@@ -84,7 +88,7 @@ Skatteverket allows ändring av val genom omprövning inom 5 år efter deklarati
 
 ## Kulturarbetare (special exemption)
 
-PDF reference: kulturarbetare = personer som uteslutande eller så gott som uteslutande sysslar med **konstnärlig, litterär eller liknande kulturell verksamhet**.
+Kulturarbetare = personer som uteslutande eller så gott som uteslutande sysslar med **konstnärlig, litterär eller liknande kulturell verksamhet**.
 
 Specials:
 - **Ingen 5-årsgräns** — kvittning får göras hur länge som helst
@@ -95,7 +99,7 @@ Specials:
 
 Skatteverket may dispens.
 
-PDF tips: "Om du har någon annan verksamhet vid sidan av kulturarbetarverksamheten, kan det i vissa fall löna sig att lägga den andra verksamheten i aktiebolag eller handelsbolag om du vill kunna utnyttja kulturarbetarkvittningen."
+Planeringstips: om man har annan verksamhet vid sidan av kulturarbetarverksamheten kan det vara värt att placera den andra verksamheten i AB eller HB — för att inte späda ut 90 %-kravet för kulturarbetarkvittningen i EF:n.
 
 ## Inrullning (rullning)
 
@@ -116,7 +120,7 @@ Rullningen kan göras under obegränsat antal år. Skatteverket kan ifrågasätt
 - Indikator för "ingen vinstsyfte" → hobbyverksamhet → näringsverksamhet kan avregistreras retroaktivt → underskottet återförs
 - För att visa vinstsyfte: redovisa **något** av intäkter (inte enbart kostnader)
 
-PDF tips: "Det bästa sättet att visa att du har vinstsyfte är att redovisa åtminstone några intäkter och inte enbart kostnader."
+Praktiskt: det bästa sättet att visa vinstsyfte är att redovisa **åtminstone några intäkter** varje år, inte enbart kostnader. Helt intäktslös verksamhet under lång tid är en stark indikator på hobbyverksamhet.
 
 ## Slutligt underskott vid avveckling
 
@@ -125,11 +129,11 @@ When verksamhet upphör helt (verksamheten avslutas, alla tillgångar säljs):
 ### Huvudregel
 
 Vid nedläggning av enskild näringsverksamhet:
-- 70% av slutligt underskott får utnyttjas som **kapitalförlust** i inkomstslaget kapital
-- Avdraget tas in i ruta **14.1 på baksidan av INK1**, året efter nedläggningsåret
-- Skattereduktion = 70% × 30% = **21%** skattereduktion på det kvarvarande underskottet
+- 70 % av slutligt underskott får utnyttjas som **kapitalförlust** i inkomstslaget kapital
+- Avdraget tas in i ruta **8.4 på INK1** ("Slutligt underskott av näringsverksamhet"), året efter nedläggningsåret. **Inte ruta 14.1** — 14.1 är allmänt avdrag för nystartad aktiv NV (de första 5 åren).
+- Skattereduktion = 70 % × 30 % = **21 %** skattereduktion på det kvarvarande underskottet
 
-Worked example (PDF):
+Worked example:
 - Slutligt underskott 80 000 kr vid nedläggning
 - Inkomstdeklaration året efter: 70% × 80 000 = 56 000 kr som kapitalförlust
 - Skatteminskning = 30% × 56 000 = **16 800 kr** (motsvarar 21% av 80k)
@@ -150,9 +154,7 @@ Om verksamheten ombildas till AB, kan underskottet **inte** föras över till AB
 - 70%-avdraget i kapital (om verksamheten faktiskt upphör)
 - ELLER om verksamheten *fortsätter parallellt* i AB och EF, finns ingen formell upphörande → underskottet rullas vidare i EF
 
-PDF restriction: "Möjligheterna till avdrag för slutligt underskott är dock begränsade vid en ombildning till ett aktiebolag eftersom tillgångarna förs ut ur den enskilda firman till underpris och det inte blivit någon uttagsbeskattning."
-
-This restriction prevents using a sham ombildning + nedläggning to convert future-rolling underskott into immediate kapitalförlust.
+Spärr vid ombildning till AB: tillgångarna förs ut ur den enskilda firman till underpris utan uttagsbeskattning, varför avdrag för slutligt underskott är begränsat. Detta blockerar konstruktionen "sham ombildning + nedläggning" som annars hade kunnat konvertera framtida rullbart underskott till omedelbar kapitalförlust.
 
 ## Dödsbon
 
@@ -161,23 +163,30 @@ Same regler:
 - Dödsboet kan ta över ansvar för kvarvarande underskott
 - Vid bouppteckning: om endast en dödsbodelägare → dödsboet anses skiftat redan vid bouppteckning → underskottet förloras
 - Vid flera dödsbodelägare → dödsboet kan leva vidare och utnyttja underskottet
-- Tip from PDF: vid risk för att underskott försvinner, gör **partiellt arvsavstående** för att skapa flera dödsbodelägare
+- Mitigation: vid risk för att underskott försvinner, gör **partiellt arvsavstående** för att skapa flera dödsbodelägare
 
 ## Kvittning vid övergång passiv → aktiv
 
-PDF specific case: Christer har hyreshus (passiv) med underskott rullande.
+Exempel:
+```
+år 1: hyreshus (passiv), underskott 80 000 kr → rullas framåt (passiv ger ingen kvittning mot tjänst)
+år 2: ytterligare 50 000 kr underskott → ackumulerat rullande 130 000 kr
+år 3: ägaren slutar sin anställning, börjar arbeta ≥ 500 h/år i verksamheten → klassificering passiv → aktiv
+       överskott 40 000 kr
+       inrullat underskott (rullas från passiv-perioden) får kvittas mot årets aktiv-överskott → netto 0
+       återstående rullande underskott = 130 000 − 40 000 = 90 000 kr
+```
 
-År 1: hyreshus, underskott 80 000 kr → rullas framåt (passiv → ingen kvittning mot tjänst)
-År 2: tillkommer ytterligare 50 000 kr underskott → rullas framåt → ackumulerat 130 000 kr
-År 3: Christer slutar sin anställning, skaffar nya fastighet och börjar arbeta i verksamheten ≥ 500 h/år → klassificeras som **aktiv**. Överskott 40 000 kr.
+Effekt: hela ackumulerade underskottet (130 000 kr) kan dras av (vanlig rullning), men dessutom kan resterande 90 000 kr av nettounderskottet **kvittas mot tjänst** med allmänt avdrag — eftersom verksamheten är aktiv i bedömningsåret. Att verksamheten varit passiv under tidigare år påverkar inte rätten det aktuella året.
 
-Effekt: hela ackumulerade underskottet (130 000 kr) kan dras av (vanlig rullning), men dessutom kan resterande 90 000 kr av nettounderskottet (130 000 − 40 000 = 90 000) **kvittas mot tjänst** med allmänt avdrag — eftersom verksamheten är aktiv i bedömningsåret. PDF: "Att verksamheten har varit passiv under de föregående åren har ingen betydelse."
+### 5-årsgränsens räknepunkt
 
-### 5-årsgränsen — but Christer is past 5 years
+Det krävs aktiv NV. 5-årsgränsen för nystartad ska gälla *från företagsstarten*:
+- Verksamheten startade aktivt → 5 år börjar då
+- Verksamheten startade passivt och blev sen aktiv → oklart om 5 år räknas från start eller från övergång till aktiv
+- Skatteverkets ställningstagande **dnr 131 657367-11/111** ger viss vägledning — verifiera exakt tolkning vid implementation
 
-Det krävs aktiv NV. The 5-årsgränsen från nystartad ska gälla *från företagsstarten*. Om verksamheten startade aktivt → 5 år börjar då. Om verksamheten startade passivt och senare blir aktiv, är det oklart om 5 år räknas från start eller från övergång till aktiv. Skatteverkets ställningstagande (131 657367-11/111) ger guidance — verify exact tolkning.
-
-PDF case suggests: kvittning är möjlig så länge verksamheten är aktiv under bedömningsåret. But proceed with caution.
+Praktisk princip: kvittning är möjlig så länge verksamheten är aktiv under bedömningsåret, men närma fallet med försiktighet vid passiv→aktiv-övergångar nära 5-årsgränsen.
 
 ## Komplettering med ny verksamhet
 
@@ -203,11 +212,23 @@ Inom EF: alla delverksamheter slås automatiskt ihop till **en enda näringsverk
 
 **Implication**: starting a profitable verksamhet samtidigt som man har en förlustverksamhet i samma EF → vinsten quenchas av förlusten utan ny ansökan eller särskild bokföring.
 
-PDF example: Bertil har AB med 520 000 kr vinst (skattas högt). Plus EF (hyreshus) med 100 000 kr förlust per år.
-- Option A: Behåll AB+EF → vinsten beskattas i AB, förlusten rullas i EF. Bertil får 299 000 kr efter skatt från AB-vinsten, plus 100 000 kr cash tillgängliga utan beskattning (eftersom EF-förlusten finansieras av AB-pengar via uttag).
-- Option B: skrota AB:et, lägg konsultverksamheten i EF:en med hyreshuset → sammanlagd vinst 420 000 kr → skatt+egenavg ~166 976 kr → **253 024 kr kvar** vs option A's 199 000 kr. Save 54 024 kr.
+Räkneexempel (illustrativt): AB med 520 000 kr vinst (full bolagsskatt + utdelnings-/lönebeskattning) + separat EF med hyresfastighet (100 000 kr underskott per år).
 
-This is the **biggest single argument for EF over AB** for low-to-mid income with concurrent förlustverksamhet.
+```
+option_A: behåll AB+EF separat
+  AB-vinst beskattas i AB; EF-underskott rullas (kan inte kvittas mot AB-vinst)
+  efter skatt på AB-vinst ≈ 299 000 kr
+
+option_B: avveckla AB, slå ihop verksamheten i EF
+  sammanlagt EF-resultat = AB-konsult-vinst − hyresfastighetens underskott
+                         = 520 000 − 100 000 = 420 000 kr
+  EF-skatt + egenavgifter på 420 000 ≈ 166 976 kr
+  → 253 024 kr kvar
+
+besparing ≈ 54 000 kr/år genom intern kvittning i EF
+```
+
+Detta är det **enskilt största argumentet för EF över AB** vid kombinerad förlust- och vinstverksamhet i samma hushåll.
 
 ## NE-bilaga / INK1 rutor
 
@@ -218,7 +239,7 @@ This is the **biggest single argument for EF over AB** for low-to-mid income wit
 | NE R47/R48 | Överskott / underskott av aktiv NV |
 | NE R49/R50 | Överskott / underskott av passiv NV |
 | INK1 14.1 | Allmänt avdrag för underskott i nystartad aktiv NV (sidan 2 baksida) |
-| INK1 14.1 (slutligt) | 70% av slutligt underskott i avslutad EF, året efter nedläggning |
+| INK1 8.4 | 70 % av slutligt underskott i avslutad EF, året efter nedläggning ("Slutligt underskott av näringsverksamhet") |
 
 ## Pitfalls
 

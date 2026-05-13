@@ -9,19 +9,25 @@
 
 Ackumulerad inkomst (AI) is en **särskild skatteberäkning** för att undvika tröskeleffekter vid den progressiva beskattningen of inkomster som tjänats in över flera år men betalats ut **ett enstaka år**.
 
-Without AI, en näringsidkare som upphör med verksamheten och måste återföra 600 000 kr i periodiseringsfonder samma år får hela 600 000 kr beskattat med toppen av progressivskalan (52% statlig skatt över brytpunkten + egenavgifter). Med AI, beloppet sprids tillbaka tilL åren det "egentligen" tjänats in, och skatten beräknas som om det fördelats över de åren.
+Utan AI får en näringsidkare som upphör med verksamheten och måste återföra 600 000 kr i periodiseringsfonder hela återföringen beskattad det året — med total marginalskatt som ofta hamnar runt 52 % inklusive **statlig inkomstskatt 20 % över skiktgränsen** + kommunalskatt + egenavgifter. Med AI sprids beloppet tillbaka till åren det "egentligen" tjänats in, och statliga skatten beräknas som om det fördelats över de åren.
 
-Note that AI **does NOT spread the income across years for SGI/PGI** — those use the actual deklarerade inkomsten av NV in each respektive year. AI affects only **statlig inkomstskatt**, inte kommunal, egenavgifter, eller socialavgifter.
+Note that AI **does NOT spread the income across years for SGI/PGI** — those use the actual deklarerade inkomsten av NV in each respektive year. AI affects only **statlig inkomstskatt** (20 %-skiktet), inte kommunal, egenavgifter, eller socialavgifter.
+
+## Terminologi: skiktgräns vs brytpunkt
+
+- **Skiktgräns**: gränsen i **beskattningsbar förvärvsinkomst** (efter grundavdrag) där statlig inkomstskatt 20 % börjar tas ut. 2025: **625 800 kr**. 2026: **643 000 kr**.
+- **Brytpunkt**: motsvarande gräns i **bruttoinkomst** (före grundavdrag) — vad lönen faktiskt behöver vara för att du ska börja betala statlig skatt. 2025: ca 643 100 kr. 2026: ca 660 400 kr.
+- AI-spärregeln nedan använder **beskattningsbar inkomst** (alltså skiktgränsen, inte brytpunkten).
 
 ## Spärregler (cumulative — all must be true)
 
-1. **Något av fördelningsåren ska ha haft beskattningsbar inkomst UNDER brytpunkten för statlig inkomstskatt** under det aktuella året. If you were over brytpunkten all hela fördelningstiden, AI saves nothing.
-2. **Den beskattningsbara inkomsten inklusive den ackumulerade inkomsten måste överstiga brytpunkten med minst 50 000 kr** under det aktuella året (= you actually paid statlig skatt on at least 50 000 kr extra)
+1. **Något av fördelningsåren ska ha haft beskattningsbar inkomst UNDER skiktgränsen för statlig inkomstskatt** under det aktuella året. If you were over skiktgränsen hela fördelningstiden, AI saves nothing.
+2. **Den beskattningsbara inkomsten inklusive den ackumulerade inkomsten måste överstiga skiktgränsen med minst 50 000 kr** under det aktuella året (= you actually paid statlig skatt på minst 50 000 kr extra)
 3. **Den ackumulerade inkomsten måste vara minst 50 000 kr**
 
-Brytpunkten 2025: ca 643 100 kr (verify with current SKV value).
+Skiktgränsen 2025: **625 800 kr**. 2026: **643 000 kr**.
 
-For pensionärer (≥ 65 år vid årets ingång), the brytpunkt is higher. Beräkningen anpassas till deras höjda brytpunkt.
+For pensionärer (året efter pensionsåldersgränsen — 66 år 2025, 67 år 2026), skiktgränsen är högre pga förhöjt grundavdrag. Beräkningen anpassas till deras höjda brytpunkt.
 
 ## Fördelningstiden (allocation period)
 
@@ -97,24 +103,32 @@ Engångsersättning vid överlåtelse av patenträtt kan vara AI om royalty utbe
 
 Avbrottsförsäkring som ersätter förlust av inkomst för flera år: AI möjligt.
 
-## Worked example
+## Worked example — strukturell
 
-> Slutåret återförs alla P-fonder på 600 000 kr (6 årigtgammal P-fond). Näringsidkaren har också aktuell anställning med 350 000 kr lön samma år. Total förvärvsinkomst aktuellt år: 950 000 kr (= 350k lön + 600k P-fond-återföring).
->
-> Utan AI: skatt på 950 000 kr ≈ 380 000 kr (inkl statlig 20% på ~290k över brytpunkten = 58k extra).
->
-> Med AI (fördelningstid 6 år):
-> - Förvärvsinkomst de senaste 6 år: i snitt 350 000 kr/år (= lön + lite eget uttag varje år)
-> - 600 000 / 6 = 100 000 kr fördelas på varje av de 6 åren
-> - För varje fördelningsår: ny inkomst = 350k + 100k = 450k → fortfarande under brytpunkten 643k! → ingen statlig skatt
-> - AI sparar därför hela statliga skatt-bompen → ca **40 000–60 000 kr** less skatt
-> - Egenavgifter och kommunal skatt påverkas inte; betalas normalt på alla 600k.
+Setup: vid avveckling återförs P-fonder på 600 000 kr (intjänade över 6 år). Lön samma år: 350 000 kr. Total förvärvsinkomst aktuellt år: 950 000 kr.
+
+```
+utan_AI:
+  beskattningsbar_inkomst ≈ 950 000 − grundavdrag → tydligt över skiktgränsen 625 800 kr (2025)
+  statlig_skatt = 20 % × (beskattningsbar − skiktgräns) ≈ 65 000 kr (extra)
+  + kommunalskatt + egenavgifter på återföringen
+  total ≈ 380 000 kr
+
+med_AI (fördelningstid 6 år):
+  per_år = 600 000 / 6 = 100 000 kr
+  hypotetisk_årsinkomst = 350 000 + 100 000 = 450 000 kr  → under skiktgränsen alla 6 åren
+  statlig_skatt_per_år = 0 (under skiktgräns)
+  totalt: kommunalskatt + egenavgifter på återföringen oförändrade
+  besparing = ~40 000–60 000 kr (= helt statlig skatt-bortfall)
+```
+
+Princip: AI är värt-att-räkna-på närhelst (a) ackumulerad inkomst ≥ 50 000 kr, (b) ett eller flera fördelningsår låg under skiktgränsen, OCH (c) aktuella året + ackumulerade beloppet driver över skiktgränsen med minst 50 000 kr. AI påverkar bara statlig skatt, inte kommunal eller egenavgifter.
 
 ## Pitfalls
 
 1. **Inte begärt AI** — Skatteverket gör inte beräkningen automatiskt
 2. **Inkomsten hör bara till ett år** — då är AI inte tillämplig (vanligt fel)
-3. **Brytpunkten ej justerad för pensionärer** — brytpunkten är högre för pensionärer (≥ 65)
+3. **Skiktgränsen ej justerad för pensionärer** — pensionärer (efter pensionsåldersgränsen, 66 år 2025 / 67 år 2026) har förhöjt grundavdrag → högre effektiv skiktgräns
 4. **Glömt att SGI/PGI inte påverkas** — AI är skattetekniskt; sociala avgifter beräknas på faktisk redovisad inkomst per år
 5. **5-årsregeln för efteransökan missad** — efter 5 år är AI-rätten förlorad
 6. **AI på återförda P-fonder som hör till bara 1 år** — kräver minst 2 års fonder
@@ -141,7 +155,7 @@ The **strongest** planning use of AI är ihop med:
 
 - Vid nedläggning kan sparat räntefördelningsbelopp användas mot återförd P-fond och expansionsfond
 - This reduces the NV income from the lump återföring → may eliminate AI-need entirely if sparat fördelning fully covers
-- See [[rantefordelning-planning]] (Ville/Lennart worked examples)
+- See [[rantefordelning-planning]] (sparat fördelningsbelopp-mekanik vid nedläggning)
 
 ### Income leveling över flera år
 
@@ -170,22 +184,24 @@ På det avdragna beloppet betalas SLP 24,26% (för pensionsförmåner är detta 
 - R39 = Pensionssparavdrag (positivt)
 - R45/47-48 = slutgiltigt resultat
 
-### Worked example (PDF "Olle")
+### Pensionssparavdrag — breakeven-exempel
 
-- Underlag (efter räntefördelning, P-fond, expansionsfond): 834 286 kr
-- Pensionssparavdrag 35% av 834 286 = 292 000 kr
-- Without pensionssparavdrag: skatt+egenavgifter på 834 286 = 363 960 kr
-- With: skatt+egenavgifter på (834 286 − 292 000) + särskild löneskatt 24,26% × 292 000 = 266 532 kr
-- **Net minskning: 97 428 kr**, dvs 33% sänkning av skatt+egenavgifter
-- Olle's pensionsgrundande inkomst ändras inte (han slår i taket)
+Setup: aktiv EF, underlag (efter RF, P-fond, expansionsfond) ~834 000 kr, redan över PGI-taket.
 
-### PDF caveat — pensionssparavdrag rarely lönar sig
+| Variabel | Utan pensionssparavdrag | Med 35 % avdrag |
+|---|---|---|
+| NV-beskattad inkomst | 834 000 | 834 000 − 292 000 = 542 000 |
+| Skatt + egenavgifter NV-delen | ~364 000 | ~169 000 |
+| Särskild löneskatt 24,26 % × 292 000 | 0 | ~70 800 |
+| **Total skattekostnad** | **~364 000** | **~239 800 + sparade pengar** |
 
-> "Mitt argument mot pensionsförsäkringarna är de höga avgifterna. Dels betalar du avgifter för de underliggande fonderna, dels en förvaltningsavgift för själva försäkringen."
->
-> "I en lågränteekonomi som vi nu är inne i, blir det lätt så att avkastningen på ditt kapital i pensionsförsäkringen inte ens täcker försäkringsbolagets avgifter (som baseras på kapitalet och inte på avkastningen) och därmed blir tillväxten negativ och du förlorar pengar."
+Effekt: ~33 % sänkning av skatt+egenavgifter på året, mot priset att 292 000 kr binds i pensionssparande (utbetalas vid pension, beskattas som tjänsteinkomst då). PGI påverkas inte om man redan slår i taket. Lönar sig sällan p.g.a. fondavgifter — se varning nedan.
 
-Recommendation: pensionssparavdrag is en sista utväg om man **inte** har annan sätt att spara med samma skattefördelar.
+### Caveat — pensionssparavdrag lönar sig sällan
+
+Pensionsförsäkringar bär två avgiftsskikt: avgifter i de underliggande fonderna och en förvaltningsavgift för själva försäkringen (oftast kapitalbaserad). Vid låga avkastningsmiljöer kan avgifterna äta upp eller överstiga avkastningen, vilket gör nettotillväxten negativ.
+
+Recommendation: pensionssparavdrag is en sista utväg om man **inte** har annat sätt att spara med samma skattefördelar.
 
 ### Ingen pensionssparavdrag i passiv NV
 

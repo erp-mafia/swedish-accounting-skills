@@ -56,10 +56,9 @@ For vissa näringsidkare (såsom ålderspensionärer) där skatten på kapitalin
 
 Tillgång eller arbete måste anskaffas / utföras **efter slutet av det beskattningsår** då avsättningen gjordes. Om man köper ersättningsinventarier under samma år som skadeåret, kan man INTE göra avsättning till ersättningsfond. Istället kan man använda 30-procentsregeln för avskrivning vilket innebär att försäkringsersättningen kvittas mot inköpet.
 
-Tip from PDF:
-> *"För att slippa omvägen över ersättningsfond, kan det löna sig att snabba på ersättningsinvesteringen, så att den hamnar på samma år som ersättningen."*
+Optimering: snabba på ersättningsinvesteringen så att den hamnar på *samma år* som försäkringsersättningen — då kan 30 %-avskrivningsregeln för inventarier kvitta ut intäkten direkt, utan att gå omvägen via ersättningsfond.
 
-Alt: try to time ersättningen i början av nästföljande år istället för i slutet av det innevarande, så att du har längre tid på dig.
+Alt: tima försäkringsersättningen så att utbetalningen sker i början av nästföljande år istället för i slutet av innevarande → ger längre tid att finna ersättningstillgång inom samma beskattningsår.
 
 Fonden får också tas i anspråk för byggnader, markanläggningar och mark som anskaffas under **samma beskattningsår** som ersättningen ska tas upp som intäkt. I sådant fall ska det anses som om man gör en avsättning till fonden och att man tar fonden i anspråk omedelbart efteråt.
 
@@ -87,7 +86,9 @@ For mark:
 For lager:
 - Lagret anses nedskrivet med det ianspråktagna beloppet
 
-## Återföring efter tre år (om inte använd)
+## Återföring efter tre år (övergångsregel före 2026-04-01)
+
+För avsättningar gjorda **före 2026-04-01** gäller den äldre 3-årsregeln (se [10-årsregel-sektionen](#användningstid--förlängd-2026-3-år--10-år) för avsättningar gjorda från 2026-04-01).
 
 Ersättningsfonden måste användas inom **tre år** från avsättningen. Annars måste fonden återföras till beskattning. Avdraget återförs i den inkomstdeklaration som lämnas för det tredje beskattningsåret efter det beskattningsår som avdraget gjordes.
 
@@ -120,13 +121,19 @@ Special rule for fastigheter avyttrade via expropriation:
 
 For ersättningsfond för **mark**, återföringen sker normalt i inkomstslaget **kapital**.
 
-## Tillägg vid återföring (3 år ut utan att tas i anspråk)
+## Användningstid — förlängd 2026: 3 år → 10 år
 
-When avdraget återförs (utan att fonden använts), ska ett **särskilt tillägg på 30%** av det återförda beloppet tas upp som intäkt. Detta för att avskräcka från att göra avsättningar bara för skattekredit.
+**Skogsskattereformen 2026 (prop. 2025/26:69, ikraft 2026-04-01)** förlängde användningstiden från **3 år till 10 år**. Reformen är en del av en sammanhängande lantbruks-/skogsreform men gäller alla typer av ersättningsfond (inventarier, byggnader/mark, mark, djurlager) — inte bara skogsbruk.
 
-**This is the most important fact about ersättningsfond**: the 30% straffavgift makes ersättningsfond *unattractive* if you don't actually plan to invest in replacement assets. The PDF emphasizes:
+- **Avsättningar gjorda före 2026-04-01**: ursprungliga 3-årsregeln gäller (med möjlighet till dispens i ytterligare högst 3 år).
+- **Avsättningar gjorda fr.o.m. 2026-04-01**: 10-årsregeln gäller.
+- Övergångsregler för befintliga fonder — kontrollera mot Skatteverket vid behov.
 
-> *"Tillägget är så stort att det aldrig kan löna sig att avsätta till ersättningsfond enbart för att skjuta fram skatten."*
+## Tillägg vid återföring (om fonden inte tagits i anspråk inom användningstiden)
+
+When avdraget återförs (utan att fonden använts inom 3-/10-årstiden), ska ett **särskilt tillägg på 30 %** av det återförda beloppet tas upp som intäkt. Detta för att avskräcka från att göra avsättningar bara för skattekredit.
+
+**This is the most important fact about ersättningsfond**: the 30 % straffavgift makes ersättningsfond *unattractive* if you don't actually plan to invest in replacement assets. Tillägget är så pass tungt att det praktiskt taget aldrig lönar sig att göra avsättning enbart för att skjuta fram skatten — gör avsättningen bara om en konkret ersättningsinvestering är planerad inom användningstiden.
 
 Possibility of dispens for the timing exists, but the tillägget is mandatory.
 
@@ -147,26 +154,15 @@ In förenklat årsbokslut: redovisas via U3 (upplysning ersättningsfond) plus v
 
 BAS 2018 Förenklat årsbokslut: konto **2060 Ersättningsfond** — under eget kapital-rubriken, knuten till U3.
 
-## Worked example (from PDF)
+## Tre-scenario-jämförelse (illustrativ)
 
-A näringsidkare gets försäkringsersättning of **1 000 000 kr** for a lastbil that burns up. Skattemässigt restvärde of the bilen was 0 (fully avskriven).
+Setup: försäkringsersättning 1 000 000 kr för förstörd lastbil. Skattemässigt restvärde på bilen = 0 (helt avskriven).
 
-### Scenario 1: Replace within same year
-Replace the lastbil with an identical truck for 1 000 000 kr (same year):
-- Skattemässig restvärde at year's end: 0 − 1 000 000 + 1 000 000 = 0
-- No skatt effect — försäkringsersättningen kvittas mot inköpet
-
-### Scenario 2: Replace next year (without ersättningsfond)
-- Försäkringsersättning 1 000 000 kr full intäkt skadeåret
-- Buy nytt for 1 000 000 kr next year → endast 300 000 kr avskrivning får göras (30% regeln på inventarier)
-- → Måste skatta för 1 000 000 kr **direkt** trots att alla pengar gått till ersättning
-
-### Scenario 3: Replace next year (with ersättningsfond)
-- Avsätt 1 000 000 kr till ersättningsfond för inventarier (avdrag = intäkten)
-- Skadeåret: net resultat 0
-- Nästa år: ta fonden i anspråk vid köp av nya lastbilen — anskaffningsvärdet räknas som 0 (efter ianspråktagande)
-- Future avskrivningar görs på 0 → inga avskrivningar
-- Net effect: matches scenario 1 — neutralt över tid
+| Scenario | Skatteeffekt skadeåret | Skatteeffekt år 2 | Totalt över tid |
+|---|---|---|---|
+| **A: Ersätt samma år** (köp ny lastbil 1 000 000 kr) | Inkomst 1 000 000 + 30 %-regelns avskrivning på inköp 1 000 000 → netto 0 | Avskrivningsunderlag fortsatt 0 | **Neutralt** |
+| **B: Ersätt nästa år, INGEN ersättningsfond** | Intäkt 1 000 000 kr beskattas direkt; ingen kvittande kostnad | Köp 1 000 000 kr → 30 %-regelns avskrivning ger bara 300 000 kr avdrag år 2; resten avskrivs över ~3 år | **1 000 000 kr beskattas direkt utan kassaflöde** |
+| **C: Ersätt nästa år, MED ersättningsfond** | Avsätt 1 000 000 kr till fond → avdrag = intäkten → resultat 0 | Köp 1 000 000 kr; ta fond i anspråk → anskaffningsvärde räknas som 0 → inga framtida avskrivningar | **Neutralt över tid (matchar A)** |
 
 ## NE-bilaga reporting
 
@@ -182,7 +178,7 @@ In NE: ersättningsfond hanteras genom de vanliga rutorna R5/R6 (kostnader) för
 2. **Confusing inventarier/byggnad/mark/djurlager funds** — varje typ har olika ianspråk-regler; inventariefond får INTE användas för markköp
 3. **Anskaffning samma år som skadan** — då måste man använda 30-procentsregeln, inte ersättningsfond
 4. **Glömma att bokföra avsättningen** — för ersättningsfond ÄR det formellt samband (i motsats till P-fond EF)
-5. **3-årsgränsen** — Skatteverket återför automatiskt vid year 4 dispens-utan
+5. **Användningstidens slut** — 3 år för avsättningar före 2026-04-01, 10 år för avsättningar därefter. Skatteverket återför automatiskt vid år 4 (resp. år 11) utan dispens.
 6. **Behandlar fastighetsavyttring som ren kapitalinkomst** — då blir det ingen NV-inkomst att avsätta från; måste medvetet lägga del i NV-inkomstslaget
 
 ## Interaction with andra dispositions

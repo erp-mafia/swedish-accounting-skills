@@ -26,11 +26,9 @@ Test for ledande ställning:
 - Arbetsuppgifter som kräver expertkompetens?
 - Endast den ene har sådan kompetens → denne är företagsledare
 
-Worked example (PDF "Irena & Christer"):
-- Irena är läkare, driver läkarpraktik på deltid
-- Christer sköter bokföring och administration
-- Christer is medhjälpande make (saknar läkarexamen)
-- Om Christer själv utbildar sig till psykoterapeut → kan istället bli gemensam verksamhet
+Räkneexempel: läkare driver praktik på deltid, andra maken sköter bokföring/administration.
+- Andra maken är **medhjälpande** (saknar läkarexamen → ingen ledande roll i kärnverksamheten)
+- Om andra maken själv utbildar sig till psykoterapeut → vägledande arbete inom kärnverksamheten → kan klassas som **gemensam verksamhet**
 
 #### Rules for medhjälparfallet
 
@@ -39,7 +37,7 @@ The medhjälpande make may declare an inkomst from the verksamheten, **maximerat
 - Higher belopp kan motiveras med branscherfarenhet, utbildning eller kollektivavtal
 - Förmåner som den medhjälpande maken har får rymmas inom marknadsmässig ersättning
 
-Plus: medhjälpande maken may declare an **inkomst motsvarande rimlig ersättning på den kapitalinsats** som maken har gjort. The rimlig ersättning villkoret krävs att medhjälpande maken's kapitalunderlag för räntefördelning är >50 000 kr (annars går det inte att räntefördela).
+Plus: medhjälpande maken may declare an **inkomst motsvarande rimlig ersättning på den kapitalinsats** som maken har gjort. Den rimliga ersättningen utgår från räntefördelningens kapitalunderlag — fr.o.m. inkomstår 2025 (prop. 2024/25:1) krävs inte längre att kapitalunderlaget överstiger 50 000 kr för att räntefördela. Räntefördelning får göras så snart kapitalunderlaget är positivt (≥ 0 kr).
 
 **INTE allowed**: fördelning av underskott till medhjälpande maken. Medhjälpande maken kan endast få ersättning om verksamheten gått med överskott.
 
@@ -77,7 +75,7 @@ If båda makarna kan anses ha **samma ställning** i verksamheten, det är gemen
 | Företagsledande make aktiv, medhjälpande inte | Företagsledande maken aktiv; medhjälpande bedöms separat |
 | Medhjälpande maken jobbar ≥ 1/3 av heltid (500–600h) | Aktiv (smittar genom huvudsaklighetsregeln) |
 
-PDF guidance: "Det ligger då nära till hands att göra en likartad bedömning som för den företagsledande maken. Är den företagsledande maken aktiv, blir den medhjälpande maken också aktiv och vice versa."
+Smittoeffekt: medhjälpande maken bedöms i regel på samma sätt som den företagsledande — om företagsledaren är aktiv blir medhjälparen i normalfallet också aktiv (och tvärtom).
 
 ## Lön till barn
 
@@ -98,31 +96,29 @@ PDF guidance: "Det ligger då nära till hands att göra en likartad bedömning 
 
 This is one of the largest single skattelättnader för en familjeföretagare med tonåringar.
 
-Worked example (PDF "Gabriel"):
-- Gabriel, 51, har EF med 800 000 kr överskott före schablonavdrag
-- Skatt + egenavgifter på 800 000 kr = **387 794 kr** (≈ 48,5%)
-- Gabriel netto: 800 000 − 354 094 (lön till skatt+egenavg) = 445 906 kr
+### Decision-mall: anställa barn 16+
 
-Nu introducerar en dotter, 17 år, som hjälper med hemsida och Facebook:
-- Lön till dottern 2 000 kr/månad = 24 000 kr/år (marknadsmässig)
-- Arbetsgivaravgifter 31,42% × 24 000 = 7 540 kr
-- Total kostnad i EF: 31 540 kr
-- Gabriels överskott sjunker till 800 000 − 31 540 = 768 460 kr
-- Skatt+egenavgifter på 768 460 = **334 931 kr**
-- Gabriel kvar: 433 729 kr
+Setup: aktiv EF, näringsidkare under brytpunkten, NV-överskott ~800 000 kr. Barn ≥ 16 utan andra inkomster anställs marknadsmässigt (t.ex. 24 000 kr/år för webbjobb).
 
-Dottern har inga andra inkomster:
-- Lön 24 000 kr, skatt ~1 700 kr (grundavdrag äter upp), dottern kvar 22 300 kr
+```
+1. Lönekostnad_barn = Bruttolön + AG-avgift (31,42 % × bruttolön)
+   Exempel: 24 000 + 7 540 = 31 540 kr/år
+2. EF_överskott_nytt = EF_överskott_före − Lönekostnad_barn
+3. Skatt_EF_efter = NV-marginalskatt × EF_överskott_nytt
+4. Skatt_barn = max(0, lön − grundavdrag) × kommunalskatt
+   Barn under grundavdraget: ~0 kr skatt → ren skatteförflyttning
+5. Familjebesparing = (Skatt_EF_före) − (Skatt_EF_efter + Skatt_barn)
+```
 
-**Sammanlagt familjen: 433 729 + 22 300 = 456 029 kr (mot 445 906 utan dottern)**
+Illustrativ effekt: vid 800 000 kr EF-överskott och 24 000 kr lön till barn (under grundavdraget) → familjebesparing ~10 000 kr/år. Plus barnet bygger PGI livet ut.
 
-Total skattelättnad: **10 123 kr**. Plus dottern bygger pensionsgrundande inkomst hela livet ut.
+Krav: barnet ≥ 16 år **vid avlöningstillfället**, faktiskt arbete utfört, marknadsmässig timlön (90 kr/tim + AG-avgift ofta godtagbart). Lön till barn under 16 är **inte avdragsgill** för EF.
 
-PDF tips: höjning av dotterns lön så att hon kommer över **deklarationsgränsen 20 135 kr** (0,423 PBB) ger henne pensionsrätt från första kronan. Each krona over the deklarationsgränsen kostar 7% allmän pensionsavgift för dottern (≈ 1 400 kr för precis nå gränsen), men ger henne flera hundra kronor mer i pension varje år livet ut.
+Planeringstips: höj barnets lön så att den hamnar precis över **deklarationsgränsen 0,423 × PBB** (=24 870 kr 2025 / 25 042 kr 2026) → utlöser pensionsrätt från första kronan. Varje krona över gränsen kostar 7 % allmän pensionsavgift för barnet, men ger flera hundra kronor mer i pension varje år livet ut.
 
-### Beware skattefri inkomst frestelse
+### Tröskeleffekt — skattefri inkomst vs PGI
 
-Att hålla dotterns lön precis under deklarationsgränsen (20 135 kr) ger skattefri inkomst för barnet — but it's **dålig pensionsmässig planering**. Optimalt: precis över gränsen, så pensionsrätt utlöses.
+Att hålla barnets lön precis *under* deklarationsgränsen ger skattefri inkomst men **ingen PGI**. Optimalt: precis *över* gränsen → liten direktkostnad mot stor pensionsvinst.
 
 ### Krav: faktiskt arbete
 
@@ -152,12 +148,15 @@ I gemensam verksamhet kan båda makarna anses som företagsledare och därmed ka
 
 In gemensam EF där makar tillsammans äger tillgångar och har skulder:
 - Each make computes kapitalunderlag på *sin andel* av tillgångar och skulder
-- Genom att fördela ägande av tillgångar och skulder kan en eller båda makar nå +50 001 räntefördelningsgräns
+- Genom att fördela ägande av tillgångar och skulder kan storleken av räntefördelningsbeloppet styras
 
-Worked example (PDF, kvinnan + mannen verksamhet):
+> **Notera (2025-reform):** Äldre källor talar om att nå "+50 001 räntefördelningsgräns" — den gränsen är **slopad fr.o.m. inkomstår 2025**. Numera går det att räntefördela från första positiva kronan, men storleken på kapitalunderlaget bestämmer fördelningsbeloppet (kapitalunderlag × SLR+6%). Större kapitalunderlag = större belopp som flyttas från NV till kapital (30 % skatt).
+
+Worked example (2025-regler):
 - Maskin för 15 000 kr behöver köpas
-- Default: båda äger 50/50 → kvinnans kapitalunderlag 40k + 7,5k = 47,5k → fortfarande under 50k → ingen räntefördelning
-- Alt: låter kvinnan **köpa hela maskinen**: kvinnans kapitalunderlag 40k + 15k = 55k → räntefördelning på full 55k
+- Default: båda äger 50/50 → kvinnans kapitalunderlag 40 000 + 7 500 = 47 500 kr → räntefördelningsbelopp 2025 = 47 500 × 7,96 % = 3 781 kr
+- Alt: låter kvinnan **köpa hela maskinen**: kvinnans kapitalunderlag 40 000 + 15 000 = 55 000 kr → räntefördelningsbelopp 2025 = 55 000 × 7,96 % = 4 378 kr
+- Skillnaden 597 kr × marginalskatte-besparing ≈ 100–200 kr/år för medel-EF; större värde vid större kapitalunderlag
 
 Such omflyttning ska göras civilrättsligt (faktiskt) — det räcker inte med en skriftlig fördelningsfiktion.
 
@@ -165,7 +164,7 @@ Such omflyttning ska göras civilrättsligt (faktiskt) — det räcker inte med 
 
 Inkomstfördelning between makar påverkar:
 - **Pensionsgrundande inkomst (PGI)**: 7,5 inkomstbasbelopp tak — om en make är över taket lägs överskottet i hennes inkomstslag onödigt; flytta över till den make som är under taket
-- **Sjukpenninggrundande inkomst (SGI)**: 8 prisbasbelopp tak — same logic
+- **Sjukpenninggrundande inkomst (SGI)**: **10 prisbasbelopp** tak (höjt från 7,5 PBB 2018; samma tak som föräldrapenning) — same logic
 - **Föräldrapenninggrundande inkomst**: 10 prisbasbelopp tak
 
 Tips:
@@ -194,6 +193,6 @@ If you build software for familjeägda EF:
 - [ ] Compute kapitalunderlag separately för each make (gemensam verksamhet)
 - [ ] Generate NE-bilaga primary + supplement layout
 - [ ] Flag the 16-årsdagen för barn som ska avlönas
-- [ ] Warn at the deklarationsgränsen 20 135 kr för barn (pension implications)
+- [ ] Warn at the deklarationsgränsen 0,423 × PBB (≈ 24 870 kr 2025 / 25 042 kr 2026) för barn (pension implications)
 
 See also [[aktiv-passiv-naringsverksamhet]], [[rantefordelning-planning]] (makar-fördelning av tillgångar), [[kvittning-underskott]] (närstående-takeover regel), and [[ackumulerad-inkomst]] (kan båda makar dra ackumulerad inkomst from gemensam verksamhet).
