@@ -183,7 +183,7 @@ Always check Skatteverket's current technical documentation. Their APIs change. 
 ## 7. Momsregistrering
 
 ### When required
-- Momspliktig verksamhet > 80 000 kr per 12-month period (threshold from 2025)
+- Momspliktig verksamhet > **120 000 kr** per 12-month period (threshold höjt 1 januari 2025 från 80 000 kr; 80 000 kr var den föregående höjningen från 2022)
 - Below threshold: can choose to register voluntarily
 - EU-handel: registration required regardless of threshold
 
