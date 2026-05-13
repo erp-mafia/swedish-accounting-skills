@@ -14,7 +14,7 @@ Example: Lantbruksfastighet köpt för 1 200 000 kr. Totalt taxeringsvärde 800 
 
 Anskaffningsvärde för täkten = 200 000 / 800 000 × 1 200 000 = **300 000 kr**.
 
-**Alternativregeln** (schablonregel om täktområdet inte hade något eget taxeringsvärde): Beräkningsmetoden är **70% av täkthrens marknadsvärde vid utvinningens början, multiplicerat med 75%-spärren av marknadsvärdet**, dvs i praktiken det belopp som motsvarar **75% av täktmarkens marknadsvärde** vid utvinningens början.
+**Alternativregeln** (schablonregel om täktområdet inte hade något eget taxeringsvärde): Anskaffningsvärdet får beräknas som det **fiktiva omkostnadsbeloppet enligt kapitalvinstreglerna** vid en marknadsvärdesförsäljning av täktmarken det år utvinningen påbörjades. **Spärr: anskaffningsvärdet får inte överstiga 75 % av täktmarkens marknadsvärde** vid utvinningens början.
 
 Exploateringskostnader (det som inte dragits av i löpande drift) får läggas till anskaffningsvärdet, även efter exploateringens början.
 

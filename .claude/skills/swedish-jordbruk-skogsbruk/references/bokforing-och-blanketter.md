@@ -26,10 +26,10 @@ Lantbrukare med nettoomsättning ≤ **3 MSEK** får upprätta förenklat årsbo
 Skillnaderna mot vanligt årsbokslut i lantbrukskontext:
 - **Inte rätt** till avsättning för framtida återväxtåtgärder (största nackdelen för skogsägare — se `skogsbeskattning.md`).
 - **Inte rätt** till avsättning för återställningskostnader vid substansminskning. Men beräknade återställningskostnader får läggas till anskaffningsvärdet.
-- Lager med totalvärde ≤ 5 000 kr behöver inte tas upp som tillgång.
-- Inventarier av mindre värde: halvt PBB-gränsen (29 600 kr för 2026, 28 950 för 2025) → direktavdrag.
+- Lager med totalvärde ≤ 5 000 kr behöver inte tas upp som tillgång (BFNAR 2025:1-uppdatering: lagergränsen är nu också halvt PBB för många kategorier — kontrollera).
+- Inventarier av mindre värde: halvt PBB-gränsen (**29 400 kr för 2025** (PBB 58 800 / 2), **29 600 kr för 2026** (PBB 59 200 / 2)) → direktavdrag. BFNAR 2025:1 (24 mars 2025) höjde gränsen från tidigare 5 000 kr — gäller från räkenskapsår som inleds efter 31 dec 2024.
 
-Skogskontot tas upp som **tillgång i ruta B9** (vanligt årsbokslut) eller som **obeskattad reserv i ruta U4** (förenklat årsbokslut). I förenklat årsbokslut visas också skogsavdrag och betalningsplan-fordringar som **obeskattade poster** i ruta U-fältet.
+Skogskontot tas upp som **tillgång i ruta B9 (Kassa och bank)** — både i vanligt och förenklat årsbokslut. I förenklat årsbokslut lämnas dessutom upplysning i **ruta U4** om att saldot är obeskattat (latent skatt vid uttag). Halva-beloppet-regeln gäller bara räntefördelningens kapitalunderlag, inte B9-värdet.
 
 ## Djur som lager (IL 17 kap 5§)
 
@@ -42,36 +42,93 @@ Skogskontot tas upp som **tillgång i ruta B9** (vanligt årsbokslut) eller som 
 - Lägst **85% av produktionskostnaden** (specialregel för djurlager — vanlig lager: 97% efter 3%-schablonen).
 - Eller lägst **kollektivt beräknat genomsnittligt nettoförsäljningsvärde** för samtliga djur — om detta ger ett **lägre** värde än 85% av produktionskostnaden.
 
-**Skatteverket fastställer årligen schablonvärden** per djurslag, ålder/vikt och kategori. SKVFS 2017:21, allmänna råd SKV A 2017:20 (uppdateras årligen).
+### Skatteverkets föreskrifter — uppdateras årligen
 
-### Schablonvärden — exempel (inkomstår 2019, exkl. moms)
+**Två separata regelverk:**
+1. **Genomsnittlig produktionsutgift** (A-värden) — fastställs i SKVFS-föreskrifter, en per beskattningsår.
+2. **Nettoförsäljningsvärde** (B-värden) — fastställs i SKV A allmänna råd.
 
-**A = genomsnittlig produktionsutgift, B = nettoförsäljningsvärde**
+**Aktuella föreskrifter** (kontrollera senaste vid implementation):
 
-| Djurslag/kategori | A | B |
+| Föreskrift | Beskattningsår | Ikraft | Tillämpas på deklaration |
+|---|---|---|---|
+| **SKVFS 2025:27** (A-värden, jordbruk) | 2025 | 2026-01-01 | våren 2026 |
+| SKVFS 2025:28 (A-värden, renskötsel) | 2025 | 2026-01-01 | våren 2026 |
+| SKVFS 2024:28 (föregående år, jordbruk) | 2024 | 2025-01-01 | våren 2025 |
+| **SKV A 2025:8** (B-värden, nettoförsäljningsvärden) | 2025 | 2025 | våren 2026 |
+| SKV A 2024:25 (föregående B-värden) | 2024 | 2024 | våren 2025 |
+
+**Implementation:** hämta alltid värdena från aktuell föreskrift för det beskattningsår som hanteras — hårdkoda inte. Värdena justeras varje år och **strukturen kan ändras** mellan föreskrifter (se ändringstabellen nedan).
+
+### A-värden från SKVFS 2025:27 (beskattningsår 2025)
+
+Värden per styck om inte annat anges, kronor exklusive moms.
+
+**Nötkreatur**:
+
+| Kategori | Klass | Kronor |
 |---|---|---|
-| Yngre draghästar (4-15 år) | 27 700 | 30 000 |
-| Äldre draghästar (>15 år) | 24 700 | 15 000 |
-| Föl unghäst | 10 200 | 12 500 |
-| Ettåringar unghäst | 16 900 | 15 000 |
-| Mjölkkor 400 kg | 7 600 | 8 100 |
-| Mjölkkor 500 kg | 7 900 | 9 000 |
-| Mjölkkor 600 kg | 8 200 | 10 000 |
-| Mjölkkor 700 kg | 8 600 | 11 000 |
-| Dikor 400 kg | 7 200 | 9 900 |
-| Dikor 600 kg | 7 900 | 11 200 |
-| Ungnöt under 1 år | 3 800 | 3 200 |
-| Ungnöt 1-2 år | 5 900 | 7 800 |
-| Ungnöt >2 år | 7 900 | 12 500 |
-| Gödnöt (kr/kg levande vikt) | 17 | 18 |
-| Galtar och suggor (gyltor) | 2 330 | 4 040 |
-| Smågrisar <2 mån | 300 | 490 |
-| Gödsvin 2-4 mån | 490 | 550 |
-| Gödsvin >6 mån | 1 250 | 1 600 |
-| Får 30 kg levande vikt | 720 | 920 |
-| Får 90 kg levande vikt | 750 | 1 060 |
+| Mjölkkor | Mjölkras (oavsett vikt) | 14 800 /st |
+| Dikor och amkor | Lätt köttras | 13 000 /st |
+| Dikor och amkor | Tung köttras | 14 200 /st |
+| Ungnöt (kvigor och kvigkalvar) | Under 1 år | 4 300 /st |
+| Ungnöt | 1–2 år | 8 900 /st |
+| Ungnöt | Över 2 år | 13 500 /st |
+| Slaktnöt | Självrekryterande | 21,80 /kg |
+| Slaktnöt | Inköpt slaktnöt, köttras | 34,90 /kg |
 
-(Kontrollera SKV's aktuella föreskrift för innevarande beskattningsår — värdena uppdateras.)
+**Svin**:
+
+| Kategori | Klass | Kronor |
+|---|---|---|
+| Avelssvin | Galtar och suggor (gyltor) | 3 540 /st |
+| Smågrisar | yngre än 2 mån | 420 /st |
+| Gödsvin | 2–4 mån | 790 /st |
+| Gödsvin | 4–6 mån | 1 650 /st |
+
+**Får**:
+
+| Kategori | Klass | Kronor |
+|---|---|---|
+| Tackor och baggar | (per styck) | 1 100 /st |
+| Lamm | (per kg levande vikt) | 20,20 /kg |
+
+**Renar (SKVFS 2025:28, renskötsel)**: renkalv 1 442 /st, vuxen honren 2 359 /st, vuxen hanren 3 276 /st.
+
+### B-värden från SKV A 2025:8 (beskattningsår 2025)
+
+Nettoförsäljningsvärden (B). Används kollektivt — om totala B-summan ger ett lägre värde än A_summa × 0,85, värderas djurlagret till B-summan. Notera att 85 %-spärren INTE får tillämpas på B-värden.
+
+**Nötkreatur**:
+
+| Kategori | Klass | Kronor |
+|---|---|---|
+| Mjölkkor | Mjölkras | 22 700 /st |
+| Dikor och amkor | Lätt köttras | 22 300 /st |
+| Dikor och amkor | Tung köttras | 26 500 /st |
+| Ungnöt | Under 1 år | 5 300 /st |
+| Ungnöt | 1–2 år | 15 500 /st |
+| Ungnöt | Över 2 år | 22 600 /st |
+| Slaktnöt | Självrekryterande | 34,80 /kg |
+| Slaktnöt | Inköpt slaktnöt, köttras | 37,80 /kg |
+
+**Svin och får**: SKV A 2025:8 innehåller även dessa, men exakta värden bör hämtas från aktuell föreskrift vid implementation (FAR Online / Skatteverket).
+
+### Strukturella ändringar 2024:28 → 2025:27 (viktigt för migrering)
+
+| Område | SKVFS 2024:28 | SKVFS 2025:27 |
+|---|---|---|
+| Mjölkkor | Uppdelat per kg levande vikt (400/500/600/700 kg) | **En kategori** "Mjölkras" oavsett vikt |
+| Dikor/amkor | Uppdelat per kg levande vikt | **Per ras**: lätt köttras / tung köttras |
+| Gödnöt → Slaktnöt | "Gödnöt" per kg levande vikt | **Renamed "Slaktnöt"**, två kategorier: självrekryterande / inköpt köttras |
+| Draghästar och unghästar | Egna kategorier med viktklasser | **Borttagna** ur föreskriften — värderas enligt allmänna lagerregler IL 17 kap utan SKV-schablon |
+| Får | Per kg levande vikt (30/50/70/90 kg) | **Tackor/baggar per styck**, lamm per kg |
+| Gödsvin > 6 mån | Egen kategori | **Borttagen** ur föreskriften |
+
+Implementationsråd:
+- Versionera lookup-tabellen per beskattningsår i koden — strukturändringar är inte bara värdejusteringar
+- Mappa äldre kategorier vid migrering (t.ex. "mjölkko 600 kg 2024" → "mjölkras 2025"; "diko 700 kg 2024" → välj lätt/tung köttras 2025 baserat på rasinformation)
+- Hästar och svin > 6 mån är borta ur 2025:27 — fallback till anskaffningsvärde/marknadsvärde med 85 %-spärr enligt IL 17 kap 5 §
 
 ### Tävlings- och ridhästar
 
@@ -85,33 +142,30 @@ För att få fram lägsta lagervärde:
 
 Lagervärdet = det **lägre** av de två. Nettoförsäljningsvärdet får INTE skrivas ner till 85%.
 
-**Worked example**: Sven har 6 dikor (500 kg/styck) plus 6 ungnöt under 1 år och 2 ungnöt 1-2 år.
+**Beräkningsmall** (siffror illustrativa, byt mot aktuella SKVFS/SKV A värden):
 
-Produktionsutgift:
-- 6 × 7 500 = 45 000
-- 6 × 3 800 = 22 800
-- 2 × 5 900 = 11 800
-- Summa = 79 600. 85% = **67 660**.
+```
+djur[]: lista av (antal, kategori, vikt/ålder)
 
-Nettoförsäljningsvärde:
-- 6 × 10 600 = 63 600
-- 6 × 3 200 = 19 200
-- 2 × 7 800 = 15 600
-- Summa = **98 400**.
+A_summa = Σ(antal × A_värde(kategori, klass))   # produktionsutgift per SKVFS
+B_summa = Σ(antal × B_värde(kategori, klass))   # nettoförsäljningsvärde per SKV A
 
-Lagervärde = **67 660 kr** (det lägre).
+A_85 = A_summa × 0,85          # nedskrivningsregeln 85 %-tak
+B_kollektiv = B_summa          # nettoförsäljningsvärde får INTE skrivas ner till 85 %
+
+lagervärde = min(A_85, B_kollektiv)
+```
+
+Exempel-beräkning för 6 dikor (tung köttras) + 6 ungnöt under 1 år + 2 ungnöt 1-2 år (SKVFS 2025:27 A-värden, illustrativa B-värden):
+- A_summa = 6 × 14 200 + 6 × 4 300 + 2 × 8 900 = 85 200 + 25 800 + 17 800 = 128 800 kr; A_85 ≈ 109 480 kr
+- B_summa ≈ 135 000 kr (kontrollera mot SKV A för aktuellt år)
+- Lagervärde = **109 480 kr** (det lägre)
 
 ### Egenproducerat hö, halm, ensilage, spannmål
 
-Anskaffningsvärdet för egenproducerat foder kan vara svårt att räkna ut exakt. Förslag på schablonvärden (från bokens författare — inte officiella värden):
+Anskaffningsvärdet för egenproducerat foder är svårt att räkna ut exakt eftersom Skatteverket inte publicerat schablonvärden för dessa lagertillgångar. Praktisk lösning vid bokslut: använd **marknadspris vid produktionstillfället** för respektive produkt och kvalitet (branschnoteringar från LRF, Lantmännen, Hushållningssällskapet eller motsvarande), justerat för det egenproducerades faktiska kvalitet. Värdet får aldrig sättas så lågt att det ger orealistisk vinst.
 
-| Produkt | kr |
-|---|---|
-| Hö per kg | 1.50 |
-| Ensilage, mindre balar | 250 |
-| Ensilage, större balar | 300 |
-| Foderspannmål per kg | 1.50 |
-| Halm per kg | 1.50 |
+Eftersom officiella värden saknas är det viktigt att dokumentera **källan** för det använda marknadspriset i bokslutsbilagan, så att SKV kan följa beräkningen vid en eventuell granskning.
 
 ### Växande gröda
 
@@ -123,7 +177,7 @@ Detsamma gäller växande gröda och skog som ännu inte är avverkad eller fram
 
 ### Förbrukningsinventarier — halvt PBB
 
-Inventarier med anskaffningsvärde < halvt prisbasbelopp → direktavdrag. 2026: 29 600 kr (PBB 59 200 / 2). 2025: 28 950 kr (PBB 57 900 / 2). 2020: 23 650 kr.
+Inventarier med anskaffningsvärde < halvt prisbasbelopp → direktavdrag. **2026: 29 600 kr (PBB 59 200 / 2). 2025: 29 400 kr (PBB 58 800 / 2)**. 2020: 23 650 kr. *Obs:* PBB för 2025 är **58 800 kr**, inte 57 900 (det var 2024).
 
 För inventarier som **äga gemensamt** av flera näringsidkare (enkelt bolag): beloppsgränsen gäller för inventariet i sin helhet, **inte** delägarens andel.
 
@@ -170,15 +224,23 @@ Markanläggningar skrivs av med fast årlig procent (planenlig, inte restvärdes
 - **10%/år**: täckdiken och skogsvägar
 - **5%/år**: övriga markanläggningar (öppna diken, stängsel om de inte är markinventarier, bevattningsanläggningar i jorden, övriga, etc.)
 
-### Avskrivning av byggnader
+### Avskrivning av byggnader — skattemässiga satser
 
-| Byggnadstyp | %/år |
-|---|---|
-| Bostadshus (småhus och hyreshus) | 2 |
-| Växthus, silor och kylhus | 5 |
-| Övriga ekonomibyggnader | 4 |
+Skatteverkets vägledande procentsatser för värdeminskningsavdrag (SKV A 2005:5, ej tidsbegränsad) för byggnader på lantbruksenhet:
 
-(Skatteverkets allmänna råd för byggnader på lantbruksenhet — kan avvika från ÅRL/K3 som baseras på faktisk livslängd.)
+| Byggnadstyp | Skattemässig %/år | Implicit nyttjandeperiod |
+|---|---|---|
+| Bostadshus (småhus och hyreshus) | 2 | 50 år |
+| Växthus, silor och kylhus | 5 | 20 år |
+| Övriga ekonomibyggnader (stall, lador, maskinhallar) | 4 | 25 år |
+
+### Skillnad mot bokföringsmässig avskrivning per K-regelverk
+
+| Regelverk | Avskrivning i räkenskaperna | Avvikelse mot skattemässig |
+|---|---|---|
+| **K1** (förenklat årsbokslut för EF, BFNAR 2006:1) | Formellt samband: bokföringsmässig = skattemässig sats | **Ingen** — satserna ovan används direkt |
+| **K2** (mindre AB, BFNAR 2016:10) | Nyttjandeperiod, men förenkling tillåter SKV-satser | Vanligtvis **ingen** i praktiken |
+| **K3** (större AB, BFNAR 2012:1) | Faktisk nyttjandeperiod + obligatorisk komponentavskrivning | **Avviker nästan alltid** — ekonomibyggnad 40–60 års nyttjandeperiod (1,7–2,5 %/år) jämfört med skattemässig 4 %/år → kräver dubbla register och uppskjuten skatt |
 
 ## Skogsavdrag — skattemässig vs bokfört värde
 
@@ -186,11 +248,13 @@ Skogsavdrag **bokförs INTE i räkenskaperna**. Det är en ren skattemässig jus
 
 **Konsekvens**: Det bokförda värdet på skogsfastigheten (B7a i ruta-2196 räntefördelningsbilagan) blir större än det skattemässiga värdet (B7b). Skillnadsbeloppet (negativt) — sk **B7c** — påverkar kapitalunderlaget.
 
-**Worked example (Enar Gran)**:
-- Bokfört värde fastigheten 518 400 kr (B2/B3 på sid 1 NE → B7a på sid 2196)
-- Skattemässigt värde 473 400 kr (B7b)
-- Skillnad = −45 000 kr (förs in som minskning vid B-beräkningen)
-- Detta är **skogsavdraget som gjorts** men ej bokförts → skattemässigt har fastighetens omkostnadsbelopp minskat med 45 000 kr.
+**Räkneexempel (illustrativt)**:
+```
+bokfört_värde_fastighet = anskaffningsvärde − bokförda_avskrivningar    # → B7a på sid 2196
+skattemässigt_värde    = anskaffningsvärde − bokförda_avskrivningar − ack_skogsavdrag    # → B7b
+skillnad_B7c           = skattemässigt − bokfört = − ack_skogsavdrag    # negativ post i kapitalunderlaget
+```
+Exempel: bokfört 518 400 kr, ack_skogsavdrag 45 000 kr → skattemässigt 473 400 kr → B7c = −45 000 kr. Skogsavdraget bokförs aldrig, så B7c korrigerar för att fastighetens skattemässiga omkostnadsbelopp har minskat utan motsvarande bokföringspost.
 
 ## Ersättningsfond (IL 31 kap)
 
@@ -231,11 +295,15 @@ Dock: för ålderspensionärer är inkomstskatt + egenavgifter ofta lägre än 3
 | **Mark** | Anskaffning av mark som är kapitaltillgång |
 | **Djurlager** | Nedskrivning av djurlager. Fonden får tas i anspråk med högst ett belopp som motsvarar utgifterna under beskattningsåret för att anskaffa djur. Nedskrivningen får inte leda till att lagret tas upp till ett lägre värde i dess helhet vid beskattningsårets slut än som annars skulle ha godtagits. |
 
-### Återföring efter 3 år
+### Användningstid — förlängd 2026: 3 år → 10 år
 
-Ersättningsfonden måste användas inom **3 år** från avsättningen. I annat fall återförs den till beskattning i deklarationen som lämnas för det tredje beskattningsåret efter det att avdraget gjordes.
+**Skogsskattereformen 2026 (prop. 2025/26:69, ikraft 2026-04-01)** förlängde användningstiden för ersättningsfond:
+- **Före 2026-04-01**: avsättningen måste användas inom **3 år** från avsättningsåret. Dispens kunde medges i ytterligare högst 3 år.
+- **Fr.o.m. 2026-04-01**: avsättningen får användas inom **10 år**. Detta gäller också nya avsättningar gjorda från reformens ikraftträdande. (Övergångsregler för befintliga fonder — kontrollera mot SKV vid behov.)
 
-**Dispens**: Vid sjukdom, lågkonjunktur eller liknande kan Skatteverket medge dispens i ytterligare högst 3 år.
+I annat fall återförs den till beskattning i deklarationen som lämnas för det tionde (tidigare tredje) beskattningsåret efter det att avdraget gjordes.
+
+**Dispens**: Vid sjukdom, lågkonjunktur eller liknande kan Skatteverket medge dispens i ytterligare högst 3 år (oavsett om grundtiden är 3 eller 10 år).
 
 ### Tillägg vid återföring av annan orsak
 
@@ -260,10 +328,16 @@ Tillägget gäller **inte** vid expropriation och liknande.
 
 ### BAS-mapping för ersättningsfond
 
-Ersättningsfond är **inte** ett obeskattat reservkonto (skiljer sig från periodiseringsfond, expansionsfond, överavskrivningar). Det är en skattemässig konstruktion.
+Ersättningsfond skiljer sig från periodiseringsfond och expansionsfond: **den måste bokföras via resultaträkningen för att avdraget ska vara giltigt** (gäller även för EF under K1, undantag mark). Detta är **motsatsen** till P-fond/expansionsfond i EF som aldrig bokförs.
 
-- I förenklat årsbokslut redovisas avsättningen som obeskattad reserv i ruta U-fältet (för transparens).
-- I löpande bokföring: ingen specifik kontering — avdraget görs i deklarationen.
+```
+Debit  8xxx Avsättning till ersättningsfond  (resultatpåverkande)
+Credit 2060 Ersättningsfond                  (skuld-/eget kapitalsida)
+```
+
+- **I förenklat årsbokslut**: avsättningen bokförs i resultatet + upplysning i **ruta U3** (Ersättningsfond vid årets slut).
+- **Undantag: ersättningsfond för mark** behöver inte bokföras enligt BFNAR 2006:1 9.2 — endast U3-upplysning.
+- Detta ändrades **inte** av Skogsskattereformen 2026 — bokföringskravet kvarstår; däremot förlängdes användningstiden från 3 till 10 år (se skogsbeskattning.md).
 
 ## Räntefördelning — lantbruksspecifika regler
 
@@ -316,7 +390,7 @@ Den särskilda posten kan därmed aldrig leda till positiv räntefördelning uta
 
 ### Särskild post vid expansionsfond
 
-Övertar förvärvaren expansionsfond i samband med övertagandet, ska den särskilda posten ökas med **72% av den övertagna expansionsfonden** (= 100% − 27.7% expansionsfondsskatt). Den övertagna expansionsfonden räknas inte som vederlag för fastigheten.
+Övertar förvärvaren expansionsfond i samband med övertagandet, ska den särskilda posten ökas med **79,4 % av den övertagna expansionsfonden** (= 100 % − 20,6 % expansionsfondsskatt; bolagsskatten är 20,6 % sedan 2021). Den övertagna expansionsfonden räknas inte som vederlag för fastigheten. Äldre källor anger 72 % / 27,7 % baserat på den tidigare 21,4 %-bolagsskatten — kontrollera alltid mot aktuell sats.
 
 ## N8-blanketten — skogs- och substansminskningsavdrag
 
@@ -406,9 +480,10 @@ Uttaget är en intäkt i NV. Tas upp i ruta R27 på sid 2 NE.
 
 ### Periodiseringsfond, expansionsfond, ersättningsfond i EF
 
-Alla tre är **inte bokförda i räkenskaperna** för enskilda näringsidkare. De är skattemässiga konstruktioner i NE-bilagan. Däremot bör skogsägare som gör förenklat årsbokslut lämna upplysningar om dem i **ruta U1-U3** i bokslutet (för att visa banken och andra läsare hela bilden).
+- **Periodiseringsfond och expansionsfond**: **bokförs INTE** i räkenskaperna för enskilda näringsidkare. De är skattemässiga konstruktioner i NE-bilagan. Upplysning lämnas i ruta U1 (P-fond) respektive U2 (expansionsfond) i förenklat årsbokslut.
+- **Ersättningsfond**: **ska bokföras via resultaträkningen** för avdragsrätt (debit 8xxx / credit 2060). Detta är motsatsen till P-fond/expansionsfond. Upplysning i ruta U3. Undantag: ersättningsfond för mark behöver inte bokföras (BFNAR 2006:1 9.2).
 
-I ruta U4 lämnas upplysning om bokförda intäkter som helt eller till viss del är obeskattade — det gäller skogskonto, insatsemission och betalningsplan på skog.
+I ruta U4 lämnas upplysning om bokförda tillgångar/intäkter som helt eller till viss del är obeskattade — det gäller skogskonto, insatsemission och betalningsplan på skog. Själva saldot på skogskonto bokförs alltid i B9 (Kassa och bank); U4 markerar bara att framtida uttag blir skattepliktig NV-intäkt.
 
 ## Cross-references
 

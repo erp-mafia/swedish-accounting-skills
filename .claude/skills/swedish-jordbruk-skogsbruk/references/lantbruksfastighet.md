@@ -9,6 +9,8 @@ A lantbruksenhet is normally a **mixed** fastighet from a skattesynpunkt: some p
 - Ett tänkt tomtområde till privatbostaden.
 - Komplementbyggnader: vedbod, pannrum, jordkällare, lekstugor, gäststugor, friggebodar, attefallshus, **Bolundare**, personbilsgarage och carport.
 
+> **Terminologi-uppdatering (PBL 2025-12-01):** Friggebod och attefallshus har via PBL-reformen 2025 slagits ihop till en samlad kategori "**komplementbyggnad**" (max 30 kvm inom detaljplan, 50 kvm utanför; sammanlagd potten 45 / 65 kvm). Detta är **byggrätt, inte skatterätt** — påverkar inte direkt privatbostads-/näringsfastighetsklassificeringen, men termen "Bolundare" och "attefallshus" är inte längre officiella i bygglagstiftningen. Skatteverket använder fortfarande de gamla termerna när IL 2 kap tolkas, så listan ovan gäller alltjämt skattemässigt.
+
 **Näringsfastighet**:
 - Övrig produktiv skogsmark (eller med avverkningsrestriktioner)
 - Skogligt impediment
@@ -80,37 +82,20 @@ Example: Bostadsbyggnadsvärdet + tomtmark = 41% av hela taxeringsvärdet. → 4
 
 **Skäliga avvikelser tillåts** om det finns substantiella skäl, t.ex. genomgripande renovering, nybyggnad, eller avverkning som ändrat värderelationen. Men man får inte "vingla" — fördelningen ska vara stabil över åren.
 
-## Solceller på lantbruk
+## Solceller på lantbruk — fastighetsklassificeringens effekt
 
-Beskattningen styrs av **var solcellerna är placerade**:
+Solcellsanläggningens skattekonsekvenser styrs primärt av **var den är placerad** och **vilken byggnadstyp den försörjer**:
 
-### På privatbostad (mangårdsbyggnad)
+| Placering / leverans | Inkomstslag | Momslyft | Grönt avdrag |
+|---|---|---|---|
+| På mangårdsbyggnad (privatbostad), försörjer endast småhuset | Kapital (schablon) | Inget (förbud stadigvarande bostad) | Ja, **kräver två elabonnemang** |
+| På ekonomibyggnad, försörjer endast näringsverksamheten | NV | Fullt momslyft | Nej (näringsfastighet) |
+| Blandad försörjning (både småhus och ekonomibyggnad/näringsdel) | NV för näringsdelen | Proportionerligt — del som hör till ekonomibyggnaden | **Nej** för småhusdelen utan separat elmätning |
+| All el säljs in på elnätet mot ersättning | NV | 100 % | Nej |
 
-- Inkomstskatt: inkomst av kapital, schablonregler för småhus (40 000 kr + 20% av hyran avdrag).
-- Moms: INGEN momslyft (förbud mot momslyft på stadigvarande bostad).
+**Avskrivning på näringsfastighet**: anläggningen avskrivs som byggnadsinventarium (oftast 20 % årligt restvärde eller 30 %/20 % räkenskapsenligt) om den är funktionellt avskild från byggnaden — eller med byggnadens 4 %/år-sats om den är integrerad. Bedöms från fall till fall.
 
-### På ekonomibyggnad
-
-- Inkomstskatt: inkomster räknas i NV.
-- Avskrivning av anläggningen enligt **byggnadsreglerna 4%/år** om den är avsedd att användas för byggnaden — eller enligt **inventarieregler** om den är avsedd att användas i näringsverksamheten.
-- Moms: full momslyft om all el levereras in på elnätet mot ersättning.
-
-### Skatteverkets ställningstagande dnr 131 44577-17/111
-
-Tre scenarios från Skatteverket:
-
-| Scenario | Leverans | Momslyft |
-|---|---|---|
-| All el levereras på elnätet mot ersättning | All ström för momspliktig verksamhet | 100% |
-| El levereras till både mangårdsbyggnad och ekonomibyggnad där momspliktig verksamhet bedrivs. Solcellerna på ekonomibyggnaden. Endast överskottet säljs. | El leverans till stadigvarande bostad är förbjuden | **DEL** av momsen — den som hör till ekonomibyggnaden |
-| Installerad på mangårdsbyggnad — el levereras enbart till mangårdsbyggnaden. Bara överskottet säljs. | El leverans till stadigvarande bostad | INGEN momslyft |
-
-### HFD-domen 2019
-
-Högsta förvaltningsdomstolens dom **2019-10-25, mål nr 6174-18, 6175-18 och 6177-18** rörde ingående moms på solcellsanläggningar. Med anledning av domen har Skatteverket sett över följande ställningstaganden:
-- **2018-03-01, dnr 202 90662-18/111**, Avdragsrätt för mervärdesskatt vid inköp och installation av en solcellsanläggning för mikroproduktion av el
-- **2017-12-20, dnr 202 492055-17/111**, Beskattningskonsekvenser för den som har en solcellsanläggning på sin jordbruksfastighet
-- **2017-12-20, dnr 202 492052-17/111**, Beskattningskonsekvenser för den som har en solcellsanläggning på sin villa eller fritidshus som är privatbostad
+För detaljer om momslyft-mekaniken, HFD 2019-domens innebörd, status på Skatteverkets ställningstaganden (dnr 131 44577-17/111 m.fl.), två-elabonnemang-kravet för grönt avdrag, 5 %-schablonens upphörande 2024-03-22, samt slopandet av 60-öres-skattereduktionen 2026-01-01 → se `lantbruks-moms.md` sektion "Solceller på lantbruk — moms".
 
 ### Energiskatt
 
@@ -127,7 +112,7 @@ Högsta förvaltningsdomstolens dom **2019-10-25, mål nr 6174-18, 6175-18 och 6
 - Om priset är **≥ taxeringsvärdet** → räknas som **köp**. Kapitalvinstberäkning krävs.
 - Om priset är **< taxeringsvärdet** → räknas som **gåva**. Ingen kapitalvinstberäkning.
 
-Gåvans värde = priset minskat med taxeringsvärdet **året före** överlåtelseåret.
+Gåvomomentets värde = **taxeringsvärdet** (eller marknadsvärdet) **året före** överlåtelseåret minus **vederlaget** (priset). När vederlaget är 0 är hela fastighetens taxeringsvärde gåva; när vederlaget är ≥ taxeringsvärdet är gåvomomentet 0 och hela överlåtelsen ses som köp. Stämpelskattens 85 %-gräns jämför vederlaget med taxeringsvärdet året före.
 
 ### Skattemässiga effekter
 
@@ -176,7 +161,7 @@ Sådana villkor får man **endast** i gåvo- eller testamentsavtal — inte i k�
 
 - Skogskonto-medel **kan stå kvar** även om fastigheten är såld eller bortskänkt.
 - Pengarna beskattas som inkomst av (oftast passiv) NV i den takt de tas ut, av den ursprunglige innehavaren.
-- För en pensionär är detta ofta **oförmånligt** (24.26% löneskatt istället för 10.21% egenavgifter).
+- För en pensionär är detta ofta **oförmånligt** (24,26 % särskild löneskatt enligt SLF, lag 1990:659, i stället för 10,21 % egenavgifter).
 - Lösning: ta ut alla skogskontopengar före gåva, eller överlåta skogskontot till mottagaren av hela lantbruksenheten (IL 21 kap, blankett N7).
 
 ### Köp eller arv? — Skatteverkets klassificering

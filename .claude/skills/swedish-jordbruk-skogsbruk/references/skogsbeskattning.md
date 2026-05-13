@@ -2,6 +2,20 @@
 
 Special rules for skogsbruk under **IL 21 kap** (Inkomstskattelagen 1999:1229). Skogsbeskattning has three distinct tools that overlap and interact: skogsavdrag, skogskonto, and (via betalningsplan) periodisering of avverkningsrätt-intäkter.
 
+## Skogsskattereformen 2026 — viktig översikt
+
+Riksdagen beslutade 25 februari 2026 om en sammanhängande reform av skogsbeskattningen (**prop. 2025/26:69, SkU18**), ikraft **1 april 2026**. Huvudpunkterna:
+
+| Förändring | Detalj |
+|---|---|
+| **Källskatt 15 % på skogskontoränta avskaffas** | Hela räntan sätts in på kontot; beskattas vid uttag som NV-intäkt. Se skogskonto-sektionen. |
+| **Naturvårdskonto NYTT** | Nytt uppskovsinstrument vid naturvårdsavtal — avdrag upp till **90 %** av naturvårdsavtalsersättningen. Insättning på särskilt bankkonto. Bokförs **R28 (insättning) / R27 (uttag)** — samma rutor som skogskonto. Första avdraget i deklaration 2027 (inkomstår 2026). |
+| **Ersättningsfond (IL 31 kap) — användningstid förlängd 3 → 10 år** | Stort lyft för lantbrukare med stor försäkringsersättning eller expropriation; mer tid att hitta ersättningstillgång. |
+| **Skogsavdrag utvidgat till EES** | Tidigare gällde IL 21 kap endast skogsmark i Sverige. Nu kan svenska skogsägare även göra skogsavdrag för skog inom EES-området under samma villkor. |
+| **Skatteverkets ställningstagande dnr 8-2883764 (2024-06-17)** | Kodifierar tolkningen efter HFD 2023 ref. 59 om rationaliseringsförvärv. Upphäver dnr 131-80453-13/111 (2013). Det gamla får tillämpas på förvärv före 1 oktober 2024. |
+
+Källor: Riksdagsbeslut 2026-02-25, prop. 2025/26:69, SkU18.
+
 ## Intäkternas karaktär — three categories
 
 The category determines how much of the income is *avdragsgrundande* (forming the base for skogsavdrag) and how much of it can be deposited on skogskonto.
@@ -130,10 +144,29 @@ Vid omarrondering: utgifter för lantmäteriförrättning som är ett led i yttr
 
 Fysisk person som förvärvar skog som ett led i jord- och skogsbrukets yttre rationalisering får under de **första fem åren** efter förvärvet dra av **100% av avdragsgrundande skogsintäkten** (i stället för 50%).
 
-Conditions (Skatteverket dnr 131 80453-13/111):
-- Den tidigare ägda fastigheten får inte redan vara en rationell brukningsenhet (gräns: 400 hektar produktiv skogsmark).
+#### HFD 2023 ref. 59 — VIDGAD TILLÄMPNING (mål 1087-23, dom 2023-12-28)
+
+Skatteverkets tidigare ställningstagande **dnr 131 80453-13/111** (2013) krävde att den ursprungliga brukningsenheten *inte* redan var rationell, vilket sattes som riktmärke vid t.ex. 400 ha produktiv skogsmark. **Det rättsläget gäller inte längre.**
+
+Genom HFD 2023 ref. 59 räcker det att tillköpet ger kostnadseffektivare maskin- och arbetsanvändning genom större areal — **oavsett om den ursprungliga brukningsenheten redan var stor**. Storskaliga sammanslagningar räknas också som rationalisering.
+
+#### Skatteverkets nya ställningstagande dnr 8-2883764 (2024-06-17)
+
+Skatteverket kodifierade tolkningen efter HFD 2023 ref. 59 i ett nytt ställningstagande som **upphäver dnr 131-80453-13/111** (2013). Nuvarande SKV-position:
+
+- Brukningsenhet definieras enligt **Skogsvårdslagen 12 §**
+- Brukningsenhet ska vara **≥ 400 hektar** efter förvärvet
+- Både ursprungligen ägda och tillköpta delarna måste utgöra **> 10 %** av den nya enheten
+- Helst samma kommun (eller god vägförbindelse)
+
+Övergångsregel: 2013-positionen får fortfarande tillämpas på **förvärv före 1 oktober 2024**. Förvärv därefter följer den nya tolkningen.
+
+Praktisk konsekvens: tillämpningsområdet för 100 %-regeln är betydligt bredare än äldre beskrivningar anger. Software bör inte automatiskt avvisa rationaliseringskvalifikation pga storlek på ursprungsfastighet — men kontrollera ≥ 400 ha och 10 %-proportionerna mot SKV-vägledningen.
+
+#### Övriga villkor (kvarstår oförändrade)
+
 - Det får inte vara för stort avstånd mellan fastigheterna (gräns: vägavstånd högst 3 mil).
-- Den tidigare ägda eller den förvärvade fastigheten ska öka arealen produktiv skogsmark med minst **10%**.
+- Den tidigare ägda eller den förvärvade fastigheten ska öka arealen produktiv skogsmark.
 
 NB: rationaliseringseffekten ökar bara *hastigheten* — det totala avdragsutrymmet (50% av anskaffningsvärdet) gäller fortfarande.
 
@@ -178,7 +211,7 @@ Skattekredit på upp till 10 år. Pengar sätts in på ett särskilt bankkonto, 
 
 1. **Skatteutjämning mellan år** — kapa toppinkomster för att jämna ut den progressiva statliga skatten.
 2. **Skattekredit** upp till 10 år (även utan progressivt utfall är skattekrediten värd ca 30%-marginalen × räntan).
-3. **Skatteskyddat sparande** — 15% källskatt på räntan i stället för 30% på vanlig bankränta.
+3. **Skatteskyddat sparande** — 15 % källskatt på räntan i stället för 30 % på vanlig bankränta. *Obs:* Denna källskatt **slopas 1 april 2026** (riksdagsbeslut hösten 2025); efter dess sätts hela räntan in på kontot och beskattas som NV vid uttag.
 
 ### Vem får sätta in?
 
@@ -229,15 +262,18 @@ Per beskattningsår, ett konto per skogsägare per bank. Skulle insättning ske 
 
 Däremot: olika beskattningsår kan ha **olika** skogskonton (max 10 samtidigt eftersom max 10 år).
 
-### Skogskontoräntan — specialbeskattning (källskatt)
+### Skogskontoräntan — specialbeskattning (källskatt) — SLOPAS 2026-04-01
 
-**15% källskatt** på räntan. Banken drar av och betalar in till Skatteverket direkt — räntan syns INTE i deklarationen och får inte räknas in i preliminärskatten.
+**Före 2026-04-01**: **15 % källskatt** på räntan. Banken drar av och betalar in till Skatteverket direkt — räntan syns INTE i deklarationen och får inte räknas in i preliminärskatten.
 
-Effektiv skatt på skogskontot är dock högre när uttag sker:
-- Vid uttag: hela beloppet (inklusive räntan, sedan banken redan dragit 15%) beskattas som inkomst av NV, alltså 0-60% beroende på age, marginalskatt, aktiv/passiv.
-- Exempel: marginalskatt + egenavgifter = 50%. Insatt 100 000 kr, ränta 1% = 1 000 kr. Källskatt 15% × 1 000 = 150 kr. Resterande 850 kr beskattas med 50% = 425 kr vid uttag. Total skatt på räntan: 575 kr = 57.5%.
+**Fr.o.m. 1 april 2026**: **Källskatten 15 % på skogskontoränta avskaffas.** Hela räntan sätts i stället in på kontot och beskattas som NV-inkomst när uttag görs (riksdagsbeslut hösten 2025 som del av paketet att förenkla räntebeskattning; ingår i Skogsskattereformen 2026 — se översikten överst i denna fil).
 
-Räntan vid skogskonto är dock **delvis skatteskyddat sparande** jämfört med 30% kapitalskatt på en vanlig bankränta (om man inte skulle behöva räntan i NV).
+Effektiv skatt på skogskontot (för pre-2026-04-01-räntor) är dock högre när uttag sker:
+- Vid uttag: hela beloppet (inklusive räntan, sedan banken redan dragit 15 %) beskattas som inkomst av NV, alltså 0–60 % beroende på ålder, marginalskatt, aktiv/passiv.
+- Exempel pre-reform: marginalskatt + egenavgifter = 50 %. Insatt 100 000 kr, ränta 1 % = 1 000 kr. Källskatt 15 % × 1 000 = 150 kr. Resterande 850 kr beskattas med 50 % = 425 kr vid uttag. Total skatt på räntan: 575 kr = 57,5 %.
+- Post-reform-exempel (uttag fr.o.m. 2026-04-01): samma ränta 1 000 kr, ingen källskatt — hela 1 000 kr beskattas vid uttag med 50 % = 500 kr.
+
+Räntan vid skogskonto är dock **delvis skatteskyddat sparande** (pre-reform) jämfört med 30 % kapitalskatt på en vanlig bankränta. Efter 2026-04-01 är det vanlig NV-beskattning utan källskattssteget — fortfarande lägre marginalskatt än vanlig kapital om uttag sker under brytpunkten.
 
 ### Uttagsregler
 
@@ -248,7 +284,7 @@ Räntan vid skogskonto är dock **delvis skatteskyddat sparande** jämfört med 
 
 ### Skogskonto vid fastighetsöverlåtelse
 
-- Vid försäljning: skogskontot finns kvar oberoende av att fastigheten sålts. Uttag deklareras som passiv NV (när annan aktiv NV saknas) — vilket kan ge **24.26% löneskatt** istället för 10.21% egenavgifter för pensionärer (oförmånligt).
+- Vid försäljning: skogskontot finns kvar oberoende av att fastigheten sålts. Uttag deklareras som passiv NV (när annan aktiv NV saknas) — vilket ger **24,26 % särskild löneskatt** (SLF, lag 1990:659 om särskild löneskatt på vissa förvärvsinkomster) i stället för 10,21 % egenavgifter för pensionärer (oförmånligt).
 - Vid arv/gåva av hela lantbruksenheten: mottagaren får **överta** skogskontot. Insättning förs vidare med samma 10-årsfrist. Mottagaren tar sedan upp uttag till beskattning. Blankett N7 anmäler övertagandet.
 - Skogskontot kan **inte** delas mellan flera mottagare vid arv eller gåva — det måste följa lantbruksenheten i sin helhet.
 - Vid delöverlåtelse (arealförvärv): övertaget belopp = (kontobehållning × mottagarens ägarandel × taxeringsvärde för övertagen skogsmark / taxeringsvärde för all skogsmark).
@@ -271,6 +307,27 @@ Om Skatteverket nekar avdrag (för att underskott uppstår eller belopp översti
 Skogskontobehållningen får räknas in i kapitalunderlaget för räntefördelning och expansionsfond — men bara till **50%** av behållningen (medan vanliga bankkonton räknas till 100%).
 
 **Implikation**: Att lägga upp skogspengar på ett likvidkonto i lantbruket är effektivare för räntefördelning än att låsa dem på skogskonto — men då förlorar man källskatten 15% och 10-årig skattekredit. Trade-off.
+
+## Naturvårdskonto (NYTT 2026)
+
+Ett nytt uppskovsinstrument införs **1 april 2026** genom **prop. 2025/26:69 (SkU18)**. Naturvårdskontot fungerar likt skogskontot men är specifikt avsett för **engångsersättningar enligt naturvårdsavtal** (frivilliga eller framtvingade naturskydd, biotopskydd, områdesskydd m.m.).
+
+### Huvudregler
+
+- **Avdragsbelopp**: upp till **90 %** av naturvårdsavtalsersättningen får sättas in på naturvårdskonto och dras av som kostnad i NV. (Att jämföra med skogskontots 60 % på avverkningsrätt / 40 % på leveransvirke.)
+- **Insättning på särskilt bankkonto** (naturvårdskonto), enligt liknande regler som skogskonto.
+- **Bokföring i NE-bilaga**: **R28 (insättning)** = samma ruta som skogskonto-insättning; **R27 (uttag)** = samma ruta som skogskonto-uttag. Naturvårdskonto och skogskonto delar alltså samma NE-rutor — kontot identifieras av bankens uppgifter.
+- **Källskatt**: ingen 15 %-källskatt (precis som skogskontot efter 2026-04-01-reformen, dvs samtidigt slopande).
+- **Användningstid**: liknande villkor som skogskonto — kontrollera mot Skatteverkets vägledning för slutgiltiga regler när de publiceras.
+
+### Första avdraget
+
+Naturvårdskontot är användbart fr.o.m. inkomstår 2026 — **första avdraget görs i deklaration 2027**.
+
+### Cross-references
+
+- För räntefördelnings kapitalunderlag — sannolikt samma 50 %-regel som skogskonto (latent skatt), men kontrollera när vägledning publiceras.
+- För N8-blanketten — preliminärt: ingen separat sektion, men kan komma att uppdateras.
 
 ## Lager av skogsprodukter
 
@@ -308,20 +365,22 @@ Egen sammanställning (deklarationsprogram BL SKATT, Visma, m.fl. inkluderar den
 - Yrkat skogsavdrag (max 50% av avdragsgrundande intäkten, eller 100% vid rationaliseringsförvärv)
 - Kvarvarande avdragsutrymme
 
-### Worked example (BSKA — Enar Gran)
+### BSKA-beräkning — strukturell
 
-Enar köpte sin skogsfastighet för 1 600 000 kr. Taxeringsvärde 1 100 000 kr, varav skogsbruksvärde 220 000 kr.
+```
+1. Anskaffningsvärde_skog = Köpeskilling × (Taxeringsvärde_skog / Taxeringsvärde_totalt)
+2. Avdragsutrymme = Anskaffningsvärde_skog × 0,50      # 0,25 för juridisk person
+3. Avdragsgrundande_skogsintäkt =
+     1,00 × Avverkningsuppdrag_likvid
+   + 0,60 × Leveransvirke_likvid
+   + 0,60 × Egenuttag_marknadsvärde
+   + 1,00 × Uttag_från_betalningsplan_på_tidigare_avverkningsrätt
+4. Maxavdrag_året = Avdragsgrundande × 0,50            # 1,00 vid rationaliseringsförvärv första 5 åren
+5. Faktiskt_avdrag = min(Maxavdrag_året, Avdragsutrymme_återstående, Lägsta_avdrag_15000)
+6. Avdragsutrymme_återstående -= Faktiskt_avdrag
+```
 
-Anskaffningsvärde för skog = 1 600 000 × 220 000 / 1 100 000 = **320 000 kr**.
-
-Avdragsutrymme = 320 000 × 50% = **160 000 kr**.
-
-Under året:
-- Avverkningsuppdrag 48 000 kr
-- Uttag från betalningsplan (tidigare avverkningsuppdrag) 42 000 kr
-- Total avdragsgrundande skogsintäkt = 48 000 + 42 000 = 90 000 kr
-
-Maxavdrag = 50% × 90 000 = **45 000 kr**.
+Räkneexempel (illustrativt): köp 2 400 000 kr av blandad lantbruksenhet, taxeringsvärde 1 500 000 kr varav skogsbruksvärde 450 000 kr → anskaffningsvärde_skog = 720 000 kr; avdragsutrymme = 360 000 kr. Avverkningsuppdrag 80 000 kr + leveransvirke 50 000 kr → 80 000 + 30 000 = 110 000 kr avdragsgrundande × 50 % = **55 000 kr maxavdrag**.
 
 Yrkat: 45 000 kr på N8 A1 → NE R25.
 

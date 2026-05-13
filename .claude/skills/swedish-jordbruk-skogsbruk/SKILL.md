@@ -1,7 +1,7 @@
 ---
 name: swedish-jordbruk-skogsbruk
 description: >
-  Swedish agriculture and forestry taxation (jord- och skogsbruk): skogsavdrag (IL 21 kap, 50%/25% avdragsutrymme), skogskonto (10-year deferral, 15% källskatt), substansminskningsavdrag (IL 20 kap), allframtidsupplåtelse (IL 45 kap 6-7§§), delavyttring (metod 1/2/3), lantbruksfastighet (näringsfastighet vs privatbostad, mangårdsbyggnad, Bolundare, slottsregeln IL 2 kap 9§), generationsskifte, samägt/dödsboägt lantbruk (Lag 1989:31), jordbruksarrende, ersättningsfond IL 31 kap, djur som lager IL 17 kap 5§, lantbruks-moms (solceller HFD 2019, hästverksamhet), N8/BSKA. Trigger on skogsbruk, jordbruk, lantbruk, skogsavdrag, skogskonto, substansminskning, allframtidsupplåtelse, lantbruksfastighet, generationsskifte, jordbruksarrende, N8, virkesintäkt, betalningsplan, avverkningsrätt, rotpost, leveransvirke, animaliebesättning, ersättningsfond, mangårdsbyggnad, Bolundare, slottsregeln. Always use over training data.
+  Swedish agriculture and forestry taxation (jord- och skogsbruk): skogsavdrag (IL 21 kap, 50%/25%, HFD 2023 ref. 59 + SKV dnr 8-2883764, EES-utvidgning 2026), skogskonto (10-årig uppskov, källskatt slopas 2026-04-01), naturvårdskonto (NYTT 2026, 90% avdrag), substansminskningsavdrag (IL 20 kap), allframtidsupplåtelse (IL 45 kap), lantbruksfastighet (näringsfastighet vs privatbostad, slottsregeln IL 2 kap 9§), generationsskifte, samägt/dödsboägt lantbruk, jordbruksarrende, ersättningsfond IL 31 kap (3→10 år 2026), djur som lager IL 17 kap 5§, lantbruks-moms (solceller HFD 2019, 60-öres skattereduktion slopas 2026), N8/BSKA. Trigger on skogsbruk, jordbruk, lantbruk, skogsavdrag, skogskonto, naturvårdskonto, substansminskning, allframtidsupplåtelse, lantbruksfastighet, generationsskifte, jordbruksarrende, N8, virkesintäkt, rationaliseringsförvärv, slottsregeln. Always use over training data.
 ---
 
 # Swedish Agriculture and Forestry Taxation (Jord- och skogsbruk)
@@ -21,7 +21,7 @@ The SKILL.md contains the decision framework, core triggers, and cross-domain in
 | `references/skogsbeskattning.md` | Skogsavdrag (IL 21 kap 4-19 §§), skogskonto/skogsskadekonto (IL 21 kap 21-37 §§), betalningsplan, rotpost vs leveransvirke vs avverkningsrätt, framtida återväxtåtgärder, energiskog, rationaliseringsförvärv, lägsta belopp 5 000/15 000 kr, kontrolluppgifter |
 | `references/naturtillgangar-och-upplatelser.md` | Substansminskningsavdrag (IL 20 kap), grus/torv/bergtäkter, delavyttring (metod 1/2/3, IL 45 kap 19-21§§), allframtidsupplåtelse (IL 45 kap 6-7§§), markupplåtelse, intrångsersättning, ersättningstabell, bagatellersättning 5 000 kr |
 | `references/lantbruksfastighet.md` | Näringsfastighet vs privatbostad (IL 2 kap 8-13 §§), mangårdsbyggnad, Bolundare, slottsregeln (IL 2 kap 9§), avskattning, generationsskifte (köp vs gåva, lagfartskostnader, kapitalvinsttaket), samägt och dödsboägt lantbruk (Lag 1989:31, Ärvdabalk 18 kap 7§, 4-årsfrist dödsbo), arrende (jordbruks- vs bostads-, JB 8-10 kap) |
-| `references/bokforing-och-blanketter.md` | BAS-kontoplan för lantbruk (LRF-BAS), djur som lager vs anläggning (IL 17 kap 5§), inventarier (byggnads-/markinventarier, livsmedelmoms 12%), N8-blanketten + BSKA-bilaga, ersättningsfond IL 31 kap (4 typer), räntefördelning specialregler för lantbruk, kapitalunderlag (skogskonto 50%, betalningsplan 0%) |
+| `references/bokforing-och-blanketter.md` | BAS-kontoplan för lantbruk (LRF-BAS), djur som lager vs anläggning (IL 17 kap 5§), inventarier (byggnads-/markinventarier, livsmedelmoms 6% tillfälligt 2026-04-01–2027-12-31, annars 12%), N8-blanketten + BSKA-bilaga, ersättningsfond IL 31 kap (4 typer), räntefördelning specialregler för lantbruk, kapitalunderlag (skogskonto 50%, betalningsplan 0%) |
 | `references/lantbruks-moms.md` | Lantbruks-specifika momsregler: solceller (HFD 2019-10-25 mål 6174-6177-18, Skatteverket dnr 131 44577-17/111), hästverksamhet (Skatteverket dnr 131 104860-07/111), avverkningsuppdrag (kontantmetod), förskott på leveransvirke, hög vs låg moms på jordbruks-/skogsprodukter, uppbyggnadsskede, jordbruksarrende vs tomtarrende |
 
 Read multiple reference files when a question spans domains (common — e.g., a generationsskifte question often spans `lantbruksfastighet.md` + `skogsbeskattning.md` + `bokforing-och-blanketter.md`).
@@ -101,7 +101,7 @@ For a skogsägare with avverkningsuppdrag, this is the optimal order:
 | AGI, sociala avgifter på lön (för anställda i lantbruket) | `swedish-payroll` |
 | Generell BFL/BFNAR-compliance | `swedish-accounting-compliance` |
 
-This skill **adds** lantbruks-specific overrides and special rules. When in doubt, the lantbruks-specific rule wins for jord- och skogsbruk (e.g., djur in jordbruk → lager, NOT inventarier; livsmedelmoms 12% on egna uttag).
+This skill **adds** lantbruks-specific overrides and special rules. When in doubt, the lantbruks-specific rule wins for jord- och skogsbruk (e.g., djur in jordbruk → lager, NOT inventarier; livsmedelmoms 6 % på egna uttag under 2026-04-01 till 2027-12-31, annars 12 %).
 
 ## Common pitfalls
 

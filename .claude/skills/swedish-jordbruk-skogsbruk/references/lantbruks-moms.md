@@ -26,29 +26,31 @@ Skogen ger **råvaror** som inte är livsmedel → **25% moms** på alla skogspr
 
 ### Jordbruksprodukter
 
-Jordbruksprodukter avsedda att förtäras av människor → **12% livsmedelmoms**.
+Jordbruksprodukter avsedda att förtäras av människor → **6 % livsmedelmoms** (tillfälligt sänkt från 12 % under perioden **1 april 2026 – 31 december 2027** enligt prop. 2025/26:55). Övergångsregel: leveransdatum styr satsen, inte fakturadatum.
 
-| Produkt | Moms när |
-|---|---|
-| Levande djur (slakt- och livdjur), när säljs till slakteriet | **25%** (djuren är ännu inte livsmedel) |
-| Kött (när köttet säljs på gården eller direkt till konsument) | **12%** |
-| Mjölk (oavsett om till mejeriet eller direkt till konsument) | **12%** |
-| Spannmål, frukt, rotfrukter, grönsaker — avsedda att förtäras av människor | **12%** |
-| Spannmål, frukt etc. avsedd för djurfoder | **25%** |
-| Energigrödor som ska användas för energiproduktion (men inte föda) | **25%** |
-| Fisk och skaldjur | **12%** (alltid livsmedel) |
-| Bär, frukter och grönsaker — själv-plock | **12%** (livsmedel) |
-| Sädeskärvar för utfodring av fåglar | **25%** (inte livsmedel för människor) |
+| Produkt | Moms 2026-04-01 → 2027-12-31 | Moms före 2026-04-01 och fr.o.m. 2028-01-01 |
+|---|---|---|
+| Levande djur (slakt- och livdjur), när säljs till slakteriet | **25 %** (djuren är ännu inte livsmedel) | 25 % |
+| Kött (på gården eller direkt till konsument) | **6 %** | 12 % |
+| Mjölk (oavsett mottagare) | **6 %** | 12 % |
+| Spannmål, frukt, rotfrukter, grönsaker — avsedda att förtäras av människor | **6 %** | 12 % |
+| Spannmål, frukt etc. avsedd för djurfoder | **25 %** | 25 % |
+| Energigrödor för energiproduktion | **25 %** | 25 % |
+| Fisk och skaldjur (alltid livsmedel) | **6 %** | 12 % |
+| Bär, frukter, grönsaker — själv-plock (livsmedel) | **6 %** | 12 % |
+| Sädeskärvar för utfodring av fåglar (inte människoföda) | **25 %** | 25 % |
 
 ### Direktförsäljning till konsumenter
 
-All försäljning av livsmedel direkt till konsumenter (gårdsbutik, granne eller andra) → **12%**, oavsett om man säljer en gris/halv ko/kvarn.
+All försäljning av livsmedel direkt till konsumenter (gårdsbutik, granne, marknad, REKO-ring etc.) → **6 % under perioden 2026-04-01 till 2027-12-31** (annars 12 %), oavsett om man säljer en gris, halv ko eller kvarn.
 
-Det du säljer betraktas då alltid som livsmedel och inte som råvaror oavsett om det är spannmål, mjöl, kött eller livande mjölk.
+Det du säljer betraktas då som livsmedel, inte råvara — oavsett om det är spannmål, mjöl, kött eller mjölk.
 
 ### Servering / catering
 
-12% moms på serveringstjänster (utom på vin, sprit och starköl, som är 25%).
+Servering på plats (restaurang/servering, oavsett tillagat eller utlevererat) behåller **12 %** även under sänkningsperioden — den tillfälliga 6 %-sänkningen gäller **inte servering**. Vin, sprit och starköl: 25 % som vanligt.
+
+**Avhämtning / take-away** behandlas som livsmedelsförsäljning → **6 %** under sänkningsperioden (annars 12 %). Gränsdragningen mellan servering och avhämtning blir därför viktig att kunna styrka.
 
 ### Egna uttag (uttagsmoms)
 
@@ -56,18 +58,29 @@ Om du tar ut tjänster eller varor för egen del ur lantbruket:
 - Uttag av **varor** → momsen beräknas på **inköpspriset** (eller självkostnadspriset om inget inköpspris finns).
 - Uttag av **tjänster** → momsen beräknas på kostnaden för att tillhandahålla tjänsten. Om en varas marknadsvärde är lägre än inköpspriset används marknadsvärdet vid uttagsmomsberäkningen.
 - I inkomstdeklarationen värderas uttagen till **marknadspris**.
-- Uttag av livsmedel från lantbruket till dig själv, din familj och närstående → **12% moms** (låg moms).
+- Uttag av livsmedel från lantbruket till dig själv, din familj och närstående → **6 % moms under 2026-04-01 till 2027-12-31** (annars 12 %).
 
-**Worked example (uttag kött)**:
-- Lisbeth slaktar en 30 månader gammal Belted Galloway-stut, slaktvikt 300 kg, för eget bruk.
-- Hon tar upp uttaget i inkomstdeklarationen till marknadsvärde 30 kr/kg inkl moms.
-- Moms 12% (baklänges 10.71%) → 30 × 10.71% = **3.21 kr** moms per kg.
-- Förmånsvärde exkl moms = 26.79 kr/kg → 300 × 26.79 = **8 037 kr** förmånsvärde.
+**Räkneexempel (uttag kött, slaktnöt självrekryterande)**:
 
-För moms (utgående):
-- Marknadsvärdet räknas inte (utan inköpsvärdet eller annan jämförelse). Stuten var född på gården → inget inköpspris.
-- Skatteverkets djurvärden: produktionskostnad gödnöt 10 kr/kg levande vikt. Levande vikt = 2 × slaktvikt = 600 kg. Värde 600 × 10 = 6 000 kr.
-- Utgående moms 12% × 6 000 = **720 kr**.
+Uttag av eget slaktat nötkött, slaktvikt 300 kg, för privat konsumtion.
+
+```
+inkomstdeklaration (förmånsvärde):
+  marknadsvärde_inkl_moms = 30 kr/kg     # exempelpris
+  moms_andel (6 % baklänges) = 6 / 106 = 5,66 %
+  förmånsvärde_exkl_moms = 30 × (1 - 0,0566) ≈ 28,30 kr/kg
+  totalt_förmånsvärde = 300 × 28,30 = 8 490 kr
+
+uttagsmoms (utgående moms):
+  # marknadsvärde används INTE — använd produktionskostnad enligt SKVFS
+  # Slaktnöt självrekryterande SKVFS 2025:27: 21,80 kr/kg levande vikt
+  levande_vikt = 2 × slaktvikt = 600 kg
+  uttagsvärde = 600 × 21,80 = 13 080 kr
+  utgående_moms = 13 080 × 0,06 = 785 kr        # 6 % under 2026-04-01 → 2027-12-31
+  # (12 % före 2026-04-01 och fr.o.m. 2028-01-01: 13 080 × 0,12 = 1 570 kr)
+```
+
+Notera asymmetrin: marknadspris styr **inkomstdeklarationen** (förmånsvärde), medan produktionsutgift från SKVFS styr **uttagsmomsen**. Det är vanligen mer förmånligt för näringsidkaren än ett enhetligt marknadsvärde.
 
 ## Att lyfta moms — undantag
 
@@ -119,27 +132,68 @@ Skatteverkets ställningstagande **131 44577-17/111**:
 
 Bedömningen blir densamma om installationen görs på ekonomibyggnaden eller på annan plats på jordbruksfastigheten för att enbart leverera el till mangårdsbyggnaden.
 
-### HFD-domen 2019
+### HFD-domen 2019 — rättsläge för momslyft
 
-**Högsta förvaltningsdomstolens dom 2019-10-25, mål nr 6174-18, 6175-18 och 6177-18** rörde ingående moms på solcellsanläggningar.
+**HFD 2019-10-25, mål nr 6174-18, 6175-18 och 6177-18** klargjorde att även en mycket liten momspliktig användning (försäljning av överskottsel) kan ge rätt till momslyft på en proportionerlig del av installationen.
 
-Domen klargjorde att även en mycket liten momspliktig användning (försäljning av överskottsel) kan ge rätt till momslyft på en del av installationen.
+Bedömningen kvarstår oförändrad enligt Skatteverkets nuvarande vägledning (Rättslig vägledning utg. 2024.5, dok 394014 — *Beskattningskonsekvenser för den som har en solcellsanläggning på sin jordbruksfastighet*), som **ersätter** tidigare ställningstaganden:
+- 2018-03-01, dnr 202 90662-18/111 (avdragsrätt vid inköp och installation)
+- 2017-12-20, dnr 202 492055-17/111 (jordbruksfastighet)
+- 2017-12-20, dnr 202 492052-17/111 (villa/fritidshus som privatbostad)
+- 2020-11-10, dnr 8-112186 (samma rubrik, äldre version)
 
-Med anledning av domen kommer Skatteverket att se över följande ställningstaganden:
-- **2018-03-01, dnr 202 90662-18/111**, Avdragsrätt för mervärdesskatt vid inköp och installation av en solcellsanläggning för mikroproduktion av el
-- **2017-12-20, dnr 202 492055-17/111**, Beskattningskonsekvenser för den som har en solcellsanläggning på sin jordbruksfastighet
-- **2017-12-20, dnr 202 492052-17/111**, Beskattningskonsekvenser för den som har en solcellsanläggning på sin villa eller fritidshus som är privatbostad
+**ML 1994:200 → ML 2023:200** trädde ikraft 1 juli 2023. Gamla paragrafhänvisningar i ovan ställningstaganden är inaktuella men den rättsliga bedömningen är oförändrad.
+
+### Grönt avdrag på lantbruksfastighet — två elabonnemang krävs
+
+För att privatbostadsdelen ska få **skattereduktion för grön teknik** (grönt avdrag) på en solcellsinstallation måste Skatteverket kunna säkerställa att den egenproducerade elen **i princip endast** kommer småhuset (mangårdsbyggnaden) tillgodo.
+
+**Praktiska kravet (Skatteverket fr.o.m. 2024-03-22)**: **två separata elabonnemang/elmätare** krävs på fastigheten — ett för småhuset, ett för ekonomibyggnad/näringsdelen. Solcellsanläggningen ska vara ansluten till småhusets abonnemang.
+
+Bakgrund: tidigare tillämpade Skatteverket en **schablon på 5 %** — om högst 5 % av producerad el bedömdes "spilla över" till annan byggnad kunde grönt avdrag ändå medges. Denna schablon **upphörde 2024-03-22**. Nuvarande krav är fysisk separation av elnäten.
+
+Konsekvens för typsituationer:
+
+| Scenario | Grönt avdrag möjligt? |
+|---|---|
+| Solceller på småhus + småhus har eget elabonnemang separat från ekonomibyggnad/stall | **JA** |
+| Solceller på småhus, gemensamt elabonnemang för småhus + hönsstall (elvärme i stallet) | **NEJ** — utan separat mätning antas el "spilla över" till näringsdelen |
+| Solceller på ekonomibyggnad, levererar bara till näringsverksamhet | Ingen grönt avdrag (näringsfastighet), men momslyft enligt HFD 2019 |
+| Solceller med viss leverans till båda byggnader | Proportionerligt momslyft för näringsdelen; **inget grönt avdrag för småhusdelen** utan separat mätning |
 
 ### Energiskatt
 
 - Toppeffekt < **255 kW** (motsvarar ungefär 30 normala villor) och ingen el överförs till elnätet → ingen energiskatt.
 - All el som överförs till koncessionspliktiga elnätet → energiskatt ska betalas. Det är dock i regel köparen av den el som överförs till det koncessionspliktiga elnätet som ska redovisa energiskatten på denna del.
 
+### Skattereduktion för såld förnybar el — SLOPAS 2026-01-01
+
+Den s.k. **60-öres-regeln** (skattereduktion för mikroproduktion av förnybar el, max 18 000 kr/år vid utbetalning för upp till 30 000 kWh) **avskaffas 1 januari 2026** (riksdagsbeslut SkU17 2024/25, prop. 2024/25:109).
+
+Praktisk effekt för lantbruk med solcellsanläggning som säljer överskott:
+- Tidigare: 60 öre/kWh skattereduktion på upp till 30 000 kWh sålda → max 18 000 kr/år
+- 2026 och framåt: 0 kr — endast spotpris från elhandelsföretaget + eventuell elcertifikat-/ursprungsgaranti-ersättning
+- Övriga skatteregler (moms enligt tabellerna ovan, inkomstbeskattning som NV om monterat på näringsbyggnad) gäller fortsatt
+
+### Grönt avdrag — sats och tak
+
+Subventionsgrad (lagstadgad):
+- Före 2025-07-01: **20 %** av arbets-/materialkostnad
+- Fr.o.m. 2025-07-01: **15 %** av arbets-/materialkostnad
+
+Tak: max **50 000 kr/år** per person i grönt avdrag (kombinerat för alla grön-teknik-installationer).
+
+De effektiva procentsatser som ofta citeras (**19,4 % före / 14,55 % efter**) uppstår när bara 97 % av en typisk faktura räknas som kvalificerad — 20 % × 97 % = 19,4 % och 15 % × 97 % = 14,55 %. Detta är effektiva fakturareduktioner, inte lagstadgad sats. Skatteverket har också (2024-08) klargjort att **växelriktare** räknas till de 15 %-kvalificerade kostnaderna, inte separat högre sats som vissa leverantörer marknadsförde.
+
+Avdraget gäller **bara privatpersoner**, inte näringsverksamhet. För **näringsfastighet** finns inget grönt avdrag — istället sker momslyft (per HFD 2019 och dnr 131 44577-17/111) och NV-avdrag för anskaffningen som inventarium eller byggnadsinventarium.
+
+Lantbrukare med privatbostadsdel av lantbruksfastighet kan utnyttja grönt avdrag *för den privata delen* — men endast om kravet på två elabonnemang ovan är uppfyllt.
+
 ## Förskott på leveransvirke — moms vs inkomstskatt-asymmetri
 
 När du får förskott för virke som du varken levererat eller fått inmätt:
 - **Inkomstskatt**: Du tar upp förskottet som en **skuld**, ej intäkt. Du behöver alltså inte skatta för beloppet förrän du levererar virket eller får det inmätt.
-- **Moms**: Du ska däremot redovisa **moms på det**, om den som har betalat ut förskottet har specificerat moms på det kvitto eller den faktura. Det räknas nämligen som förskott på en **beställd vara**, trots att det egentligen inte är en bestämd vara.
+- **Moms**: Du ska däremot redovisa **moms på det** om den som har betalat ut förskottet har specificerat moms på kvittot eller fakturan. Skattskyldighet vid förskott uppkommer enligt momslagen (ML 2023:200, 7 kap.) vid leverans av "**bestämd och beställd vara**" — i skogskontexten är varan *beställd* (avtal med virkesköparen finns) även om volymen/kvaliteten inte är *bestämd* förrän vid avverkning/inmätning. När säljaren har angett moms på fakturan har Skatteverkets praxis varit att betrakta omständigheterna som tillräckligt identifierade för att momsen ska redovisas direkt vid förskottet.
 - **Skogsavdrag/skogskonto**: Förskottet är **inte underlag** för skogsavdrag och inte heller underlag för insättning på skogskonto.
 
 Denna asymmetri mellan moms (omedelbar) och inkomstskatt (väntar tills inmätning) är en specialfall som måste hanteras manuellt i bokföringsprogram.
