@@ -62,18 +62,18 @@ The order matters: avskrivningar reduce result, then räntefördelning operates 
 
 ## Core rates and thresholds (verify annually)
 
-### Egenavgifter (inkomstår 2025)
+### Egenavgifter (inkomstår 2025/2026, oförändrade procentsatser)
 | Group | Rate |
 |---|---|
-| Active, 7 karensdagar (standard) | **28,97%** |
+| Active, 7 karensdagar (standard) | **28,97 %** |
 | Active, 1 karensdag | slightly higher |
 | Active, 90 karensdagar | slightly lower |
-| Passive (SLP) | **24,26%** |
-| Pensionär (active or passive, fyllt 65 vid årets ingång eller hel pension hela året) | **10,21%** |
-| Född 1937 eller tidigare | **0%** |
+| Passive (SLP) | **24,26 %** |
+| Pensionär (aktiv eller passiv, året efter pensionsåldersgränsen — 66 år 2025, 67 år 2026) | **10,21 %** |
+| Född 1937 eller tidigare | **0 %** |
 
-Generell nedsättning 7,5% on belopp 40 001 – 200 000 kr (max 15 000 kr/year), automatic.
-Regional nedsättning (Norrlands inland stödområde) 10% on max 180 000 kr (max 18 000 kr/year).
+**Generell nedsättning** 7,5 % av hela avgiftsunderlaget, max 15 000 kr/år. Förutsättning: aktiv NV + underlag > 40 000 kr (40 000-gränsen är en tröskel, inte ett avdragsbelopp — vid underlag 40 001 kr utgår nedsättning på *hela* underlaget). Beräknas automatiskt av Skatteverket.
+Regional nedsättning (Norrlands inland stödområde) 10 % på underlag upp till 180 000 kr (max 18 000 kr/år).
 
 ### Räntefördelningsräntor (anchored to SLR Nov 30 prior year)
 | Type | Formula | 2025 | 2026 |
@@ -110,7 +110,7 @@ Gränsbelopp (2025+, efter prop. 2024/25:1):
 | Lägsta PGI (0,423 PBB) | 24 870 kr | 25 042 kr |
 | Lägsta SGI (0,24 PBB) | 14 112 kr | 14 208 kr |
 | Skiktgräns statlig skatt | 625 800 kr | 643 000 kr |
-| Brytpunkt statlig skatt (under pensionsåldersgränsen) | ~643 100 kr | ~660 400 kr |
+| Brytpunkt statlig skatt (under pensionsåldersgränsen) | 643 100 kr | 660 400 kr |
 | Max SGI (10 PBB) | 588 000 kr | 592 000 kr |
 | Max PGI (7,5 IBB) | 604 500 kr | 625 500 kr |
 | Avgiftstak (8,07 × IBB) | 650 442 kr | 673 038 kr |
