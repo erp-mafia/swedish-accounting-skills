@@ -94,7 +94,7 @@ AB can defer up to **25%** of skattemässigt resultat for up to 6 years.
 
 Entry: Debit 8811 / Credit 21xx (avsättning). Debit 21xx / Credit 8819 (återföring).
 
-**Enskild firma**: 30% periodiseringsfond, handled ONLY in NE-bilaga (R29/R30), NEVER booked.
+**Enskild firma**: 30% periodiseringsfond, handled ONLY in NE-bilaga (R34 avsättning / R32 återföring), NEVER booked.
 
 ### Överavskrivningar
 

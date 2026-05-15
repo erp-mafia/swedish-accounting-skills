@@ -195,11 +195,12 @@ Always check Skatteverket's current technical documentation. Their APIs change. 
 ## 8. ROT and RUT
 
 ### ROT-avdrag (2026)
-- 30% of arbetskostnad (not material)
-- Max 50 000 kr per person per year
+- 30% of arbetskostnad (not material) from 2026-01-01
+- Max 50 000 kr per person per year (2026)
 - Only for privatpersoner who own the bostad
 - Applies to: reparation, underhåll, om- och tillbyggnad
 - Filing: via Skatteverket's system, contractor submits begäran
+- Temporary 50% rate applied **12 May – 31 December 2025** (prop. 2024/25:130); reverted to 30% at 2026-01-01. See `changes-2025-2026.md` for the period-specific cap.
 
 ### RUT-avdrag (2026)
 - 50% of arbetskostnad
