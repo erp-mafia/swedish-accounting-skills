@@ -138,11 +138,13 @@ För allframtidsupplåtelse finns bara **en** metod (motsvarande metod 2 vid del
 
 ### Bagatellersättningar (IL 45 kap 24§)
 
-För att inte små belopp ska beskattas: schablonmässigt **omkostnadsbelopp 5 000 kr per år** får dras av, oavsett hur många upplåtelser man gjort under året. Frivillig metod.
+För att inte små belopp ska beskattas: schablonmässigt **omkostnadsbelopp 12 000 kr per år** (höjt från 5 000 kr fr.o.m. 2024-01-01) får dras av, oavsett hur många upplåtelser man gjort under året. Frivillig metod.
 
 **Begränsningar**:
-- Schablonen 5 000 kr får inte överstiga ersättningen — inte avdragsgill förlust.
+- Schablonen 12 000 kr får inte överstiga ersättningen — inte avdragsgill förlust.
 - Gäller bara inkomster som **kapitalvinstredovisas**, inte inkomster som tas upp i näringsverksamheten.
+
+Den separata skattefrihetsgränsen för kontant engångsersättning vid allframtidsupplåtelse (IL 45 kap 5§) höjdes samtidigt från 5 000 kr till **42 000 kr** per år.
 
 ### Begränsad tid — då INTE kapitalvinst
 

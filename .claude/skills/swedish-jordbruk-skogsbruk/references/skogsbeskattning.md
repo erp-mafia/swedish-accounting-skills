@@ -10,7 +10,7 @@ Riksdagen beslutade 25 februari 2026 om en sammanhängande reform av skogsbeskat
 |---|---|
 | **Källskatt 15 % på skogskontoränta avskaffas** | Hela räntan sätts in på kontot; beskattas vid uttag som NV-intäkt. Se skogskonto-sektionen. |
 | **Naturvårdskonto NYTT** | Nytt uppskovsinstrument vid naturvårdsavtal — avdrag upp till **90 %** av naturvårdsavtalsersättningen. Insättning på särskilt bankkonto. Bokförs **R28 (insättning) / R27 (uttag)** — samma rutor som skogskonto. Första avdraget i deklaration 2027 (inkomstår 2026). |
-| **Ersättningsfond (IL 31 kap) — användningstid förlängd 3 → 10 år** | Stort lyft för lantbrukare med stor försäkringsersättning eller expropriation; mer tid att hitta ersättningstillgång. |
+| **Ny ersättningsfond för naturvårdsmark (10 år)** | Reformen inför en *ny* fondtyp, ersättningsfond för naturvårdsmark, med 10 års användningstid. Övriga ersättningsfonder (inventarier, byggnader/markanläggning, mark, djurlager) behåller sin 3-åriga frist (förlängningsbar till 6 år via dispens). |
 | **Skogsavdrag utvidgat till EES** | Tidigare gällde IL 21 kap endast skogsmark i Sverige. Nu kan svenska skogsägare även göra skogsavdrag för skog inom EES-området under samma villkor. |
 | **Skatteverkets ställningstagande dnr 8-2883764 (2024-06-17)** | Kodifierar tolkningen efter HFD 2023 ref. 59 om rationaliseringsförvärv. Upphäver dnr 131-80453-13/111 (2013). Det gamla får tillämpas på förvärv före 1 oktober 2024. |
 
@@ -142,7 +142,7 @@ Vid omarrondering: utgifter för lantmäteriförrättning som är ett led i yttr
 
 ### Rationaliseringsförvärv (IL 21 kap 10§)
 
-Fysisk person som förvärvar skog som ett led i jord- och skogsbrukets yttre rationalisering får under de **första fem åren** efter förvärvet dra av **100% av avdragsgrundande skogsintäkten** (i stället för 50%).
+Fysisk person som förvärvar skog som ett led i jord- och skogsbrukets yttre rationalisering får under **förvärvsåret och de fem följande kalenderåren** (totalt sex år) dra av **100% av avdragsgrundande skogsintäkten** (i stället för 50%).
 
 #### HFD 2023 ref. 59 — VIDGAD TILLÄMPNING (mål 1087-23, dom 2023-12-28)
 
@@ -154,14 +154,13 @@ Genom HFD 2023 ref. 59 räcker det att tillköpet ger kostnadseffektivare maskin
 
 Skatteverket kodifierade tolkningen efter HFD 2023 ref. 59 i ett nytt ställningstagande som **upphäver dnr 131-80453-13/111** (2013). Nuvarande SKV-position:
 
-- Brukningsenhet definieras enligt **Skogsvårdslagen 12 §**
-- Brukningsenhet ska vara **≥ 400 hektar** efter förvärvet
-- Både ursprungligen ägda och tillköpta delarna måste utgöra **> 10 %** av den nya enheten
-- Helst samma kommun (eller god vägförbindelse)
+- Brukningsenhet definieras enligt **Skogsvårdslagen 12 §** (inte längre en fast hektargräns)
+- Bedömningen görs individuellt: ger tillköpet en kostnadseffektivare brukningsenhet? Den tidigare fasta gränsen "≥ 400 hektar / redan rationell" från 2013-ställningstagandet är **slopad** — den hörde till den upphävda positionen, inte den nuvarande.
+- Tillköpet ska normalt avse samma brukningsenhet och ägas i samma proportion; helst samma kommun eller med god vägförbindelse
 
 Övergångsregel: 2013-positionen får fortfarande tillämpas på **förvärv före 1 oktober 2024**. Förvärv därefter följer den nya tolkningen.
 
-Praktisk konsekvens: tillämpningsområdet för 100 %-regeln är betydligt bredare än äldre beskrivningar anger. Software bör inte automatiskt avvisa rationaliseringskvalifikation pga storlek på ursprungsfastighet — men kontrollera ≥ 400 ha och 10 %-proportionerna mot SKV-vägledningen.
+Praktisk konsekvens: tillämpningsområdet för 100 %-regeln är betydligt bredare än äldre beskrivningar anger. Software bör inte automatiskt avvisa rationaliseringskvalifikation pga storlek på ursprungsfastighet — bedömningen är numera kvalitativ (ger tillköpet en kostnadseffektivare brukningsenhet?), inte en fast hektargräns. Kontrollera mot aktuell SKV-vägledning.
 
 #### Övriga villkor (kvarstår oförändrade)
 
@@ -375,7 +374,7 @@ Egen sammanställning (deklarationsprogram BL SKATT, Visma, m.fl. inkluderar den
    + 0,60 × Leveransvirke_likvid
    + 0,60 × Egenuttag_marknadsvärde
    + 1,00 × Uttag_från_betalningsplan_på_tidigare_avverkningsrätt
-4. Maxavdrag_året = Avdragsgrundande × 0,50            # 1,00 vid rationaliseringsförvärv första 5 åren
+4. Maxavdrag_året = Avdragsgrundande × 0,50            # 1,00 vid rationaliseringsförvärv (förvärvsåret + 5 år)
 5. Faktiskt_avdrag = min(Maxavdrag_året, Avdragsutrymme_återstående, Lägsta_avdrag_15000)
 6. Avdragsutrymme_återstående -= Faktiskt_avdrag
 ```

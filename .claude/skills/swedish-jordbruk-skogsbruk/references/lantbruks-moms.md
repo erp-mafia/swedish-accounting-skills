@@ -102,6 +102,8 @@ För att du ska få lyfta momsen på en utgift måste momsen finnas angiven i kr
 
 Hästhållning ingår **inte** automatiskt i näringsverksamheten, även om hästen eller hästarna finns på lantbruksfastigheten. Skatteverket bedömer **vinstsyfte** för hästverksamheten separat.
 
+**Utveckling 2024**: HFD slog 2024 fast att tävling med trav-/galopphäst mot **garanterad startpeng** utgör ekonomisk verksamhet, och Skatteverket har sett över sitt ställningstagande. En trav-/galoppverksamhet med betydande garanterade startpengar kan därmed numera vara momspliktig även om den tidigare hade bedömts som hobby. Läs de äldre ställningstagandena nedan mot den bakgrunden.
+
 Räcker det inte (verksamheten räknas som **privat**), kan företaget inte få lyfta moms på den del av verksamheten som hör till privathästeriet, varken på anskaffningar eller löpande utgifter. Inte heller på inredning och reparationer i lantbrukets ekonomibyggnader som används för den privata hästhållningen.
 
 **Skatteverkets ställningstaganden**:
@@ -134,7 +136,7 @@ Bedömningen blir densamma om installationen görs på ekonomibyggnaden eller p�
 
 ### HFD-domen 2019 — rättsläge för momslyft
 
-**HFD 2019-10-25, mål nr 6174-18, 6175-18 och 6177-18** klargjorde att även en mycket liten momspliktig användning (försäljning av överskottsel) kan ge rätt till momslyft på en proportionerlig del av installationen.
+**HFD 2019 ref. 50** (HFD 2019-10-25, mål nr 6174-18, 6175-18 och 6177-18) klargjorde att även en mycket liten momspliktig användning (försäljning av överskottsel) kan ge rätt till momslyft på en proportionerlig del av installationen. Målet gällde en bostadsrättsförening; principen tillämpas analogt på solcellsanläggningar på lantbruksfastighet.
 
 Bedömningen kvarstår oförändrad enligt Skatteverkets nuvarande vägledning (Rättslig vägledning utg. 2024.5, dok 394014 — *Beskattningskonsekvenser för den som har en solcellsanläggning på sin jordbruksfastighet*), som **ersätter** tidigare ställningstaganden:
 - 2018-03-01, dnr 202 90662-18/111 (avdragsrätt vid inköp och installation)
@@ -163,7 +165,7 @@ Konsekvens för typsituationer:
 
 ### Energiskatt
 
-- Toppeffekt < **255 kW** (motsvarar ungefär 30 normala villor) och ingen el överförs till elnätet → ingen energiskatt.
+- Installerad toppeffekt < **500 kW** (gränsen höjdes från 255 kW 2021) → undantag från energiskatt på egenförbrukad el.
 - All el som överförs till koncessionspliktiga elnätet → energiskatt ska betalas. Det är dock i regel köparen av den el som överförs till det koncessionspliktiga elnätet som ska redovisa energiskatten på denna del.
 
 ### Skattereduktion för såld förnybar el — SLOPAS 2026-01-01

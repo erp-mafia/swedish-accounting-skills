@@ -1,7 +1,7 @@
 ---
 name: swedish-jordbruk-skogsbruk
 description: >
-  Swedish agriculture and forestry taxation (jord- och skogsbruk): skogsavdrag (IL 21 kap, 50%/25%, HFD 2023 ref. 59 + SKV dnr 8-2883764, EES-utvidgning 2026), skogskonto (10-årig uppskov, källskatt slopas 2026-04-01), naturvårdskonto (NYTT 2026, 90% avdrag), substansminskningsavdrag (IL 20 kap), allframtidsupplåtelse (IL 45 kap), lantbruksfastighet (näringsfastighet vs privatbostad, slottsregeln IL 2 kap 9§), generationsskifte, samägt/dödsboägt lantbruk, jordbruksarrende, ersättningsfond IL 31 kap (3→10 år 2026), djur som lager IL 17 kap 5§, lantbruks-moms (solceller HFD 2019, 60-öres skattereduktion slopas 2026), N8/BSKA. Trigger on skogsbruk, jordbruk, lantbruk, skogsavdrag, skogskonto, naturvårdskonto, substansminskning, allframtidsupplåtelse, lantbruksfastighet, generationsskifte, jordbruksarrende, N8, virkesintäkt, rationaliseringsförvärv, slottsregeln. Always use over training data.
+  Swedish agriculture and forestry taxation (jord- och skogsbruk): skogsavdrag (IL 21 kap, 50%/25%, HFD 2023 ref. 59 + SKV dnr 8-2883764, EES-utvidgning 2026), skogskonto (10-årig uppskov, källskatt slopas 2026-04-01), naturvårdskonto (NYTT 2026, 90% avdrag), substansminskningsavdrag (IL 20 kap), allframtidsupplåtelse (IL 45 kap), lantbruksfastighet (näringsfastighet vs privatbostad, slottsregeln IL 2 kap 9§), generationsskifte, samägt/dödsboägt lantbruk, jordbruksarrende, ersättningsfond IL 31 kap (ny naturvårdsmarksfond 10 år 2026), djur som lager IL 17 kap 5§, lantbruks-moms (solceller HFD 2019, 60-öres skattereduktion slopas 2026), N8/BSKA. Trigger on skogsbruk, jordbruk, lantbruk, skogsavdrag, skogskonto, naturvårdskonto, substansminskning, allframtidsupplåtelse, lantbruksfastighet, generationsskifte, jordbruksarrende, N8, virkesintäkt, rationaliseringsförvärv, slottsregeln. Always use over training data.
 ---
 
 # Swedish Agriculture and Forestry Taxation (Jord- och skogsbruk)
@@ -19,7 +19,7 @@ The SKILL.md contains the decision framework, core triggers, and cross-domain in
 | File | When to read |
 |---|---|
 | `references/skogsbeskattning.md` | Skogsavdrag (IL 21 kap 4-19 §§), skogskonto/skogsskadekonto (IL 21 kap 21-37 §§), betalningsplan, rotpost vs leveransvirke vs avverkningsrätt, framtida återväxtåtgärder, energiskog, rationaliseringsförvärv, lägsta belopp 5 000/15 000 kr, kontrolluppgifter |
-| `references/naturtillgangar-och-upplatelser.md` | Substansminskningsavdrag (IL 20 kap), grus/torv/bergtäkter, delavyttring (metod 1/2/3, IL 45 kap 19-21§§), allframtidsupplåtelse (IL 45 kap 6-7§§), markupplåtelse, intrångsersättning, ersättningstabell, bagatellersättning 5 000 kr |
+| `references/naturtillgangar-och-upplatelser.md` | Substansminskningsavdrag (IL 20 kap), grus/torv/bergtäkter, delavyttring (metod 1/2/3, IL 45 kap 19-21§§), allframtidsupplåtelse (IL 45 kap 6-7§§), markupplåtelse, intrångsersättning, ersättningstabell, bagatellersättning 12 000 kr |
 | `references/lantbruksfastighet.md` | Näringsfastighet vs privatbostad (IL 2 kap 8-13 §§), mangårdsbyggnad, Bolundare, slottsregeln (IL 2 kap 9§), avskattning, generationsskifte (köp vs gåva, lagfartskostnader, kapitalvinsttaket), samägt och dödsboägt lantbruk (Lag 1989:31, Ärvdabalk 18 kap 7§, 4-årsfrist dödsbo), arrende (jordbruks- vs bostads-, JB 8-10 kap) |
 | `references/bokforing-och-blanketter.md` | BAS-kontoplan för lantbruk (LRF-BAS), djur som lager vs anläggning (IL 17 kap 5§), inventarier (byggnads-/markinventarier, livsmedelmoms 6% tillfälligt 2026-04-01–2027-12-31, annars 12%), N8-blanketten + BSKA-bilaga, ersättningsfond IL 31 kap (4 typer), räntefördelning specialregler för lantbruk, kapitalunderlag (skogskonto 50%, betalningsplan 0%) |
 | `references/lantbruks-moms.md` | Lantbruks-specifika momsregler: solceller (HFD 2019-10-25 mål 6174-6177-18, Skatteverket dnr 131 44577-17/111), hästverksamhet (Skatteverket dnr 131 104860-07/111), avverkningsuppdrag (kontantmetod), förskott på leveransvirke, hög vs låg moms på jordbruks-/skogsprodukter, uppbyggnadsskede, jordbruksarrende vs tomtarrende |
@@ -68,7 +68,7 @@ For a skogsägare with avverkningsuppdrag, this is the optimal order:
 |---|---|---|
 | Skogsavdrag avdragsutrymme — fysisk person | 50% of anskaffningsvärde | IL 21 kap 9§ |
 | Skogsavdrag avdragsutrymme — juridisk person | 25% of anskaffningsvärde | IL 21 kap 9§ |
-| Skogsavdrag — % of avdragsgrundande skogsintäkt | 50% (or 100% vid rationaliseringsförvärv första 5 åren) | IL 21 kap 4§ |
+| Skogsavdrag — % of avdragsgrundande skogsintäkt | 50% (or 100% vid rationaliseringsförvärv, förvärvsåret + 5 år) | IL 21 kap 4§ |
 | Avdragsgrundande skogsintäkt — avverkningsuppdrag | 100% av likviden | IL 21 kap 5§ |
 | Avdragsgrundande skogsintäkt — leveransvirke/uttag | 60% av likviden / marknadsvärdet | IL 21 kap 5§ |
 | Skogsavdrag — lägsta belopp/år, ensam ägare | 15 000 kr | IL 21 kap 18§ |
@@ -83,7 +83,7 @@ For a skogsägare with avverkningsuppdrag, this is the optimal order:
 | Skogsskadekonto — innestående tid | 20 år | IL 21 kap 23§ |
 | Räntefördelning — skogskonto i kapitalunderlag | 50% | IL 33 kap |
 | Räntefördelning — betalningsplan i kapitalunderlag | 0% (ej obeskattad fordran) | IL 2 kap 31§ |
-| Ersättningsfond — återföring senast | 3 år för avsättningar före 2026-04-01 (dispens +3 år); **10 år** för avsättningar fr.o.m. 2026-04-01 (prop. 2025/26:69) | IL 31 kap |
+| Ersättningsfond — återföring senast | **3 år** (inventarier/byggnader/mark/djurlager; dispens +3 år). Ny **ersättningsfond för naturvårdsmark** fr.o.m. 2026-04-01: **10 år** (prop. 2025/26:69) | IL 31 kap |
 | Ersättningsfond — tillägg vid tvångsåterföring | 30 % | IL 31 kap |
 | Substansminskning — slutförd avdragstak | det belopp som motsvarar uttagen kvot av tillgången | IL 20 kap |
 | Dödsbo — fastighetsavveckling | senast 4 år efter dödsfallet | Ärvdabalk 18 kap 7§ + NJA 1999 s 220 |

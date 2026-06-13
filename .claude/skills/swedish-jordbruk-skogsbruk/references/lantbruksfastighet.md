@@ -17,7 +17,7 @@ A lantbruksenhet is normally a **mixed** fastighet from a skattesynpunkt: some p
 - Åkermark, betesmark
 - Ekonomibyggnader (lagårdar, stallbyggnader, logar, lador, silor, maskinhallar, verkstadsbyggnader)
 - Bostadshus där varken ägaren eller någon närstående bor på mer än 50% av bostadsytan
-- Mangårdsbyggnader med tre eller fler lägenheter (alltid näringsfastighet)
+- Mangårdsbyggnad inrättad som bostad åt **fler än två familjer** (alltid näringsfastighet, IL 2 kap 9§)
 
 ### Avsikt att bo
 
@@ -161,7 +161,7 @@ Sådana villkor får man **endast** i gåvo- eller testamentsavtal — inte i k�
 
 - Skogskonto-medel **kan stå kvar** även om fastigheten är såld eller bortskänkt.
 - Pengarna beskattas som inkomst av (oftast passiv) NV i den takt de tas ut, av den ursprunglige innehavaren.
-- För en pensionär är detta ofta **oförmånligt** (24,26 % särskild löneskatt enligt SLF, lag 1990:659, i stället för 10,21 % egenavgifter).
+- För en pensionär är detta ofta **oförmånligt** (24,26 % särskild löneskatt enligt SLF, lag 1990:659, i stället för 10,21 % ålderspensionsavgift som en pensionär annars betalar på aktiv NV; full aktiv egenavgift är 28,97 %).
 - Lösning: ta ut alla skogskontopengar före gåva, eller överlåta skogskontot till mottagaren av hela lantbruksenheten (IL 21 kap, blankett N7).
 
 ### Köp eller arv? — Skatteverkets klassificering
@@ -276,8 +276,8 @@ Ett enkelt bolag deklarerar inte själv. Var och en av delägarna tar upp sin an
 
 ### Bostadsarrende — avtalstid
 
-- Avtalstid minst **5 år** (JB 10 kap 3§). Är avtalet inte tidsbestämt eller på minst 5 år → 5 år gäller.
-- Längsta avtalstid: **50 år**.
+- Avtalstid minst **5 år** (JB 10 kap 2§). Är avtalet inte tidsbestämt eller på minst 5 år → 5 år gäller. (JB 10 kap 3§ reglerar uppsägning/förlängning.)
+- Längsta avtalstid: **50 år** (allmän nyttjanderättsgräns, JB 7 kap 5§; 25 år inom detaljplanelagt område).
 - Förlängas obegränsat antal gånger.
 - Uppsägning skriftlig, senast **1 år** före arrendetidens slut.
 - Arrendatorns förvärvsrätt: under vissa förutsättningar förtursrätt att köpa arrendestället (Lag 1985:658).

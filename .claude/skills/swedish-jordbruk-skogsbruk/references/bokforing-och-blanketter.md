@@ -9,7 +9,7 @@ LRF (Lantbrukarnas Riksförbund) har tagit fram en speciell **BAS-kontoplan för
 LRF-BAS följer samma huvudstruktur som normal BAS (klasserna 1-8) men adderar:
 - Underkonton för lager av djur per djurslag (1431-1438)
 - Konton för olika typer av skogslager (1460-1465)
-- Speciella intäktskonton för produkter per gren (3010 mjölk, 3020 kött, 3040 spannmål, etc.)
+- Speciella intäktskonton för produkter per gren (t.ex. 3010 mjölk, 3040 spannmål). I praktiken bokförs slakt-/livdjur ofta på 31xx (3150 slaktdjur, 3140 livdjur) och EU-stöd på 39xx (3981 gårdsstöd, 3081 miljöstöd).
 
 För kompatibilitet med Skatteverkets SIE-import räcker det med normal BAS — LRF-tilläggen är bara strukturhjälp.
 
@@ -55,7 +55,7 @@ Skogskontot tas upp som **tillgång i ruta B9 (Kassa och bank)** — både i van
 | **SKVFS 2025:27** (A-värden, jordbruk) | 2025 | 2026-01-01 | våren 2026 |
 | SKVFS 2025:28 (A-värden, renskötsel) | 2025 | 2026-01-01 | våren 2026 |
 | SKVFS 2024:28 (föregående år, jordbruk) | 2024 | 2025-01-01 | våren 2025 |
-| **SKV A 2025:8** (B-värden, nettoförsäljningsvärden) | 2025 | 2025 | våren 2026 |
+| **SKV A (B-värden 2025)** — rådets exakta nummer bör verifieras mot Skatteverket (decemberutgåva, högt nr i mönstret jfr 2024:25) | 2025 | 2025 | våren 2026 |
 | SKV A 2024:25 (föregående B-värden) | 2024 | 2024 | våren 2025 |
 
 **Implementation:** hämta alltid värdena från aktuell föreskrift för det beskattningsår som hanteras — hårdkoda inte. Värdena justeras varje år och **strukturen kan ändras** mellan föreskrifter (se ändringstabellen nedan).
@@ -95,7 +95,7 @@ Värden per styck om inte annat anges, kronor exklusive moms.
 
 **Renar (SKVFS 2025:28, renskötsel)**: renkalv 1 442 /st, vuxen honren 2 359 /st, vuxen hanren 3 276 /st.
 
-### B-värden från SKV A 2025:8 (beskattningsår 2025)
+### B-värden (SKV A för beskattningsår 2025)
 
 Nettoförsäljningsvärden (B). Används kollektivt — om totala B-summan ger ett lägre värde än A_summa × 0,85, värderas djurlagret till B-summan. Notera att 85 %-spärren INTE får tillämpas på B-värden.
 
@@ -130,9 +130,9 @@ Implementationsråd:
 - Mappa äldre kategorier vid migrering (t.ex. "mjölkko 600 kg 2024" → "mjölkras 2025"; "diko 700 kg 2024" → välj lätt/tung köttras 2025 baserat på rasinformation)
 - Hästar och svin > 6 mån är borta ur 2025:27 — fallback till anskaffningsvärde/marknadsvärde med 85 %-spärr enligt IL 17 kap 5 §
 
-### Tävlings- och ridhästar
+### Särskilt dyrbara avelsdjur (inkl. hästar utan schablon)
 
-**Undantag**: Skatteverkets schablonvärden för produktionsutgifter gäller **inte** för tävlings- eller ridhästar. Värdet får tas upp lägst till **85% av det lägsta av anskaffningsvärdet och allmänna saluvärdet**.
+**Undantag** (IL 17 kap 5§ andra stycket): för särskilt dyrbara avelsdjur där produktionsutgiften inte har fastställts i SKVFS — vilket sedan SKVFS 2025:27 även omfattar hästar — får värdet tas upp lägst till **85% av det lägsta av anskaffningsvärdet och allmänna saluvärdet**.
 
 ### Två beräkningar — välj det lägsta
 
@@ -295,15 +295,13 @@ Dock: för ålderspensionärer är inkomstskatt + egenavgifter ofta lägre än 3
 | **Mark** | Anskaffning av mark som är kapitaltillgång |
 | **Djurlager** | Nedskrivning av djurlager. Fonden får tas i anspråk med högst ett belopp som motsvarar utgifterna under beskattningsåret för att anskaffa djur. Nedskrivningen får inte leda till att lagret tas upp till ett lägre värde i dess helhet vid beskattningsårets slut än som annars skulle ha godtagits. |
 
-### Användningstid — förlängd 2026: 3 år → 10 år
+### Användningstid — 3 år (10 år endast för naturvårdsmark)
 
-**Skogsskattereformen 2026 (prop. 2025/26:69, ikraft 2026-04-01)** förlängde användningstiden för ersättningsfond:
-- **Före 2026-04-01**: avsättningen måste användas inom **3 år** från avsättningsåret. Dispens kunde medges i ytterligare högst 3 år.
-- **Fr.o.m. 2026-04-01**: avsättningen får användas inom **10 år**. Detta gäller också nya avsättningar gjorda från reformens ikraftträdande. (Övergångsregler för befintliga fonder — kontrollera mot SKV vid behov.)
+De fyra fondtyperna ovan (inventarier, byggnader/markanläggningar, mark, djurlager) har **3 års** användningstid: avsättningen måste tas i anspråk inom 3 år från avsättningsåret. I annat fall återförs den till beskattning i deklarationen för det tredje beskattningsåret efter det att avdraget gjordes.
 
-I annat fall återförs den till beskattning i deklarationen som lämnas för det tionde (tidigare tredje) beskattningsåret efter det att avdraget gjordes.
+**Dispens**: Vid sjukdom, lågkonjunktur eller liknande kan Skatteverket medge dispens i ytterligare högst 3 år.
 
-**Dispens**: Vid sjukdom, lågkonjunktur eller liknande kan Skatteverket medge dispens i ytterligare högst 3 år (oavsett om grundtiden är 3 eller 10 år).
+**Skogsskattereformen 2026 (prop. 2025/26:69, ikraft 2026-04-01)** ändrade INTE 3-årsfristen för dessa fonder. Reformen införde i stället en **ny, separat fondtyp — ersättningsfond för naturvårdsmark — med 10 års användningstid**. Den 10-åriga fristen gäller alltså bara naturvårdsmark-fonden, inte djurlager/inventarier/byggnader/mark.
 
 ### Tillägg vid återföring av annan orsak
 
@@ -336,8 +334,8 @@ Credit 2060 Ersättningsfond                  (skuld-/eget kapitalsida)
 ```
 
 - **I förenklat årsbokslut**: avsättningen bokförs i resultatet + upplysning i **ruta U3** (Ersättningsfond vid årets slut).
-- **Undantag: ersättningsfond för mark** behöver inte bokföras enligt BFNAR 2006:1 9.2 — endast U3-upplysning.
-- Detta ändrades **inte** av Skogsskattereformen 2026 — bokföringskravet kvarstår; däremot förlängdes användningstiden från 3 till 10 år (se skogsbeskattning.md).
+- **Undantag: ersättningsfond för mark (och, fr.o.m. 2026, ersättningsfond för naturvårdsmark)** behöver inte bokföras enligt BFNAR 2006:1 9.2 — endast U3-upplysning.
+- Detta ändrades **inte** av Skogsskattereformen 2026 — bokföringskravet kvarstår. Reformen införde däremot en ny fondtyp för naturvårdsmark med 10 års frist; de befintliga fonderna (inkl. djurlager) behåller 3 år (se skogsbeskattning.md).
 
 ## Räntefördelning — lantbruksspecifika regler
 
@@ -481,7 +479,7 @@ Uttaget är en intäkt i NV. Tas upp i ruta R27 på sid 2 NE.
 ### Periodiseringsfond, expansionsfond, ersättningsfond i EF
 
 - **Periodiseringsfond och expansionsfond**: **bokförs INTE** i räkenskaperna för enskilda näringsidkare. De är skattemässiga konstruktioner i NE-bilagan. Upplysning lämnas i ruta U1 (P-fond) respektive U2 (expansionsfond) i förenklat årsbokslut.
-- **Ersättningsfond**: **ska bokföras via resultaträkningen** för avdragsrätt (debit 8xxx / credit 2060). Detta är motsatsen till P-fond/expansionsfond. Upplysning i ruta U3. Undantag: ersättningsfond för mark behöver inte bokföras (BFNAR 2006:1 9.2).
+- **Ersättningsfond**: **ska bokföras via resultaträkningen** för avdragsrätt (debit 8xxx / credit 2060). Detta är motsatsen till P-fond/expansionsfond. Upplysning i ruta U3. Undantag: ersättningsfond för mark och naturvårdsmark behöver inte bokföras (BFNAR 2006:1 9.2).
 
 I ruta U4 lämnas upplysning om bokförda tillgångar/intäkter som helt eller till viss del är obeskattade — det gäller skogskonto, insatsemission och betalningsplan på skog. Själva saldot på skogskonto bokförs alltid i B9 (Kassa och bank); U4 markerar bara att framtida uttag blir skattepliktig NV-intäkt.
 
