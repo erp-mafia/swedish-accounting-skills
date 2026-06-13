@@ -93,14 +93,14 @@ Gives sole traders equivalent of AB's ability to retain earnings at corporate ta
 - **No mandatory 6-year reversal** (can be held indefinitely)
 - On reversal: amount added back as NV income, previously paid 20.6% credited against that year's tax
 
-Handled exclusively in NE-bilaga (R33/R34), NEVER booked.
+Handled exclusively in NE-bilaga (R36 avsättning / R37 återföring), NEVER booked.
 
 ### 4. Periodiseringsfond (Enskild firma)
 
 - Max deferral: **30%** of result (vs 25% for AB)
 - Same 6-year mandatory reversal
 - **No schablonintäkt** for fysiska personer
-- Handled only in NE-bilaga (R29/R30), NEVER booked
+- Handled only in NE-bilaga (R34 avsättning / R32 återföring), NEVER booked
 
 ---
 
@@ -108,7 +108,7 @@ Handled exclusively in NE-bilaga (R33/R34), NEVER booked.
 
 | Item | AB | Enskild firma |
 |------|-----|---------------|
-| Periodiseringsfond | **Booked** (8811/21xx) | Declaration only (NE R29/R30) |
+| Periodiseringsfond | **Booked** (8811/21xx) | Declaration only (NE R34/R32) |
 | Överavskrivningar | **Booked** (8850/2150) | **Booked** (8850/2150) |
 | Skatt på årets resultat | **Booked** (8910/2512) | NOT booked (personal tax) |
 | Schablonintäkt periodiseringsfond | Declaration only (INK2S 4.6a) | N/A |

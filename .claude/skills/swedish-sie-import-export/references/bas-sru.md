@@ -61,8 +61,9 @@ These accounts appear frequently in SIE files and have special significance:
 - **6230** Datakommunikation (internet/data)
 - **6570** Bankkostnader (bank charges)
 - **7010** Löner (salaries)
-- **7210** Arbetsgivaravgifter (employer contributions)
-- **7510** Avskrivningar maskiner/inventarier (depreciation)
+- **7210** Löner tjänstemän och företagsledare
+- **7510** Arbetsgivaravgifter (employer contributions)
+- **7832** Avskrivningar maskiner/inventarier (depreciation)
 - **8310** Ränteintäkter (interest income)
 - **8410** Räntekostnader (interest expenses)
 - **8910** Skatt på årets resultat (income tax on profit, AB)

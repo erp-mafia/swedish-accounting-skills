@@ -20,9 +20,9 @@ Total: 31.42% (unchanged since 2009). Calculated on full gross with no cap.
 Check each employee's birth year against calendar year:
 
 - Born 1937 or earlier: 0% (no avgifter)
-- Turned 66 at year's start (born ≤1958 for 2024, ≤1959 for 2025; threshold rises to 67 in 2026): only ålderspensionsavgift = 10.21%
+- Pensionärsåldersgränsen (riktåldern) was 66 in 2024-2025 and rises to 67 from 2026. The reduced rate (only ålderspensionsavgift 10.21%) applies if the person reached the riktålder at year's start. For 2025: born 1958 or earlier. For 2026: born 1958 or earlier (same cohort, since the threshold rose by 1 year alongside the calendar year).
 - Youth discount: abolished January 1, 2024
-- New temporary reduction (Apr 1, 2026 - Sep 30, 2027): 20.81% on salary up to 25,000 SEK/month for ages 19-23
+- Temporary reduction (Apr 1, 2026 – Sep 30, 2027): 20.81% on salary up to 25,000 SEK/month for ages 19–23
 
 No avgifter required if total annual compensation from a single employer < 1,000 SEK.
 
@@ -40,13 +40,13 @@ Passive businesses pay särskild löneskatt at 24.26% instead.
 
 ## Key thresholds
 
-| Parameter | 2024 | 2025 |
+| Parameter | 2025 | 2026 |
 |---|---|---|
-| Prisbasbelopp (PBB) | 57,300 | 58,800 |
-| Inkomstbasbelopp (IBB) | 76,200 | 80,600 |
-| Max PGI (7.5 × IBB) | 571,500 | 604,500 |
-| Effective pension ceiling (8.07 × IBB) | 614,934 | 650,442 |
-| SGI ceiling (10 × PBB) | 573,000 | 588,000 |
+| Prisbasbelopp (PBB) | 58,800 | 59,200 |
+| Inkomstbasbelopp (IBB) | 80,600 | 83,400 |
+| Max PGI (7.5 × IBB) | 604,500 | 625,500 |
+| Effective pension ceiling (8.07 × IBB) | 650,442 | 673,038 |
+| SGI ceiling (10 × PBB) | 588,000 | 592,000 |
 
 ## Special reductions
 

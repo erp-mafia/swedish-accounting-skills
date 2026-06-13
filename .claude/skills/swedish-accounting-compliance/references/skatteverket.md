@@ -183,7 +183,7 @@ Always check Skatteverket's current technical documentation. Their APIs change. 
 ## 7. Momsregistrering
 
 ### When required
-- Momspliktig verksamhet > 80 000 kr per 12-month period (threshold from 2025)
+- Momspliktig verksamhet > **120 000 kr** per 12-month period (threshold höjt 1 januari 2025 från 80 000 kr; 80 000 kr var den föregående höjningen från 2022)
 - Below threshold: can choose to register voluntarily
 - EU-handel: registration required regardless of threshold
 
@@ -195,11 +195,12 @@ Always check Skatteverket's current technical documentation. Their APIs change. 
 ## 8. ROT and RUT
 
 ### ROT-avdrag (2026)
-- 30% of arbetskostnad (not material)
-- Max 50 000 kr per person per year
+- 30% of arbetskostnad (not material) from 2026-01-01
+- Max 50 000 kr per person per year (2026)
 - Only for privatpersoner who own the bostad
 - Applies to: reparation, underhåll, om- och tillbyggnad
 - Filing: via Skatteverket's system, contractor submits begäran
+- Temporary 50% rate applied **12 May – 31 December 2025** (prop. 2024/25:156); reverted to 30% at 2026-01-01. The takbelopp stayed at 50 000 kr throughout — only the subsidy rate changed.
 
 ### RUT-avdrag (2026)
 - 50% of arbetskostnad

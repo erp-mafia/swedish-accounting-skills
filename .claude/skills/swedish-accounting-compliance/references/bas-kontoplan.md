@@ -91,13 +91,12 @@ BAS uses a 4-digit account numbering system organized into 8 classes:
 
 ### Klass 7: Personal, avskrivningar
 - **70xx**: Löner till kollektivanställda
-- **71xx**: Fri lön?
-- **72xx**: Löner till tjänstemän och företagsledare
+- **72xx**: Löner till tjänstemän och företagsledare (BAS 7210 = Löner tjänstemän)
 - **73xx**: Kostnadsersättningar (traktamenten, bilersättning)
 - **74xx**: Pensionskostnader
-- **75xx**: Sociala avgifter (arbetsgivaravgifter)
+- **75xx**: Sociala avgifter (BAS 7510 = Arbetsgivaravgifter)
 - **76xx**: Övriga personalkostnader (utbildning, friskvård)
-- **77xx**: Avskrivningar
+- **77xx**: Avskrivningar (BAS 7832 = Avskrivning inventarier)
 - **78xx**: Nedskrivningar
 - **79xx**: Poster av engångskaraktär
 
@@ -131,9 +130,12 @@ Most small AB/enskild firma need these accounts at minimum:
 - 2091 Balanserad vinst/förlust
 - 2099 Årets resultat
 - 2440 Leverantörsskulder
-- 2610 Utgående moms 25%
-- 2611 Utgående moms 12%
-- 2612 Utgående moms 6%
+- 2610 Utgående moms 25 % (gruppkonto)
+- 2611 Utgående moms 25 % försäljning inom Sverige
+- 2620 Utgående moms 12 % (gruppkonto)
+- 2621 Utgående moms 12 % försäljning inom Sverige
+- 2630 Utgående moms 6 % (gruppkonto)
+- 2631 Utgående moms 6 % försäljning inom Sverige
 - 2640 Ingående moms
 - 2650 Redovisningskonto för moms
 - 2710 Personalskatt
@@ -167,25 +169,31 @@ Most small AB/enskild firma need these accounts at minimum:
 
 ## 4. Moms accounts
 
-Standard moms account structure in BAS:
+Standard moms account structure in BAS 2024 (per bas.se):
 
-| Konto | Beskrivning |
-|---|---|
-| 2610 | Utgående moms 25% |
-| 2611 | Utgående moms 12% |
-| 2612 | Utgående moms 6% |
-| 2614 | Utgående moms omvänd skattskyldighet |
-| 2615 | Utgående moms import |
-| 2640 | Ingående moms |
-| 2645 | Beräknad ingående moms vid förvärv EU |
-| 2650 | Redovisningskonto för moms |
+| Konto | Beskrivning | Sats |
+|---|---|---|
+| 2610 | Utgående moms (gruppkonto / 25 %) | 25 % |
+| 2611 | Utgående moms 25 % försäljning inom Sverige | 25 % |
+| 2612 | Utgående moms 25 % egna uttag | 25 % |
+| 2614 | Utgående moms 25 % omvänd skattskyldighet | 25 % (reverse) |
+| 2615 | Utgående moms 25 % import | 25 % (import) |
+| 2620 | Utgående moms (gruppkonto / 12 %) | 12 % |
+| 2621 | Utgående moms 12 % försäljning inom Sverige | 12 % |
+| 2624 | Utgående moms 12 % omvänd skattskyldighet | 12 % (reverse) |
+| 2630 | Utgående moms (gruppkonto / 6 %) | 6 % |
+| 2631 | Utgående moms 6 % försäljning inom Sverige | 6 % |
+| 2634 | Utgående moms 6 % omvänd skattskyldighet | 6 % (reverse) |
+| 2640 | Ingående moms | (avdrag) |
+| 2645 | Beräknad ingående moms vid förvärv EU | (avdrag) |
+| 2650 | Redovisningskonto för moms | (avstämning) |
 
 Workflow:
-1. During the period: book utgående on 2610/2611/2612 and ingående on 2640
-2. At declaration: netta 2610+2611+2612-2640 against 2650
+1. During the period: utgående bokförs på 2611 (25 %) / 2621 (12 %) / 2631 (6 %); ingående på 2640
+2. At declaration: netta 2611+2621+2631-2640 against 2650
 3. Payment to/from Skatteverket: 2650 <-> 1630 (skattekonto)
 
-**From 1 Apr 2026**: livsmedel moves from 2611 (12%) to 2612 (6%). Your system must handle the transition correctly based on leveransdatum.
+**From 1 Apr 2026**: livsmedel-momsen sänks från 12 % till 6 % — försäljning av livsmedel flyttas från **2621 (12 %)** till **2631 (6 %)**. Systemet måste hantera övergången baserat på leveransdatum.
 
 ## 5. Mapping rules and principles
 
@@ -201,7 +209,7 @@ Workflow:
 **Kundfaktura:**
 - Debit 1510 (kundfordringar) full amount inkl moms
 - Credit 30xx (intäkt) exkl moms
-- Credit 2610/2611/2612 (utgående moms)
+- Credit 2611 (25 %) / 2621 (12 %) / 2631 (6 %) (utgående moms)
 
 **Leverantörsfaktura:**
 - Debit 4xxx/5xxx/6xxx (kostnad) exkl moms
@@ -217,9 +225,9 @@ Then separately:
 - Credit 2730 (arbetsgivaravgifter skuld)
 
 **Momsredovisning (monthly/quarterly):**
-- Debit 2610 (tömma utgående 25%)
-- Debit 2611 (tömma utgående 12%)
-- Debit 2612 (tömma utgående 6%)
+- Debit 2611 (tömma utgående 25 %)
+- Debit 2621 (tömma utgående 12 %)
+- Debit 2631 (tömma utgående 6 %)
 - Credit 2640 (tömma ingående)
 - Credit/Debit 2650 (netto: skuld if credit, fordran if debit)
 
