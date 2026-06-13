@@ -261,6 +261,12 @@ Per beskattningsår, ett konto per skogsägare per bank. Skulle insättning ske 
 
 Däremot: olika beskattningsår kan ha **olika** skogskonton (max 10 samtidigt eftersom max 10 år).
 
+### Insättningsgaranti — vid stora likvider
+
+Skogskonto och skogsskadekonto omfattas av den statliga insättningsgarantin: **1 150 000 kr per person och institut** (höjt från 1 050 000 kr fr.o.m. 2026-01-01; Riksgälden räknar om beloppet mot euro vart femte år). Belopp däröver är oförsäkrade om banken fallerar.
+
+Eftersom man bara får ha **ett skogskonto per bank och beskattningsår** måste en stor avverkningslikvid spridas på skogskonton i **olika banker** för att varje konto ska rymmas inom garantin. (Det tillfälliga tilläggsskyddet upp till 5 mkr gäller vissa livshändelser, t.ex. försäljning av privatbostad — inte avverkningslikvider.)
+
 ### Skogskontoräntan — specialbeskattning (källskatt) — SLOPAS 2026-04-01
 
 **Före 2026-04-01**: **15 % källskatt** på räntan. Banken drar av och betalar in till Skatteverket direkt — räntan syns INTE i deklarationen och får inte räknas in i preliminärskatten.

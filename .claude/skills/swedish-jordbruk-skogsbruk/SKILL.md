@@ -81,6 +81,7 @@ For a skogsägare with avverkningsuppdrag, this is the optimal order:
 | Skogsskadekonto — lägsta insättning | 50 000 kr | IL 21 kap 23§ |
 | Skogsskadekonto — insättning av avverkningsuppdrag vid skogsskador | max 80% | IL 21 kap 24§ |
 | Skogsskadekonto — innestående tid | 20 år | IL 21 kap 23§ |
+| Insättningsgaranti — skogskonto, per bank | 1 150 000 kr (2026, höjt från 1 050 000) | Riksgälden |
 | Räntefördelning — skogskonto i kapitalunderlag | 50% | IL 33 kap |
 | Räntefördelning — betalningsplan i kapitalunderlag | 0% (ej obeskattad fordran) | IL 2 kap 31§ |
 | Ersättningsfond — återföring senast | **3 år** (inventarier/byggnader/mark/djurlager; dispens +3 år). Ny **ersättningsfond för naturvårdsmark** fr.o.m. 2026-04-01: **10 år** (prop. 2025/26:69) | IL 31 kap |
