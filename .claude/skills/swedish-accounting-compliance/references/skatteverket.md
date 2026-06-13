@@ -200,7 +200,7 @@ Always check Skatteverket's current technical documentation. Their APIs change. 
 - Only for privatpersoner who own the bostad
 - Applies to: reparation, underhåll, om- och tillbyggnad
 - Filing: via Skatteverket's system, contractor submits begäran
-- Temporary 50% rate applied **12 May – 31 December 2025** (prop. 2024/25:130); reverted to 30% at 2026-01-01. See `changes-2025-2026.md` for the period-specific cap.
+- Temporary 50% rate applied **12 May – 31 December 2025** (prop. 2024/25:156); reverted to 30% at 2026-01-01. The takbelopp stayed at 50 000 kr throughout — only the subsidy rate changed.
 
 ### RUT-avdrag (2026)
 - 50% of arbetskostnad

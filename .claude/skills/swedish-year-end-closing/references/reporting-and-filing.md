@@ -94,13 +94,13 @@ For brutet räkenskapsår: same intervals relative to fiscal year-end.
 
 > **Höjt 2025**: tidigare nivåer var 5 000 / 5 000 / 10 000 = 20 000 SEK (privat AB) och tillämpades på räkenskapsår som inleddes före 2025-01-01. För publikt AB är beloppen dubbla: 15 000 / 15 000 / 30 000 = 60 000 SEK.
 
-### Late filing penalties Skatteverket — INK2 (förseningsavgift per SFL 48 kap 1 §)
+### Late filing penalties Skatteverket — INK2 (förseningsavgift per SFL 48 kap 6 §)
 
-Förseningsavgiften eskalerar om INK2 inte lämnas i tid:
+Upp till tre förseningsavgifter kan tas ut för samma deklaration. För aktiebolag/ekonomisk förening är varje avgift **6 250 SEK** — den andra och tredje är lika stora som den första (48 kap 6 § SFL), de eskalerar alltså inte:
 
 - Första avgiften: **6 250 SEK**
-- Andra avgiften (efter 3 månader): ytterligare **12 500 SEK** = totalt 18 750 SEK
-- Tredje avgiften (efter 5 månader): ytterligare **18 750 SEK** = totalt **37 500 SEK** (cap)
+- Andra avgiften (om deklarationen inte lämnats inom 3 månader): ytterligare **6 250 SEK** = totalt 12 500 SEK
+- Tredje avgiften (efter 5 månader): ytterligare **6 250 SEK** = totalt **18 750 SEK** (cap)
 
 Skattetillägg (20 % av undandragen skatt) kan tillkomma vid felaktig deklaration.
 

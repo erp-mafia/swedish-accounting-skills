@@ -56,7 +56,7 @@ Additional KF advantages:
 
 ## Skattefri grundnivå — ENACTED 1 januari 2026
 
-Riksdagen beslutade hösten 2025 om en **skattefri grundnivå på 300 000 SEK kapitalunderlag per individ** för ISK och KF (kombinerat), ikraft **1 januari 2026**.
+En **skattefri grundnivå** för ISK och KF (kombinerat) per individ fasas in: **150 000 SEK för 2025** och **300 000 SEK från 1 januari 2026** (kapitalunderlag).
 
 - **Bara fysiska personer** — grundnivån gäller ISK och KF för privatpersoner.
 - **AB-ägd KF påverkas INTE** — den 1,065 %-effektiva skatten på AB:ets KF gäller fortfarande utan grundbelopp.
