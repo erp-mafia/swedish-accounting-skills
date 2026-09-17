@@ -8,10 +8,12 @@ Claude skills for Swedish accounting compliance. These skills give Claude deep k
 |-------|-------------|
 | `swedish-accounting-compliance` | BFL, BFNAR, BAS kontoplan, K2/K3, verifikationer, bokforingsskyldighet |
 | `swedish-asset-accounting` | Anlaggningsredovisning, planenlig/overavskrivning, BAS 10xx-12xx/78xx |
+| `swedish-ef-skatteplanering` | Enskild firma: rantefordelning, expansionsfond, egenavgifter, NE-bilaga, EF vs AB |
 | `swedish-financial-reporting` | Arsredovisning, Bolagsverket filing, INK2/INK2R/INK2S, noter |
 | `swedish-invoice-compliance` | ML 17 kap 24ss, kreditfaktura, Peppol BIS 3.0, ROT/RUT, reverse charge |
 | `swedish-payroll` | AGI, sociala avgifter, skattetabeller, formansbeskattning, BAS 7xxx |
-| `swedish-sie-import-export` | SIE4 parsing, validation, generation, encoding (CP437/UTF-8) |
+| `swedish-project-accounting` | Projektredovisning, pagaende arbeten, K2/K3 intaktsredovisning, SIE-dimensioner |
+| `swedish-sie-import-export` | SIE4 parsing, validation, generation, encoding (PC8/CP437, mojibake) |
 | `swedish-sru-filing` | SRU file generation for Skatteverket (INFO.SRU + BLANKETTER.SRU) |
 | `swedish-tax-planning` | Periodiseringsfond, overavskrivningar, koncernbidrag, 3:12-regler |
 | `swedish-vat` | Momsdeklaration rutor, EU VAT, reverse charge, BAS 26xx, ML 2023:200 |
@@ -22,8 +24,8 @@ Claude skills for Swedish accounting compliance. These skills give Claude deep k
 Clone this repo and the skills will be available in Claude Code when working inside the directory:
 
 ```bash
-git clone https://github.com/erp-mafia/swedish-accounting-agents.git
-cd swedish-accounting-agents
+git clone https://github.com/erp-mafia/swedish-accounting-skills.git
+cd swedish-accounting-skills
 claude
 ```
 
