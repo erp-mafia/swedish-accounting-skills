@@ -397,9 +397,9 @@ False invoices: skattebrott (Skattebrottslagen) up to 2 years, grovt 6 months–
 
 ### Bad debts flow
 
-1. Transfer doubtful: Debit 1515, Credit 1510
-2. Provision: Debit 6352 (befarade förluster), Credit 1519
-3. Loss confirmed: Debit 6351 (konstaterade förluster), Credit 1515; reverse provision Debit 1519 Credit 6352; recover VAT by debiting 2610/2620/2630
+1. Befarad förlust: Debit **6352** (befarade förluster), Credit **1519** (nedskrivning, contra to 1510). The receivable stays on 1510; move it to **1516** only if it is disputed.
+2. Konstaterad förlust: Debit **6351** (konstaterade förluster) and Credit **1510**; reverse the provision Debit **1519** Credit **6352**; recover the VAT by debiting 2610/2620/2630
+3. Later payment of a written-off receivable: book it back through 3950 (återvunna kundfordringar)
 
 VAT recovery on bad debts permitted under **ML 7 kap 43§** when loss is konstaterad (bankruptcy, failed enforcement, acknowledged insolvency).
 

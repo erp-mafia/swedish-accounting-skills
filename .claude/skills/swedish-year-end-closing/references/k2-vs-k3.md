@@ -32,8 +32,8 @@
 ## Leasing classification
 
 **K3**: Distinguishes financial and operational leases. Financial leases capitalized:
-- **1260** Leasade tillgångar [Ej K2]
-- **1269** Ack. avskrivningar [Ej K2]
+- **1217** Finansiellt leasade maskiner / **1227** Finansiellt leasade inventarier [Ej K2]
+- **1219** / **1229** Ackumulerade avskrivningar [Ej K2] (BAS 2026 has no 1269; 1260 is a free account)
 
 **K2**: All leases treated as operational.
 
@@ -69,8 +69,8 @@
 The following BAS accounts are marked [Ej K2] and should be hidden or disabled:
 - **1010–1019** (Utvecklingsutgifter)
 - **1081** (Pågående projekt, immateriella)
-- **1260** (Leasade tillgångar)
-- **1269** (Ack. avskrivningar leasade tillgångar)
+- **1217** / **1227** (Finansiellt leasade maskiner respektive inventarier)
+- **1219** / **1229** (Ackumulerade avskrivningar)
 - **1370** (Uppskjuten skattefordran)
 - **2240** (Avsättningar för uppskjutna skatter)
 - **8940** (Uppskjuten skatt)

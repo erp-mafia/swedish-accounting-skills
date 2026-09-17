@@ -145,8 +145,10 @@ Electronics >100k SEK/invoice?
 ### Accounts receivable
 - **1510** Kundfordringar (main)
 - **1513** Kundfordringar – delad faktura (ROT/RUT SKV portion)
-- **1515** Osäkra kundfordringar
+- **1516** Tvistiga kundfordringar
 - **1519** Nedskrivning av kundfordringar (contra)
+
+(BAS 2026 has no 1515; older charts used it for osäkra kundfordringar.)
 
 ### Revenue
 - **3001/3002/3003/3004** Domestic sales 25%/12%/6%/exempt
@@ -168,7 +170,7 @@ Electronics >100k SEK/invoice?
 ### Invoice extras
 - **3540** Faktureringsavgift (25% VAT)
 - **3740** Öresavrundning (no VAT)
-- **3930** Påminnelseavgift (no VAT)
+- Påminnelseavgift (no VAT): BAS 2026 has no dedicated account — use **3540** Faktureringsavgifter or a free account in group 39
 - **8313** Dröjsmålsränta (no VAT, financial income)
 
 ---
