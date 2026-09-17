@@ -10,18 +10,23 @@ A fullständig faktura must contain all fields per **17 kap 24§ ML (2023:200)**
 | 2 | Löpnummer (unique sequential from one or more series) | Invoice number | 17:24 p.2 |
 | 3 | Säljarens momsregistreringsnummer (SE + 10 digits + 01) | Seller VAT ID | 17:24 p.3 |
 | 4 | Köparens momsregistreringsnummer (when RC or intra-EU) | Buyer VAT ID | 17:24 p.4 |
-| 5 | Fullständigt namn och adress, säljare och köpare | Names and addresses | 17:24 p.5 |
-| 6 | Varornas mängd och art / tjänsternas omfattning och art | Quantity and nature | 17:24 p.6 |
-| 7 | Leveransdatum eller tillhandahållandedatum (if ≠ invoice date) | Delivery date | 17:24 p.7 |
-| 8 | Beskattningsunderlag per skattesats, enhetspris exkl. moms, rabatter | Tax base per rate | 17:24 p.8 |
-| 9 | Mervärdesskattesats (25%, 12%, or 6%) | VAT rate | 17:24 p.9 |
-| 10 | Mervärdesskattebelopp | VAT amount | 17:24 p.10 |
-| 11 | "Omvänd betalningsskyldighet" (if reverse charge) | RC notation | 17:24 |
-| 12 | ML/Directive reference (if VAT-exempt) | Exemption ref | 17:24 |
-| 13 | "Självfakturering" (if self-billing) | Self-billing text | 17:24 |
-| 14 | Margin scheme notation (if applicable) | Margin scheme | 17:24 |
-| 15 | Transport media details (new vehicles to EU) | Vehicle specifics | 17:24 |
-| 16 | Förskottsbetalning amount (advance payment) | Advance payment | 17:17 |
+| 5 | Säljarens fullständiga namn och adress | Seller name and address | 17:24 p.5 |
+| 6 | Köparens fullständiga namn och adress | Buyer name and address | 17:24 p.6 |
+| 7 | Varornas mängd och art / tjänsternas omfattning och art | Quantity and nature | 17:24 p.7 |
+| 8 | Leveransdatum/tillhandahållandedatum, or date of förskotts-/a conto-betalning (if ≠ invoice date) | Delivery or prepayment date | 17:24 p.8 |
+| 9 | Beskattningsunderlag per skattesats eller undantag, enhetspris exkl. moms, rabatter | Tax base per rate | 17:24 p.9 |
+| 10 | Mervärdesskattesats (25%, 12%, or 6%) | VAT rate | 17:24 p.10 |
+| 11 | Mervärdesskattebelopp | VAT amount | 17:24 p.11 |
+| 12 | "Självfakturering" (if self-billing) | Self-billing text | 17:24 p.12 |
+| 13 | ML/Directive reference or other statement (if VAT-exempt) | Exemption ref | 17:24 p.13 |
+| 14 | "Omvänd betalningsskyldighet" (if reverse charge) | RC notation | 17:24 p.14 |
+| 15 | Transport media details (new means of transport to another EU country) | Vehicle specifics | 17:24 p.15 |
+| 16 | "Vinstmarginalbeskattning för resebyråer" | Travel agency margin scheme | 17:24 p.16 |
+| 17 | "Vinstmarginalbeskattning för begagnade varor / konstverk / samlarföremål och antikviteter" | Second-hand margin scheme | 17:24 p.17 |
+
+**Förskotts- och a conto-betalningar:** must be invoiced too (17 kap 14§); the payment date goes in p.8.
+
+**Reverse charge:** p.9–11 may be omitted if the invoice instead states the tax base with reference to the p.7 details (17 kap 25§).
 
 **Löpnummerserie:** Must enable detection of missing invoices. Multiple series permitted (per unit, POS, etc.). Also required by BFL 5 kap 6§. Gaps or duplicates are a compliance red flag.
 
@@ -37,11 +42,13 @@ Reduced content: date, seller ID (VAT/org number), description of goods/services
 
 **Cannot** be used for: intra-EU transactions, distance sales, cross-border reverse charge.
 
+**Small-business VAT exemption (18 kap ML, from 1 January 2025):** A seller covered by the exemption may issue a förenklad faktura at any amount (17 kap 26§ p.4). The invoice must not show VAT (18 kap 41§) and must state that the supply is exempt under 18 kap 4§ (17 kap 28§ p.6).
+
 ## 3. Time limits for issuing invoices
 
 - Domestic: no hard statutory deadline; "without undue delay" per god affärssed.
-- Intra-EU goods/services (main rule): **15th of month following delivery/performance** (17 kap 19§).
-- Construction services: **end of second month after performance**.
+- Intra-EU goods/services (main rule): **15th of month following delivery/performance** (17 kap 17–18§§).
+- Construction services: **end of second month after performance** (17 kap 16§).
 
 ## 4. Electronic vs paper equivalence
 
@@ -107,7 +114,7 @@ Debit 2440 Leverantörsskulder, Credit purchase account (40xx), Credit 2641 Ing�
 2. **Approval procedure (godkännandeförfarande).** Passive approval accepted: silence within agreed timeframe = approval, provided seller can review and object.
 3. **"Självfakturering" notation** on every invoice.
 
-Seller remains responsible for VAT reporting. Both parties archive 7 years per BFL 5 kap 11§.
+Seller remains responsible for VAT reporting. Both parties archive 7 years per BFL 7 kap 2§.
 
 Peppol: `InvoiceTypeCode` **389**.
 
@@ -167,7 +174,7 @@ VAT in UBL: `cac:PartyTaxScheme/cbc:CompanyID` = `SE556732170701`.
 
 ### B2B e-invoicing timeline
 
-B2B voluntary as of April 2026. Ministry of Finance launched formal inquiry **5 February 2026**, report due **30 November 2027**. EU ViDA directive (adopted 11 March 2025) allows member states to mandate domestic B2B e-invoicing without EU approval. Mandatory cross-border B2B e-invoicing by **1 July 2030**.
+B2B voluntary as of September 2026; no domestic B2B mandate has been decided. Ministry of Finance launched formal inquiry (Dir. 2026:9) **5 February 2026**, report due **30 November 2027**. EU ViDA directive (Directive (EU) 2025/516, adopted 11 March 2025) allows member states to mandate domestic B2B e-invoicing without EU approval. ViDA timeline: single VAT registration from **1 July 2028**; platform deemed-supplier rules from 1 July 2028 at the earliest and 1 January 2030 at the latest; mandatory e-invoicing plus digital reporting for intra-EU B2B from **1 July 2030** (replaces periodisk sammanställning).
 
 ## 8. ROT/RUT invoicing
 
@@ -224,7 +231,7 @@ Account 1513 exists in BAS Kontoplan 1 but not Kontoplan 2. Alternative: 1600 Ö
 
 ### Invoice requirements
 
-Per **17 kap 28§ punkt 14 ML**: when buyer is liable for VAT, invoice must include notation. Three accepted forms:
+Per **17 kap 24§ punkt 14 ML**: when buyer is liable for VAT, invoice must include notation. Three accepted forms:
 - Swedish: "Omvänd betalningsskyldighet"
 - English: "Reverse charge"
 - Reference to ML paragraph or EU Directive article
@@ -237,7 +244,7 @@ Invoice must include buyer's VAT number and charge **no VAT**.
 Applies when buyer is taxable person who not only temporarily provides construction services.
 Seller: Box 41. Buyer: Box 24, output VAT Box 30, input VAT Box 48.
 
-**EU services (B2B main rule) — ML 16 kap 6§ + 6 kap 33–37§§:**
+**EU services (B2B main rule) — ML 16 kap 9§ + 6 kap 33§:**
 Swedish business buys services from EU seller under main rule.
 Buyer: Box 21, output VAT Box 30–32, input VAT Box 48. Seller: Box 39 + periodisk sammanställning.
 
@@ -245,10 +252,10 @@ Buyer: Box 21, output VAT Box 30–32, input VAT Box 48. Seller: Box 39 + period
 Text: "Unionsintern leverans" or ref to Article 138 Directive 2006/112/EC. Both VAT numbers required.
 Seller: Box 35 + periodisk sammanställning. Buyer: Box 20, output VAT Box 30–32, input VAT Box 48.
 
-**Electronics >100k SEK — ML 16 kap 17§:**
+**Electronics >100k SEK — ML 16 kap 16§:**
 Mobile phones, integrated circuits, game consoles, tablets, laptops when invoice excl. VAT > SEK 100,000. In effect since 1 April 2021.
 
-**Other:** Scrap metal/waste (16:14), CO₂ allowances (16:15), gold (16:16). Full scope: 16 kap 6–22§§.
+**Other:** Scrap metal/waste (16:14), CO₂ allowances (16:15), gold (16:11–12). Full scope: 16 kap 6–17§§.
 
 ### BAS accounts for reverse charge
 
@@ -257,13 +264,14 @@ Mobile phones, integrated circuits, game consoles, tablets, laptops when invoice
 | 2614 | Utgående moms, omvänd betalningsskyldighet 25% |
 | 2624 | Utgående moms, omvänd betalningsskyldighet 12% |
 | 2634 | Utgående moms, omvänd betalningsskyldighet 6% |
-| 2644/2647 | Ingående moms, omvänd momsskyldighet (domestic) |
+| 2647 | Ingående moms omvänd betalningsskyldighet varor och tjänster i Sverige (domestic) |
 | 2645 | Beräknad ingående moms på förvärv från utlandet |
-| 4610 | Byggtjänster (cost account) |
-| 4535 | Varuförvärv från EU |
-| 4545 | Tjänsteförvärv från EU |
+| 4425 | Inköp av tjänster i Sverige, omvänd betalningsskyldighet, 25% (e.g. byggtjänster; momsdeklaration ruta 24) |
+| 4515 | Inköp av råvaror och material från annat EU-land, 25% |
+| 4535 | Inköp av tjänster från annat EU-land, 25% |
+| 4545 | Import av råvaror och material, 25% (non-EU imports, not EU purchases) |
 | 3231 | Försäljning byggsektorn, omvänd betalningsskyldighet |
-| 3048 | EU-försäljning tjänster 0% |
+| 3308 | Försäljning tjänster till annat EU-land |
 
 ## 10. Currency handling
 
