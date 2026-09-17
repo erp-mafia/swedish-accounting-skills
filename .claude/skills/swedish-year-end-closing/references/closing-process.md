@@ -44,8 +44,14 @@ Every balance sheet account must be reconciled against external documentation.
 | **2992** | Beräknat arvode för revision |
 | **2990** | Övriga upplupna kostnader |
 
-### K2 simplification
-Individual recurring costs below **5,000 SEK** that don't fluctuate >20% year-over-year need not be accrued. Personnel costs must ALWAYS be accrued regardless of amount. K3 has no such threshold.
+### K2 simplifications (BFNAR 2016:10 as amended by BFNAR 2025:2, FY beginning after 2025-12-31)
+These are separate rules:
+- **2.4**: Inkomster and utgifter that each are below **7,000 SEK** need not be accrued (5,000 SEK for FY beginning before 2026-01-01). Applies to both income and costs (including interest). The test is the amount on each invoice, avtal or similar document, not the size of the accrual; an invoice split into several invoices is summed.
+- **2.4A**: A received or paid förskott for goods or services below **7,000 SEK** may be recognised directly as income or cost.
+- **7.9**: The same kind of cost recurring every year (not personnel costs) may be expensed in the year the invoice normally arrives, if it can be expected to vary at most **20%** between years and each year carries one annual cost. No amount limit.
+- **2.4B**: 2.4, 2.4A and 7.9 may not be applied to the extent that they, alone or together, materially affect income, costs or financial position.
+
+K3 has no such blanket thresholds; materiality is assessed case by case.
 
 ## Phase 3: Depreciation (avskrivningar)
 
@@ -54,10 +60,10 @@ Individual recurring costs below **5,000 SEK** that don't fluctuate >20% year-ov
 | Immateriella tillgångar | **7810–7819** | **1019, 1029** etc. |
 | Byggnader | **7821** | **1119** |
 | Markanläggningar | **7824** | **1129** |
-| Maskiner | **7831** | **1219** |
-| Inventarier | **7832** | **1229** |
-| Bilar/transportmedel | **7834** | **1249** |
-| Datorer | **7833** | **1259** |
+| Maskiner och andra tekniska anläggningar (121x, incl. 1214 datorer/1216 arbetsfordon för produktion) | **7831** | **1219** |
+| Inventarier, verktyg och installationer (122x, incl. 1224 datorer/1226 bilar ej för produktion) | **7832** | **1229** |
+
+Account numbers above follow **BAS 2026**, which removed 7833–7835 and made 1230–1260 free accounts. Books still on BAS 2025 used 7833 installationer, 7834 bilar/transportmedel (1249) and 7835 datorer (1259); map these to 7831/7832 when migrating.
 
 ### K2 vs K3 depreciation
 - **K2**: Schablonmässiga nyttjandeperioder allowed (5 years for inventarier, tax rates for buildings). Component depreciation FORBIDDEN.
@@ -77,7 +83,7 @@ Alternative: **97% schablon rule** (3% inkuransavdrag).
 | **1460** | Lager av handelsvaror |
 | **4990** | Lagerförändring |
 
-K1: inventory below half a prisbasbelopp (29,600 SEK for 2026) need not be valued.
+K1: inventory with a total value of at most half a prisbasbelopp (29,600 SEK for 2026) need not be recognised (K1 6.47; IL 17:4a).
 K3: indirect manufacturing overhead must be included when material. K2: optional.
 
 ## Phase 5: Untaxed reserves (obeskattade reserver)

@@ -258,7 +258,7 @@ def calculate_wip_lopande(project, period_date):
     
     wip_balance = upparbetad - fakturerat
     
-    # Tax basis: only invoiced amounts (HFD 2011 ref. 20)
+    # Tax basis: invoiced amounts (IL 17:26; industries per IL 17:23)
     tax_revenue = fakturerat
     accounting_revenue = upparbetad
     

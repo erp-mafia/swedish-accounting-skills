@@ -70,7 +70,7 @@ Is the contract fixed-price or time-and-materials?
 
 ├─ Time-and-materials (löpande räkning)
 │  └─ Both K2 and K3: recognize revenue as work is performed
-│     Tax: may diverge from accounting (HFD 2011 ref. 20)
+│     Tax: may diverge from accounting (IL 17:26; scope per IL 17:23)
 │
 └─ Fixed-price (fast pris)
    ├─ K3 (koncernredovisning): successiv vinstavräkning MANDATORY
@@ -80,16 +80,16 @@ Is the contract fixed-price or time-and-materials?
    │     └─ No: revenue = costs incurred (zero profit recognized)
    │
    ├─ K3 (juridisk person): successiv vinstavräkning OR
-   │  alternativregeln (per punkt 23.31, requires 17 kap. 23 § IL)
+   │  färdigställandemetoden (punkt 23.31, only industries in 17 kap. 23 § IL)
    │
-   └─ K2: huvudregeln (completion %) OR alternativregeln
+   └─ K2 (method choice 6.15): huvudregeln (completion %, 6.16–6.21) OR alternativregeln (6.22–6.25)
       └─ Alternativregeln: recognize when "väsentligen fullgjort"
          (Srf U 15: assessed from customer acceptance perspective)
 ```
 
 ### Befarade förluster
 
-K3 punkt 23.32: if total estimated costs exceed total contract revenue, the expected loss must be recognized as a cost IMMEDIATELY, regardless of completion percentage. This is mandatory and overrides normal recognition logic. The engine must flag projects where cumulative actual + estimated remaining costs exceed contract revenue.
+K3 punkt 23.24 (successiv vinstavräkning; punkt 23.32 when a juridisk person uses färdigställandemetoden) and K2 punkt 6.19 (huvudregeln) / 6.23 (alternativregeln): if total estimated costs exceed total contract revenue, the expected loss must be recognized as a cost IMMEDIATELY, regardless of completion percentage. This is mandatory and overrides normal recognition logic. The engine must flag projects where cumulative actual + estimated remaining costs exceed contract revenue.
 
 ### Moms timing mismatch
 
@@ -118,7 +118,7 @@ Per Srf U 14, pågående arbeten must be reported GROSS per project in the balan
 1. **Incorrect färdigställandegrad**: over/under-recognition of revenue. Flag projects where completion % diverges >20% from time-elapsed or budget-consumed ratios.
 2. **Missing project tags**: orphaned costs. Enforce MANDATORY project code on accounts flagged in dimension settings.
 3. **Mixing recognition methods**: without disclosure violates consistency. Lock method per project type at company config level.
-4. **Unrecognized befarade förluster**: automatic detection required per K3 23.32.
+4. **Unrecognized befarade förluster**: automatic detection required per K3 23.24 (23.32 under färdigställandemetoden) and K2 6.19/6.23.
 5. **Incomplete project closings**: residual balances on 1620/2450/1470. Enforce zero-balance check before CLOSED status.
 6. **Missing garantiavsättningar**: common audit finding for construction. Prompt at project close.
 7. **VAT-revenue timing mismatch**: booking 1620 entries with moms, or failing to report moms on advance invoices.

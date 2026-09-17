@@ -4,6 +4,11 @@
 
 Pattern: xx0 = asset, xx8 = accumulated impairment (nedskrivning), xx9 = accumulated depreciation.
 
+The tables below follow BAS 2025. **BAS 2026 changes** (bas.se, BAS kontoplan 2026):
+- Group 12 restructured into **1210 Maskiner och andra tekniska anläggningar** (1211 i övrigt, 1212 byggnads- och markinventarier för produktion, 1214 datorer för produktion, 1216 arbetsfordon, 1217 finansiellt leasade maskiner, 1218/1219 ack. ned-/avskrivningar) and **1220 Inventarier, verktyg och installationer** (1221 i övrigt, 1222 byggnads- och markinventarier ej för produktion, 1224 datorer ej för produktion, 1226 bilar och transportmedel ej för produktion, 1227 finansiellt leasade inventarier, 1228/1229 ack. ned-/avskrivningar). 1230, 1240, 1250 and 1260 are free accounts; 1292 = djur som anläggningstillgång.
+- Depreciation: **7831** (maskiner, group 121x) and **7832** (inventarier, group 122x); 7833–7835 removed; 7836 leasade tillgångar and 7839 övriga remain. Impairment: 7731/7732/7733, reversals 7781/7782/7783.
+- Group 10: new **1090 Övriga immateriella anläggningstillgångar** (1092 tomträtter, 1098/1099), matching the new K2 balance-sheet post.
+
 ### Intangible Assets (Kontogrupp 10)
 
 | Account | Description | Notes |
@@ -138,7 +143,7 @@ BFL 5 kap. 4 § requires subsidiary accounting (sidoordnad bokföring) for fixed
 - **K3 (punkt 4.8):** Must record information per component
 - **Grouping (punkt 4.9):** Similar low-value assets acquired simultaneously may be grouped as one entry
 - **Disposals (punkt 4.7):** Must note date and proceeds of disposals/scrappings
-- **Theft-attractive items (punkt 4.11):** Items expensed as förbrukningsinventarier but stöldbegärliga should still be tracked
+- **Directly expensed assets (punkt 4.11):** Assets expensed directly in accordance with god redovisningssed (e.g. förbrukningsinventarier) need not be entered in the anläggningsregister. Tracking stöldbegärliga items separately is an internal-control choice, not a BFNAR requirement.
 
 ### Note Disclosure (ÅRL 5 kap. 8 §, 25 §)
 
@@ -162,6 +167,7 @@ Immediate expensing permitted for:
 | 2024 | 57,300 kr | **28,650 kr** |
 | 2025 | 58,800 kr | **29,400 kr** |
 | 2026 | 59,200 kr | **29,600 kr** |
+| 2027 | 59,600 kr | **29,800 kr** (calculated by SCB, not yet formally set) |
 
 Measured excluding deductible VAT.
 

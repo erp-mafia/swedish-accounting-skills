@@ -35,6 +35,7 @@ Every page: company name, organisationsnummer, registered office.
 - Medelantal anställda
 - Ställda säkerheter
 - Eventualförpliktelser
+- Väsentliga händelser efter räkenskapsårets slut, if any (a note, not the förvaltningsberättelse: ÅRL 5:22, K2 18.20, 18.20A, 18.22)
 
 K3 requires significantly more: deferred tax analysis, critical judgments, estimation uncertainty.
 
