@@ -41,9 +41,9 @@ Credit 2153  Ack. överavskrivningar maskiner & inventarier
 ## Inventory increase
 ```
 Debit  1460  Lager av handelsvaror
-Credit 4990  Lagerförändring
+Credit 4960  Förändring av lager av handelsvaror
 ```
-For decrease: reverse the entry. Use separate accounts per inventory type for manufacturing.
+For decrease: reverse the entry. Use the account matching the stock type: **4910** råvaror, **4920** tillsatsmaterial och förnödenheter, **4950** färdiga varor, **4960** handelsvaror. (4990 is a software convention, not a BAS account.)
 
 ## Prepaid expenses (e.g., insurance covering next year)
 ```

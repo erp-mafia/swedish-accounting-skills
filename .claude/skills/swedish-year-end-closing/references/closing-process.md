@@ -81,7 +81,7 @@ Alternative: **97% schablon rule** (3% inkuransavdrag).
 | **1440** | Produkter i arbete |
 | **1450** | Färdiga varor |
 | **1460** | Lager av handelsvaror |
-| **4990** | Lagerförändring |
+| **4960** | Förändring av lager av handelsvaror (råvaror **4910**, förnödenheter **4920**, färdiga varor **4950**; 4990 is not a BAS account) |
 
 K1: inventory with a total value of at most half a prisbasbelopp (29,600 SEK for 2026) need not be recognised (K1 6.47; IL 17:4a).
 K3: indirect manufacturing overhead must be included when material. K2: optional.
