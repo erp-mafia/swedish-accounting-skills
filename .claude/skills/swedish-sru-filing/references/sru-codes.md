@@ -268,10 +268,10 @@ Source: BAS-kontogruppen + Skatteverket joint mapping at bas.se/kontoplaner/sru/
 | 8300-8399 | 7417 | 3.16 | Ränteintäkter |
 | 8400-8499 | 7522 | 3.18 | Räntekostnader |
 | 8500-8599 (nedskrivn.) | 7521 | 3.17 | Nedskrivningar finansiella |
-| 8810 | 7524 | 3.19 | Lämnade koncernbidrag |
+| 8830 | 7524 | 3.19 | Lämnade koncernbidrag |
 | 8820 | 7419 | 3.20 | Mottagna koncernbidrag |
-| 8830 | 7420 | 3.21 | Återföring periodiseringsfond |
-| 8840 | 7525 | 3.22 | Avsättning periodiseringsfond |
+| 8819 | 7420 | 3.21 | Återföring periodiseringsfond |
+| 8811 | 7525 | 3.22 | Avsättning periodiseringsfond |
 | 8850 | 7421 | 3.23 | Förändring överavskrivningar |
 | 8860-8899 | 7422 | 3.24 | Övriga bokslutsdispositioner |
 | 8900-8989 | 7528 | 3.25 | Skatt |

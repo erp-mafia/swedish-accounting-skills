@@ -54,6 +54,14 @@ Additional KF advantages:
 - KF losses are **not avdragsgilla**, making it disadvantageous in declining markets
 - Placing kvalificerade andelar in KF is actively challenged by Skatteverket as skatteflykt
 
-## Proposed skattefri grundnivå
+## Skattefri grundnivå — ENACTED 1 januari 2026
 
-A lagrådsremiss proposes a tax-free base level for ISK/KF savings. If enacted, this would affect the breakeven calculation. Monitor legislative developments.
+En **skattefri grundnivå** för ISK och KF (kombinerat) per individ fasas in: **150 000 SEK för 2025** och **300 000 SEK från 1 januari 2026** (kapitalunderlag).
+
+- **Bara fysiska personer** — grundnivån gäller ISK och KF för privatpersoner.
+- **AB-ägd KF påverkas INTE** — den 1,065 %-effektiva skatten på AB:ets KF gäller fortfarande utan grundbelopp.
+- Avkastningsskatten på det kapitalunderlag som *överstiger* 300 000 SEK beräknas enligt vanlig formel (SLR + 1 % × 30 %, golv 1,25 %).
+- För en privatperson med små sparbelopp blir ISK/KF nu helt skattefri upp till grundnivån.
+- För breakeven-kalkylen vs direktägande: tröskeln blir mycket högre när kapitalunderlaget understiger 300 000 SEK — direktägande tappar konkurrenskraften.
+
+Källor: riksdagsbeslut hösten 2025, Skatteverket Belopp & procent 2026, Avanza/Skandia-info.
