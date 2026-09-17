@@ -17,7 +17,7 @@ description: >
 
 The hard part is the till, not the ledger. One basket can carry three VAT rates, and the boundary between serving and take-away moves with how the food is sold rather than what it is.
 
-Account numbers follow **BAS 2026**, which restructured class 3: domestic sales sit on **3000** with **3001–3004** by rate.
+Account numbers follow **BAS 2026**. Domestic sales sit on **3000** with **3001–3004** by rate, unchanged from earlier BAS years.
 
 ## How to use this skill
 

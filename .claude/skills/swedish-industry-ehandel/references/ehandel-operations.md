@@ -211,10 +211,10 @@ Multi-purpose gift card sold for 500 kr:
 No VAT. On redemption against 500 kr of 25 % goods: debit **2421** 500, credit **3001** 400,
 credit **2611** 100.
 
-Single-purpose gift card sold for 500 kr against 6 % goods: debit **1686** 500, credit **3003
-Försäljning inom Sverige, 6 % moms** 471,70, credit **2631 Utgående moms på försäljning inom
-Sverige, 6 %** 28,30. On redemption, only **2421** moves if the liability was recognised, and no
-further VAT arises.
+Single-purpose gift card sold for 500 kr against 6 % goods: VAT is due at sale, so debit **1686**
+(or **1930**) 500, credit **2421 Förskott från kunder** 471,70 and credit **2631 Utgående moms på
+försäljning inom Sverige, 6 %** 28,30. On redemption, debit **2421** 471,70 and credit **3003
+Försäljning inom Sverige, 6 % moms** 471,70; no further VAT arises.
 
 ### Breakage
 
@@ -360,9 +360,10 @@ material, say so in the month-end note.
 ### Why a pure webshop is exempt
 
 The kassaregister obligation in SFL 39 kap. 4 § applies to cash and card payments taken in the
-seller's presence. Two exemptions in SFL 39 kap. 5 § together cover a webshop: **distans- och
-hemförsäljning**, which Skatteverket lists among the activities exempt without any application,
-and invoiced sales — *"Du som fakturerar hela eller delar av din försäljning behöver inte
+seller's presence. A webshop falls outside it on two separate grounds: **distans- och
+hemförsäljning** is exempt under SFL 39 kap. 5 §, which Skatteverket lists among the activities
+exempt without any application, and invoiced sales are outside 39 kap. 4 § altogether rather than
+being an exemption — *"Du som fakturerar hela eller delar av din försäljning behöver inte
 registrera den fakturerade försäljningen i ett kassaregister."*
 
 There is also a de minimis: *"Du behöver inte ha ett tillverkardeklarerat kassaregister om du

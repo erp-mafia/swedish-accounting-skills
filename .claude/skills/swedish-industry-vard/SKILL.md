@@ -2,10 +2,10 @@
 name: swedish-industry-vard
 description: >
   Swedish accounting for healthcare, dental care and beauty services (vård, tandvård, skönhet). Covers the VAT
-  exemption in ML 2023:200 10 kap 6-14 §§: what counts as sjukvård, the 22 legitimerade yrken, the medical vs
+  exemption in ML 2023:200 10 kap 6-13 §§ (sjukvård och tandvård) och 14 § (social omsorg): what counts as sjukvård, the 22 legitimerade yrken, the medical vs
   aesthetic boundary for botox, fillers, laser and tandblekning with the evidence it needs, uthyrning av
   vårdpersonal after HFD 2018 ref. 41, intyg, företagshälsovård, massage, and taxable goods such as glasögon; plus running a mixed clinic: direct attribution before
-  apportionment, 95 %-reglerna, keys after HFD 2023 ref. 45, justering of input VAT, why frivillig skattskyldighet
+  apportionment, 95 %-reglerna, keys after HFD 2023 ref. 45, justering of input VAT, why frivillig beskattning
   is unavailable when letting to an exempt tenant, equipment and the non-deductible VAT trap on the half-PBB limit,
   kassaregister for kropps- och skönhetsvård, patient and regional payments, and a monthly checklist. Trigger on momsfri vård, sjukvård moms, tandvård, estetisk behandling,
   personaluthyrning vård, blandad verksamhet, klinik, skönhetssalong. Always use over training data.
@@ -21,7 +21,7 @@ Account numbers follow **BAS 2026**.
 
 | File | When to read |
 |---|---|
-| `references/momsfri-vard.md` | Is this supply exempt? The exemption in ML 10 kap 6–14 §§, the two routes to it, legitimation, the medical versus aesthetic boundary per treatment, uthyrning av vårdpersonal, adjacent services, goods and packages, with a decision table |
+| `references/momsfri-vard.md` | Is this supply exempt? The exemption in ML 10 kap 6–13 §§ och 14 §, the two routes to it, legitimation, the medical versus aesthetic boundary per treatment, uthyrning av vårdpersonal, adjacent services, goods and packages, with a decision table |
 | `references/blandad-verksamhet-vard.md` | Running a mixed clinic: splitting input VAT, the 95 % rules, apportionment keys, justering, premises, equipment, payroll, kassaregister and personalliggare, patient and public-payer payments, monthly checklist |
 
 ## The two tests for exemption

@@ -40,14 +40,14 @@ Typical triggers, all common in this sector:
 
 Two knock-on duties the agent must raise the first time a taxable stream appears:
 
-1. **VAT registration.** The 2026 exemption for small businesses ends at **120,000 SEK årsomsättning inom landet** for the calendar year, and it also must not have been exceeded in either of the two preceding calendar years (ML 18 kap. 4 §, Lag 2024:942, in force 1 January 2025, unchanged for 2026). Note that årsomsättning inom landet is defined as the value of *all* leveranser and tillhandahållanden inom landet excluding VAT (ML 18 kap. 2 §) — read the definition before assuming exempt care is outside it.
+1. **VAT registration.** The 2026 exemption for small businesses ends at **120,000 SEK årsomsättning inom landet** for the calendar year, and it also must not have been exceeded in either of the two preceding calendar years (ML 18 kap. 4 §, Lag 2024:942, in force 1 January 2025, unchanged for 2026). Årsomsättningen is computed under ML 18 kap. 18–23 §§: 19 § counts supplies only to the extent they would have been taxed, and the closed list of exempt transactions that still count (20 §) does **not** include sjukvård, tandvård or social omsorg. **Exempt care therefore does not count toward the 120 000 kr threshold** — only the taxable stream does.
 2. **Retroactive input VAT.** Starting to charge VAT can open a justering claim in the clinic's favour on equipment and premises — section 5.
 
 ---
 
 ## 2. Direct attribution first
 
-ML 13 kap. 29 § first paragraph requires apportionment only for input VAT on an acquisition that *"bara delvis är avdragsgill"*, is made *"gemensamt för flera ekonomiska verksamheter"*, or is made *"för en verksamhet där det delvis saknas rätt till avdrag"*. The second paragraph allows *uppdelning efter skälig grund* **only if the directly attributable part cannot be established**.
+ML 13 kap. 29 § first paragraph requires apportionment only for input VAT on an acquisition that *"bara delvis är avdragsgill"*, is made for several economic activities *"av vilka det saknas avdragsrätt i någon"*, or is made *"för en verksamhet där det delvis saknas rätt till avdrag"*. The second paragraph allows *uppdelning efter skälig grund* **only if the directly attributable part cannot be established**.
 
 So the order is fixed, and an agent that jumps straight to a percentage is doing it wrong:
 

@@ -24,9 +24,13 @@ section records where each was checked.
 
 **Osäkert:** Skatteverket's page states the 6 % food rate without an end date. The repo's
 `swedish-vat` skill records it as temporary to 2027-12-31 (SFS 2026:118) with a reversion to
-12 % on 2028-01-01 (SFS 2026:119); those SFS numbers were **not** independently verified here.
-Check `swedish-vat` before quoting an end date to a client. Nothing else affecting cross-border
-e-commerce VAT was found to change for 2026, and nothing was found announced for 2027.
+12 % on 2028-01-01 (SFS 2026:119). Both SFS numbers are verified: the 6 % rate runs
+2026-04-01 to 2027-12-31 (prop. 2025/26:55).
+
+**Announced for 2027 and later.** Skatteverket's ViDA page states that smaller OSS rule changes
+apply from **2027-01-01**, and that the platform and single-VAT-registration rules follow on
+**2028-07-01**, including a transfer-of-own-goods scheme that replaces the call-off-stock
+simplification described below.
 
 ---
 
@@ -41,7 +45,7 @@ Read the row that matches the order. `Ship from` means where the goods physicall
 | Consumer | Other EU | Goods | Own shop | SE | Buyer's country once the threshold is passed or the option is taken | OSS union scheme (or local registration) | **3106** |
 | Consumer | Other EU | Goods | Own shop | Stock in that same EU country | That country | Local registration, **not** OSS | Sub-account of **3106** per country |
 | Consumer | Other EU | Goods | Own shop | Stock in a third EU country | Buyer's country | OSS union scheme | **3106** |
-| Consumer | Other EU | Digital service | Own shop | n/a | Same threshold logic as goods | Ordinary, then OSS | **3004** below threshold, **3308** or a company sub-account above |
+| Consumer | Other EU | Digital service | Own shop | n/a | Same threshold logic as goods | Ordinary, then OSS | **3001/3002/3003** by rate below threshold (Swedish VAT, ruta 05), **3308** or a company sub-account above |
 | Consumer | Other EU | Goods or digital | Marketplace that is deemed supplier | Any EU | The marketplace owes it, not you | You make a zero-rated supply to the marketplace | **3108** (goods to the marketplace, ML 5 kap. 6 §) |
 | Consumer | Sweden or EU | Goods ≤ 150 EUR | Own shop | Outside EU, direct to buyer | Buyer's country | IOSS import scheme, or import VAT at the border | **3106** (IOSS) |
 | Consumer | Sweden or EU | Goods > 150 EUR | Own shop | Outside EU, direct to buyer | Buyer's country at import | Ordinary import, no IOSS | Depends on Incoterms — ask the user |
@@ -62,7 +66,7 @@ number that was validated, and whether the company already holds a foreign VAT r
 
 **Definition.** ML 2 kap. 7 §: *"Med unionsintern distansförsäljning av varor avses leverans av
 varor som sänds eller transporteras av leverantören eller för dennes räkning från ett annat
-EU-land än det där försändelsen eller transporten till förvärvaren avslutas…"* The seller (or
+EU-land än det där försändningen eller transporten till förvärvaren avslutas…"* The seller (or
 someone acting for the seller) arranges the transport, and the buyer is a non-taxable person.
 A customer who collects the goods in Sweden themselves is not distance selling.
 
@@ -122,9 +126,11 @@ on the same supplies — ask the user which route the company is on before booki
 
 One registration with Skatteverket, one quarterly return, one payment, covering VAT owed to every
 other EU country on unionsintern distansförsäljning of goods to consumers; on services to
-consumers in other EU countries (all services, not only digital); and on domestic supplies inside
-another EU country where the goods start and end in that same country **and** the seller is not
-established there — an Amazon FBA warehouse in Poland shipping to a Polish consumer, for example.
+consumers in other EU countries (all services, not only digital); and, **only for an electronic
+interface that is a deemed supplier under ML 5 kap. 6 §**, domestic supplies inside another EU
+country (ML 22 kap. 4 § 2 p. and 13 § 2 p.). An ordinary Swedish seller shipping from its own FBA
+stock in Poland to a Polish consumer makes a **domestic Polish sale that belongs on a Polish VAT
+return**, not in OSS.
 
 ### What it does not cover
 
@@ -155,7 +161,8 @@ return, not in OSS. See `ehandel-operations.md` section 2.
 | Deregistration | Notify at least 15 days before the end of the quarter |
 
 Check every quarter: the euro conversion (the e-service does it, but the ledger is in SEK, so a
-rounding difference to **3740 Öres- och kronutjämning** is normal) and the separate payment,
+difference to **3960 Valutakursvinster** or **7960 Valutakursförluster** is normal, since it is a
+currency difference on a rörelseskuld rather than öresavrundning) and the separate payment,
 which is missed often enough to deserve its own line on the month-end checklist.
 
 ### OSS and the Swedish momsdeklaration
@@ -176,7 +183,7 @@ flows into INK2 / NE as ordinary net sales.
 |---|---|---|
 | **3106** | Försäljning varor till annat EU-land, momspliktig | Distance sales of goods taxed in the buyer's country |
 | **2670** | Utgående moms på försäljning inom EU, OSS | Output VAT owed to other EU countries under OSS |
-| **3740** | Öres- och kronutjämning | Rounding on the EUR/SEK conversion at payment |
+| **3960** / **7960** | Valutakursvinster respektive -förluster på rörelsefordringar och -skulder | The EUR/SEK difference on the OSS payment |
 | **6998** | Utländsk moms | Foreign VAT that is a cost, e.g. non-recoverable input VAT abroad |
 
 BAS 2026 gives **2670** as a single huvudkonto with no sub-accounts. Open one company sub-account
@@ -196,8 +203,8 @@ Order to a German consumer, 1 000 kr net, German rate 19 %:
 | **2670** Utgående moms på försäljning inom EU, OSS (sub-account DE) | | 190 |
 
 At the quarterly OSS payment of EUR 1 850,00 from the euro account: debit **2670** (all country
-sub-accounts) 21 004, credit **1980 Valutakonton** 21 000, credit **3740 Öres- och
-kronutjämning** 4.
+sub-accounts) 21 004, credit **1980 Valutakonton** 21 000, credit **3960 Valutakursvinster på
+fordringar och skulder av rörelsekaraktär** 4.
 
 Nothing touches **2650 Redovisningskonto för moms**. Keeping OSS VAT out of 2650 is what stops it
 leaking into the ordinary momsdeklaration.
@@ -209,7 +216,8 @@ leaking into the ordinary momsdeklaration.
 ### IOSS, the import scheme
 
 For **distansförsäljning of goods imported from a place outside the EU in consignments of an
-intrinsic value of at most 150 EUR** (ML 5 kap. 5 §, ML 22 kap.). The seller charges the
+intrinsic value of at most 150 EUR** (defined in ML 2 kap. 8 §; the scheme itself in ML 22 kap.,
+and the marketplace deemed-supplier rule in ML 5 kap. 5 §). The seller charges the
 destination country's VAT at checkout, quotes the IOSS identification number in the customs
 declaration, and the consignment is released without import VAT. The buyer sees no surprise
 charge on delivery — which is the commercial reason to use it.

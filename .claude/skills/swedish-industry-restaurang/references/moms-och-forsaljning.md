@@ -202,7 +202,7 @@ Fri kost at genuine **intern representation** (personalfest, intern kurs, inform
 
 | Case | VAT | Income tax / booking |
 |------|------|------|
-| **Komplimentmåltid** to a guest (goodwill after a complaint) | Uttag av tjänst, ML 5 kap. 29 §; base = kostnaden, ML 8 kap. 6 §; 12 % | Cost stays in **4310**; uttagsmoms to **6071 Representation, avdragsgill** or **7631** by whom it was for |
+| **Komplimentmåltid** to a guest (goodwill after a complaint) | Uttag av tjänst, ML 5 kap. 29 §; base = kostnaden, ML 8 kap. 6 §; 12 % | Cost stays in **4310**; a meal has a 0 kr income-tax deduction ceiling, so the uttagsmoms goes to **6072 Representation, ej avdragsgill** (or **7632** when it was for staff), not to 6071 |
 | **Free dish to a paying table already invoiced** (price reduction, not a gift) | No uttag — reduce the ersättning; **3730 Lämnade rabatter** | Normal revenue reduction |
 | **Varuprover and gåvor av mindre värde** given inside the business | **Not** an uttag: ML 5 kap. 9 § andra stycket | Book cost only |
 | **Tasting portions to the public** as marketing | Varuprover if of minor value; otherwise uttag | **5960 Varuprover, reklamgåvor, presentreklam och tävlingar** |
@@ -328,8 +328,7 @@ Benefit side, same day: 4 × 124,00 = **496,00 kr** kostförmån to AGI ruta 012
 | Account | Debit | Credit |
 |------|------|------|
 | **1930 Företagskonto** | 60 451.00 | |
-| **6040 Kontokortsavgifter** | 439.20 | |
-| **2641 Debiterad ingående moms** | 109.80 | |
+| **6040 Kontokortsavgifter** | 549.00 | |
 | **1686 Fordringar för kontokort och kuponger** | | 61 000.00 |
 
 Cash must be booked **senast påföljande arbetsdag** and **1910** must reconcile to the counted drawer; the växelkassa is registered in the till before the day starts (`swedish-cash-register`).
@@ -338,7 +337,7 @@ Cash must be booked **senast påföljande arbetsdag** and **1910** must reconcil
 
 ## 11. BAS 2026 accounts used in this file
 
-Verified against KONTOPLAN BAS 2026 (bas.se, downloaded 2026-09-17). Note that BAS 2026 restructured class 3: domestic sales are now **3000** with **3001–3004** by rate — the older per-product 30xx series is gone.
+Verified against KONTOPLAN BAS 2026 (bas.se, downloaded 2026-09-17). Note that domestic sales are now **3000** with **3001–3004** by rate — the older per-product 30xx series is gone.
 
 | Account | Name |
 |------|------|

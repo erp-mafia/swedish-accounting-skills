@@ -197,7 +197,7 @@ The trigger is an **åtagande** — the contractual responsibility for defects d
 
 | | K2 | K3 |
 |------|------|------|
-| Basis | Best estimate; for garantiåtaganden, computed from **previous years' actual costs** for the same type of undertaking. Where no history exists (new company, changed direction), företagsekonomiskt motiverade riktlinjer for the industry may be used (16.7 commentary) | Best estimate of the expenditure required to settle the förpliktelse |
+| Basis | Best estimate; for garantiåtaganden, computed from **previous years' actual costs** for the same type of undertaking. Where no history exists (new company, changed direction), företagsekonomiskt motiverade riktlinjer for the industry may be used (the allmänna rådet in K2 16.7 itself) | Best estimate of the expenditure required to settle the förpliktelse |
 | Discounting | Not required | **21.9**: discount to present value **if the timing effect is material**, at a pre-tax rate reflecting the time value of money and the risks |
 | Tax-based shortcut | **16.8**: the provision **may** be computed per IL if it can be assumed the result does not deviate by more than **20 %** from the 16.7 best estimate | No equivalent shortcut |
 
@@ -209,7 +209,7 @@ K2 16.7's table was amended by **BFNAR 2025:2**, applicable to räkenskapsår be
 
 - **3 §**: framtida garantiutgifter are deducted per 4 or 5 § with the amount **set aside in the accounts** to cover the risk from garantiåtagandena at the end of the beskattningsår. **The deduction must be reversed the following beskattningsår.** The provision is therefore re-computed and re-deducted annually, gross.
 - **4 § (schablonregeln)**: the deduction may not exceed the year's actual costs arising from garantiåtaganden, excluding the change in the provision itself. If the garantitid is **shorter than two years**, the deduction is capped at as many twenty-fourths of those costs as the garantitid is in months (part months dropped). Adjusted pro rata for a long or short räkenskapsår.
-- **5 § (utredningsregeln)**: a larger deduction must be given where clearly motivated because the business is newly started, the garantiåtaganden concern one or a few very large tillverkningsobjekt or arbeten, the scope of garantiåtaganden increased significantly during the year, or similar grounds. **A single large entreprenad with a long garantitid is precisely the case 5 § exists for.**
+- **5 § (utredningsregeln)**: a larger deduction must be given where clearly motivated because the business is newly started, the garantiåtaganden concern one or a few very large tillverkningsobjekt or arbeten, the scope of garantiåtaganden increased significantly during the year, **a significant part of the garantiåtaganden concerns a period considerably longer than two years**, or similar grounds. **A single large entreprenad with a long garantitid is precisely the case 5 § exists for.**
 
 ### Accounts and entry
 
@@ -282,7 +282,7 @@ A beskattningsbar person **in a byggnadsrörelse** who performs or acquires (1) 
 2. the fastighet or lägenhet is a **lagertillgång** in the byggnadsrörelse under IL, and
 3. the services relate to a part of the property **not used in an activity giving avdragsrätt**.
 
-Third stycke extends the rule to property that is another asset in the byggnadsrörelse than lagertillgång, if conditions 1 and 3 are met.
+Third stycke extends the rule to property that is another asset in the byggnadsrörelse than lagertillgång, if conditions 1 and 3 are met — but there it applies **only to services the person performs itself** ("i de fall den beskattningsbara personen **utför** tjänsterna"). Purchased byggtjänster on such a property are not uttagspliktiga; Skatteverket: uttagsbeskattning sker då "endast för egenproducerade byggtjänster".
 
 Skatteverket's clarifications: a **byggnadsrörelse** means you build buildings and anläggningar; **hantverksrörelser** (VVS, måleri) and **anläggningsrörelser** (markarbeten, sprängning) are **not** byggnadsrörelser. Uttagsbeskattning only becomes relevant where the property is used in a **non-VAT-liable** activity. Where the property is a lagertillgång and uttagsbeskattning applies, input VAT on both material and purchased byggtjänster is deductible under the ordinary rules. If there is no utåtriktad byggverksamhet, or it is too small a part of the whole, the fastighetsförvaltning rules below apply instead.
 

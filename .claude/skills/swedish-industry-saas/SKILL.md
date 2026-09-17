@@ -53,7 +53,7 @@ An annual subscription invoiced and paid in January is mostly a liability, not i
 | Question | Skill |
 |---|---|
 | VAT rules, OSS, reverse charge in depth | `swedish-vat` |
-| Buying foreign SaaS and cloud (the mirror case) | `swedish-daily-bookkeeping` (`references/foreign-purchases.md`) |
+| Buying foreign SaaS and cloud (the mirror case) | `swedish-daily-bookkeeping` (`references/foreign-purchases.md`), or `swedish-vat` if that skill is not installed |
 | Payroll, benefits, AGI for option programmes | `swedish-payroll` |
 | Owner-side planning, 3:12 and dividends | `swedish-tax-planning` |
 | Accruals, provisions and closing | `swedish-year-end-closing` |

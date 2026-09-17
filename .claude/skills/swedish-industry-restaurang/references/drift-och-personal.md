@@ -88,7 +88,7 @@ A restaurant's daily cash takings may be booked on one **gemensam verifikation**
 
 **SFL 39 kap. 11 §**: anyone running restaurangverksamhet must keep a personalliggare. Identification details must be documented for the näringsidkare and, **continuously**, for everyone *verksam* in the premises — including people working in another business the same trader runs in the same verksamhetslokal. "Verksam" is wider than "employed": unpaid family, a friend helping at the bar, a hired consultant in the kitchen all count.
 
-Exemptions (SFL 39 kap. 11 § första stycket):
+Exemptions (SFL 39 kap. 11 § andra stycket):
 
 1. Enskild näringsverksamhet where only the trader, their spouse or children under 16 are active.
 2. Fåmansföretag or fåmanshandelsbolag where only the företagsledare, their spouse or children under 16 are active.
@@ -281,7 +281,7 @@ Public performance of music in a restaurant or café needs licences from the rig
 
 Skatteverket's public rate guidance states that upplåtelse or överlåtelse of the copyright to literary and artistic works carries **6 % VAT in all links of the chain**, and names remuneration from upphovsrättsorganisationer such as STIM as an example. **Osäkert:** whether the performers'/producers' remuneration is treated identically was not confirmable — Skatteverket's rättslig vägledning is not machine-readable. Book the rate the invoice actually states.
 
-**There is no radio or TV fee for a restaurant.** The old radio- och tv-avgift (lag 1989:41) was repealed by **lag (2018:1893)** from 1 January 2019 and replaced by a public service-avgift charged to individuals through the tax system; that law was in turn repealed on **1 January 2026** by **lag (2025:986) om public service**. A "Sveriges Radio" or "SVT" invoice to a restaurant in 2026 is not a public service fee — check what it actually is before booking it.
+**There is no radio or TV fee for a restaurant.** The old radio- och tv-avgift (lag 1989:41) was repealed by **lag (2018:1893)** from 1 January 2019 and replaced by a public service-avgift charged to individuals through the tax system; lag 2018:1893 was in turn repealed at the end of 2025 and replaced by **lag (2025:986) om public service**, which re-enacts the avgift on individuals (5 kap.), not on companies. A "Sveriges Radio" or "SVT" invoice to a restaurant in 2026 is therefore not a public service fee — check what it actually is before booking it.
 
 ---
 
@@ -350,7 +350,7 @@ All checked **2026-09-17**.
 - Socialavgiftslag (2000:980) — 2 kap. 10 §
 - Arbetstidslag (1982:673) — 6 §, 8 §, 8 a §
 - Lag (2022:156) om alkoholskatt — 9 kap.
-- Lag (2018:1893) om finansiering av radio och tv i allmänhetens tjänst — in force 2019-01-01, repealing lag (1989:41); itself repealed 2026-01-01 by **lag (2025:986) om public service**
+- Lag (2018:1893) om finansiering av radio och tv i allmänhetens tjänst — in force 2019-01-01, repealing lag (1989:41); itself replaced by **lag (2025:986) om public service** (in force 2025-12-02; the individual avgift continues under its 5 kap.)
 
 **Skatteverket (www.skatteverket.se, full page text retrieved)**
 

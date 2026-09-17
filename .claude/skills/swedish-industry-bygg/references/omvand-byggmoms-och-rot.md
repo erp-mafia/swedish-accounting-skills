@@ -310,7 +310,7 @@ Historic anomaly worth knowing when reconciling old jobs: for work paid between 
 ## 11. ROT: fakturamodellen step by step
 
 1. **Agree with the customer.** Skatteverket recommends agreeing the terms of the work and the ROT treatment; the avtal may be written or oral. Establish who owns the bostad and who will claim.
-2. **Collect the customer's data before starting**: personnummer, and either the **fastighetsbeteckning** (småhus/ägarlägenhet) or the **bostadsrättsföreningens organisationsnummer plus lägenhetsnummer** (four digits). Required by HUSFL 9 a §.
+2. **Collect the customer's data before starting**: personnummer, and either the **fastighetsbeteckning** (småhus/ägarlägenhet) or the **bostadsrättsföreningens organisationsnummer plus lägenhetsnummer** (four digits). Personnummer is required by HUSFL 9 § p. 2; the fastighetsbeteckning, or the BRF's organisationsnummer plus lägenhetsbeteckning, by 9 a §.
 3. **Record hours as you go.** Actual hours per work type must be reported, **also on fixed-price jobs**, and subcontractors' hours too. Only time worked on site at the customer qualifies.
 4. **Invoice with the deduction shown.** Deduct up to 30 % of arbetskostnad inkl. moms and reduce "att betala". Separate arbetskostnad, materialkostnad and övriga kostnader as separate lines.
 5. **Customer pays electronically**, the reduced amount.
