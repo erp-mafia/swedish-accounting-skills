@@ -112,8 +112,8 @@ Vid underlag 200 000 kr nås maxavdraget 15 000 kr. Über 200 000 är det ingen 
 ### Avstämning nästa år
 
 Beräknat schablonavdrag stämmer aldrig exakt med faktiska egenavgifter. Differensen rättas till i nästa års deklaration:
-- **R39** = tidigare års schablonavdrag (läggs tillbaka som intäkt)
-- **R40** = faktiska egenavgifter / SLP enligt skattebeskedet (dras av)
+- **R40** = föregående års medgivna schablonavdrag (fjolårets R43, läggs tillbaka som intäkt)
+- **R41** = påförda egenavgifter / SLP enligt slutskattebeskedet (dras av)
 
 Net effect: schablonavdraget är ett genuint avdrag för året, men korrigeras nästa år mot verkligheten.
 
@@ -242,16 +242,16 @@ This is one of the largest specific incentives för aktiv-classification:
 
 Använd alltid Skatteverkets aktuella jobbskatteavdragsräknare i implementationen — beloppen är dynamiska.
 
-### Förhöjt JSA för pensionärer (åldersgräns höjs successivt)
+### Förhöjt JSA för pensionärer (åldersgräns)
 
-Personer som vid årets ingång uppnått pensionsåldersgränsen (66 år 2025, **67 år 2026**) får utökat JSA. Strukturen nedan beskriver kalkylgrunden — exakta belopp justeras varje budget och bör hämtas från Skatteverket vid implementation:
+Personer som vid beskattningsårets ingång har fyllt **66 år** (gäller 2025 och 2026, IL 67 kap 8 §) får utökat JSA. En höjning av åldersgränsen till 67 år fr.o.m. 2027 är bara föreslagen (promemoria "Höjd åldersgräns och förstärkning av jobbskatteavdraget för seniorer", maj 2026), inte beslutad. Strukturen nedan beskriver kalkylgrunden — exakta belopp justeras varje budget och bör hämtas från Skatteverket vid implementation:
 
 - 20 % av arbetsinkomsten upp till 100 000 kr (= max ~20 000 kr extra)
 - 5 % av arbetsinkomster mellan 100 000 – 300 000 kr (= max ~10 000 kr extra)
 - 30 000 kr på arbetsinkomster mellan 300 000 – 600 000 kr (= max ~30 000 kr extra)
 - 30 000 kr på arbetsinkomster > 600 000 kr, minus 3 % av arbetsinkomster över 600 000 kr
 
-Pensionärer som är aktiva i NV får ett **avsevärt större** JSA än under-pensionsåldersgränsen-personer, but only on aktiv arbetsinkomst (inte pensionen själv). Prop. 2025/26:32 förstärker även detta avdrag för 2026.
+Pensionärer som är aktiva i NV får ett **avsevärt större** JSA än under-pensionsåldersgränsen-personer, but only on aktiv arbetsinkomst (inte pensionen själv). IL 67 kap 8 § ändrades inte för 2026 (senaste lydelse SFS 2024:1131); 2026 års förstärkning gällde JSA enligt 7 § (under 66 år).
 
 ### Arbetsinkomster — definition
 

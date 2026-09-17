@@ -20,7 +20,7 @@ This SKILL.md contains the decision framework, key rates, and interactions. Deta
 |---|---|
 | `references/aktiv-passiv-naringsverksamhet.md` | Aktiv vs passiv classification, tredjedelsregeln (500 h), aktivitetsregeln, huvudsaklighetsregeln, konsekvenser för egenavgifter/SLP/JSA/SGI/PGI, rättsfall |
 | `references/rantefordelning-planning.md` | Positiv/negativ räntefördelning, IL 33 kap, kapitalunderlag, breakeven analysis, sparat fördelningsbelopp, övergångspost, makar, when räntefördelning is *not* worth using |
-| `references/periodiseringsfond-expansionsfond-ef.md` | P-fond EF (30%, no schablonintäkt), expansionsfond (IL 34 kap, 20,6%, 125,94% kapitalunderlagstak), interactions, R29/R30/R34/R35 NE-bilaga |
+| `references/periodiseringsfond-expansionsfond-ef.md` | P-fond EF (30%, no schablonintäkt), expansionsfond (IL 34 kap, 20,6%, 125,94% kapitalunderlagstak), interactions, R32–R37 NE-bilaga |
 | `references/ersattningsfond.md` | IL 31 kap, 4 fund types (inventarier/byggnader/mark/djurlager), utbytestillgångar, expropriation, naturkatastrof, 30% tillägg at återföring |
 | `references/inkomstuppdelning-familj.md` | IL 60 kap, medhjälpande make, gemensam verksamhet, marknadsmässig ersättning, lön till barn 16+, 7-year rule (närstående) |
 | `references/kvittning-underskott.md` | IL 62:3 allmänt avdrag, första 5 åren, 100k cap, kulturarbetare unbounded, slutligt underskott (70%, 3-year split), rullning, EU/EES verksamhet |
@@ -69,7 +69,7 @@ The order matters: avskrivningar reduce result, then räntefördelning operates 
 | Active, 1 karensdag | slightly higher |
 | Active, 90 karensdagar | slightly lower |
 | Passive (SLP) | **24,26 %** |
-| Pensionär (aktiv eller passiv, året efter pensionsåldersgränsen — 66 år 2025, 67 år 2026) | **10,21 %** |
+| Pensionär (aktiv NV, året efter pensionsåldersgränsen — 66 år 2025, 67 år 2026; passiv NV betalar SLP 24,26 % oavsett ålder) | **10,21 %** |
 | Född 1937 eller tidigare | **0 %** |
 
 **Generell nedsättning** 7,5 % av hela avgiftsunderlaget, max 15 000 kr/år. Förutsättning: aktiv NV + underlag > 40 000 kr (40 000-gränsen är en tröskel, inte ett avdragsbelopp — vid underlag 40 001 kr utgår nedsättning på *hela* underlaget). Beräknas automatiskt av Skatteverket.
@@ -95,12 +95,12 @@ Gränsbelopp (2025+, efter prop. 2024/25:1):
 - Tak: **30% of skattemässigt resultat** (vs 25% for AB)
 - 6-year mandatory reversal (FIFO)
 - **NO schablonintäkt** for fysiska personer
-- NE-bilaga only (R34/R35), never booked
+- NE-bilaga only (R32 återföring / R34 avsättning), never booked
 
 ### Räkenskapsenlig avskrivning på inventarier
 - Huvudregeln: 30% declining balance on (IB + årets inköp – årets försäljningar)
 - Kompletteringsregeln: 20% straight-line per asset over 5 years
-- Förbrukningsinventarier (< halva PBB: **29 400 kr 2025 / 29 600 kr 2026**, kortidsinventarier ≤ 3 år): direktavdrag. Halva-PBB-gränsen blev enhetlig fr.o.m. 2025 (prop. 2024/25:1) — innan gällde 5 000 kr för många EF.
+- Förbrukningsinventarier (< halva PBB: **29 400 kr 2025 / 29 600 kr 2026**, kortidsinventarier ≤ 3 år): direktavdrag (IL 18:4; halva-PBB-gränsen har gällt sedan 2009). Nytt fr.o.m. beskattningsår som börjar efter 2024-12-31 (SFS 2024:1131) för EF med förenklat årsbokslut: hela avskrivningsunderlaget får dras av om det uppgår till högst ett halvt PBB (IL 18:13), och lager på högst ett halvt PBB behöver inte tas upp (IL 17:4 a).
 
 ### PGI/SGI/brytpunkter (verify annually mot Skatteverket Belopp och procent)
 | Threshold | 2025 | 2026 |
@@ -126,10 +126,10 @@ EF differs sharply from AB on which items are booked vs only entered on NE-bilag
 | Item | Booked in räkenskaperna? | Where it lives |
 |---|---|---|
 | Räntefördelning | NEVER | NE sid 2 R30/R31 |
-| Periodiseringsfond EF | NEVER (per BFNAR 2006:1 / K1) | NE sid 2 R34/R35 |
+| Periodiseringsfond EF | NEVER (per BFNAR 2006:1 / K1) | NE sid 2 R32/R34 |
 | Expansionsfond | NEVER (per K1) | NE sid 2 R36/R37 |
 | Ersättningsfond | YES (avsättning bokförs); resterande hanteras i deklaration | Bokfört + NE |
-| Egenavgifter schablonavdrag | NEVER | NE sid 2 R43, justering R39/R40 |
+| Egenavgifter schablonavdrag | NEVER | NE sid 2 R43, avstämning R40/R41 |
 | Skatt på årets resultat | NEVER (personal tax) | Inte i bokföringen |
 | Inventarieavskrivning | YES (8851/1229 etc) | Bokfört |
 | Förenklat årsbokslut U1–U4 | Upplysning, ej bokfört | NE-bilaga upplysning |
@@ -140,27 +140,30 @@ This is the largest source of conceptual errors when implementing EF bookkeeping
 
 | Ruta | Innehåll |
 |---|---|
-| R11 | Bokfört resultat (samma som förenklat årsbokslut) |
-| R12–R26 | Skattemässiga justeringar (avskrivningar, ej avdragsgill rep., ränta, etc.) |
-| R29 | Överskott före räntefördelning |
+| R11 | Bokfört resultat (samma som förenklat årsbokslut; förs till R12 sid 2) |
+| R12–R28 | Skattemässiga justeringar (R13–R16 ej avdragsgilla kostnader/ej skattepliktiga intäkter m.m., R17–R21 gemensam verksamhet/medhjälpande make, R22–R23 övriga justeringar, R24 outnyttjat underskott föregående år, R25–R28 skogsavdrag, återföring värdeminskningsavdrag, skogskonto/upphovsmannakonto) |
+| R29 | Överskott/underskott före räntefördelning |
 | R30 | Positiv räntefördelning (till INK1 p.11.1, inkomst av kapital) |
 | R31 | Negativ räntefördelning (till INK1 p.11.2, avdrag i kapital) |
 | R32 | Återföring av periodiseringsfond (oldest year first) |
 | R33 | Överskott före avsättning till periodiseringsfond |
 | R34 | Avsättning till periodiseringsfond (max 30% av R33) |
 | R35 | Överskott före ökning av expansionsfond |
-| R36 | Återföring av expansionsfond (till INK1 p.12.1) |
-| R37 | Ökning av expansionsfond (till INK1 p.12.2) |
-| R38 | Inkomst före schablonavdrag och sjukpenning |
-| R39 | Tidigare års schablonavdrag (positiv) |
-| R40 | Faktiska egenavgifter / SLP (avdrag) |
-| R41/R42 | Sjukpenning hänförlig till NV |
-| R43 | Årets schablonavdrag för egenavgifter |
-| R45 | Inkomst som överförs till tjänst för kvittning (aktiv, nystartad) — till INK1 p.14.1 (allmänt avdrag) |
-| R47/R48 | Överskott / underskott av aktiv NV → INK1 p.10.1/p.10.2 |
-| R49/R50 | Överskott / underskott av passiv NV → INK1 p.10.3/p.10.4 |
+| R36 | Ökning av expansionsfond, högst R35 (till INK1 p.12.1) |
+| R37 | Minskning av expansionsfond (till INK1 p.12.2) |
+| R38 | Egna pensionspremier / inbetalning på pensionssparkonto som dras av i NV (endast aktiv) |
+| R39 | Särskild löneskatt på pensionssparavdraget i R38 |
+| R40 | Förra årets medgivna avdrag för egenavgifter/SLP (= fjolårets R43, tas upp som intäkt) |
+| R41 | Påförda egenavgifter/SLP enligt slutskattebeskedet (avdrag) |
+| R42 | Överskott/underskott före avdrag för egenavgifter/SLP |
+| R43 | Årets beräknade (schablon)avdrag för egenavgifter/SLP |
+| R44 | Sjukpenning som hör till näringsverksamheten |
+| R45 | Allmänt avdrag: utnyttjat underskott i nystartad (aktiv) eller konstnärlig NV — till INK1 p.14.1 |
+| R46 | Underskott som utnyttjas i kapital (avyttring näringsfastighet/näringsbostadsrätt) |
+| R47 | Överskott → INK1 p.10.1 (aktiv) eller p.10.3 (passiv) |
+| R48 | Underskott → INK1 p.10.2 (aktiv) eller p.10.4 (passiv); förs nästa år till R24 |
 
-Field positions verified mot officiell NE-bilaga (SKV 2161) inkomstår 2024/2025. Verify mot innevarande års blankett.
+Rutorna R49/R50 finns inte. Field positions verified mot Skatteverkets fältnamnstabell `NE_SKV2161-13-02-25-02` (SRU-paket 2025P4) och hjälptexten till NE för inkomstår 2025. Verify mot innevarande års blankett.
 
 ## Skatteflyktslagen and audit triggers for EF
 
@@ -195,4 +198,4 @@ The most valuable patterns for EF:
 - Bokföringslagen (BFL) 1999:1078 — bokföringsskyldighet, K1-tröskel 3 MSEK
 - BFNAR 2006:1 — Enskilda näringsidkare som upprättar förenklat årsbokslut (K1)
 - Lag (1995:575) mot skatteflykt
-- SOU 2020:50 — "Enklare skatteregler för enskild näringsverksamhet". **Delvis genomförd** via prop. 2024/25:1 (ikraft 2025-01-01): RF-trösklar omarbetade (50k slopad / -500k negativ tröskel), halva PBB som inventariegräns. Den större "näringsfond"-idén (samlad ersättning för P-fond+expansionsfond+RF) **ej genomförd**.
+- SOU 2020:50 — "Enklare skatteregler för enskild näringsverksamhet". **Delvis genomförd** via prop. 2024/25:1 (ikraft 2025-01-01): RF-trösklar omarbetade (50k slopad / -500k negativ tröskel), förenklingar för EF med förenklat årsbokslut (helt avdrag för avskrivningsunderlag ≤ halvt PBB, IL 18:13; lager ≤ halvt PBB, IL 17:4 a). Halva PBB för direktavdrag på inventarier (IL 18:4) är äldre. Den större "näringsfond"-idén (samlad ersättning för P-fond+expansionsfond+RF) **ej genomförd**.

@@ -27,7 +27,7 @@ Note that AI **does NOT spread the income across years for SGI/PGI** — those u
 
 Skiktgränsen 2025: **625 800 kr**. 2026: **643 000 kr**.
 
-For pensionärer (året efter pensionsåldersgränsen — 66 år 2025, 67 år 2026), skiktgränsen är högre pga förhöjt grundavdrag. Beräkningen anpassas till deras höjda brytpunkt.
+For pensionärer (fyllt 66 år vid beskattningsårets ingång 2025 och 2026; 67 år fr.o.m. 2027, IL 63 kap 3 a §), skiktgränsen är högre pga förhöjt grundavdrag. Beräkningen anpassas till deras höjda brytpunkt.
 
 ## Fördelningstiden (allocation period)
 
@@ -128,7 +128,7 @@ Princip: AI är värt-att-räkna-på närhelst (a) ackumulerad inkomst ≥ 50 00
 
 1. **Inte begärt AI** — Skatteverket gör inte beräkningen automatiskt
 2. **Inkomsten hör bara till ett år** — då är AI inte tillämplig (vanligt fel)
-3. **Skiktgränsen ej justerad för pensionärer** — pensionärer (efter pensionsåldersgränsen, 66 år 2025 / 67 år 2026) har förhöjt grundavdrag → högre effektiv skiktgräns
+3. **Skiktgränsen ej justerad för pensionärer** — pensionärer (fyllt 66 år vid årets ingång 2025/2026, 67 år fr.o.m. 2027) har förhöjt grundavdrag → högre effektiv skiktgräns
 4. **Glömt att SGI/PGI inte påverkas** — AI är skattetekniskt; sociala avgifter beräknas på faktisk redovisad inkomst per år
 5. **5-årsregeln för efteransökan missad** — efter 5 år är AI-rätten förlorad
 6. **AI på återförda P-fonder som hör till bara 1 år** — kräver minst 2 års fonder
@@ -180,9 +180,9 @@ På det avdragna beloppet betalas SLP 24,26% (för pensionsförmåner är detta 
 
 ### NE-rad
 
-- R38 = Resultat före pensionssparavdrag
-- R39 = Pensionssparavdrag (positivt)
-- R45/47-48 = slutgiltigt resultat
+- R38 = Avdrag för egna pensionspremier / inbetalning på pensionssparkonto (endast aktiv NV; förs även till INK1 p.10.6 som underlag för särskild löneskatt)
+- R39 = Avdrag för särskild löneskatt (24,26 %) på pensionssparavdraget i R38
+- R47/R48 = slutligt överskott/underskott (→ INK1 p.10.1–10.4)
 
 ### Pensionssparavdrag — breakeven-exempel
 

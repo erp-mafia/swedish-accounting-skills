@@ -37,9 +37,14 @@ Formula: total periodiseringsfonder at year-start × statslåneränta (SLR) from
 
 This is a skattemässig justering ONLY. NEVER booked in accounting. Reported on INK2S field 4.6a.
 
-### Transition rule for pre-2019 periodiseringsfonder
+### Transition rule for periodiseringsfonder from before 2021
 
-Funds created before 2019 (when rate was 22%) require **gross-up of 103–106%** on reversal to compensate for rate reduction. Handled only in tax calculation.
+On reversal in a tax year beginning after 2020-12-31, the reversed amount is grossed up to compensate for the rate reductions (övergångsbestämmelser p. 5 till SFS 2018:1206; AB and other juridiska personer only):
+- Funds from tax years beginning before 2019 (22%): **106%**
+- Funds from tax years beginning 2019–2020 (21.4%): **104%**
+- Funds from 2021 onwards (20.6%): **100%** (no gross-up)
+
+The uplift is reported on INK2S field 4.6d. Handled only in tax calculation.
 
 ---
 
