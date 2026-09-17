@@ -52,8 +52,7 @@ These accounts appear frequently in SIE files and have special significance:
 
 ### Income statement (3xxx-8xxx)
 - **3010-3099** Försäljning varor/tjänster (sales revenue)
-- **3740** Öres-/avrundningsdifferens (rounding differences)
-- **3741** Öresutjämning (øre equalization, used to balance rounding)
+- **3740** Öres- och kronutjämning (rounding differences, öresutjämning)
 - **4010** Varuinköp (cost of goods purchased)
 - **5010** Lokalhyra (office rent)
 - **6110** Kontorsmaterial (office supplies)
@@ -63,7 +62,8 @@ These accounts appear frequently in SIE files and have special significance:
 - **7010** Löner (salaries)
 - **7210** Löner tjänstemän och företagsledare
 - **7510** Arbetsgivaravgifter (employer contributions)
-- **7832** Avskrivningar maskiner/inventarier (depreciation)
+- **7831** Avskrivningar på maskiner och andra tekniska anläggningar (depreciation, machinery)
+- **7832** Avskrivningar på inventarier, verktyg och installationer (depreciation, equipment)
 - **8310** Ränteintäkter (interest income)
 - **8410** Räntekostnader (interest expenses)
 - **8910** Skatt på årets resultat (income tax on profit, AB)
