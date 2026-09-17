@@ -8,6 +8,7 @@ Claude skills for Swedish accounting compliance. These skills give Claude deep k
 |-------|-------------|
 | `swedish-accounting-compliance` | BFL, BFNAR, BAS kontoplan, K2/K3, verifikationer, bokforingsskyldighet |
 | `swedish-asset-accounting` | Anlaggningsredovisning, planenlig/overavskrivning, BAS 10xx-12xx/78xx |
+| `swedish-daily-bookkeeping` | Kontering av vardagstransaktioner: betalvaxlar, utlandskop, skattekonto, agartransaktioner, kvitton |
 | `swedish-ef-skatteplanering` | Enskild firma: rantefordelning, expansionsfond, egenavgifter, NE-bilaga, EF vs AB |
 | `swedish-financial-reporting` | Arsredovisning, Bolagsverket filing, INK2/INK2R/INK2S, noter |
 | `swedish-invoice-compliance` | ML 17 kap 24ss, kreditfaktura, Peppol BIS 3.0, ROT/RUT, reverse charge |
