@@ -97,9 +97,11 @@ Major changes replacing the dual system with a unified calculation:
 | Sparat utdelningsutrymme | Carried forward WITHOUT ränteuppräkning |
 | 4%-spärren | **Abolished** |
 | Löneuttagskravet | **Abolished** (50x cap remains) |
-| Karenstid | Shortened from 5 to **4 years** |
-| Närståendebegreppet | Narrowed: siblings and their families excluded |
+| Karenstid | Shortened from 5 to **4 years** (applies from inkomstår 2027, see steg 2 below) |
+| Närståendebegreppet | **Unchanged**: excluding siblings was proposed but is not in SFS 2025:1361; syskon, their spouses and children remain närstående (IL 2 kap. 22 §) |
 | Schablonmässigt löneavdrag | **8 IBB** per delägare subtracted from löneunderlag |
+
+**Steg 2 (inkomstår 2027):** the four-year periods in 57 kap. 3 § (samverkan), 4 § (kvalificerad andel: verksam i betydande omfattning under beskattningsåret eller de fyra föregående åren) and 5 § (utomståenderegeln) apply first for beskattningsår beginning after 2026-12-31 (SFS 2025:1361, övergångsbestämmelse 5). For inkomstår 2026 the five-year periods still apply.
 
 The grundbelopp at 4 IBB is significantly higher than the old förenklingsregeln (2.75 IBB), benefiting small companies. The abolished lönekrav means owners of holding companies can access lönebaserat utrymme from subsidiary wages without meeting a salary threshold.
 

@@ -293,6 +293,8 @@ Tanken med K1: **så få justeringar som möjligt mellan redovisat resultat och 
 
 Each year: räkna ut lägsta värdet enligt huvudregel + lägsta enligt kompletteringsregel → välj lägsta → årets avskrivning = avskrivningsunderlag − valda värdet.
 
+**K1 6.38 (BFNAR 2025:1)**: uppgår det bokförda värdet före årets avskrivning (avskrivningsunderlaget) till högst ett halvt prisbasbelopp får hela beloppet skrivas av (IL 18:13).
+
 ### Förbrukningsinventarier — direktavdrag
 
 - Korttidsinventarier (livslängd ≤ 3 år) → direktavdrag i sin helhet
@@ -303,7 +305,7 @@ Each year: räkna ut lägsta värdet enligt huvudregel + lägsta enligt komplett
 - Huvudregel: lägsta värdets princip (LVP) — det lägre av anskaffningsvärde och nettoförsäljningsvärde
 - FIFO för värdering av identiska partier
 - **97%-regeln** (3% schablonmässigt inkuransavdrag) tillåts i K1
-- **K1 specifik förenkling**: lager < 5 000 kr **behöver inte alls tas upp** som tillgång — varuförändringen bokförs men endast lager över 5 000 kr balansredovisas
+- **K1 specifik förenkling**: lager med ett sammanlagt värde på **högst ett halvt prisbasbelopp** (29 600 kr 2026) **behöver inte alls tas upp** som tillgång utan får redovisas som kostnad (K1 6.47; IL 17:4a)
 
 ### Skulder
 
@@ -391,7 +393,7 @@ Bokslutssekvens för en EF som upprättar förenklat årsbokslut. Varje steg mot
 | 8 | Låneskulder | B13 |
 | 9 | Skatteskulder — moms, AGI-skuld | B14 |
 | 10 | Leverantörsskulder inkl. moms | B15 |
-| 11 | Övriga skulder — förskott från kund > halvt PBB | B16 |
+| 11 | Övriga skulder — förskott från kund > 5 000 kr (K1 6.72) | B16 |
 | 12 | Boka årets resultat (8999 debet / 2019 kredit för EF) | R11 |
 | 13 | Fyll i U1 (P-fond), U2 (expansionsfond), U3 (ersättningsfond), U4 (skogskonto/upphovsmannakonto/betalningsplan) | U1-U4 |
 | 14 | För R11 till NE-bilaga, fortsätt med skattemässiga justeringar R12-R26, RF R30/R31, P-fond R32/R34, expansionsfond R36/R37, schablonavdrag R43 | (NE forts.) |
@@ -406,7 +408,7 @@ Kritiska invarianter att kontrollera efter steg 14:
 
 1. **Bokföra P-fond / expansionsfond som kostnad i resultaträkningen** — INTE tillåtet i K1 → avdraget blir ogiltigt
 2. **Använda brutet räkenskapsår** — INTE tillåtet för enskild näringsidkare
-3. **Räkna fel på lager < 5 000 kr** — får utelämnas (men måste konsekvent: lager 4 999 kr utelämnas; 5 001 kr tas upp)
+3. **Räkna fel på lagergränsen** — lager på högst ett halvt prisbasbelopp får utelämnas (2026: lager 29 600 kr utelämnas; 29 601 kr tas upp)
 4. **Glömma förskott från kunder > 5 000 kr** — ska redovisas som skuld (B16), minskar R1 årets försäljning
 5. **Förenkla bort relevanta verifikationer** — verifikationerna är fortfarande huvudbevis enligt BFL
 6. **Använda K1 trots > 3 MSEK omsättning** — INTE tillåtet
@@ -445,7 +447,8 @@ If you build bokföringssoftware targeted at EF:
 - [ ] Allow utelämning av < 5 000 kr fordringar/skulder per BFNAR 2006:1
 - [ ] Apply 97% schablonavdrag för inkurans på lager
 - [ ] Apply huvudregel/kompletteringsregel for avskrivning, choose lower automatic
-- [ ] Surface halv-PBB-cap för förbrukningsinventarier (29 400 kr 2025 / 29 600 kr 2026; gräns höjd från 5 000 kr fr.o.m. 2025 via prop. 2024/25:1)
+- [ ] Surface halv-PBB-cap för förbrukningsinventarier (29 400 kr 2025 / 29 600 kr 2026; halvt PBB enligt IL 18:4, oförändrat sedan Lag 2009:547; K1 6.30)
+- [ ] Surface halv-PBB-gränserna för lager (K1 6.47; IL 17:4a) och helavskrivning av avskrivningsunderlag på högst halvt PBB (K1 6.38; IL 18:13), räkenskapsår som inleds efter 2024-12-31 (BFNAR 2025:1)
 
 ## Out of scope
 

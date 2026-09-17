@@ -52,7 +52,7 @@ Anchored to statslåneräntan (SLR) 30 november the year before income year.
 | 2025 | 1,96% | **7,96%** | **2,96%** |
 | 2026 | 2,55% | **8,55%** | **3,55%** |
 
-SLR may not go below 0,5% as floor (same floor as för schablonintäkt on P-fond AB).
+SLR floor (IL 33 kap 3 §): **0 %** for positiv räntefördelning (rate never below 6 %) and **0,5 %** for negativ räntefördelning (rate never below 1,5 %). Schablonintäkt on P-fond AB has its own 0,5 % floor (IL 30 kap 6 a §).
 
 ## When is positiv räntefördelning *worth* doing?
 
@@ -214,7 +214,7 @@ SOU 2020:50 "Enklare skatteregler för enskild näringsverksamhet" har genomför
 **Genomfört:**
 - ✅ **50 000 kr-gränsen för positiv räntefördelning slopad** (krävde tidigare kapitalunderlag > +50 000 kr; nu räcker ≥ 0 kr)
 - ✅ **Tröskeln för negativ räntefördelning höjd** till −500 000 kr (var −50 000 kr) — SOU föreslog total slopning, men reformen blev en höjd tröskel istället
-- ✅ Höjd schabloninventariegräns till halva PBB (var 5 000 kr)
+- ✅ EF med förenklat årsbokslut: hela avskrivningsunderlaget för inventarier får dras av om det är högst ett halvt PBB (IL 18 kap 13 §), och lager på högst ett halvt PBB behöver inte tas upp (IL 17 kap 4 a §). (Halvt PBB som gräns för direktavdrag på inventarier, IL 18 kap 4 §, gällde redan före 2025.)
 - ✅ Vissa förenklingar i förenklat årsbokslut
 
 **Inte genomfört** (kvarstår som förslag — bevaka):

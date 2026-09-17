@@ -17,7 +17,7 @@ For an AB-perspective on periodiseringsfond, see `swedish-tax-planning/reference
 | Schablonintäkt | YES (SLR × IB av P-fonder, min 0,5%) | **NO** |
 | Antal parallella fonder | 6 | 6 |
 | Maximal carry | 6 år (FIFO återföring senast år 7) | 6 år (FIFO) |
-| Uppräkning på återföring (pre-2019) | YES (6%) | No equivalent |
+| Uppräkning på återföring (fonder från före 2021) | YES (106 % för fonder före 2019, 104 % för 2019–2020, 100 % fr.o.m. 2021) | No equivalent (gäller bara juridiska personer) |
 
 The most important EF-specific facts:
 1. **30%** (not 25%) — markedly more aggressive than AB
@@ -106,9 +106,9 @@ Practical tip: the year 2 expansionsfond kapitalunderlag will be similar to the 
 
 ### NE-bilaga fields
 
-- Ruta **R35** — Överskott före ökning av expansionsfond (= caps R37)
-- Ruta **R36** — Återföring av expansionsfond → INK1 p.12.1
-- Ruta **R37** — Ökning av expansionsfond → INK1 p.12.2
+- Ruta **R35** — Överskott före ökning av expansionsfond (= caps R36)
+- Ruta **R36** — Ökning av expansionsfond (högst R35) → INK1 p.12.1
+- Ruta **R37** — Minskning (återföring) av expansionsfond → INK1 p.12.2
 - Hjälpblankett **SKV 2196** (Räntefördelning och expansionsfond) — used för kapitalunderlagsberäkning. **Lämnas INTE in** till Skatteverket; behåll som arbetspapper. Beräknade belopp överförs till NE och INK1.
 - Upplysning U2 in förenklat årsbokslut: expansionsfond vid årets slut
 
@@ -203,15 +203,14 @@ BAS 2018 Förenklat årsbokslut har konton 2080 Periodiseringsfonder och 2050 Av
 
 P-fond and expansionsfond are computed **in a specific order**:
 
-1. Compute skattemässigt resultat (R11 + R12–R26 justeringar = R31 inkomst före räntefördelning)
-2. Apply **räntefördelning** (R30) → result becomes inkomst efter räntefördelning
-3. Apply **återföring av P-fond** (R34) → increase result
-4. Apply **återföring av expansionsfond** (R36) → increase result
-5. Compute **30% cap for new P-fond avsättning** = 30% × (result after steps 1–4)
-6. Apply **avsättning ny P-fond** (R35) → decrease result
-7. Compute **expansionsfond ökning room** = result after step 6 (may not cause underskott)
-8. Apply **ökning expansionsfond** (R37) → decrease result
-9. Final: inkomst före schablonavdrag (R38)
+1. Compute skattemässigt resultat (R12 bokfört resultat + R13–R28 justeringar = R29 överskott före räntefördelning)
+2. Apply **räntefördelning** (R30 positiv → decrease, R31 negativ → increase)
+3. Apply **återföring av P-fond** (R32) → increase result
+4. Compute **30% cap for new P-fond avsättning** = 30% × R33 (result after steps 1–3; expansionsfond changes are not included, IL 30 kap 6 §)
+5. Apply **avsättning ny P-fond** (R34) → decrease result
+6. Compute **expansionsfond ökning room** = R35 (result after step 5; ökning may not cause underskott)
+7. Apply **ökning expansionsfond** (R36) → decrease result, or **minskning** (R37) → increase result
+8. Then pensionssparavdrag (R38–R39), avstämning egenavgifter (R40–R41), R42 överskott före avdrag för egenavgifter, schablonavdrag (R43), sjukpenning (R44), and final överskott/underskott (R47/R48)
 
 The exact ordering is enforced by NE-blankett layout. Note that the result *after* P-fond avsättning is the cap for expansionsfond ökning, so the two tools partly compete (every kr more in P-fond is one kr less expansionsfond room).
 

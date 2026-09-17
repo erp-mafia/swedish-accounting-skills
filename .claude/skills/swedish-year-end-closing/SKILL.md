@@ -23,7 +23,7 @@ This skill contains detailed reference material split by topic. Read the relevan
 - **`references/journal-entries.md`** — All specific bokslutstransaktioner with debit/credit pairs for software implementation
 - **`references/tax-calculations.md`** — Bolagsskatt for AB, egenavgifter/räntefördelning/expansionsfond/periodiseringsfond for enskild firma, schablonintäkt, schablonavdrag
 - **`references/reporting-and-filing.md`** — Årsredovisning structure, NE-bilaga, filing deadlines, penalties, Bolagsverket/Skatteverket requirements, SIE4 export, audit thresholds
-- **`references/k2-vs-k3.md`** — Implementation differences: component depreciation, deferred tax, intangibles, leasing, format restrictions, account visibility
+- **`references/k2-vs-k3.md`** — Implementation differences: component depreciation, deferred tax, intangibles, leasing, format restrictions, account visibility, K2 accrual rules (2.4/2.4A/2.4B/7.9), K2 changes from BFNAR 2025:2, K3 BFNAR 2025:3, årsbokslut BFNAR 2026:1
 - **`references/pitfalls-and-rates.md`** — Common mistakes, compliance traps, kontrollbalansräkning, and reference rate table (2025/2026)
 - **`references/k1-forenklat-arsbokslut.md`** — K1 förenklat årsbokslut (BFNAR 2006:1): applicability (3 MSEK threshold), kontantmetoden vs faktureringsmetoden, B1-B16/R1-R11/U1-U4 struktur with BAS 2018 förenklat kontoplan mappings, K1 värderingsregler (inventarier, lager, skogskonto), NE-bilaga mapping, värdering at avveckling, and a distilled praktikfall
 

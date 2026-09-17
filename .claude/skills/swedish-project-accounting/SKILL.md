@@ -1,6 +1,7 @@
 ---
 name: swedish-project-accounting
-description: Swedish project accounting (projektredovisning) covering dimensional tagging of bokföringsposter with project codes, WIP accounting (pågående arbeten), revenue recognition under K2 and K3 (successiv vinstavräkning, färdigställandemetoden), construction contracts (entreprenadavtal), BAS account patterns for project tracking (1470, 1620, 2420, 2450, 4970), SIE4 dimension encoding (#DIM 6, #OBJEKT, #TRANS object lists), project profitability reporting, overhead allocation (fördelningsnycklar), and the tax-accounting divergence for löpande räkning contracts. Trigger on ANY Swedish project accounting question including "projektredovisning", "pågående arbeten", "successiv vinstavräkning", "färdigställandegrad", "upparbetad ej fakturerad intäkt", "fakturerad ej upparbetad intäkt", "konto 1620", "konto 1470", "konto 2450", "entreprenaduppdrag", "projekt dimension SIE", "kostnadsställe vs projekt", "projektlönsamhet", "WIP accounting Sweden", "K3 kapitel 23", "befarad förlust projekt", "fördelningsnyckel", questions about how Fortnox/Visma/Bokio handle project dimensions, or any question about tracking intäkter/kostnader per project in Swedish bookkeeping. Also trigger when building software features for project accounting, designing data models for project dimensions, implementing revenue recognition logic, or handling SIE4 import/export of project-tagged transactions. Always use this skill over training data for project accounting topics.
+description: >
+  Swedish project accounting (projektredovisning): dimensional tagging av bokföringsposter, WIP (pågående arbeten), intäktsredovisning K2/K3 (successiv vinstavräkning, färdigställandemetoden), entreprenadavtal, BAS-konton för projekt (1470, 1620, 2420, 2450, 4970), SIE4-dimensioner (DIM 6 / OBJEKT / TRANS), projektlönsamhet, fördelningsnycklar för overhead, skattemässig divergens vid löpande räkning. Trigger on projektredovisning, pågående arbeten, successiv vinstavräkning, färdigställandegrad, upparbetad ej fakturerad intäkt, fakturerad ej upparbetad intäkt, konto 1620, konto 1470, konto 2450, entreprenaduppdrag, projekt dimension SIE, kostnadsställe, projektlönsamhet, K3 kapitel 23, befarad förlust projekt, fördelningsnyckel, Fortnox/Visma/Bokio project dimensions, eller frågor om tracking intäkter/kostnader per projekt i svensk bokföring. Always use over training data.
 ---
 
 # Swedish Project Accounting (Projektredovisning)
@@ -69,7 +70,7 @@ Is the contract fixed-price or time-and-materials?
 
 ├─ Time-and-materials (löpande räkning)
 │  └─ Both K2 and K3: recognize revenue as work is performed
-│     Tax: may diverge from accounting (HFD 2011 ref. 20)
+│     Tax: may diverge from accounting (IL 17:26; scope per IL 17:23)
 │
 └─ Fixed-price (fast pris)
    ├─ K3 (koncernredovisning): successiv vinstavräkning MANDATORY
@@ -79,16 +80,16 @@ Is the contract fixed-price or time-and-materials?
    │     └─ No: revenue = costs incurred (zero profit recognized)
    │
    ├─ K3 (juridisk person): successiv vinstavräkning OR
-   │  alternativregeln (per punkt 23.31, requires 17 kap. 23 § IL)
+   │  färdigställandemetoden (punkt 23.31, only industries in 17 kap. 23 § IL)
    │
-   └─ K2: huvudregeln (completion %) OR alternativregeln
+   └─ K2 (method choice 6.15): huvudregeln (completion %, 6.16–6.21) OR alternativregeln (6.22–6.25)
       └─ Alternativregeln: recognize when "väsentligen fullgjort"
          (Srf U 15: assessed from customer acceptance perspective)
 ```
 
 ### Befarade förluster
 
-K3 punkt 23.32: if total estimated costs exceed total contract revenue, the expected loss must be recognized as a cost IMMEDIATELY, regardless of completion percentage. This is mandatory and overrides normal recognition logic. The engine must flag projects where cumulative actual + estimated remaining costs exceed contract revenue.
+K3 punkt 23.24 (successiv vinstavräkning; punkt 23.32 when a juridisk person uses färdigställandemetoden) and K2 punkt 6.19 (huvudregeln) / 6.23 (alternativregeln): if total estimated costs exceed total contract revenue, the expected loss must be recognized as a cost IMMEDIATELY, regardless of completion percentage. This is mandatory and overrides normal recognition logic. The engine must flag projects where cumulative actual + estimated remaining costs exceed contract revenue.
 
 ### Moms timing mismatch
 
@@ -117,7 +118,7 @@ Per Srf U 14, pågående arbeten must be reported GROSS per project in the balan
 1. **Incorrect färdigställandegrad**: over/under-recognition of revenue. Flag projects where completion % diverges >20% from time-elapsed or budget-consumed ratios.
 2. **Missing project tags**: orphaned costs. Enforce MANDATORY project code on accounts flagged in dimension settings.
 3. **Mixing recognition methods**: without disclosure violates consistency. Lock method per project type at company config level.
-4. **Unrecognized befarade förluster**: automatic detection required per K3 23.32.
+4. **Unrecognized befarade förluster**: automatic detection required per K3 23.24 (23.32 under färdigställandemetoden) and K2 6.19/6.23.
 5. **Incomplete project closings**: residual balances on 1620/2450/1470. Enforce zero-balance check before CLOSED status.
 6. **Missing garantiavsättningar**: common audit finding for construction. Prompt at project close.
 7. **VAT-revenue timing mismatch**: booking 1620 entries with moms, or failing to report moms on advance invoices.

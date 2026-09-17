@@ -91,11 +91,11 @@ The suffix after the hyphen encodes when the fiscal year ENDS:
 | Suffix | Fiscal year ends in months |
 |---|---|
 | P1 | January–April |
-| P2 | May–August |
-| P3 | Special cases |
+| P2 | May–June |
+| P3 | July–August |
 | P4 | September–December (calendar-year companies) |
 
-The year in the type string is the INCOME YEAR (inkomstår), not the filing year. A company with fiscal year 2024-01-01 to 2024-12-31 uses period `2024P4`.
+The year in the type string is the INCOME YEAR (inkomstår: the calendar year in which the räkenskapsår ends), not the filing year. A company with fiscal year 2024-01-01 to 2024-12-31 uses period `2024P4`; fiscal year 2024-07-01 to 2025-06-30 uses `2025P2`.
 
 ### Each block is independent
 
@@ -120,10 +120,14 @@ All three conventions accepted: `\r\n` (Windows), `\r` (classic Mac), `\n` (Unix
 
 - **Integers in hela kronor (whole SEK)**. No öre, no decimals.
 - Positive: no sign, no leading zeros. Example: `1000`
-- Negative: `-` prefix. Example: `-1000`
+- Negative: `-` prefix. Example: `-1000`. Use it only to deviate from the sign printed on the form (see sign convention below).
 - **No thousands separators.** `7 135` with a space WILL fail.
 - Truncation rule per SFL 22 kap. 1 §: öre are DROPPED (truncated), not rounded.
 - Small rounding differences from öre truncation across multiple posts are accepted by Skatteverket.
+
+### Sign convention (teckenkonventionen)
+
+The sign printed on the form applies and the amount is reported as a **positive** number. Cost rows printed with "−" (e.g. INK2R 7511–7517, 7522, 7528; INK2S 7751, 7763) are therefore sent as positive amounts. A negative amount means the value deviates from the printed sign. Fields without a printed sign (balance sheet rows 2.1–2.50) are reported with their actual sign. The printed sign per field is in column `*/+/-` of Skatteverket's fältnamnstabell; see `references/sru-codes.md`.
 
 ### Org number format
 
@@ -170,33 +174,39 @@ Reserved for post names. **Forbidden in all string data values.**
 #NAMN Exempelbolaget AB
 #UPPGIFT 7011 20240101
 #UPPGIFT 7012 20241231
-#UPPGIFT 7113 90000
+#UPPGIFT 7104 100000
 #BLANKETTSLUT
 #BLANKETT INK2R-2024P4
 #IDENTITET 165590001234 20250401 100001
 #NAMN Exempelbolaget AB
 #UPPGIFT 7011 20240101
 #UPPGIFT 7012 20241231
-#UPPGIFT 7201 100000
-#UPPGIFT 7281 50000
-#UPPGIFT 7301 50000
-#UPPGIFT 7302 25000
+#UPPGIFT 7215 60000
+#UPPGIFT 7251 40000
+#UPPGIFT 7281 180000
+#UPPGIFT 7301 25000
+#UPPGIFT 7302 154400
+#UPPGIFT 7365 80000
+#UPPGIFT 7368 20600
 #UPPGIFT 7410 500000
-#UPPGIFT 7513 -200000
-#UPPGIFT 7514 -150000
-#UPPGIFT 7450 75000
+#UPPGIFT 7513 250000
+#UPPGIFT 7514 150000
+#UPPGIFT 7528 20600
+#UPPGIFT 7450 79400
 #BLANKETTSLUT
 #BLANKETT INK2S-2024P4
 #IDENTITET 165590001234 20250401 100002
 #NAMN Exempelbolaget AB
 #UPPGIFT 7011 20240101
 #UPPGIFT 7012 20241231
-#UPPGIFT 7650 75000
-#UPPGIFT 7651 15000
-#UPPGIFT 8020 90000
+#UPPGIFT 7650 79400
+#UPPGIFT 7651 20600
+#UPPGIFT 7670 100000
 #BLANKETTSLUT
 #FIL_SLUT
 ```
+
+Cost rows 7513, 7514 and 7528 are printed with "−" on INK2R and are therefore sent as positive amounts. Result before tax 100 000 kr, booked tax 20 600 kr (20.6 %), årets resultat 79 400 kr (3.26 → 4.1). INK2S adds back the tax (4.3a) to reach överskott 100 000 kr at 4.15 (7670), which is carried to INK2 1.1 (7104).
 
 ## Validation errors
 
@@ -233,7 +243,7 @@ The official mapping is maintained by BAS-kontogruppen + Skatteverket at `bas.se
 
 **The #1 mapping error**: BAS accounts 5000-6999 (övriga externa kostnader) must ALL aggregate into a single SRU code: **7513**. Do NOT create individual SRU codes per BAS account in this range.
 
-**INK2S codes are NOT auto-derived from BAS accounts.** They represent tax adjustments requiring manual calculation. The bookkeeping result flows from INK2R into INK2S field 7650/7750, then tax adjustments are applied to arrive at 8020/8021 (överskott/underskott).
+**INK2S codes are NOT auto-derived from BAS accounts.** They represent tax adjustments requiring manual calculation. The bookkeeping result flows from INK2R into INK2S field 7650/7750, then tax adjustments are applied to arrive at 7670/7770 (4.15 överskott / 4.16 underskott), which carry to INK2 7104/7114.
 
 **For the complete SRU code tables and BAS mapping**, read `references/sru-codes.md`.
 

@@ -1,7 +1,7 @@
 ---
 name: swedish-tax-planning
 description: >
-  Swedish corporate tax planning for AB. Scope: aktiebolag (AB) only. For enskild firma tax planning, use swedish-ef-skatteplanering. Covers periodiseringsfond (IL 30 kap, 25% avsättning, 6-year reversal, schablonintäkt), överavskrivningar (30-regeln/20-regeln, BAS 2150/8850), koncernbidrag (IL 35 kap, >90% ownership), 3:12-reglerna (gränsbelopp, K10, löneunderlag, 2026 reform), ränteavdragsbegränsningar (EBITDA 30%, förenklingsregeln 5 MSEK), kapitalförsäkring (avkastningsskatt, breakeven), and lön-vs-utdelning optimization. Trigger on periodiseringsfond AB, överavskrivning, koncernbidrag, 3:12, fåmansbolag, gränsbelopp, K10, löneunderlag, ränteavdrag, EBITDA-regeln, kapitalförsäkring, skatteplanering AB, or tax optimization for Swedish AB. Always use over training data.
+  Swedish corporate tax planning for AB. Scope: aktiebolag (AB) only. For enskild firma tax planning, use swedish-ef-skatteplanering. Covers periodiseringsfond (IL 30 kap, 25% avsättning, 6-year reversal, schablonintäkt), överavskrivningar (30-regeln/20-regeln, BAS 2150/8850), koncernbidrag (IL 35 kap, more than 90% ownership), 3:12-reglerna (gränsbelopp, K10, löneunderlag, 2026 reform), ränteavdragsbegränsningar (EBITDA 30%, förenklingsregeln 5 MSEK), kapitalförsäkring (avkastningsskatt, breakeven), and lön-vs-utdelning optimization. Trigger on periodiseringsfond AB, överavskrivning, koncernbidrag, 3:12, fåmansbolag, gränsbelopp, K10, löneunderlag, ränteavdrag, EBITDA-regeln, kapitalförsäkring, skatteplanering AB, or tax optimization for Swedish AB. Always use over training data.
 ---
 
 # Swedish Tax Planning (Skatteplanering AB)
@@ -23,7 +23,7 @@ This SKILL.md contains the decision framework and key interactions. Detailed rul
 | `references/koncernbidrag.md` | Questions about koncernbidrag, IL 35 kap, >90% ownership, directions, underskottsspärr, BAS 8820/8830 |
 | `references/312-regler.md` | Questions about 3:12, fåmansbolag, kvalificerade andelar, gränsbelopp, K10, löneunderlag, 2026 reform |
 | `references/ranteavdragsbegransningar.md` | Questions about ränteavdragsbegränsningar, EBITDA-regeln, förenklingsregeln 5 MSEK, N9, carry-forward |
-| `references/kapitalforsakring.md` | Questions about kapitalförsäkring in AB, avkastningsskatt, BAS 1385, when KF beats direktägande |
+| `references/kapitalforsakring.md` | Questions about kapitalförsäkring in AB, avkastningsskatt, BAS 1385, uttag accounting, when KF beats direktägande |
 | `references/strategy-and-interactions.md` | Questions about optimal year-end sequence, lön vs utdelning, interaction matrix, Skatteverket audit triggers |
 
 Read multiple reference files when a question spans domains (common in tax planning).
@@ -78,6 +78,8 @@ Read multiple reference files when a question spans domains (common in tax plann
 - Breakeven return vs direktägande: ~5.2%
 - Never for näringsbetingade andelar (already skattefria)
 - BAS: 1385
+- Uttag (K2 8.4C/11.13A, räkenskapsår from 2026): intäkt up to the unrecognised värdeökning; only the excess reduces 1385
+- No skattefri grundnivå for AB (IL 42:45–49 applies to fysiska personer only)
 
 ## Interaction matrix (critical for year-end optimization)
 

@@ -236,8 +236,7 @@ Detta är det **enskilt största argumentet för EF över AB** vid kombinerad f�
 |---|---|
 | NE R24 | Inrullat underskott från föregående år |
 | NE R45 | Underskott som ska föras till allmänt avdrag (aktiv, nystartad, ≤ 100k) |
-| NE R47/R48 | Överskott / underskott av aktiv NV |
-| NE R49/R50 | Överskott / underskott av passiv NV |
+| NE R47/R48 | Överskott / underskott av NV (aktiv → INK1 10.1/10.2, passiv → INK1 10.3/10.4; aktiv/passiv styrs av kryssrutan på NE sid 1). R48 förs nästa år till R24 |
 | INK1 14.1 | Allmänt avdrag för underskott i nystartad aktiv NV (sidan 2 baksida) |
 | INK1 8.4 | 70 % av slutligt underskott i avslutad EF, året efter nedläggning ("Slutligt underskott av näringsverksamhet") |
 

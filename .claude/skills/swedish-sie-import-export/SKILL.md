@@ -17,7 +17,9 @@ Deterministic reference for parsing, validating, generating, and troubleshooting
 
 ## Quick orientation
 
-SIE4 (Standard Import Export, version 4B, 2008) is Sweden's universal accounting data interchange format. Tagged plain-text, one record per line, `#LABEL` prefix, space-delimited fields.
+SIE4 (Standard Import Export) is Sweden's universal accounting data interchange format. Tagged plain-text, one record per line, `#LABEL` prefix, space-delimited fields.
+
+**Current spec**: SIE filformat utgåva 4C (2025-08-06). 4C does not change the file format from 4B (2008); its format clarifications are that a line added and later removed is written as #BTRANS, and that an empty field before a field with a value is written as `""`. CP437 (`#FORMAT PC8`) is still the only allowed character set. SIE-Gruppen's online validator is at https://sietest.sie.se/. SIE 5 is a separate XML format (English labels; can also carry reskontror, asset registers and attached documents). This skill covers SIE 4.
 
 **File extensions**: `.SE` = export, `.SI` = import.
 
@@ -25,8 +27,8 @@ SIE4 (Standard Import Export, version 4B, 2008) is Sweden's universal accounting
 - **Type 1**: Closing balances + chart of accounts + SRU codes (tax returns)
 - **Type 2**: Type 1 + monthly period balances (#PSALDO, #PBUDGET)
 - **Type 3**: Type 2 + object-level balances, dimensions
-- **Type 4E**: Type 3 + all verifications (#VER/#TRANS) = full audit trail
-- **Type 4I**: Verifications only, minimal header = subsystem import (payroll, POS)
+- **Type 4E**: Export file: Type 1 records + verifications (#VER/#TRANS); period and object balances optional. Used for full transaction exports (audit trail)
+- **Type 4I**: Import file: header (incl. #FNAMN) + verifications; #RAR, #KONTO, #DIM/#OBJEKT optional; no balance records = subsystem import (payroll, POS)
 
 ## Core invariants (never violate)
 
@@ -40,6 +42,7 @@ SIE4 (Standard Import Export, version 4B, 2008) is Sweden's universal accounting
 ## Field format rules
 
 - **Quoting**: Double quotes around fields with spaces. Escape internal quotes as `\"`
+- **Empty fields**: Fields are positional. An empty field before a field with a value is written as `""` (`#VER "" "" 20251216 "Porto"`); trailing empty fields may be left out
 - **Dates**: YYYYMMDD. Periods: YYYYMM
 - **Amounts**: Dot decimal separator, max 2 decimals, no plus sign
 - **Block delimiters**: `{` and `}` each on own line around #TRANS entries in #VER
@@ -84,7 +87,7 @@ Sum: 12500 + (-2500) + (-10000) = 0. Valid.
 - **N** = Löner (payroll)
 - **U** = Utbetalningar (supplier payments)
 
-Series and numbering restart each fiscal year. 4I import files may have empty series/verno.
+Series and numbering often restart each fiscal year, but some programs run a series across years. Every verification series must be unbroken (BFNAR 2013:2 p. 5.9). 4I import files may have empty series/verno.
 
 ## Year-end closing and IB/UB flow
 
@@ -111,8 +114,8 @@ Post-migration validation: compare balance reports, trial balances, verification
 
 ## Audit trail under BFL
 
-- **7-year retention** after calendar year in which fiscal year ended (BFL 7:1)
-- **Storage in Sweden** required (EU/EEA with Skatteverket notification; non-EU requires permission)
+- **7-year retention** after calendar year in which fiscal year ended (BFL 7:2)
+- **Storage in Sweden** is the main rule (BFL 7:2). Electronic records may be kept in another EU country, or in a non-EU country with equivalent mutual-assistance instruments, if the location (and any change) is reported to Skatteverket, Skatteverket/Tullverket get immediate electronic access on request, and a printout can be made immediately in Sweden (BFL 7:3a). Otherwise a permit from Skatteverket is needed (BFL 7:4). Paper records stay in Sweden; only a paper verifikation may be kept abroad temporarily, for special reasons (BFL 7:3).
 - **Immutability**: locked entries cannot be modified. Corrections via separate correction verification only.
 - **#FLAGGA**: anti-duplication control. Exporter writes 0, importer sets to 1 after success.
 - **SIE is not complete archiving**: lacks processing history and system documentation required by BFL.
@@ -120,11 +123,11 @@ Post-migration validation: compare balance reports, trial balances, verification
 
 ## Encoding quick reference
 
-The spec mandates CP437 (`#FORMAT PC8`), but modern cloud software exports UTF-8. Many programs write `#FORMAT PC8` regardless of actual encoding.
+The spec (including 4C) allows only CP437 (`#FORMAT PC8`), but many cloud programs export UTF-8 anyway, often still declaring `#FORMAT PC8`. When generating files, write CP437.
 
 **Detection priority**: UTF-8 BOM → strict UTF-8 decode → CP437 byte scan (0x84/0x86/0x8E/0x8F/0x94/0x99) → Latin-1 byte scan (0xC4/0xC5/0xD6/0xE4/0xE5/0xF6) → check #PROGRAM (cloud = UTF-8, desktop = CP437) → fall back Latin-1.
 
-**Mojibake signatures**: `Ã¥`/`Ã¤`/`Ã¶` = UTF-8 read as Latin-1. `†`/`„`/`"` = CP437 read as Win-1252. `σ`/`Σ`/`÷` = Latin-1 read as CP437.
+**Mojibake signatures**: `Ã¥`/`Ã¤`/`Ã¶` = UTF-8 read as Latin-1. `†`/`„`/`”`/`Ž` = CP437 read as Win-1252. `σ`/`Σ`/`÷` = Latin-1 read as CP437.
 
 **#KSUMMA note**: CRC-32 is calculated on CP437 byte values per spec. Skip KSUMMA validation when non-CP437 encoding is detected.
 
@@ -134,12 +137,12 @@ For full encoding tables and per-software behaviors, read `references/encoding.m
 
 | Error | Cause | Fix |
 |-------|-------|-----|
-| Unbalanced verification | #TRANS sum ≠ 0 | Add öresutjämning (3741) or fix amounts |
-| IB/UB mismatch | Incomplete year-end closing | Create adjustment verification in opening period |
+| Unbalanced verification | #TRANS sum ≠ 0: line missing from the export, parse error (e.g. #RTRANS or #BTRANS counted), truncated file, or rounding in the source | Don't import or edit the voucher. Report the exact difference, compare with the source voucher, fix the cause and re-export. Never add a balancing line to an imported voucher. Real errors in the books: separate rättelsepost in the current period (see validation-rules.md) |
+| IB/UB mismatch | IB ≠ previous year's UB (ÅRL 2:4 p.7): exports taken at different times, late entries in the previous year, parse error, or a real error | Report the difference per account, diagnose against the source, re-export or update IB in the source. Never post undiagnosed adjustments in the opening or a closed period |
 | Garbled å/ä/ö | Encoding mismatch | Detect actual encoding, re-decode |
 | Duplicate verno | Series collision on import | Remap to unused series |
 | Undeclared account | #TRANS references account not in #KONTO | Add #KONTO or map to existing |
-| #FLAGGA 1 | File already imported | Verify not duplicate, manually reset to 0 |
+| #FLAGGA 1 | File already imported | Don't import. Resetting #FLAGGA to 0 defeats the double-import guard (spec 7.4); do it only after confirming the vouchers are not already in the target |
 | Missing #RAR | Can't determine fiscal year | Reject file or infer from verification dates |
 | Non-zero IB on 3xxx-9xxx | Incomplete closing in source | Run closing entries before export |
 | Truncated file | #KSUMMA opening present, closing missing | Reject, re-export from source |
