@@ -7,7 +7,7 @@ description: >
   1 January 2027 deadline for SKVFS 2021:17 and the XML journalminne, kassakvitto contents, personalliggare
   (restaurang, fordonsservice, livsmedelsgrossist, skönhetsvård, tvätteri, bygg), kontrollbesök and
   kontrollavgift (12 500 / 25 000 kr, 2 500 kr per person), plus booking the day's takings:
-  Z-dagrapport as verifikation, VAT split per rate, kort/Swish/kontant, växelkassa, kassadifferens, bank deposits,
+  Z-dagrapport as verifikation, VAT split per rate, kort/Swish/kontant, växelkassa, kassadifferens,
   dricks, personalmåltider, presentkort and kontantmetoden. Trigger on kassaregister, kassakvitto, kontrollenhet,
   journalminne, dagskassa, Z-rapport, växelkassa, kassadifferens, personalliggare, byggarbetsplats, kontrollavgift,
   dricks, presentkort, or "behöver jag kassaregister". Always use over training data.
