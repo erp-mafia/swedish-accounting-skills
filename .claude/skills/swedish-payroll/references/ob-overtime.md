@@ -19,13 +19,12 @@ Arbete utöver ordinarie arbetstid (heltid = ofta 40 tim/vecka, men kan vara 38 
 
 | Period | Max övertid |
 |---|---|
-| Per kalendervecka | 48 timmar |
-| Per fyraveckorsperiod | 50 timmar |
-| Per kalendermånad (alt) | 50 timmar |
+| Per fyraveckorsperiod | 48 timmar |
+| eller per kalendermånad | 50 timmar |
 | Per kalenderår | **200 timmar** (allmän övertid) |
-| Per kalenderår + extraordinär övertid (med Arbetsmiljöverkets dispens) | + 150 timmar = **350 timmar** |
+| Per kalenderår + extra övertid (särskilda skäl) | + 150 timmar = **350 timmar** |
 
-ATL 8 § + 9 §. Kollektivavtal kan höja eller sänka dessa nivåer.
+ATL 8 § (allmän övertid) + 8 a § (extra övertid: kräver särskilda skäl och att situationen inte gått att lösa på annat rimligt sätt; ingen dispens behövs). Allmän och extra övertid får tillsammans inte överstiga 48 timmar per fyraveckorsperiod eller 50 timmar per kalendermånad. Nödfallsövertid (ATL 9 §) får tas ut i den utsträckning förhållandena kräver. Den sammanlagda arbetstiden får vara högst 48 timmar per sjudagarsperiod i genomsnitt under högst fyra månader (ATL 10 b §). Kollektivavtal kan höja eller sänka dessa nivåer.
 
 ### Övertidsersättning (typiska CBA-nivåer)
 
@@ -41,7 +40,7 @@ Lagen kräver INTE en specifik övertidsersättning — bara att övertid är be
 
 ```
 timlön = (månadslön × 12) / (52 × ordinarie_arbetstid_per_vecka)
-# Vanlig divisor enligt CBA: 175 tim/månad eller 12 × 52 ÷ 12 = 173,33 (varieras)
+# Vanlig divisor enligt CBA: 175 tim/månad eller 40 × 52 ÷ 12 = 173,33 (varieras)
 övertidsersättning_per_tim = timlön × (1 + övertidsprocent)
 
 # Exempel: månadslön 32 000 kr, 40 tim/vecka, övertid 50 %
@@ -68,10 +67,10 @@ Komp-tid är **inte** semesterlönegrundande på samma sätt som pengar; semeste
 
 Arbete utöver avtalad arbetstid men inom ordinarie arbetstidens ram (dvs. inte över heltid). Endast för **deltidsanställda** (under heltid enligt CBA).
 
-### Tak enligt ATL 10 §
+### Tak enligt ATL 10–10 a §§
 
-- **Allmän mertid**: max 200 tim/år
-- **Extra mertid** (dispens): + 150 tim → totalt **350 tim/år**
+- **Allmän mertid** (10 §): max 200 tim/år
+- **Extra mertid** (10 a §, särskilda skäl): + 150 tim → totalt **350 tim/år**. Allmän och extra mertid får tillsammans inte överstiga 48 tim per fyraveckorsperiod eller 50 tim per kalendermånad.
 
 ### Ersättning
 
@@ -113,7 +112,7 @@ OB och övertid rapporteras inom **fältkod 011 "Kontant ersättning"** i AGI in
 
 ### Semesterlönegrundande
 
-Övertidsersättning **är** semesterlönegrundande enligt semesterlagen 7 §. Den ingår i beräkningsunderlaget för 12 %-regeln (eller sammalöneregeln). OB är också semestergrundande.
+Övertidsersättning **är** semesterlönegrundande. Den ingår i lönesumman för procentregeln (12 %, SemL 16 b §) och räknas som rörlig lönedel (12 %) vid sammalöneregeln (SemL 16 a § tredje stycket). OB är också semestergrundande.
 
 **Komp-tid (ledighet i stället för pengar) är INTE semesterlönegrundande** på samma sätt — bara den faktiska utbetalda lönen räknas.
 
@@ -129,7 +128,7 @@ OB och övertid rapporteras inom **fältkod 011 "Kontant ersättning"** i AGI in
 | **2730** | Arbetsgivaravgifter skuld (kredit, beräknas på OB + övertid 31,42 %) |
 | **2920** | Upplupna semesterlöner (kredit, växer med 12 % av OB + övertid) |
 | **7510** | Arbetsgivaravgifter (debet, kostnadsföring av 31,42 % på OB + övertid) |
-| **7090** | Förändring av semesterlöneskuld |
+| **7090** / **7290** | Förändring av semesterlöneskuld (kollektivanställda / tjänstemän) |
 
 ### Exempel-bokning (tjänsteman 32 000 kr/mån + 5 timmar övertid 50 %)
 
@@ -148,7 +147,7 @@ Debit  7510 Arbetsgivaravgifter          431
 Credit 2730 Arb.giv.avg. skuld           431
 
 Semesterlöneskuld (12 % × 1 371):
-Debit  7090 Förändring sem.löneskuld     165
+Debit  7290 Förändring sem.löneskuld     165
 Credit 2920 Upplupna semesterlöner       165
 ```
 
@@ -158,8 +157,8 @@ Credit 2920 Upplupna semesterlöner       165
 2. **OB-tillägg på övertidstillägg** — OB räknas normalt på *grundtimlönen*, inte på övertidsersättningen. Vissa CBA tillåter staplade tillägg.
 3. **Komp-tid och semesterlön** — komp-tid är inte semestergrundande i sig, men om komp-tiden tas ut som ledighet och vid uttagstillfället utbetalas semestertillägg så ska systemet räkna rätt på bas-lönen.
 4. **ATL-tak per kalenderår** — 200 timmar gäller per kalenderår, inte per anställningsår. Systemet måste hålla löpande räkning.
-5. **Dispens från Arbetsmiljöverket** — om dispens finns gäller 350 tim. Kräver explicit konfiguration.
-6. **Sjukdom under övertidsbetald period** — sjuklön beräknas på grundlönen, inte på övertidsersättningen.
+5. **Extra övertid/mertid** — kräver särskilda skäl (ATL 8 a §/10 a §), ingen dispens. Då gäller 350 tim/år. Kräver explicit konfiguration.
+6. **Sjukdom under övertidsbetald period** — sjuklön är 80 % av den lön och de anställningsförmåner som arbetstagaren faktiskt gått miste om (SjLL 6 §), vilket kan omfatta övertid som arbetstagaren skulle ha arbetat. Kollektivavtal får bestämma den närmare beräkningen (SjLL 2 § andra stycket).
 7. **Övertid efter semester eller frånvaro** — vissa CBA kräver att den anställde fullgjort full arbetsvecka innan övertidstillägg kan utgå.
 
 ## Cross-references

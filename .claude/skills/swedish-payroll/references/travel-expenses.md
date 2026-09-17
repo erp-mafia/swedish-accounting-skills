@@ -33,7 +33,14 @@ When meals are provided and traktamente reduced, a kostförmån for the free mea
 
 ### International traktamente
 
-Uses country-specific normalbelopp published annually by Skatteverket. Same 3-month, 2-year, and meal reduction percentage rules apply.
+Uses country-specific normalbelopp published annually by Skatteverket. Same 3-month and 2-year rules apply. Meal reductions differ from domestic trips and are a percentage of the normalbelopp:
+
+| Meals provided | % reduction abroad (domestic) |
+|---|---|
+| Frukost only | 15% (20%) |
+| Lunch or middag | 35% (35%) |
+| Lunch and middag | 70% (70%) |
+| All three meals | 85% (90%) |
 
 ## Utlägg vs kostnadsersättning
 
@@ -51,8 +58,10 @@ For purchases >4,000 SEK including moms, the employer's name must appear on the 
 
 Unchanged 2024-2026:
 - Own car: 25 SEK/mil (2.50 SEK/km)
-- Förmånsbil (petrol/diesel): 12 SEK/mil
-- Förmånsbil (electric/hybrid): 9.50 SEK/mil
+- Förmånsbil not fully electric (petrol, diesel, plug-in hybrid etc.): 12 SEK/mil
+- Förmånsbil fully electric: 9.50 SEK/mil
+
+Förmånsbil amounts apply only when the employee pays all fuel for the trips (IL 12:5). From 2026-07-01, an employee with a plug-in hybrid förmånsbil keeps the 12 SEK/mil fuel deduction even when charging with electricity the employer provides at the workplace (IL 12:5 third paragraph, SFS 2026:464).
 
 Amounts exceeding schabloner are taxed as salary with full arbetsgivaravgifter. All reimbursements require a körjournal with dates, mileage readings, destinations, and business purpose. Retention: 7 years per bokföringslagen.
 

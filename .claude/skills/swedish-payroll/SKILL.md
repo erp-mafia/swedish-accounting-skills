@@ -39,15 +39,15 @@ Total rate unchanged since 2009. Calculated on full gross salary + taxable benef
 | Birth year condition | Rate |
 |---|---|
 | Born 1937 or earlier | 0% |
-| Turned 66+ at year start (67+ from 2026) | 10.21% (only ålderspensionsavgift) |
+| Born 1938–1958 (2025 and 2026) | 10.21% (only ålderspensionsavgift) |
 | Standard (all others) | 31.42% |
-| Temporary youth 19-23 (Apr 2026 - Sep 2027) | 20.81% on salary up to 25,000 SEK/month |
+| Temporary youth: turned 18 but not 23 at year start, 2026 = born 2003–2007 (pay from Apr 1, 2026 to Sep 30, 2027) | 20.81% on salary up to 25,000 SEK/month (Lag 2026:100) |
 
 No avgifter required if total annual compensation from one employer < 1,000 SEK.
 
 ### AGI filing deadline
 
-12th of month following pay period (17th in Jan/Aug for turnover ≤40 MSEK). Late = 625 SEK first offense, 1,250 SEK if repeated.
+12th of month following pay period (17th in Jan/Aug for turnover ≤40 MSEK). Late = 625 SEK; 1,250 SEK if the declaration was due under a föreläggande (SFL 48:6).
 
 ### Skatteavdrag lookup chain
 
@@ -65,17 +65,19 @@ Karensavdrag = 20% of one week's sjuklön (80% of weekly pay). Day 2-14: 80% of 
 
 2024-2025: 290 SEK/hel dag. 2026: 300 SEK/hel dag. Halv dag = 50%. After 3 months same location: 70%. After 2 years: 50%.
 
-### Key thresholds 2025
+### Key thresholds 2026
 
 | Parameter | Value |
 |---|---|
-| Prisbasbelopp (PBB) | 58,800 SEK |
-| Inkomstbasbelopp (IBB) | 80,600 SEK |
-| Max PGI (7.5 × IBB) | 604,500 SEK |
-| SGI ceiling (10 × PBB) | 588,000 SEK |
+| Prisbasbelopp (PBB) | 59,200 SEK |
+| Inkomstbasbelopp (IBB) | 83,400 SEK |
+| Max PGI (7.5 × IBB) | 625,500 SEK |
+| Pension ceiling (8.07 × IBB) | 673,038 SEK |
+| SGI ceiling (10 × PBB) | 592,000 SEK |
 | Friskvård tax-free cap | 5,000 SEK/year |
 | Milersättning (own car) | 25 SEK/mil |
-| Statlig skatt brytpunkt | 660,400 SEK/year (2026) |
+| Statlig skatt skiktgräns | 643,000 SEK/year |
+| Statlig skatt brytpunkt | 660,400 SEK/year |
 
 ### BAS 7xxx quick reference
 
@@ -104,7 +106,7 @@ bruttolöneavdrag → förmånsvärden (reduced by nettolöneavdrag) → tax bas
 
 ### Löneväxling factor
 
-For every 1 SEK salary reduction: pension contribution = 1.058 SEK. Flag if post-reduction salary drops below ~54,204 SEK/month (8.07 × IBB / 12 for 2025).
+For every 1 SEK salary reduction: pension contribution = 1.058 SEK. Flag if post-reduction salary drops below ~56,087 SEK/month (8.07 × IBB / 12 for 2026).
 
 ### F-skatt verification
 
@@ -112,4 +114,4 @@ A-skatt: withhold tax + pay avgifter. F-skatt: neither. FA-skatt: split. No F-sk
 
 ## Rate update schedule
 
-Rates shift annually with PBB, IBB, and SLR. Subscribe to Skatteverket's annual publications each December. Bilförmån formulas use SLR from November 30 of prior year (floor 0.50%). Kostförmån tied to PBB. Traktamente normalbelopp published annually.
+Rates shift annually with PBB, IBB, and SLR. Subscribe to Skatteverket's annual publications each December. Bilförmån formulas use SLR from November 30 of prior year (floor 0.50%). Kostförmån tied to PBB. Traktamente normalbelopp published annually. PBB 2027: SCB has calculated 59,600 SEK; not yet formally set by the government.
