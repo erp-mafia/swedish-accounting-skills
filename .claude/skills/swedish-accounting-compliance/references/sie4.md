@@ -3,6 +3,7 @@
 SIE (Standard Import Export) is the Swedish standard for exchanging accounting data between systems. SIE4 is the current version used in practice.
 
 
+
 ## Table of Contents
 1. SIE versions overview
 2. SIE4 file structure

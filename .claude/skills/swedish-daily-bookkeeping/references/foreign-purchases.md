@@ -4,6 +4,7 @@ Decision reference for an agent categorising a bank line or a supplier invoice f
 
 Account numbers are **BAS 2026**. Class 4 was restructured for 2026: series **40-42** is now *Handelsvaror* and series **43-48** is *Råvaror och förnödenheter*. Foreign purchases therefore have **two parallel account sets** — see §5 and §6.
 
+
 ## Table of Contents
 
 1. [Decision procedure for a foreign supplier invoice](#1-decision-procedure-for-a-foreign-supplier-invoice)

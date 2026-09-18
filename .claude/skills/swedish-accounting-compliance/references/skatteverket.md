@@ -3,6 +3,7 @@
 Tax compliance rules, reporting requirements, and API integration details relevant for Swedish accounting software.
 
 
+
 ## Table of Contents
 1. Moms (mervärdesskatt) - rules and rates
 2. Skattedeklaration

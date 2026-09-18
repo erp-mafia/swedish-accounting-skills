@@ -5,6 +5,7 @@ Scope: subscription and licence revenue in a Swedish AB. Periodisering, bokslut 
 **Which year this describes.** K2 and K3 points are quoted from BFN's consolidated vägledningar for räkenskapsår beginning after 2025-12-31: K2 (BFNAR 2016:10) as amended by **BFNAR 2025:2**, K3 (BFNAR 2012:1) as amended by **BFNAR 2025:3** and **2025:4**. For a calendar-year company FY2026 is already on this text; FY2025 is not, and several points below differ there. Accounts are BAS 2026 v1.1. Sources and check dates in section 13.
 
 
+
 ## Table of contents
 
 1. The three clocks

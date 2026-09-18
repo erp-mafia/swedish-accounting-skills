@@ -5,6 +5,7 @@ Scope: what is specific to software businesses. General VAT rules, momsdeklarati
 **Which year this describes.** ML is cited from the consolidated text t.o.m. SFS 2026:1025, IL t.o.m. SFS 2026:1393, SFL t.o.m. SFS 2026:1305. K2 and K3 points are from the consolidated vägledningar for räkenskapsår beginning after 2025-12-31 (K2 as amended by BFNAR 2025:2, K3 by BFNAR 2025:3 and 2025:4). Rates and amounts are the 2026 figures. Proposals are labelled as such. Sources and check dates in section 11.
 
 
+
 ## Table of contents
 
 1. VAT on sales: the checkout decision

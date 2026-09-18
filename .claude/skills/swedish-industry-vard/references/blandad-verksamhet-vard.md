@@ -5,6 +5,7 @@ Scope: the bookkeeping and advisory consequences, for a Swedish clinic, dental p
 **Legal position stated: 2026.** ML (2023:200) consolidated t.o.m. SFS 2026:1025; SFL (2011:1244) and HSL (2017:30) in their current consolidated form; prisbasbelopp 2026 = 59,200 SEK (Skatteverket). One proposal affecting apportionment is pending for 2027 and is marked as a proposal in section 3. Sources and check dates at the end.
 
 
+
 ## Table of contents
 
 1. [Why a clinic becomes blandad verksamhet](#1-why-a-clinic-becomes-blandad-verksamhet)

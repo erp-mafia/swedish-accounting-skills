@@ -7,6 +7,7 @@ The general project-accounting method — successiv vinstavräkning, färdigstä
 **Legal position stated: as in force 2026-09-17.** Figures are labelled with the year they belong to. Statutes were read in consolidated form on 2026-09-17 (IL 1999:1229 consolidated to SFS 2026:1393, ML 2023:200 to SFS 2026:1025, SFL 2011:1244 as cached same day). K2 and K3 were read in BFN's consolidated vägledningar (K2 updated 2025-06-16, K3 updated 2025-12-15). Accounts are verified against the official BAS 2026 kontoplan v 1.1. See [Sources](#13-sources).
 
 
+
 ## Table of contents
 
 1. [Contract types in practice](#1-contract-types-in-practice)

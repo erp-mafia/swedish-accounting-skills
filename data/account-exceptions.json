@@ -1,7 +1,24 @@
 {
   "_comment": "Account numbers referenced deliberately although they are not in the BAS 2026 chart, e.g. when a skill explains that an account does NOT exist, or when the number is an SRU field code rather than a BAS account.",
   "global": [],
-  ".claude/skills/swedish-year-end-closing/references/closing-process.md": ["2012", "4990"],
-  ".claude/skills/swedish-sru-filing/SKILL.md": ["7513"],
-  ".claude/skills/swedish-sru-filing/references/sru-codes.md": ["7513"]
+  ".claude/skills/swedish-year-end-closing/references/closing-process.md": [
+    "2012",
+    "4990"
+  ],
+  ".claude/skills/swedish-sru-filing/SKILL.md": [
+    "7513"
+  ],
+  ".claude/skills/swedish-sru-filing/references/sru-codes.md": [
+    "7513"
+  ],
+  ".claude/skills/swedish-daily-bookkeeping/references/payment-providers.md": [
+    "1580"
+  ],
+  ".claude/skills/swedish-daily-bookkeeping/references/skattekonto-and-owner.md": [
+    "2012"
+  ],
+  ".claude/skills/swedish-inventory/references/stock-bookkeeping.md": [
+    "4733",
+    "4790"
+  ]
 }
