@@ -79,8 +79,8 @@ Exceeding → must have registered revisor, revisionsberättelse becomes part of
 |-----------|----------|---------|
 | Årsredovisning prepared | June 30 (6 months) | Bokföringsbrott risk |
 | Bolagsstämma (AGM) | June 30 (6 months) | Must adopt årsredovisning |
-| Årsredovisning to Bolagsverket | July 31 (7 months) | Förseningsavgift **7 500 SEK** (privat AB), 15 000 SEK (publikt AB) |
-| Inkomstdeklaration 2 to Skatteverket | August 1 (närmaste vardag) | Förseningsavgift escalating, see below |
+| Årsredovisning to Bolagsverket | Within one month after adoption; 30 June means 30 July (ÅRL 8:3) | Förseningsavgift **7 500 SEK** (privat AB), 15 000 SEK (publikt AB) |
+| Inkomstdeklaration 2 to Skatteverket | Authority deadline for the exact financial-year-end cohort | Förseningsavgift escalating, see below |
 
 For brutet räkenskapsår: same intervals relative to fiscal year-end.
 

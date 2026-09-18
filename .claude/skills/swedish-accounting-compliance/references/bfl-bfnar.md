@@ -113,7 +113,7 @@ BFL allows multiple verification series (e.g., "A" for supplier invoices, "B" fo
 - Consists of: förvaltningsberättelse, resultaträkning, balansräkning, noter
 - Larger companies also: kassaflödesanalys
 - Must be upprättat within: 6 months for AB, 7 months for ekonomisk förening
-- AB must file with Bolagsverket within 7 months, or face förseningsavgift
+- AB must file with Bolagsverket within one month after adoption (ÅRL 8:3). Seven months after year-end is normally the first late-fee threshold (ÅRL 8:6), not permission to miss an earlier adoption-based deadline.
 
 ## 6. Arkivering (BFL 7 kap)
 
