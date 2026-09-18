@@ -1,5 +1,19 @@
 # Aktiv vs Passiv Näringsverksamhet
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Why the classification matters](#why-the-classification-matters)
+- [Definitions and tests](#definitions-and-tests)
+- [Important rättsfall](#important-rättsfall)
+- [Tips for implementing software](#tips-for-implementing-software)
+- [NE-bilaga / INK1 representation](#ne-bilaga--ink1-representation)
+- [Common pitfalls](#common-pitfalls)
+- [Worked example: which is cheaper?](#worked-example-which-is-cheaper)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - IL 2 kap 23 § — defines aktiv vs passiv näringsverksamhet

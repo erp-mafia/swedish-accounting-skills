@@ -8,6 +8,27 @@ All account numbers are **BAS 2026**.
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. The one rule that governs everything here](#1-the-one-rule-that-governs-everything-here)
+- [2. Interim account: use 1686](#2-interim-account-use-1686)
+- [3. Identify the counterparty before you book](#3-identify-the-counterparty-before-you-book)
+- [4. Worked example A — net payout (Stripe pattern)](#4-worked-example-a--net-payout-stripe-pattern)
+- [5. Worked example B — gross payout, fee invoiced separately (acquirer / Swish pattern)](#5-worked-example-b--gross-payout-fee-invoiced-separately-acquirer--swish-pattern)
+- [6. VAT on the provider's fee — exempt or taxable?](#6-vat-on-the-providers-fee--exempt-or-taxable)
+- [7. Reporting: does an exempt foreign fee go in ruta 21 / 22?](#7-reporting-does-an-exempt-foreign-fee-go-in-ruta-21--22)
+- [8. Swish](#8-swish)
+- [9. Card terminal and kortinlösen — three different numbers](#9-card-terminal-and-kortinlösen--three-different-numbers)
+- [10. Chargebacks, refunds and reserves](#10-chargebacks-refunds-and-reserves)
+- [11. Marketplace sales (Amazon, Etsy, Shopify + provider)](#11-marketplace-sales-amazon-etsy-shopify--provider)
+- [12. Currency — payouts in EUR/USD](#12-currency--payouts-in-eurusd)
+- [13. Dricks (tips) through a card terminal or Swish](#13-dricks-tips-through-a-card-terminal-or-swish)
+- [14. Ask-the-user rules (consolidated)](#14-ask-the-user-rules-consolidated)
+- [15. Sources](#15-sources)
+
+<!-- /toc -->
+
 ## 1. The one rule that governs everything here
 
 A payment provider is an **intermediary**, not the customer. The customer owes the full price; the provider owes you the full price minus its fee.

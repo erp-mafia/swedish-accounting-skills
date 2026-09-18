@@ -1,5 +1,7 @@
 # Swedish VAT (Moms) Complete Compliance Reference
 
+
+
 ## Table of Contents
 
 1. [Momsredovisning Periods, Thresholds, Deadlines](#1-momsredovisning-periods-thresholds-and-deadlines)

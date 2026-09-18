@@ -1,5 +1,7 @@
 # Årsredovisning Document Structure (K2/K3)
 
+
+
 ## Table of Contents
 1. Document ordering
 2. Uppställningsform -- resultaträkning

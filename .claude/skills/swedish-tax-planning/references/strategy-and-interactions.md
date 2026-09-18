@@ -1,5 +1,20 @@
 # Strategy, Interactions, and Optimization
 
+<!-- toc -->
+**Contents**
+
+- [Year-end decision sequence](#year-end-decision-sequence)
+- [Lön vs utdelning: the fundamental trade-off](#lön-vs-utdelning-the-fundamental-trade-off)
+- [Interaction matrix](#interaction-matrix)
+- [Obeskattade reserver: balance sheet effects](#obeskattade-reserver-balance-sheet-effects)
+- [Skatteverket audit triggers](#skatteverket-audit-triggers)
+- [Skatteflyktslagen (Lag 1995:575)](#skatteflyktslagen-lag-1995575)
+- [Documentation requirements](#documentation-requirements)
+- [Multi-year planning horizon](#multi-year-planning-horizon)
+- [Bolagsskatt and rule changes (status September 2026)](#bolagsskatt-and-rule-changes-status-september-2026)
+
+<!-- /toc -->
+
 ## Year-end decision sequence
 
 Follow this order for optimal tax planning:

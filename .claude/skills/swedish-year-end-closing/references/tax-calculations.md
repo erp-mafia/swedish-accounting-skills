@@ -1,5 +1,14 @@
 # Tax Calculations: AB vs Enskild Firma
 
+<!-- toc -->
+**Contents**
+
+- [Bolagsskatt for AB](#bolagsskatt-for-ab)
+- [Enskild firma: four unique tax mechanisms](#enskild-firma-four-unique-tax-mechanisms)
+- [Critical distinction: booked vs declaration-only](#critical-distinction-booked-vs-declaration-only)
+
+<!-- /toc -->
+
 ## Bolagsskatt for AB
 
 Rate: **20.6%** (since January 1, 2021).

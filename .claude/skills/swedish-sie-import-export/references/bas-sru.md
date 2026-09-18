@@ -1,5 +1,18 @@
 # BAS Kontoplan and SRU Code Reference for SIE4
 
+<!-- toc -->
+**Contents**
+
+- [Account class hierarchy](#account-class-hierarchy)
+- [Account type (#KTYP) behavior in SIE4](#account-type-ktyp-behavior-in-sie4)
+- [Key accounts for SIE validation](#key-accounts-for-sie-validation)
+- [SRU codes](#sru-codes)
+- [Account class rules for SIE validation](#account-class-rules-for-sie-validation)
+- [Year-end closing and IB/UB flow](#year-end-closing-and-ibub-flow)
+- [BAS version handling in SIE](#bas-version-handling-in-sie)
+
+<!-- /toc -->
+
 ## Account class hierarchy
 
 BAS uses a 4-digit decimal system: first digit = class, first two = group, all four = specific account.
@@ -123,6 +136,13 @@ SRU mappings change between taxation years. A file with `#TAXAR 2023` uses 2023'
 - Some systems (Visma Bokföring) don't support them
 - May or may not appear in SIE exports depending on system
 - No mandatory #IB/#UB or #RES requirements
+
+## Year-end closing and IB/UB flow
+
+1. Closing entries (J-series) zero out all result accounts (3xxx-8xxx) by transferring net result to account 2099 (Årets resultat)
+2. After closing: UB for result accounts = 0, UB for equity reflects accumulated result
+3. These UB values become IB for next year
+4. #RES records capture what result accounts held during the year before closing
 
 ## BAS version handling in SIE
 

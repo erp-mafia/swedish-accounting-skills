@@ -4,6 +4,27 @@ Booking the day's takings in a Swedish shop, restaurant or salon.
 
 Out of scope, handled elsewhere: acquirer payouts, provider fees and settlement files → `swedish-daily-bookkeeping/references/payment-providers.md`; kassaregisterkrav, certifiering, kontrollenhet, SKVFS → the kassaregister-law reference in this skill; payroll mechanics → `swedish-payroll`; VAT edge cases and momsdeklaration rutor → `swedish-vat`.
 
+<!-- toc -->
+**Contents**
+
+- [1. Dagsavslut and the Z-dagrapport](#1-dagsavslut-and-the-z-dagrapport)
+- [2. Accounts (verified against the BAS 2026 kontoplan, bas.se)](#2-accounts-verified-against-the-bas-2026-kontoplan-basse)
+- [3. VAT rates for a cash business, September 2026](#3-vat-rates-for-a-cash-business-september-2026)
+- [4. Worked example: one restaurant day](#4-worked-example-one-restaurant-day)
+- [5. Växelkassa](#5-växelkassa)
+- [6. Kassadifferens](#6-kassadifferens)
+- [7. Insättning till bank and the reconciliation chain](#7-insättning-till-bank-and-the-reconciliation-chain)
+- [8. Dricks](#8-dricks)
+- [9. Personalmåltider and uttag](#9-personalmåltider-and-uttag)
+- [10. Presentkort (vouchers)](#10-presentkort-vouchers)
+- [11. Kontantmetoden versus faktureringsmetoden](#11-kontantmetoden-versus-faktureringsmetoden)
+- [12. Daily and monthly checklist](#12-daily-and-monthly-checklist)
+- [13. Red flags an agent must raise](#13-red-flags-an-agent-must-raise)
+- [14. Ask the user rather than assume](#14-ask-the-user-rather-than-assume)
+- [Sources](#sources)
+
+<!-- /toc -->
+
 ## 1. Dagsavslut and the Z-dagrapport
 
 ### What it is

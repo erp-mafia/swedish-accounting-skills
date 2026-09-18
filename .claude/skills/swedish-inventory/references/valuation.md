@@ -4,6 +4,24 @@ Scope: how to arrive at the closing value of a varulager and book it. Physical c
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. The three-question decision table](#1-the-three-question-decision-table)
+- [2. Lägsta värdets princip (LVP)](#2-lägsta-värdets-princip-lvp)
+- [3. Anskaffningsvärde](#3-anskaffningsvärde)
+- [4. Cost-flow assumption](#4-cost-flow-assumption)
+- [5. Inkurans](#5-inkurans)
+- [6. The 97 % rule (schablonregeln, IL 17 kap 4 §)](#6-the-97--rule-schablonregeln-il-17-kap-4)
+- [7. Egentillverkade varor](#7-egentillverkade-varor)
+- [8. K2 vs K3: where they actually differ](#8-k2-vs-k3-where-they-actually-differ)
+- [9. The small-value simplification (½ prisbasbelopp)](#9-the-small-value-simplification-½-prisbasbelopp)
+- [10. BAS 2026 accounts](#10-bas-2026-accounts)
+- [11. Ask the user — do not guess](#11-ask-the-user--do-not-guess)
+- [12. Sources](#12-sources)
+
+<!-- /toc -->
+
 ## 1. The three-question decision table
 
 Run these in order. The answer to Q1 changes the answer to everything else.

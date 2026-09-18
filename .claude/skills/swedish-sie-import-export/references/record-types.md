@@ -2,16 +2,51 @@
 
 Complete specification of all SIE4 record types, fields, and rules, per SIE filformat utgåva 4C (2025-08-06).
 
-## Table of contents
-1. [Flag item](#flag-item)
-2. [Identification items](#identification-items)
-3. [Chart of accounts items](#chart-of-accounts-items)
-4. [Dimension and object items](#dimension-and-object-items)
-5. [Balance items](#balance-items)
-6. [Verification and transaction items](#verification-and-transaction-items)
-7. [Control total](#control-total)
-8. [Record ordering](#record-ordering)
-9. [Type availability matrix](#type-availability-matrix)
+
+<!-- toc -->
+**Contents**
+
+- [Spec, file types and subtypes](#spec-file-types-and-subtypes)
+- [Field format rules](#field-format-rules)
+- [Flag item](#flag-item)
+- [Identification items](#identification-items)
+- [Chart of accounts items](#chart-of-accounts-items)
+- [Dimension and object items](#dimension-and-object-items)
+- [Balance items](#balance-items)
+- [Multi-year handling](#multi-year-handling)
+- [Verification and transaction items](#verification-and-transaction-items)
+- [Verification structure example](#verification-structure-example)
+- [Verification series conventions](#verification-series-conventions)
+- [Control total](#control-total)
+- [Record ordering](#record-ordering)
+- [Type availability matrix](#type-availability-matrix)
+
+<!-- /toc -->
+
+## Spec, file types and subtypes
+
+**Current spec**: SIE filformat utgåva 4C (2025-08-06). 4C does not change the file format from 4B (2008); its format clarifications are that a line added and later removed is written as #BTRANS, and that an empty field before a field with a value is written as `""`. CP437 (`#FORMAT PC8`) is still the only allowed character set. SIE-Gruppen's online validator is at https://sietest.sie.se/. SIE 5 is a separate XML format (English labels; can also carry reskontror, asset registers and attached documents). This skill covers SIE 4.
+
+**File extensions**: `.SE` = export, `.SI` = import.
+
+**Five subtypes**:
+- **Type 1**: Closing balances + chart of accounts + SRU codes (tax returns)
+- **Type 2**: Type 1 + monthly period balances (#PSALDO, #PBUDGET)
+- **Type 3**: Type 2 + object-level balances, dimensions
+- **Type 4E**: Export file: Type 1 records + verifications (#VER/#TRANS); period and object balances optional. Used for full transaction exports (audit trail)
+- **Type 4I**: Import file: header (incl. #FNAMN) + verifications; #RAR, #KONTO, #DIM/#OBJEKT optional; no balance records = subsystem import (payroll, POS)
+
+---
+
+## Field format rules
+
+- **Quoting**: Double quotes around fields with spaces. Escape internal quotes as `\"`
+- **Empty fields**: Fields are positional. An empty field before a field with a value is written as `""` (`#VER "" "" 20251216 "Porto"`); trailing empty fields may be left out
+- **Dates**: YYYYMMDD. Periods: YYYYMM
+- **Amounts**: Dot decimal separator, max 2 decimals, no plus sign
+- **Block delimiters**: `{` and `}` each on own line around #TRANS entries in #VER
+- **Object lists**: `{dimension_no "object_no"}` within balance/transaction items
+- **Forward compat**: Readers must ignore unknown labels and unknown trailing fields
 
 ---
 
@@ -199,6 +234,16 @@ Complete specification of all SIE4 record types, fields, and rules, per SIE filf
 
 ---
 
+## Multi-year handling
+
+- `#RAR 0 20240101 20241231` = current fiscal year
+- `#RAR -1 20230101 20231231` = previous year
+- Only one chart of accounts per file (current year's)
+- Broken fiscal years supported: `#RAR 0 20240701 20250630`
+- #PSALDO/#PBUDGET store monthly change (not cumulative), period = YYYYMM
+
+---
+
 ## Verification and transaction items
 
 ### #VER series verno verdate [vertext] [regdate] [sign]
@@ -243,6 +288,38 @@ Complete specification of all SIE4 record types, fields, and rules, per SIE filf
 - **Rule (clarified in 4C)**: A line that was first added and later removed is written only as #BTRANS
 - **Programs not understanding BTRANS**: simply ignore it
 - **Balance**: #BTRANS lines are not part of the verification balance
+
+---
+
+## Verification structure example
+
+```
+#VER A 1 20240115 "Kundfaktura 2024-001"
+{
+    #TRANS 1510 {} 12500.00
+    #TRANS 2611 {} -2500.00
+    #TRANS 3010 {1 "100" 6 "P01"} -10000.00
+}
+```
+
+Sum: 12500 + (-2500) + (-10000) = 0. Valid.
+
+---
+
+## Verification series conventions
+
+Swedish practice:
+
+- **A** = Huvudserie (main/general)
+- **B** = Automatkonteringar (auto-postings)
+- **F** = Kundfakturor (customer invoices)
+- **I** = Inbetalningar (customer payments)
+- **J** = Bokslutsverifikationer (year-end closing)
+- **L** = Leverantörsfakturor (supplier invoices)
+- **N** = Löner (payroll)
+- **U** = Utbetalningar (supplier payments)
+
+Series and numbering often restart each fiscal year, but some programs run a series across years. Every verification series must be unbroken (BFNAR 2013:2 p. 5.9). 4I import files may have empty series/verno.
 
 ---
 

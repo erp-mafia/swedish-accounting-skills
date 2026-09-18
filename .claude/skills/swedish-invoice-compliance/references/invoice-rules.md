@@ -1,5 +1,27 @@
 # Swedish Invoice Compliance — Full Reference
 
+<!-- toc -->
+**Contents**
+
+- [1. Mandatory invoice fields (ML 17 kap 24§)](#1-mandatory-invoice-fields-ml-17-kap-24)
+- [2. Förenklad faktura (simplified invoice)](#2-förenklad-faktura-simplified-invoice)
+- [3. Time limits for issuing invoices](#3-time-limits-for-issuing-invoices)
+- [4. Electronic vs paper equivalence](#4-electronic-vs-paper-equivalence)
+- [5. Kreditfaktura / ändringsfaktura](#5-kreditfaktura--ändringsfaktura)
+- [6. Självfakturering (self-billing)](#6-självfakturering-self-billing)
+- [7. Peppol / e-faktura](#7-peppol--e-faktura)
+- [8. ROT/RUT invoicing](#8-rotrut-invoicing)
+- [9. Reverse charge notation](#9-reverse-charge-notation)
+- [10. Currency handling](#10-currency-handling)
+- [11. OCR / Bankgirot](#11-ocr--bankgirot)
+- [12. Autogiro](#12-autogiro)
+- [13. Penalties](#13-penalties)
+- [14. BAS kontoplan mapping](#14-bas-kontoplan-mapping)
+- [15. Key law references](#15-key-law-references)
+- [16. Time-dependent parameters](#16-time-dependent-parameters)
+
+<!-- /toc -->
+
 ## 1. Mandatory invoice fields (ML 17 kap 24§)
 
 A fullständig faktura must contain all fields per **17 kap 24§ ML (2023:200)**, implementing EU VAT Directive Article 226.
@@ -129,6 +151,8 @@ Peppol: `InvoiceTypeCode` **389**.
 ### BIS Billing 3.0 format
 
 UBL 2.1 XML. Current version: 3.0.20.
+
+TypeCodes: **380** = invoice, **381** = credit note, **389** = self-billing.
 
 Required identification strings:
 ```xml
@@ -360,10 +384,12 @@ False invoices: skattebrott (Skattebrottslagen) up to 2 years, grovt 6 months–
 | 1511 | Kundfordringar (sub / customer portion split) |
 | 1512 | Belånade kundfordringar (factoring) |
 | 1513 | Kundfordringar – delad faktura (ROT/RUT SKV) |
-| 1515 | Osäkra kundfordringar |
+| 1516 | Tvistiga kundfordringar |
 | 1516 | Tvistiga kundfordringar |
 | 1518 | Ej reskontraförda kundfordringar |
 | 1519 | Nedskrivning av kundfordringar (contra, credit balance) |
+
+(BAS 2026 has no 1515; older charts used it for osäkra kundfordringar.)
 
 ### Revenue (30xx–34xx)
 
@@ -397,9 +423,9 @@ False invoices: skattebrott (Skattebrottslagen) up to 2 years, grovt 6 months–
 
 ### Bad debts flow
 
-1. Transfer doubtful: Debit 1515, Credit 1510
-2. Provision: Debit 6352 (befarade förluster), Credit 1519
-3. Loss confirmed: Debit 6351 (konstaterade förluster), Credit 1515; reverse provision Debit 1519 Credit 6352; recover VAT by debiting 2610/2620/2630
+1. Befarad förlust: Debit **6352** (befarade förluster), Credit **1519** (nedskrivning, contra to 1510). The receivable stays on 1510; move it to **1516** only if it is disputed.
+2. Konstaterad förlust: Debit **6351** (konstaterade förluster) and Credit **1510**; reverse the provision Debit **1519** Credit **6352**; recover the VAT by debiting 2610/2620/2630
+3. Later payment of a written-off receivable: book it back through 3950 (återvunna kundfordringar)
 
 VAT recovery on bad debts permitted under **ML 7 kap 43§** when loss is konstaterad (bankruptcy, failed enforcement, acknowledged insolvency).
 
@@ -409,5 +435,37 @@ VAT recovery on bad debts permitted under **ML 7 kap 43§** when loss is konstat
 |---|---|---|
 | Faktureringsavgift | 3540 | 25% VAT |
 | Öresavrundning | 3740 | No VAT |
-| Påminnelseavgift | 3930 | No VAT |
+| Påminnelseavgift | No dedicated BAS 2026 account — **3540** Faktureringsavgifter or a free account in group 39 | No VAT |
 | Dröjsmålsränta | 8313/8310 | No VAT (financial income) |
+
+Påminnelseavgift (no VAT): BAS 2026 has no dedicated account — use **3540** Faktureringsavgifter or a free account in group 39.
+
+## 15. Key law references
+
+| Topic | Current law | Old law |
+|---|---|---|
+| Invoice content | ML 17 kap 24§ (2023:200) | ML 11 kap 8§ (1994:200) |
+| Simplified invoice | ML 17 kap 26–28§ | ML 11 kap 9§ |
+| Small-business exemption invoice | ML 18 kap 41§, 17 kap 26§ p.4, 28§ p.6 | — |
+| Credit note | ML 17 kap 22–23§ | ML 11 kap 10§ |
+| Self-billing | ML 17 kap 15§ | ML 11 kap 4§ |
+| Reverse charge | ML 16 kap 6–17§§ | ML 1 kap 2§ st.4 |
+| Currency conversion | ML 8 kap 21–23§ | ML 7 kap 7a§ |
+| E-invoice B2G | Lag (2018:1277) | — |
+| ROT/RUT | HUSFL (2009:194) 6–9§§ | — |
+| Invoice archiving | BFL 7 kap | — |
+| Skattetillägg | SFL 49 kap | — |
+
+## 16. Time-dependent parameters
+
+These values change. Always verify against the sections above or search current rates:
+
+- Förenklad faktura threshold: **SEK 4,000** (SKVFS 2024:16)
+- ROT deduction %: 30% standard, 50% May–Dec 2025
+- RUT deduction %: 50%
+- ROT max/person/year: 50,000 SEK (75,000 in 2024 H2)
+- RUT max/person/year: 75,000 SEK
+- Combined max: 75,000 SEK (separated in 2024 H2)
+- Electronics RC threshold: 100,000 SEK excl. VAT per invoice
+- Skattetillägg VAT: 20% (periodization: 2–5%)
+- Archive retention: 7 years (BFL 7 kap)

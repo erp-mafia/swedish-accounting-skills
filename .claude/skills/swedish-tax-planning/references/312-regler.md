@@ -1,5 +1,21 @@
 # 3:12-reglerna (Fåmansbolag Dividend Taxation)
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Definitions](#definitions)
+- [Tax rates on dividends from qualified shares](#tax-rates-on-dividends-from-qualified-shares)
+- [Gränsbelopp calculation (through inkomstår 2025)](#gränsbelopp-calculation-through-inkomstår-2025)
+- [Löneunderlag (IL 57 kap. 16-19 §§)](#löneunderlag-il-57-kap-16-19)
+- [Sparat utdelningsutrymme](#sparat-utdelningsutrymme)
+- [Capital gains on qualified shares](#capital-gains-on-qualified-shares)
+- [K10-deklaration (blankett SKV 2110)](#k10-deklaration-blankett-skv-2110)
+- [2026 Reform (effective January 1, 2026)](#2026-reform-effective-january-1-2026)
+- [Common K10 errors](#common-k10-errors)
+
+<!-- /toc -->
+
 ## Legal basis
 IL 56 kap (definition of fåmansföretag), IL 57 kap (taxation of qualified holdings)
 

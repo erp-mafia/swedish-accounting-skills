@@ -1,5 +1,14 @@
 # BAS Account Mapping & Anläggningsregister
 
+<!-- toc -->
+**Contents**
+
+- [BAS Account Structure for Fixed Assets](#bas-account-structure-for-fixed-assets)
+- [Anläggningsregister (Fixed Asset Register)](#anläggningsregister-fixed-asset-register)
+- [Förbrukningsinventarier](#förbrukningsinventarier)
+
+<!-- /toc -->
+
 ## BAS Account Structure for Fixed Assets
 
 Pattern: xx0 = asset, xx8 = accumulated impairment (nedskrivning), xx9 = accumulated depreciation.

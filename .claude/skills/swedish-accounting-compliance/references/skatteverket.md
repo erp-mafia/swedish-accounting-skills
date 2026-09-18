@@ -2,6 +2,8 @@
 
 Tax compliance rules, reporting requirements, and API integration details relevant for Swedish accounting software.
 
+
+
 ## Table of Contents
 1. Moms (mervärdesskatt) - rules and rates
 2. Skattedeklaration
@@ -253,8 +255,8 @@ Law allowing Skatteverket to access digital bokföring directly via internet dur
 - Riksdag decision: 25 March 2026
 - In force: 1 July 2026
 
-### Implications for Luka/gnubok
-Your system stores bokföring in the cloud. Under the new rules, Skatteverket can request access to a customer's data directly in your system. You should:
+### Implications for cloud bookkeeping systems
+Where bokföring is stored in the cloud, Skatteverket can under the new rules request access to a customer's data directly in the system. Such a system should:
 1. Have granular access controls (per-company read access)
 2. Maintain complete audit trails
 3. Ensure data immutability (event-sourced architecture helps here)

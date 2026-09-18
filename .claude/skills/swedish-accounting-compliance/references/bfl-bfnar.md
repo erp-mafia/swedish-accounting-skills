@@ -2,6 +2,8 @@
 
 Detailed reference for Bokföringslagen (BFL 1999:1078), Bokföringsnämndens allmänna råd (BFNAR), and Årsredovisningslagen (ÅRL 1995:1554).
 
+
+
 ## Table of Contents
 1. BFL structure and key chapters
 2. Bokföringsskyldighet (BFL 2 kap)

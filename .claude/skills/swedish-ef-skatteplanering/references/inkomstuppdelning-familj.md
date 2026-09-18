@@ -1,5 +1,22 @@
 # Inkomstuppdelning i Familjen
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Purpose](#purpose)
+- [Two metoder: Medhjälparfallet vs Gemensam verksamhet](#two-metoder-medhjälparfallet-vs-gemensam-verksamhet)
+- [Aktiv eller passiv för medhjälpande make](#aktiv-eller-passiv-för-medhjälpande-make)
+- [Lön till barn](#lön-till-barn)
+- [7-årsregel (närstående)](#7-årsregel-närstående)
+- [Andra än barn och makar](#andra-än-barn-och-makar)
+- [Räntefördelning + makar (key planning lever)](#räntefördelning--makar-key-planning-lever)
+- [Pension and SGI through inkomstfördelning](#pension-and-sgi-through-inkomstfördelning)
+- [Pitfalls](#pitfalls)
+- [Implementation checklist for software](#implementation-checklist-for-software)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - IL 60 kap (Inkomstuppdelning mellan makar och barn) — full chapter

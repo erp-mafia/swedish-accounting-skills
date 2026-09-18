@@ -11,6 +11,35 @@ Scope boundaries. Moms mechanics, rutor and blandad verksamhet: `swedish-vat`. T
 
 # Part A — Underlag
 
+<!-- toc -->
+**Contents**
+
+- [A1. What a verifikation must contain](#a1-what-a-verifikation-must-contain)
+- [A2. Receipt missing — the three separate consequences](#a2-receipt-missing--the-three-separate-consequences)
+- [A3. Egen verifikation / bokföringsorder](#a3-egen-verifikation--bokföringsorder)
+- [A4. What the VAT deduction actually requires](#a4-what-the-vat-deduction-actually-requires)
+- [A5. Digital receipts — photograph it, then bin the paper](#a5-digital-receipts--photograph-it-then-bin-the-paper)
+- [A6. Decision table — receipt missing](#a6-decision-table--receipt-missing)
+- [A7. The extra underlag requirements that only exist for some costs](#a7-the-extra-underlag-requirements-that-only-exist-for-some-costs)
+- [B1. Representation](#b1-representation)
+- [B2. Personalfest and interna möten](#b2-personalfest-and-interna-möten)
+- [B3. Friskvård, arbetsredskap, arbetskläder](#b3-friskvård-arbetsredskap-arbetskläder)
+- [B4. Förbrukningsinventarie vs anläggningstillgång](#b4-förbrukningsinventarie-vs-anläggningstillgång)
+- [B5. Travel](#b5-travel)
+- [B6. Car costs](#b6-car-costs)
+- [B7. Subscriptions, software, telefoni, bredband](#b7-subscriptions-software-telefoni-bredband)
+- [B8. Hemmakontor](#b8-hemmakontor)
+- [B9. Gifts](#b9-gifts)
+- [B10. Medlemsavgifter vs serviceavgifter](#b10-medlemsavgifter-vs-serviceavgifter)
+- [B11. Utbildning, kurser, facklitteratur](#b11-utbildning-kurser-facklitteratur)
+- [B12. Försäkringar](#b12-försäkringar)
+- [B13. Bankavgifter, räntor, inkasso](#b13-bankavgifter-räntor-inkasso)
+- [B14. Kundförluster](#b14-kundförluster)
+- [B15. Quick lookup](#b15-quick-lookup)
+- [B16. Escalation rules](#b16-escalation-rules)
+
+<!-- /toc -->
+
 ## A1. What a verifikation must contain
 
 **BFL 5 kap 6 § 1 st:** "För varje affärshändelse ska det finnas en verifikation." If the company has received a document about the affärshändelse in one of the forms in 7 kap 1 § 1 st, *that* document shall be used as the verifikation.

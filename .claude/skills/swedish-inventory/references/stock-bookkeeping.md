@@ -6,6 +6,23 @@ Import VAT and EU-acquisition mechanics are **not** repeated here — see `../..
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. The two methods](#1-the-two-methods)
+- [2. BAS 2026 accounts](#2-bas-2026-accounts)
+- [3. Purchases, freight, customs and import](#3-purchases-freight-customs-and-import)
+- [4. Inventering — the legal duty](#4-inventering--the-legal-duty)
+- [5. Svinn, kassation och stöld](#5-svinn-kassation-och-stöld)
+- [6. Uttag ur lagret](#6-uttag-ur-lagret)
+- [7. E-commerce specifics](#7-e-commerce-specifics)
+- [8. Cut-off at year-end](#8-cut-off-at-year-end)
+- [9. Kontantmetoden](#9-kontantmetoden)
+- [10. Reconciliation checklist](#10-reconciliation-checklist)
+- [11. Ask the user, do not assume](#11-ask-the-user-do-not-assume)
+
+<!-- /toc -->
+
 ## 1. The two methods
 
 | | **A. Periodisk lagerredovisning** (expense purchases, adjust at year-end) | **B. Löpande lagerredovisning** (perpetual) |

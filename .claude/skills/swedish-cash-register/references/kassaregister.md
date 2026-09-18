@@ -2,6 +2,7 @@
 
 Certified cash registers (kassaregister) and staff ledgers (personalliggare) under Skatteförfarandelagen (SFL 2011:1244), Skatteförfarandeförordningen (SFF 2011:1261) and Skatteverkets föreskrifter (SKVFS). Verified against primary sources on 2026-09-17. Amounts and dates matter more than completeness here; anything not confirmable in a primary source carries an inline **Osäkert** line instead of a guess.
 
+
 ## Table of Contents
 1. The one-minute decision
 2. Who must use a kassaregister (SFL 39 kap 4 §)

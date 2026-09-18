@@ -1,13 +1,53 @@
 # K2/K3 Revenue Recognition for Project Accounting
 
-## Table of contents
 
-1. K3 Chapter 23: successiv vinstavräkning
-2. K2 Chapter 6: uppdrag till fast pris
-3. K2 vs K3 comparison
-4. Befarade förluster
-5. Note disclosures
-6. Choosing K2 vs K3 for project-intensive companies
+<!-- toc -->
+**Contents**
+
+- [When is project accounting required?](#when-is-project-accounting-required)
+- [Revenue recognition decision tree](#revenue-recognition-decision-tree)
+- [1. K3 Chapter 23: successiv vinstavräkning](#1-k3-chapter-23-successiv-vinstavräkning)
+- [2. K2 Chapter 6: uppdrag till fast pris](#2-k2-chapter-6-uppdrag-till-fast-pris)
+- [3. K2 vs K3 comparison for project accounting](#3-k2-vs-k3-comparison-for-project-accounting)
+- [4. Befarade förluster](#4-befarade-förluster)
+- [5. Note disclosures](#5-note-disclosures)
+- [6. Choosing K2 vs K3 for project-intensive companies](#6-choosing-k2-vs-k3-for-project-intensive-companies)
+
+<!-- /toc -->
+
+## When is project accounting required?
+
+BFL does not mandate project accounting. However:
+
+- **K3 Chapter 23** requires successiv vinstavräkning for fixed-price contracts in koncernredovisning. Calculating färdigställandegrad is impossible without project-level cost tracking, making it effectively mandatory.
+- **K2 Chapter 6** offers a choice between huvudregeln and alternativregeln for fixed-price contracts. Both require per-project cost accumulation.
+- **Any company doing consulting, construction, R&D, or grant-funded work** needs project accounting for management purposes even without a regulatory mandate.
+
+---
+
+## Revenue recognition decision tree
+
+```
+Is the contract fixed-price or time-and-materials?
+
+├─ Time-and-materials (löpande räkning)
+│  └─ Both K2 and K3: recognize revenue as work is performed
+│     Tax: may diverge from accounting (IL 17:26; scope per IL 17:23)
+│
+└─ Fixed-price (fast pris)
+   ├─ K3 (koncernredovisning): successiv vinstavräkning MANDATORY
+   │  └─ Recognize revenue × färdigställandegrad at each balance date
+   │     Can outcome be reliably estimated? All four conditions met?
+   │     ├─ Yes: revenue = total contract × completion %
+   │     └─ No: revenue = costs incurred (zero profit recognized)
+   │
+   ├─ K3 (juridisk person): successiv vinstavräkning OR
+   │  färdigställandemetoden (punkt 23.31, only industries in 17 kap. 23 § IL)
+   │
+   └─ K2 (method choice 6.15): huvudregeln (completion %, 6.16–6.21) OR alternativregeln (6.22–6.25)
+      └─ Alternativregeln: recognize when "väsentligen fullgjort"
+         (Srf U 15: assessed from customer acceptance perspective)
+```
 
 ---
 
@@ -196,6 +236,10 @@ Under ÅRL:
 - 1620 (upparbetad ej fakturerad intäkt): presented under Kortfristiga fordringar
 - 1470 (pågående arbeten): presented under Varulager > Pågående arbete för annans räkning
 - 2450 (fakturerad ej upparbetad intäkt): presented under Kortfristiga skulder
+
+### Gross reporting requirement
+
+Per Srf U 14, pågående arbeten must be reported GROSS per project in the balance sheet. Netting across projects is prohibited (ÅRL kvittningsförbud). A project with 1620 balance and another with 2450 balance must show both, not net them.
 
 ---
 

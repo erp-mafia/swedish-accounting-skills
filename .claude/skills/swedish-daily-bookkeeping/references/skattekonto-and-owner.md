@@ -8,6 +8,16 @@ Route elsewhere for: moms mechanics and rutor → `swedish-vat`; AGI, skattetabe
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. Skattekontot](#1-skattekontot)
+- [2. Money between the company and its owner](#2-money-between-the-company-and-its-owner)
+- [3. Notes on account numbers](#3-notes-on-account-numbers)
+- [4. Law index](#4-law-index)
+
+<!-- /toc -->
+
 ## 1. Skattekontot
 
 ### 1.1 One bank payment, several liabilities

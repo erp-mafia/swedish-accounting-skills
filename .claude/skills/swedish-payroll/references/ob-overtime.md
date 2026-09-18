@@ -2,6 +2,20 @@
 
 Reference för obekväm arbetstid (OB), övertid, mertid och kompensationsledighet i svensk lönehantering.
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Övertid](#övertid)
+- [Mertid (för deltid)](#mertid-för-deltid)
+- [OB-tillägg (obekväm arbetstid)](#ob-tillägg-obekväm-arbetstid)
+- [Skatt och avgifter](#skatt-och-avgifter)
+- [BAS-kontering](#bas-kontering)
+- [Vanliga implementationsfallgropar](#vanliga-implementationsfallgropar)
+- [Cross-references](#cross-references)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - **Arbetstidslagen (1982:673)** — tidsgränser för övertid och mertid (semitvingande; kollektivavtal kan avvika).
@@ -121,9 +135,9 @@ OB och övertid rapporteras inom **fältkod 011 "Kontant ersättning"** i AGI in
 | BAS-konto | Användning |
 |---|---|
 | **7010** | Löner till kollektivanställda (inkl. OB och övertid för dem) |
-| **7020** eller **7022** | Rörliga lönedelar — många bolag väljer att specialnota OB och övertid här för analys |
+| **7010** eller ett fritt konto i gruppen (t.ex. 7014) | Rörliga lönedelar — BAS 2026 har inget särskilt OB-konto, många bolag specialnoterar OB och övertid på ett eget konto för analys |
 | **7210** | Löner till tjänstemän och företagsledare (inkl. övertid för dem som ej köpt bort) |
-| **7212** eller **7022** | OB-tillägg, övertidsersättning tjänstemän (specialkonto för analyssyfte) |
+| **7210** eller ett fritt konto i gruppen (t.ex. 7214) | OB-tillägg, övertidsersättning tjänstemän (7212 är vinstandelar i BAS 2026, inte OB) |
 | **2710** | Personalskatt (kredit, dras vid utbetalning) |
 | **2730** | Arbetsgivaravgifter skuld (kredit, beräknas på OB + övertid 31,42 %) |
 | **2920** | Upplupna semesterlöner (kredit, växer med 12 % av OB + övertid) |

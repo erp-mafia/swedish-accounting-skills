@@ -1,5 +1,23 @@
 # Räntefördelning — Planning Reference for Enskild Firma
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [2025 reform — gränsbelopp omarbetade](#2025-reform--gränsbelopp-omarbetade)
+- [The fundamental idea](#the-fundamental-idea)
+- [Rates by year](#rates-by-year)
+- [When is positiv räntefördelning *worth* doing?](#when-is-positiv-räntefördelning-worth-doing)
+- [Kapitalunderlag — what counts](#kapitalunderlag--what-counts)
+- [Sparat fördelningsbelopp](#sparat-fördelningsbelopp)
+- [Negativ räntefördelning planning](#negativ-räntefördelning-planning)
+- [Alternative valuation rule for fastigheter](#alternative-valuation-rule-for-fastigheter)
+- [Makar — fördelning av tillgångar och skulder](#makar--fördelning-av-tillgångar-och-skulder)
+- [Pitfalls](#pitfalls)
+- [SOU 2020:50 — partial enactment (2025) + remaining proposals](#sou-202050--partial-enactment-2025--remaining-proposals)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - IL 33 kap (Räntefördelning) — full chapter

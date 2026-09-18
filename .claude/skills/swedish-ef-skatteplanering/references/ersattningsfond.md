@@ -1,5 +1,30 @@
 # Ersättningsfond (Replacement Reserve)
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Purpose](#purpose)
+- [When ersättningsfond may be used (skadeersättning grunder)](#when-ersättningsfond-may-be-used-skadeersättning-grunder)
+- [Fyra ersättningsfonder](#fyra-ersättningsfonder)
+- [Avdragets storlek](#avdragets-storlek)
+- [När fonderna får tas i anspråk](#när-fonderna-får-tas-i-anspråk)
+- [Turordning vid återföring](#turordning-vid-återföring)
+- [Beskattningskonsekvenser när fonderna tas i anspråk](#beskattningskonsekvenser-när-fonderna-tas-i-anspråk)
+- [Återföring efter tre år (övergångsregel före 2026-04-01)](#återföring-efter-tre-år-övergångsregel-före-2026-04-01)
+- [Tvingande återföring (även om tiden inte gått ut)](#tvingande-återföring-även-om-tiden-inte-gått-ut)
+- [Inkomstslag för återföringen](#inkomstslag-för-återföringen)
+- [Användningstid — förlängd 2026: 3 år → 10 år](#användningstid--förlängd-2026-3-år--10-år)
+- [Tillägg vid återföring (om fonden inte tagits i anspråk inom användningstiden)](#tillägg-vid-återföring-om-fonden-inte-tagits-i-anspråk-inom-användningstiden)
+- [Bokföringsmässig hantering](#bokföringsmässig-hantering)
+- [Tre-scenario-jämförelse (illustrativ)](#tre-scenario-jämförelse-illustrativ)
+- [NE-bilaga reporting](#ne-bilaga-reporting)
+- [Common pitfalls](#common-pitfalls)
+- [Interaction with andra dispositions](#interaction-with-andra-dispositions)
+- [Out of scope](#out-of-scope)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - IL 31 kap (Ersättningsfond) — full chapter

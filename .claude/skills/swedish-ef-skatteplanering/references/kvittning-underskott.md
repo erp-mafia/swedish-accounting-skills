@@ -1,5 +1,26 @@
 # Kvittning av Underskott i Enskild Firma
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Three modes of dealing with underskott](#three-modes-of-dealing-with-underskott)
+- [Förutsättningar för kvittning mot andra förvärvsinkomster](#förutsättningar-för-kvittning-mot-andra-förvärvsinkomster)
+- [Rullning bättre än kvittning ofta](#rullning-bättre-än-kvittning-ofta)
+- [Kulturarbetare (special exemption)](#kulturarbetare-special-exemption)
+- [Inrullning (rullning)](#inrullning-rullning)
+- [Slutligt underskott vid avveckling](#slutligt-underskott-vid-avveckling)
+- [Dödsbon](#dödsbon)
+- [Kvittning vid övergång passiv → aktiv](#kvittning-vid-övergång-passiv--aktiv)
+- [Komplettering med ny verksamhet](#komplettering-med-ny-verksamhet)
+- [Övertagande från närstående](#övertagande-från-närstående)
+- [Kvittning of olika delverksamheter](#kvittning-of-olika-delverksamheter)
+- [NE-bilaga / INK1 rutor](#ne-bilaga--ink1-rutor)
+- [Pitfalls](#pitfalls)
+- [Implementation checklist](#implementation-checklist)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - IL 62 kap 2–3 §§ — Allmänna avdrag, underskott av aktiv nystartad NV

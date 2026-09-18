@@ -2,6 +2,19 @@
 
 The closing process (bokslutsarbete) proceeds in eight phases, each depending on prior phases.
 
+<!-- toc -->
+**Contents**
+
+- [Phase 1: Reconciliations (avstämningar)](#phase-1-reconciliations-avstämningar)
+- [Phase 2: Accruals and deferrals (periodiseringar)](#phase-2-accruals-and-deferrals-periodiseringar)
+- [Phase 3: Depreciation (avskrivningar)](#phase-3-depreciation-avskrivningar)
+- [Phase 4: Inventory valuation (lagervärdering)](#phase-4-inventory-valuation-lagervärdering)
+- [Phase 5: Untaxed reserves (obeskattade reserver)](#phase-5-untaxed-reserves-obeskattade-reserver)
+- [Phase 6: Provisions and tax (avsättningar, skatt)](#phase-6-provisions-and-tax-avsättningar-skatt)
+- [Phase 7–8: Equity handling and result closing](#phase-78-equity-handling-and-result-closing)
+
+<!-- /toc -->
+
 ## Phase 1: Reconciliations (avstämningar)
 
 Every balance sheet account must be reconciled against external documentation.
