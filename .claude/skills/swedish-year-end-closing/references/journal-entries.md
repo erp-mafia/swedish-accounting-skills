@@ -64,9 +64,9 @@ Credit 2153  Ack. överavskrivningar maskiner & inventarier
 ## Inventory increase
 ```
 Debit  1460  Lager av handelsvaror
-Credit 4990  Lagerförändring
+Credit 4960  Förändring av lager av handelsvaror
 ```
-For decrease: reverse the entry. Use separate accounts per inventory type for manufacturing.
+For decrease: reverse the entry. Use the account matching the stock type: **4910** råvaror, **4920** tillsatsmaterial och förnödenheter, **4950** färdiga varor, **4960** handelsvaror. (4990 is a software convention, not a BAS account.)
 
 ## Prepaid expenses (e.g., insurance covering next year)
 ```
@@ -140,7 +140,7 @@ Zero all of 2011–2019 into 2010:
 ```
 Debit  2010  Eget kapital (for net credits from sub-accounts)
 Credit 2011  Egna varuuttag
-Credit 2012  Avräkning skatter och avgifter
+Credit 2012  Avräkning skatter och avgifter (only in the K1 chart, BAS för förenklat årsbokslut; in BAS 2026 use 2013)
 Credit 2013  Övriga egna uttag
 Debit  2017  Årets kapitaltillskott (reverse into 2010)
 Debit  2018  Övriga egna insättningar (reverse into 2010)
