@@ -6,6 +6,7 @@ General VAT mechanics live in `swedish-vat`; generic invoice content requirement
 
 **Legal position stated: as in force 2026-09-17.** Every rate, amount and threshold below is labelled with the year it belongs to. Statutes were read in consolidated form on 2026-09-17 (IL consolidated to SFS 2026:1393, ML 2023:200 consolidated to SFS 2026:1025, HUSFL 2009:194 consolidated to SFS 2025:324). Account numbers and names are verified against the official BAS 2026 kontoplan (v 1.1). See [Sources](#16-sources).
 
+
 ## Table of contents
 
 1. [Omvänd betalningsskyldighet: the two conditions](#1-omvänd-betalningsskyldighet-the-two-conditions)

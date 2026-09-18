@@ -2,6 +2,20 @@
 
 Reference för obekväm arbetstid (OB), övertid, mertid och kompensationsledighet i svensk lönehantering.
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Övertid](#övertid)
+- [Mertid (för deltid)](#mertid-för-deltid)
+- [OB-tillägg (obekväm arbetstid)](#ob-tillägg-obekväm-arbetstid)
+- [Skatt och avgifter](#skatt-och-avgifter)
+- [BAS-kontering](#bas-kontering)
+- [Vanliga implementationsfallgropar](#vanliga-implementationsfallgropar)
+- [Cross-references](#cross-references)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - **Arbetstidslagen (1982:673)** — tidsgränser för övertid och mertid (semitvingande; kollektivavtal kan avvika).

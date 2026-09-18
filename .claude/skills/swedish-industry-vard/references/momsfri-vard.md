@@ -6,6 +6,7 @@ Scope: healthcare clinics, dental practices, physiotherapists, psychologists, na
 
 **Osäkert — source access.** Skatteverket's *Rättslig vägledning* (www4.skatteverket.se/rattsligvagledning) rejected every automated request on 2026-09-17 ("Request Rejected"), and the Internet Archive was offline. Where this file needs a Skatteverket position, it cites the publicly reachable pages on skatteverket.se instead, and flags anything that could only be found in Rättslig vägledning or in a ställningstagande as Osäkert rather than substituting a secondary source.
 
+
 ## Table of contents
 
 1. [Where the exemption lives in ML 2023:200](#1-where-the-exemption-lives-in-ml-2023200)

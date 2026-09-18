@@ -2,6 +2,7 @@
 
 The BAS kontoplan is the de facto standard chart of accounts for Swedish companies. Published by BAS-intressenternas förening. Not legally mandated, but universally used and expected by auditors, Skatteverket, and accounting systems.
 
+
 ## Table of Contents
 1. Structure overview
 2. Account classes (1-8)

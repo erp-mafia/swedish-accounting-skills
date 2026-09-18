@@ -1,5 +1,22 @@
 # Periodiseringsfond and Expansionsfond — EF Perspective
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Quick comparison: P-fond AB vs P-fond EF](#quick-comparison-p-fond-ab-vs-p-fond-ef)
+- [Periodiseringsfond EF mechanics](#periodiseringsfond-ef-mechanics)
+- [Expansionsfond mechanics](#expansionsfond-mechanics)
+- [Sjukpenninggrundande and pensionsgrundande inkomst effects](#sjukpenninggrundande-and-pensionsgrundande-inkomst-effects)
+- [Bokföringsförbudet (K1 / BFNAR 2006:1)](#bokföringsförbudet-k1--bfnar-20061)
+- [Interactions with each other](#interactions-with-each-other)
+- [Common pitfalls](#common-pitfalls)
+- [Recommended planning sequence per inkomstår](#recommended-planning-sequence-per-inkomstår)
+- [Multi-year planning horizon](#multi-year-planning-horizon)
+- [Skatteflyktslagen and audit triggers for EF](#skatteflyktslagen-and-audit-triggers-for-ef)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - IL 30 kap — Periodiseringsfond (P-fond)
@@ -206,7 +223,7 @@ P-fond and expansionsfond are computed **in a specific order**:
 1. Compute skattemässigt resultat (R12 bokfört resultat + R13–R28 justeringar = R29 överskott före räntefördelning)
 2. Apply **räntefördelning** (R30 positiv → decrease, R31 negativ → increase)
 3. Apply **återföring av P-fond** (R32) → increase result
-4. Compute **30% cap for new P-fond avsättning** = 30% × R33 (result after steps 1–3; expansionsfond changes are not included, IL 30 kap 6 §)
+4. Compute **30% cap for new P-fond avsättning** = 30% of the *för periodiseringsfond justerade positiva resultatet* (IL 30 kap 6 §): the result before P-fond avsättning, **increased by** avdrag för egenavgifter (16 kap 29 §), pensionsförsäkringspremie och inbetalning på pensionssparkonto med SLP (16 kap 32 §) and **avdrag för avsättning till expansionsfond (34 kap)**, and **decreased by** sjukpenning och liknande (15 kap 8 §), återfört avdrag för egenavgifter and **återfört avdrag för avsättning till expansionsfond**
 5. Apply **avsättning ny P-fond** (R34) → decrease result
 6. Compute **expansionsfond ökning room** = R35 (result after step 5; ökning may not cause underskott)
 7. Apply **ökning expansionsfond** (R36) → decrease result, or **minskning** (R37) → increase result
@@ -240,3 +257,19 @@ The exact ordering is enforced by NE-blankett layout. Note that the result *afte
 7. Compute schablonavdrag egenavgifter (R43) and submit
 
 See also [[ackumulerad-inkomst]] for handling the upphörande year återföring lump sum, [[egenavgifter-sgi-pgi-jsa]] for nedsättning rules, and [[ef-vs-ab-breakeven]] for the comparison with corporate periodiseringsfond.
+
+## Multi-year planning horizon
+
+The most valuable patterns for EF:
+1. **Build kapitalunderlag steadily** — every kr of varaktig egen insättning grows räntefördelning room *and* expansionsfond tak in perpetuity
+2. **Use P-fond for sjukpenninggrundande inkomst leveling** — note P-fond does NOT affect SGI calculation (Försäkringskassan bortser från dispositioner) but DOES affect PGI; see [[egenavgifter-sgi-pgi-jsa]]
+3. **Aktiv classification is gold** — fight for it via timesheet, since it unlocks jobbskatteavdrag (worth up to ~30 000 kr/year), kvittning mot tjänst, lägre egenavgifter, pensionsrätt
+4. **Consider EF→AB transition around brytpunkten** — under brytpunkten EF is usually cheaper than AB; over brytpunkten AB starts to win (see [[ef-vs-ab-breakeven]])
+
+## Skatteflyktslagen and audit triggers for EF
+
+EF skatteplanering can raise scrutiny under Lag 1995:575 om skatteflykt when:
+- Switching aktiv/passiv classification opportunistically (e.g., to abuse 5-year kvittningsregeln)
+- Inkomstuppdelning between makar that doesn't reflect actual arbetsinsats or kapitalinsats
+- Sudden growth of kapitalunderlag through tillfälliga kapitaltillskott (only varaktiga tillskott count, IL 33 kap 6 §)
+- Large expansionsfond avsättning followed by quick liquidation of verksamheten

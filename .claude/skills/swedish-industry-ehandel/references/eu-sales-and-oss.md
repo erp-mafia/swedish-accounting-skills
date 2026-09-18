@@ -34,6 +34,22 @@ simplification described below.
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. Master decision table](#1-master-decision-table)
+- [2. Distansförsäljning to consumers in other EU countries](#2-distansförsäljning-to-consumers-in-other-eu-countries)
+- [3. OSS — the union scheme](#3-oss--the-union-scheme)
+- [4. Goods imported from outside the EU and sold to consumers](#4-goods-imported-from-outside-the-eu-and-sold-to-consumers)
+- [5. Marketplaces as deemed supplier](#5-marketplaces-as-deemed-supplier)
+- [6. Sales to consumers outside the EU (export)](#6-sales-to-consumers-outside-the-eu-export)
+- [7. B2B sales within the EU](#7-b2b-sales-within-the-eu)
+- [8. Digital products and services to consumers](#8-digital-products-and-services-to-consumers)
+- [9. Ask the user — always, before booking](#9-ask-the-user--always-before-booking)
+- [Sources](#sources)
+
+<!-- /toc -->
+
 ## 1. Master decision table
 
 Read the row that matches the order. `Ship from` means where the goods physically start.

@@ -20,6 +20,23 @@ financial year, which affects freight apportionment (section 3), credit notes on
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. Stock held in another country](#1-stock-held-in-another-country)
+- [2. Returns, credit notes and refunds](#2-returns-credit-notes-and-refunds)
+- [3. Shipping and handling fees](#3-shipping-and-handling-fees)
+- [4. Presentkort och rabattkoder](#4-presentkort-och-rabattkoder)
+- [5. Dropshipping](#5-dropshipping)
+- [6. Payment providers](#6-payment-providers)
+- [7. Kundförluster and fraud losses](#7-kundförluster-and-fraud-losses)
+- [8. Kassaregister](#8-kassaregister)
+- [9. Month-end reconciliation checklist](#9-month-end-reconciliation-checklist)
+- [10. Ask the user](#10-ask-the-user)
+- [Sources](#sources)
+
+<!-- /toc -->
+
 ## 1. Stock held in another country
 
 ### Why moving your own goods creates a VAT event

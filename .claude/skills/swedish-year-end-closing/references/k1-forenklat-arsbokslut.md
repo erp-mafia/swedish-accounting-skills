@@ -1,5 +1,28 @@
 # K1 — Förenklat Årsbokslut för Enskild Näringsverksamhet
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Applicability — who may use K1?](#applicability--who-may-use-k1)
+- [Räkenskapsåret](#räkenskapsåret)
+- [Kontantmetoden vs faktureringsmetoden](#kontantmetoden-vs-faktureringsmetoden)
+- [Förenklat årsbokslut — struktur](#förenklat-årsbokslut--struktur)
+- [BAS 2018 Förenklat årsbokslut kontoplan — overview](#bas-2018-förenklat-årsbokslut-kontoplan--overview)
+- [Värderingsregler — K1 skiljer sig från K2/K3](#värderingsregler--k1-skiljer-sig-från-k2k3)
+- [NE-bilaga mapping (the critical bridge)](#ne-bilaga-mapping-the-critical-bridge)
+- [Värderingsregler vid avveckling (vid sista räkenskapsåret)](#värderingsregler-vid-avveckling-vid-sista-räkenskapsåret)
+- [Förteckning över anläggningstillgångar](#förteckning-över-anläggningstillgångar)
+- [Arkivering](#arkivering)
+- [Bokslutsprocess — checklista per K1-fält](#bokslutsprocess--checklista-per-k1-fält)
+- [Common pitfalls (specifika för K1)](#common-pitfalls-specifika-för-k1)
+- [When K1 is *not* enough — switch to fullt årsbokslut](#when-k1-is-not-enough--switch-to-fullt-årsbokslut)
+- [Implementation checklist för software](#implementation-checklist-för-software)
+- [Out of scope](#out-of-scope)
+- [Legal sources](#legal-sources)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - BFL (Bokföringslagen 1999:1078) 6 kap 6 § — möjlighet att upprätta förenklat årsbokslut

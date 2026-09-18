@@ -1,14 +1,18 @@
 # Tax Implications and Grant Accounting for Projects
 
-## Table of contents
 
-1. Materiellt samband principle
-2. Tax treatment of pågående arbeten
-3. Löpande räkning tax divergence
-4. Forskningsavdrag (R&D payroll deduction)
-5. Aktivering av utvecklingsutgifter
-6. EU grants and offentliga bidrag
-7. Omvänd skattskyldighet in construction
+<!-- toc -->
+**Contents**
+
+- [1. Materiellt samband principle](#1-materiellt-samband-principle)
+- [2. Tax treatment of pågående arbeten](#2-tax-treatment-of-pågående-arbeten)
+- [3. Löpande räkning tax divergence](#3-löpande-räkning-tax-divergence)
+- [4. Forskningsavdrag (R&D payroll deduction)](#4-forskningsavdrag-rd-payroll-deduction)
+- [5. Aktivering av utvecklingsutgifter](#5-aktivering-av-utvecklingsutgifter)
+- [6. EU grants and offentliga bidrag](#6-eu-grants-and-offentliga-bidrag)
+- [7. Omvänd skattskyldighet in construction](#7-omvänd-skattskyldighet-in-construction)
+
+<!-- /toc -->
 
 ---
 

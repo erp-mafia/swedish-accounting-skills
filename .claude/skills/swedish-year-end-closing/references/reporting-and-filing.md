@@ -1,5 +1,16 @@
 # Reporting Obligations, Filing, and SIE4
 
+<!-- toc -->
+**Contents**
+
+- [Årsredovisning for AB](#årsredovisning-for-ab)
+- [NE-bilaga for Enskild firma](#ne-bilaga-for-enskild-firma)
+- [Audit thresholds](#audit-thresholds)
+- [Filing deadlines](#filing-deadlines)
+- [SIE4 Export](#sie4-export)
+
+<!-- /toc -->
+
 ## Årsredovisning for AB
 
 Must contain, in order:

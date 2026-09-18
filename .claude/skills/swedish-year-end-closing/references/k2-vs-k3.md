@@ -1,5 +1,23 @@
 # K2 vs K3: Implementation Differences for Year-End Closing
 
+<!-- toc -->
+**Contents**
+
+- [Component depreciation](#component-depreciation)
+- [Deferred tax (uppskjuten skatt)](#deferred-tax-uppskjuten-skatt)
+- [Internally developed intangible assets](#internally-developed-intangible-assets)
+- [Fair value measurement](#fair-value-measurement)
+- [Leasing classification](#leasing-classification)
+- [Income statement format](#income-statement-format)
+- [Depreciation simplifications](#depreciation-simplifications)
+- [Accrual threshold](#accrual-threshold)
+- [Notes requirements](#notes-requirements)
+- [Accounts to hide/disable in K2 mode](#accounts-to-hidedisable-in-k2-mode)
+- [K2 changes from BFNAR 2025:2 (FY beginning after 2025-12-31)](#k2-changes-from-bfnar-20252-fy-beginning-after-2025-12-31)
+- [Summary table](#summary-table)
+
+<!-- /toc -->
+
 ## Component depreciation
 
 **K3**: Mandatory. Assets with significant components having materially different useful lives must be split and depreciated separately. Buildings decomposed into roof, HVAC, facade, frame, etc. Software must support multiple components per asset with independent useful lives, residual values, and schedules.

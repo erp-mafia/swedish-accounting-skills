@@ -1,5 +1,23 @@
 # Ackumulerad Inkomst
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Purpose](#purpose)
+- [Terminologi: skiktgräns vs brytpunkt](#terminologi-skiktgräns-vs-brytpunkt)
+- [Spärregler (cumulative — all must be true)](#spärregler-cumulative--all-must-be-true)
+- [Fördelningstiden (allocation period)](#fördelningstiden-allocation-period)
+- [Skatteberäkningen i praktiken](#skatteberäkningen-i-praktiken)
+- [Typer av inkomster som kan vara AI](#typer-av-inkomster-som-kan-vara-ai)
+- [Worked example — strukturell](#worked-example--strukturell)
+- [Pitfalls](#pitfalls)
+- [Implementation checklist for software](#implementation-checklist-for-software)
+- [Combination strategies](#combination-strategies)
+- [Pensionssparavdrag — relaterad fråga för EF](#pensionssparavdrag--relaterad-fråga-för-ef)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - IL 66 kap (Särskild skatteberäkning för ackumulerad inkomst) — full chapter

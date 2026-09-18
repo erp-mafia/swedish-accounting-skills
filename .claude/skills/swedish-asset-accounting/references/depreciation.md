@@ -1,5 +1,14 @@
 # Depreciation Methods & Tax Rules
 
+<!-- toc -->
+**Contents**
+
+- [Planenlig avskrivning (Book Depreciation)](#planenlig-avskrivning-book-depreciation)
+- [Överavskrivning (Excess Tax Depreciation)](#överavskrivning-excess-tax-depreciation)
+- [Skattemässig avskrivning (Tax Depreciation)](#skattemässig-avskrivning-tax-depreciation)
+
+<!-- /toc -->
+
 ## Planenlig avskrivning (Book Depreciation)
 
 ÅRL 4 kap. 4 § requires systematic depreciation of all fixed assets with limited useful life.

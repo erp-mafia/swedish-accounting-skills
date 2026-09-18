@@ -13,6 +13,25 @@ This file only covers what is specific to serving food and drink.
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. The rate split as it stands in September 2026](#1-the-rate-split-as-it-stands-in-september-2026)
+- [2. Servering or take-away: what actually decides it](#2-servering-or-take-away-what-actually-decides-it)
+- [3. Packaging, transport and single-use items](#3-packaging-transport-and-single-use-items)
+- [4. Catering, delivery and platforms](#4-catering-delivery-and-platforms)
+- [5. Alcohol](#5-alcohol)
+- [6. Personalmåltider](#6-personalmåltider)
+- [7. Free meals to guests, complimentary dishes, samples and spill](#7-free-meals-to-guests-complimentary-dishes-samples-and-spill)
+- [8. Presentkort, lunchkuponger and third-party lunch cards](#8-presentkort-lunchkuponger-and-third-party-lunch-cards)
+- [9. Rabatter, happy hour and bundles across two rates](#9-rabatter-happy-hour-and-bundles-across-two-rates)
+- [10. Worked example: one full day](#10-worked-example-one-full-day)
+- [11. BAS 2026 accounts used in this file](#11-bas-2026-accounts-used-in-this-file)
+- [12. Ask-the-user checklist before booking a first period](#12-ask-the-user-checklist-before-booking-a-first-period)
+- [Sources](#sources)
+
+<!-- /toc -->
+
 ## 1. The rate split as it stands in September 2026
 
 Three rates run side by side in the same basket. The rate depends on **what the guest gets**, not on what is cooked.

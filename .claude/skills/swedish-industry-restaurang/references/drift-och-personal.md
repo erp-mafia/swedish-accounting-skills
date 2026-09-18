@@ -12,6 +12,23 @@ Scope split:
 
 ---
 
+<!-- toc -->
+**Contents**
+
+- [1. Serveringstillstånd: what it demands from the books](#1-serveringstillstånd-what-it-demands-from-the-books)
+- [2. Kassaregister for this industry](#2-kassaregister-for-this-industry)
+- [3. Personalliggare](#3-personalliggare)
+- [4. What a kontrollbesök looks like in a restaurant](#4-what-a-kontrollbesök-looks-like-in-a-restaurant)
+- [5. Svinn and inventering](#5-svinn-and-inventering)
+- [6. Payroll specifics](#6-payroll-specifics)
+- [7. Dricks](#7-dricks)
+- [8. Costs and assets typical to the industry](#8-costs-and-assets-typical-to-the-industry)
+- [9. Key figures a restaurant agent should sanity-check](#9-key-figures-a-restaurant-agent-should-sanity-check)
+- [10. Ask-the-user checklist before taking on a restaurant client](#10-ask-the-user-checklist-before-taking-on-a-restaurant-client)
+- [Sources](#sources)
+
+<!-- /toc -->
+
 ## 1. Serveringstillstånd: what it demands from the books
 
 A serveringstillstånd is a municipal licence under **alkohollagen (2010:1622)**. Most of it is not an accounting matter, but four parts are.

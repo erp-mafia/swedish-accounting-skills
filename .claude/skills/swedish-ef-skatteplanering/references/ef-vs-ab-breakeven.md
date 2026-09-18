@@ -1,5 +1,28 @@
 # EF vs AB — Skattemässig Jämförelse och Brytpunkter
 
+<!-- toc -->
+**Contents**
+
+- [Purpose](#purpose)
+- [Den fundamentala olikheten](#den-fundamentala-olikheten)
+- [Marginalskatt + total skatt — kvalitativ struktur](#marginalskatt--total-skatt--kvalitativ-struktur)
+- ["Kvar efter skatt på 100 kr" — kvalitativ jämförelse EF vs AB](#kvar-efter-skatt-på-100-kr--kvalitativ-jämförelse-ef-vs-ab)
+- [När EF generellt är förmånligare än AB](#när-ef-generellt-är-förmånligare-än-ab)
+- [När AB generellt är förmånligare](#när-ab-generellt-är-förmånligare)
+- ["Både och"-strategy (parallell EF + AB)](#både-och-strategy-parallell-ef--ab)
+- [Skiljd hantering vid sjukpenning](#skiljd-hantering-vid-sjukpenning)
+- [Inlåning till AB — and parallel concept i EF](#inlåning-till-ab--and-parallel-concept-i-ef)
+- [Uthyrning till AB](#uthyrning-till-ab)
+- [Tantieme — inte tillgängligt i EF](#tantieme--inte-tillgängligt-i-ef)
+- [Föräldraledighet och föräldrapenninggrundande inkomst](#föräldraledighet-och-föräldrapenninggrundande-inkomst)
+- [Ombildning EF → AB — when to switch](#ombildning-ef--ab--when-to-switch)
+- [Tabell: snabbjämförelse vid olika vinstnivåer](#tabell-snabbjämförelse-vid-olika-vinstnivåer)
+- [Anställning vs EF + bisyssla](#anställning-vs-ef--bisyssla)
+- [Pitfalls](#pitfalls)
+- [Implementation checklist for software](#implementation-checklist-for-software)
+
+<!-- /toc -->
+
 ## Purpose
 
 This reference helps decide when an enskild näringsidkare should:

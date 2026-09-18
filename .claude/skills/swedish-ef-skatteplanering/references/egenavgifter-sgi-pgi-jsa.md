@@ -1,5 +1,23 @@
 # Egenavgifter, SGI, PGI, Jobbskatteavdrag — Interaction Effects
 
+<!-- toc -->
+**Contents**
+
+- [Legal basis](#legal-basis)
+- [Egenavgifter — base rates](#egenavgifter--base-rates)
+- [Generell nedsättning av egenavgifter — 7,5 %](#generell-nedsättning-av-egenavgifter--75)
+- [Schablonavdrag för egenavgifter på NE-bilaga](#schablonavdrag-för-egenavgifter-på-ne-bilaga)
+- [Underlag för aktivitets-/sjukpenning (SGI)](#underlag-för-aktivitets-sjukpenning-sgi)
+- [Underlag för pensionsgrundande inkomst (PGI)](#underlag-för-pensionsgrundande-inkomst-pgi)
+- [Jobbskatteavdrag (JSA) — skattereduktion för aktiva NV](#jobbskatteavdrag-jsa--skattereduktion-för-aktiva-nv)
+- [Interaktionsmatris — påverkan på underlag](#interaktionsmatris--påverkan-på-underlag)
+- [Egenavgifter-effekt för aktiv vs passiv vs pensionär](#egenavgifter-effekt-för-aktiv-vs-passiv-vs-pensionär)
+- [Underlag för nedre och övre PGI-gräns](#underlag-för-nedre-och-övre-pgi-gräns)
+- [Pitfalls](#pitfalls)
+- [Implementation checklist](#implementation-checklist)
+
+<!-- /toc -->
+
 ## Legal basis
 
 - Socialavgiftslagen (SAL) 2000:980 — egenavgifter

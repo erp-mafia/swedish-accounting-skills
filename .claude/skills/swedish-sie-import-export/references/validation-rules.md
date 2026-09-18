@@ -1,17 +1,39 @@
 # SIE4 Validation Rules and Error Patterns
 
-## Table of contents
-1. [Structural validation](#structural-validation)
-2. [Verification integrity](#verification-integrity)
-3. [Balance continuity](#balance-continuity)
-4. [Account and dimension validation](#account-and-dimension-validation)
-5. [Verification numbering](#verification-numbering)
-6. [Fiscal year boundaries](#fiscal-year-boundaries)
-7. [Encoding errors](#encoding-errors)
-8. [Post-import issues](#post-import-issues)
-9. [Validation severity levels](#validation-severity-levels)
-10. [Remediation workflow: diagnose before adjusting](#remediation-workflow-diagnose-before-adjusting)
-11. [SIE file diffing](#sie-file-diffing)
+
+<!-- toc -->
+**Contents**
+
+- [Common errors (quick lookup)](#common-errors-quick-lookup)
+- [Structural validation](#structural-validation)
+- [Verification integrity](#verification-integrity)
+- [Balance continuity](#balance-continuity)
+- [Account and dimension validation](#account-and-dimension-validation)
+- [Verification numbering](#verification-numbering)
+- [Fiscal year boundaries](#fiscal-year-boundaries)
+- [Encoding errors](#encoding-errors)
+- [Post-import issues](#post-import-issues)
+- [Validation severity levels](#validation-severity-levels)
+- [Recommended validation order](#recommended-validation-order)
+- [Remediation workflow: diagnose before adjusting](#remediation-workflow-diagnose-before-adjusting)
+- [SIE file diffing](#sie-file-diffing)
+
+<!-- /toc -->
+
+## Common errors (quick lookup)
+
+| Error | Cause | Fix |
+|-------|-------|-----|
+| Unbalanced verification | #TRANS sum ≠ 0: line missing from the export, parse error (e.g. #RTRANS or #BTRANS counted), truncated file, or rounding in the source | Don't import or edit the voucher. Report the exact difference, compare with the source voucher, fix the cause and re-export. Never add a balancing line to an imported voucher. Real errors in the books: separate rättelsepost in the current period (see [remediation workflow](#remediation-workflow-diagnose-before-adjusting)) |
+| IB/UB mismatch | IB ≠ previous year's UB (ÅRL 2:4 p.7): exports taken at different times, late entries in the previous year, parse error, or a real error | Report the difference per account, diagnose against the source, re-export or update IB in the source. Never post undiagnosed adjustments in the opening or a closed period |
+| Garbled å/ä/ö | Encoding mismatch | Detect actual encoding, re-decode |
+| Duplicate verno | Series collision on import | Remap to unused series |
+| Undeclared account | #TRANS references account not in #KONTO | Add #KONTO or map to existing |
+| #FLAGGA 1 | File already imported | Don't import. Resetting #FLAGGA to 0 defeats the double-import guard (spec 7.4); do it only after confirming the vouchers are not already in the target |
+| Missing #RAR | Can't determine fiscal year | Reject file or infer from verification dates |
+| Non-zero IB on 3xxx-9xxx | Incomplete closing in source | Run closing entries before export |
+| Truncated file | #KSUMMA opening present, closing missing | Reject, re-export from source |
+| No VAT codes post-import | SIE carries no moms info | Manually configure in target system |
 
 ---
 

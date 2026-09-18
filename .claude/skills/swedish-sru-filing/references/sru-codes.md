@@ -4,16 +4,20 @@ Complete field code (fältkod) tables for INK2, INK2R, and INK2S blankett types,
 
 Field codes and signs below follow Skatteverket's fältnamnstabeller `INK2_`, `INK2R_` and `INK2S_SKV2002-33-01-24-04` in the 2025P4 package (unchanged from 2024P4). Check the next package (2026P4) when it is published.
 
-## Table of Contents
 
-1. [INK2 — Huvudblankett](#ink2)
-2. [INK2R — Räkenskapsschema: Balance Sheet Assets](#ink2r-assets)
-3. [INK2R — Räkenskapsschema: Balance Sheet Equity & Liabilities](#ink2r-equity)
-4. [INK2R — Räkenskapsschema: Income Statement](#ink2r-income)
-5. [INK2S — Skattemässiga justeringar](#ink2s)
-6. [BAS-to-SRU Mapping: Balance Sheet](#bas-balance)
-7. [BAS-to-SRU Mapping: Income Statement](#bas-income)
-8. [Sign conventions](#signs)
+<!-- toc -->
+**Contents**
+
+- [1. INK2 — Huvudblankett](#ink2)
+- [2. INK2R — Räkenskapsschema: Balance Sheet Assets](#ink2r-assets)
+- [3. INK2R — Räkenskapsschema: Balance Sheet Equity & Liabilities](#ink2r-equity)
+- [4. INK2R — Räkenskapsschema: Income Statement](#ink2r-income)
+- [5. INK2S — Skattemässiga justeringar](#ink2s)
+- [6. BAS-to-SRU Mapping: Balance Sheet](#bas-balance)
+- [7. BAS-to-SRU Mapping: Income Statement](#bas-income)
+- [8. Sign conventions](#signs)
+
+<!-- /toc -->
 
 ---
 

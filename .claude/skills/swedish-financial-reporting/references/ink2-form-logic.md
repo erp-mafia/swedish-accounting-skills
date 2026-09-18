@@ -1,5 +1,6 @@
 # INK2 Form Logic
 
+
 ## Table of Contents
 1. INK2 form structure
 2. Data flow
